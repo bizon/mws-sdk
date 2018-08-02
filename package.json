@@ -1,0 +1,45 @@
+{
+  "name": "mws-sdk",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": "git@github.com:bizon/mws-sdk.git",
+  "author": "Bertrand Marron <bertrand.marron@gmail.com>",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^23.4.2",
+    "jest-junit": "^5.1.0",
+    "xo": "^0.21.1"
+  },
+  "jest": {
+    "reporters": [
+      "default",
+      [
+        "jest-junit",
+        {
+          "output": "reports/tests/junit.xml"
+        }
+      ]
+    ],
+    "collectCoverage": true,
+    "coverageReporters": [
+      "lcov",
+      "text-summary"
+    ]
+  },
+  "xo": {
+    "semicolon": false,
+    "space": 2,
+    "overrides": [
+      {
+        "files": "__tests__/**/*.js",
+        "envs": [
+          "jest"
+        ]
+      }
+    ]
+  }
+}
