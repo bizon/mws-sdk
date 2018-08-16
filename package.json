@@ -9,7 +9,7 @@
   "repository": "git@github.com:bizon/mws-sdk.git",
   "author": "Bertrand Marron <bertrand.marron@gmail.com>",
   "dependencies": {
-    "got": "^8.3.2",
+    "got": "^9.0.0",
     "xmldom": "^0.1.27",
     "xpath": "^0.0.27"
   },
