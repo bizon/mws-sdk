@@ -1,6 +1,6 @@
 node_modules
 
-reports
-coverage
+/reports
+/coverage
 
 *.log
