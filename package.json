@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "TZ=UTC jest"
   },
   "repository": "git@github.com:bizon/mws-sdk.git",
   "author": "Bertrand Marron <bertrand.marron@gmail.com>",
