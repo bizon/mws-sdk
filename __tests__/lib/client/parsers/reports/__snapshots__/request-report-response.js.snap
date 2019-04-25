@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib.client.parsers.reports.request-report-response should parse the RequestReportResponse example response from MWS doc 1`] = `
+Object {
+  "requestReportResult": Object {
+    "reportRequestInfo": Object {
+      "completedDate": null,
+      "endDate": 2009-02-13T02:10:39.000Z,
+      "generatedReportId": null,
+      "reportProcessingStatus": "_SUBMITTED_",
+      "reportRequestId": "2291326454",
+      "reportType": "_GET_MERCHANT_LISTINGS_DATA_",
+      "scheduled": false,
+      "startDate": 2009-01-21T02:10:39.000Z,
+      "startedProcessingDate": null,
+      "submittedDate": 2009-02-20T02:10:39.000Z,
+    },
+  },
+  "responseMetadata": Object {
+    "requestId": "88faca76-b600-46d2-b53c-0c8c4533e43a",
+  },
+}
+`;

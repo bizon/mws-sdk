@@ -1,0 +1,380 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib.client.parsers.finances.list-financial-event-groups-response should parse the ListFinancialEvents example response from MWS doc 1`] = `
+Object {
+  "listFinancialEventsResult": Object {
+    "financialEvents": Object {
+      "adjustmentEventList": Array [],
+      "affordabilityExpenseEventList": Array [
+        Object {
+          "amazonOrderId": "931-2463294-5740665",
+          "baseExpense": Object {
+            "currencyAmount": -100,
+            "currencyCode": "INR",
+          },
+          "marketplaceId": "A2XZLSVIQ0F4JT",
+          "postedDate": 2018-02-08T13:17:15.000Z,
+          "taxTypeCGST": Object {
+            "currencyAmount": 0,
+            "currencyCode": "INR",
+          },
+          "taxTypeIGST": Object {
+            "currencyAmount": -18,
+            "currencyCode": "INR",
+          },
+          "taxTypeSGST": Object {
+            "currencyAmount": 0,
+            "currencyCode": "INR",
+          },
+          "totalExpense": Object {
+            "currencyAmount": -118,
+            "currencyCode": "INR",
+          },
+          "transactionType": "Charge",
+        },
+      ],
+      "affordabilityExpenseReversalEventList": Array [
+        Object {
+          "amazonOrderId": "931-2463294-5740665",
+          "baseExpense": Object {
+            "currencyAmount": 100,
+            "currencyCode": "INR",
+          },
+          "marketplaceId": "A2XZLSVIQ0F4JT",
+          "postedDate": 2018-02-08T13:17:15.000Z,
+          "taxTypeCGST": Object {
+            "currencyAmount": 0,
+            "currencyCode": "INR",
+          },
+          "taxTypeIGST": Object {
+            "currencyAmount": 18,
+            "currencyCode": "INR",
+          },
+          "taxTypeSGST": Object {
+            "currencyAmount": 0,
+            "currencyCode": "INR",
+          },
+          "totalExpense": Object {
+            "currencyAmount": 118,
+            "currencyCode": "INR",
+          },
+          "transactionType": "Refund",
+        },
+      ],
+      "chargebackEventList": Array [],
+      "couponPaymentEventList": Array [],
+      "debtRecoveryEventList": Array [],
+      "fbaLiquidationEventList": Array [],
+      "guaranteeClaimEventList": Array [],
+      "imagingServicesFeeEventList": Array [],
+      "loanServicingEventList": Array [],
+      "networkComminglingTransactionEventList": Array [],
+      "payWithAmazonEventList": Array [],
+      "performanceBondRefundEventList": Array [],
+      "productAdsPaymentEventList": Array [
+        Object {
+          "baseValue": Object {
+            "currencyAmount": 115.34,
+            "currencyCode": "USD",
+          },
+          "invoiceId": "TR1W0B4YB-6",
+          "postedDate": null,
+          "taxValue": Object {
+            "currencyAmount": 21.91,
+            "currencyCode": "USD",
+          },
+          "transactionType": "Charge",
+          "transactionValue": Object {
+            "currencyAmount": 137.25,
+            "currencyCode": "USD",
+          },
+        },
+      ],
+      "refundEventList": Array [],
+      "rentalTransactionEventList": Array [],
+      "retrochargeEventList": Array [],
+      "safeTReimbursementEventList": Array [],
+      "sellerDealPaymentEventList": Array [
+        Object {
+          "dealDescription": "test fees",
+          "dealId": "fec11097c1f4379426a7de68bf938b684f677de2",
+          "eventType": "SellerDealComplete",
+          "feeAmount": Object {
+            "currencyAmount": 16.38,
+            "currencyCode": "USD",
+          },
+          "feeType": "RunLightningDealFee",
+          "postedDate": 2016-11-21T16:18:15.000Z,
+          "taxAmount": Object {
+            "currencyAmount": 3.18,
+            "currencyCode": "USD",
+          },
+          "totalAmount": null,
+        },
+      ],
+      "sellerReviewEnrollmentPaymentEventList": Array [],
+      "serviceFeeEventList": Array [],
+      "serviceProviderCreditEventList": Array [],
+      "shipmentEventList": Array [
+        Object {
+          "amazonOrderId": "105-0457358-1245022",
+          "directPaymentList": Array [],
+          "marketplaceName": "Amazon.com",
+          "orderChargeAdjustmentList": Array [],
+          "orderChargeList": Array [],
+          "orderFeeAdjustmentList": Array [],
+          "orderFeeList": Array [],
+          "postedDate": 2017-01-23T01:31:25.000Z,
+          "sellerOrderId": "105-0457358-1245022",
+          "shipmentFeeAdjustmentList": Array [],
+          "shipmentFeeList": Array [],
+          "shipmentItemAdjustmentList": Array [],
+          "shipmentItemList": Array [
+            Object {
+              "costOfPointsGranted": null,
+              "costOfPointsReturned": null,
+              "itemChargeAdjustmentList": Array [],
+              "itemChargeList": Array [
+                Object {
+                  "chargeAmount": Object {
+                    "currencyAmount": 25.99,
+                    "currencyCode": "USD",
+                  },
+                  "chargeType": "Principal",
+                },
+                Object {
+                  "chargeAmount": Object {
+                    "currencyAmount": 0,
+                    "currencyCode": "USD",
+                  },
+                  "chargeType": "Tax",
+                },
+              ],
+              "itemFeeAdjustmentList": Array [],
+              "itemFeeList": Array [
+                Object {
+                  "feeAmount": Object {
+                    "currencyAmount": 0,
+                    "currencyCode": "USD",
+                  },
+                  "feeType": "ShippingChargeback",
+                },
+                Object {
+                  "feeAmount": Object {
+                    "currencyAmount": 0,
+                    "currencyCode": "USD",
+                  },
+                  "feeType": "VariableClosingFee",
+                },
+              ],
+              "itemTaxWithheldList": Array [],
+              "orderAdjustmentItemId": null,
+              "orderItemId": "46432915698730",
+              "promotionAdjustmentList": Array [],
+              "promotionList": Array [],
+              "quantityShipped": 1,
+              "sellerSKU": "HS223A-C00",
+            },
+          ],
+        },
+      ],
+    },
+    "nextToken": null,
+  },
+  "responseMetadata": Object {
+    "requestId": "6a2929e5-5c77-470e-ad71-36f30bfaffcc",
+  },
+}
+`;
+
+exports[`lib.client.parsers.finances.list-financial-event-groups-response should parse the ListFinancialEventsByNextToken example response from MWS doc 1`] = `
+Object {
+  "listFinancialEventsResult": Object {
+    "financialEvents": Object {
+      "adjustmentEventList": Array [
+        Object {
+          "adjustmentAmount": null,
+          "adjustmentItemList": Array [
+            Object {
+              "asin": null,
+              "fnSKU": null,
+              "perUnitAmount": Object {
+                "currencyAmount": 3.38,
+                "currencyCode": "USD",
+              },
+              "productDescription": "Shacke Metal Shoe Horn 7.5\\" inches - Double Sided Stainless
+                      Steel (Silver)",
+              "quantity": 1,
+              "sellerSKU": "KL-BPYA-C1VH",
+              "totalAmount": Object {
+                "currencyAmount": 3.38,
+                "currencyCode": "USD",
+              },
+            },
+          ],
+          "adjustmentType": "REVERSAL_REIMBURSEMENT",
+          "postedDate": null,
+        },
+      ],
+      "affordabilityExpenseEventList": Array [
+        Object {
+          "amazonOrderId": "931-2463294-5740665",
+          "baseExpense": Object {
+            "currencyAmount": -100,
+            "currencyCode": "INR",
+          },
+          "marketplaceId": "A2XZLSVIQ0F4JT",
+          "postedDate": 2018-02-08T13:17:15.000Z,
+          "taxTypeCGST": Object {
+            "currencyAmount": 0,
+            "currencyCode": "INR",
+          },
+          "taxTypeIGST": Object {
+            "currencyAmount": -18,
+            "currencyCode": "INR",
+          },
+          "taxTypeSGST": Object {
+            "currencyAmount": 0,
+            "currencyCode": "INR",
+          },
+          "totalExpense": Object {
+            "currencyAmount": -118,
+            "currencyCode": "INR",
+          },
+          "transactionType": "Charge",
+        },
+      ],
+      "affordabilityExpenseReversalEventList": Array [
+        Object {
+          "amazonOrderId": "931-2463294-5740665",
+          "baseExpense": Object {
+            "currencyAmount": 100,
+            "currencyCode": "INR",
+          },
+          "marketplaceId": "A2XZLSVIQ0F4JT",
+          "postedDate": 2018-02-08T13:17:15.000Z,
+          "taxTypeCGST": Object {
+            "currencyAmount": 0,
+            "currencyCode": "INR",
+          },
+          "taxTypeIGST": Object {
+            "currencyAmount": 18,
+            "currencyCode": "INR",
+          },
+          "taxTypeSGST": Object {
+            "currencyAmount": 0,
+            "currencyCode": "INR",
+          },
+          "totalExpense": Object {
+            "currencyAmount": 118,
+            "currencyCode": "INR",
+          },
+          "transactionType": "Refund",
+        },
+      ],
+      "chargebackEventList": Array [],
+      "couponPaymentEventList": Array [],
+      "debtRecoveryEventList": Array [],
+      "fbaLiquidationEventList": Array [],
+      "guaranteeClaimEventList": Array [],
+      "imagingServicesFeeEventList": Array [],
+      "loanServicingEventList": Array [],
+      "networkComminglingTransactionEventList": Array [],
+      "payWithAmazonEventList": Array [],
+      "performanceBondRefundEventList": Array [],
+      "productAdsPaymentEventList": Array [
+        Object {
+          "baseValue": Object {
+            "currencyAmount": 115.34,
+            "currencyCode": "USD",
+          },
+          "invoiceId": "TR1W0B4YB-6",
+          "postedDate": null,
+          "taxValue": Object {
+            "currencyAmount": 21.91,
+            "currencyCode": "USD",
+          },
+          "transactionType": "Charge",
+          "transactionValue": Object {
+            "currencyAmount": 137.25,
+            "currencyCode": "USD",
+          },
+        },
+      ],
+      "refundEventList": Array [],
+      "rentalTransactionEventList": Array [],
+      "retrochargeEventList": Array [],
+      "safeTReimbursementEventList": Array [],
+      "sellerDealPaymentEventList": Array [
+        Object {
+          "dealDescription": "test fees",
+          "dealId": "fec11097c1f4379426a7de68bf938b684f677de2",
+          "eventType": "SellerDealComplete",
+          "feeAmount": Object {
+            "currencyAmount": 16.38,
+            "currencyCode": "USD",
+          },
+          "feeType": "RunLightningDealFee",
+          "postedDate": 2016-11-21T16:18:15.000Z,
+          "taxAmount": Object {
+            "currencyAmount": 3.18,
+            "currencyCode": "USD",
+          },
+          "totalAmount": null,
+        },
+      ],
+      "sellerReviewEnrollmentPaymentEventList": Array [],
+      "serviceFeeEventList": Array [
+        Object {
+          "amazonOrderId": null,
+          "asin": null,
+          "feeDescription": "Shacke Luggage Tags with Full Back Privacy Cover w/ Steel Loops - Set of 2
+                  (Green)",
+          "feeList": Array [],
+          "feeReason": null,
+          "fnSKU": null,
+          "sellerSKU": "FH-REED-16DX",
+        },
+        Object {
+          "amazonOrderId": null,
+          "asin": null,
+          "feeDescription": "Shacke Luggage Tags with Full Back Privacy Cover w/ Steel Loops - Set of 2
+                  (Green)",
+          "feeList": Array [
+            Object {
+              "feeAmount": Object {
+                "currencyAmount": -1,
+                "currencyCode": "USD",
+              },
+              "feeType": "FBACustomerReturnPerOrderFee",
+            },
+            Object {
+              "feeAmount": Object {
+                "currencyAmount": -1.06,
+                "currencyCode": "USD",
+              },
+              "feeType": "FBACustomerReturnPerUnitFee",
+            },
+            Object {
+              "feeAmount": Object {
+                "currencyAmount": -0.5,
+                "currencyCode": "USD",
+              },
+              "feeType": "FBACustomerReturnWeightBasedFee",
+            },
+          ],
+          "feeReason": null,
+          "fnSKU": null,
+          "sellerSKU": "FH-REED-16DX",
+        },
+      ],
+      "serviceProviderCreditEventList": Array [],
+      "shipmentEventList": Array [],
+    },
+    "nextToken": "e21hcmtldHBsYWNlSWQ6bnVsbCxtYXhSZXN1bHRzUGVyUGFnZTowLHNlYXJjaFF1ZXJ5Q2hlY2tzdW06bnVsbCxxdWVyeVBhZ2luYXRpb25Ub2tlbjoidDB3V25MNXFLWkRIZ2p5ZzB3ZHRWODVnV0htVExVMkM0XzlsMHpRMG9HVXFZOVhTdjFyWUNWUE8teGxWRnF3N0ZyaDIyY3lQX0VTOXYxendQNUVvc0t0V1NKM1YyQkRJdWcyWFpXdm1KVmdPVktBdzNIMXUyVHBiTGoxVmRmY3Z6ZlU1WlpNaEpsQ0RKUnYxRk16am13Y1YyQ1BoOXNWMU1xNUZqamxUMlRCeFBkSjdEa3BkbENISElVZ094aHVTN3ZfZlFCUWYyWWJYZ2l3NHNxZXkwNnQyaVBucm5PdnAzRTdKbW4xcnc1UTlaTGV1Ymk5WUV6UGJ6UnhjRmh2VUFKdlQ5U2U3eERIdHVMUzNJVWFRODBubVhja3JLeWt3dVZKeWZXQm5CY3p0bjZTbVRHenJmZ1VOanFMWFFNT2giLHNlYXJjaFF1ZXJ5Om51bGwsdG9rZW5DcmVhdGlvbkRhdGU6MTQ4NTg2MjY5ODI1NCxzZWxsZXJJZDoiQTM1SlMxREpITjdGViJ9",
+  },
+  "responseMetadata": Object {
+    "requestId": "c07d1dd2-12f9-415f-a167-8ab5f7726dbf",
+  },
+}
+`;

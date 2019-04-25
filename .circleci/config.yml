@@ -1,0 +1,95 @@
+version: 2
+
+defaults:
+  workspace_root: &workspace_root
+    ~/mws-sdk
+
+  nodejs_container: &nodejs_container
+    working_directory: *workspace_root
+    docker:
+      - image: circleci/node:8.10-stretch
+
+  attach_workspace: &attach_workspace
+    attach_workspace:
+      at: *workspace_root
+
+  restore_node_modules: &restore_node_modules
+    restore_cache:
+      name: Restore node_modules cache
+      keys:
+        - v1-mws-sdk-node-{{ .Branch }}-{{ checksum "package-lock.json" }}
+        - v1-mws-sdk-node-master-{{ checksum "package-lock.json" }}
+        - v1-mws-sdk-node-master-
+
+jobs:
+  checkout:
+    <<: *nodejs_container
+    steps:
+      - checkout
+
+      - persist_to_workspace:
+          root: *workspace_root
+          paths:
+            - ./
+
+  install:
+    <<: *nodejs_container
+    steps:
+      - *attach_workspace
+      - *restore_node_modules
+
+      - run:
+          name: Install dependencies
+          command: npm install
+
+      - save_cache:
+          name: Save node_modules cache
+          key: v1-mws-sdk-node-{{ .Branch }}-{{ checksum "package-lock.json" }}
+          paths:
+            - node_modules/
+
+  lint:
+    <<: *nodejs_container
+    steps:
+      - *attach_workspace
+      - *restore_node_modules
+
+      - run:
+          name: Lint JavaScript
+          command: npx xo
+
+  test:
+    <<: *nodejs_container
+    steps:
+      - *attach_workspace
+      - *restore_node_modules
+
+      - run:
+          name: Test
+          command: npm test
+
+      - store_test_results:
+          path: reports/tests/
+
+      - run:
+          name: Upload code coverage to codecov
+          command: npx codecov
+
+workflows:
+  version: 2
+
+  push:
+    jobs:
+      - checkout
+
+      - install:
+          requires:
+            - checkout
+
+      - lint:
+          requires:
+            - install
+
+      - test:
+          requires:
+            - install

@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib.client.parsers.reports.get-report-list-response should parse the GetReportListByNextTokenResponse example response from MWS doc 1`] = `
+Object {
+  "getReportListResult": Object {
+    "hasNext": null,
+    "nextToken": "none",
+    "reportInfos": Array [
+      Object {
+        "acknowledged": false,
+        "acknowledgedDate": null,
+        "availableDate": 2009-02-10T09:22:33.000Z,
+        "reportId": "898899473",
+        "reportRequestId": "2278662938",
+        "reportType": "_GET_MERCHANT_LISTINGS_DATA_",
+      },
+    ],
+  },
+  "responseMetadata": Object {
+    "requestId": "fbf677c1-dcee-4110-bc88-2ba3702e331b",
+  },
+}
+`;
+
+exports[`lib.client.parsers.reports.get-report-list-response should parse the GetReportListResponse example response from MWS doc 1`] = `
+Object {
+  "getReportListResult": Object {
+    "hasNext": null,
+    "nextToken": "2YgYW55IPQhvu5hbCBwbGVhc3VyZS4=",
+    "reportInfos": Array [
+      Object {
+        "acknowledged": false,
+        "acknowledgedDate": null,
+        "availableDate": 2009-02-10T09:22:33.000Z,
+        "reportId": "898899473",
+        "reportRequestId": "2278662938",
+        "reportType": "_GET_MERCHANT_LISTINGS_DATA_",
+      },
+    ],
+  },
+  "responseMetadata": Object {
+    "requestId": "fbf677c1-dcee-4110-bc88-2ba3702e331b",
+  },
+}
+`;
