@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib.client.parsers.finances.list-financial-event-groups-response should parse the ListFinancialEventGroupsByNextTokenResponse example response from MWS doc 1`] = `
+Object {
+  "listFinancialEventGroupsResult": Object {
+    "financialEventGroups": Array [
+      Object {
+        "accountTail": "1212",
+        "beginningBalance": Object {
+          "currencyAmount": 0,
+          "currencyCode": "USD",
+        },
+        "convertedTotal": Object {
+          "currencyAmount": 19,
+          "currencyCode": "USD",
+        },
+        "financialEventGroupEnd": 2014-09-09T07:30:00.000Z,
+        "financialEventGroupId": "22YgYW55IGNhcm5hbCBwbGVhEXAMPLE",
+        "financialEventGroupStart": 2014-09-01T07:30:00.000Z,
+        "fundTransferDate": 2014-09-09T07:30:00.000Z,
+        "fundTransferStatus": "Successful",
+        "originalTotal": Object {
+          "currencyAmount": 19,
+          "currencyCode": "USD",
+        },
+        "processingStatus": "Closed",
+        "traceId": "128311029381HSADJEXAMPLE",
+      },
+    ],
+    "nextToken": "2YgYW55IGNhcm5hbCBwbGVhcEXAMPLE",
+  },
+  "responseMetadata": Object {
+    "requestId": "1105b931-6f1c-4480-8e97-f3b46EXAMPLE",
+  },
+}
+`;
+
+exports[`lib.client.parsers.finances.list-financial-event-groups-response should parse the ListFinancialEventGroupsResponse example response from MWS doc 1`] = `
+Object {
+  "listFinancialEventGroupsResult": Object {
+    "financialEventGroups": Array [
+      Object {
+        "accountTail": "1212",
+        "beginningBalance": Object {
+          "currencyAmount": 0,
+          "currencyCode": "USD",
+        },
+        "convertedTotal": Object {
+          "currencyAmount": 19,
+          "currencyCode": "USD",
+        },
+        "financialEventGroupEnd": 2014-09-09T07:30:00.000Z,
+        "financialEventGroupId": "22YgYW55IGNhcm5hbCBwbGVhEXAMPLE",
+        "financialEventGroupStart": 2014-09-01T07:30:00.000Z,
+        "fundTransferDate": 2014-09-09T07:30:00.000Z,
+        "fundTransferStatus": "Successful",
+        "originalTotal": Object {
+          "currencyAmount": 19,
+          "currencyCode": "USD",
+        },
+        "processingStatus": "Closed",
+        "traceId": "128311029381HSADJEXAMPLE",
+      },
+    ],
+    "nextToken": "2YgYW55IGNhcm5hbCBwbGVhcEXAMPLE",
+  },
+  "responseMetadata": Object {
+    "requestId": "1105b931-6f1c-4480-8e97-f3b46EXAMPLE",
+  },
+}
+`;

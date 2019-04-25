@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib.client.parsers.products.get-my-price-for-asin-response should parse the GetMyPriceForASINResponse example response from MWS doc 1`] = `
+Object {
+  "getMyPriceForAsinResult": Array [
+    Object {
+      "asin": "1933890517",
+      "product": Object {
+        "attributes": null,
+        "identifiers": Object {
+          "marketplaceAsin": Object {
+            "asin": "1933890517",
+            "marketplaceId": "ATVPDKIKX0DER",
+          },
+          "skuIdentifier": null,
+        },
+        "offers": Array [
+          Object {
+            "buyingPrice": Object {
+              "landedPrice": Object {
+                "amount": 303.99,
+                "currencyCode": "USD",
+              },
+              "listingPrice": Object {
+                "amount": 300,
+                "currencyCode": "USD",
+              },
+              "shipping": Object {
+                "amount": 3.99,
+                "currencyCode": "USD",
+              },
+            },
+            "fulfillmentChannel": "MERCHANT",
+            "itemCondition": "Used",
+            "itemSubCondition": "Acceptable",
+            "regularPrice": Object {
+              "amount": 300,
+              "currencyCode": "USD",
+            },
+            "sellerId": "A1IMEXAMPLEWRC",
+            "sellerSku": "SKU2468",
+          },
+        ],
+        "salesRankings": Array [],
+      },
+      "status": "Success",
+    },
+  ],
+  "responseMetadata": Object {
+    "requestId": "a3381684-87bd-416e-9b95-EXAMPLE9c236",
+  },
+}
+`;

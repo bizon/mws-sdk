@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib.client.parsers.reports.get-report-request-list-response should parse the GetReportRequestListByNextTokenResponse example response from MWS doc 1`] = `
+Object {
+  "getReportRequestListResult": Object {
+    "hasNext": null,
+    "nextToken": null,
+    "reportRequestInfos": Array [],
+  },
+  "responseMetadata": Object {
+    "requestId": "732480cb-84a8-4c15-9084-a46bd9a0889b",
+  },
+}
+`;
+
+exports[`lib.client.parsers.reports.get-report-request-list-response should parse the GetReportRequestListResponse example response from MWS doc 1`] = `
+Object {
+  "getReportRequestListResult": Object {
+    "hasNext": null,
+    "nextToken": "2YgYW55IPQhcm5hbCBwbGVhc3VyZS4=",
+    "reportRequestInfos": Array [
+      Object {
+        "completedDate": 2011-02-17T23:44:48.000Z,
+        "endDate": 2011-02-13T02:10:39.000Z,
+        "generatedReportId": "3538561173",
+        "reportProcessingStatus": "_DONE_",
+        "reportRequestId": "2291326454",
+        "reportType": "_GET_MERCHANT_LISTINGS_DATA_",
+        "scheduled": false,
+        "startDate": 2011-01-21T02:10:39.000Z,
+        "startedProcessingDate": 2011-02-17T23:44:43.000Z,
+        "submittedDate": 2011-02-17T23:44:09.000Z,
+      },
+    ],
+  },
+  "responseMetadata": Object {
+    "requestId": "732480cb-84a8-4c15-9084-a46bd9a0889b",
+  },
+}
+`;

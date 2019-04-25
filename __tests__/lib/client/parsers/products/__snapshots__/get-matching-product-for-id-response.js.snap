@@ -1,0 +1,399 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib.client.parsers.products.get-matching-product-for-id-response should parse the GetMatchingProductForIdResponse error example response from MWS doc 1`] = `
+Object {
+  "getMatchingProductForIdResults": Array [
+    Object {
+      "id": "0439708623",
+      "idType": "ISBN",
+      "products": Array [],
+      "status": "ClientError",
+    },
+    Object {
+      "id": "9781933988665",
+      "idType": "ISBN",
+      "products": Array [
+        Object {
+          "attributes": Object {
+            "binding": "Paperback",
+            "brand": "Marmanis, Haralambos/ Babenko, Dmitry",
+            "color": null,
+            "isAutographed": null,
+            "itemDimensions": Object {
+              "height": Object {
+                "unit": "inches",
+                "value": 9.25,
+              },
+              "length": Object {
+                "unit": "inches",
+                "value": 7.38,
+              },
+              "weight": Object {
+                "unit": "pounds",
+                "value": 1.38,
+              },
+              "width": Object {
+                "unit": "inches",
+                "value": 0.73,
+              },
+            },
+            "label": "Manning Publications",
+            "manufacturer": "Manning Publications",
+            "materialType": Array [],
+            "model": null,
+            "numberOfItems": 1,
+            "packageDimensions": Object {
+              "height": Object {
+                "unit": "inches",
+                "value": 0.8,
+              },
+              "length": Object {
+                "unit": "inches",
+                "value": 9.1,
+              },
+              "weight": Object {
+                "unit": "pounds",
+                "value": 1.35,
+              },
+              "width": Object {
+                "unit": "inches",
+                "value": 7.3,
+              },
+            },
+            "packageQuantity": 1,
+            "partNumber": null,
+            "productGroup": "Book",
+            "productTypeName": "ABIS_BOOK",
+            "publisher": "Manning Publications",
+            "size": null,
+            "smallImage": Object {
+              "height": Object {
+                "unit": "pixels",
+                "value": 75,
+              },
+              "url": "http://ecx.images-amazon.com/images/I/51EEz05N2HL._SL75_.jpg",
+              "width": Object {
+                "unit": "pixels",
+                "value": 60,
+              },
+            },
+            "studio": "Manning Publications",
+            "title": "Algorithms of the Intelligent Web",
+            "warranty": null,
+          },
+          "identifiers": Object {
+            "marketplaceAsin": Object {
+              "asin": "1933988665",
+              "marketplaceId": "ATVPDKIKX0DER",
+            },
+            "skuIdentifier": null,
+          },
+          "offers": Array [],
+          "salesRankings": Array [
+            Object {
+              "productCategoryId": "book_display_on_website",
+              "rank": 689405,
+            },
+            Object {
+              "productCategoryId": "491298",
+              "rank": 150,
+            },
+            Object {
+              "productCategoryId": "3870",
+              "rank": 375,
+            },
+            Object {
+              "productCategoryId": "3887",
+              "rank": 836,
+            },
+          ],
+        },
+      ],
+      "status": "Success",
+    },
+  ],
+  "responseMetadata": Object {
+    "requestId": "a34b6cca-d7dc-4939-b226-b13ea3ac1d88",
+  },
+}
+`;
+
+exports[`lib.client.parsers.products.get-matching-product-for-id-response should parse the GetMatchingProductForIdResponse example response from MWS doc 1`] = `
+Object {
+  "getMatchingProductForIdResults": Array [
+    Object {
+      "id": "9781933988665",
+      "idType": "ISBN",
+      "products": Array [
+        Object {
+          "attributes": Object {
+            "binding": "Paperback",
+            "brand": null,
+            "color": null,
+            "isAutographed": null,
+            "itemDimensions": Object {
+              "height": Object {
+                "unit": "inches",
+                "value": 9.17,
+              },
+              "length": Object {
+                "unit": "inches",
+                "value": 7.36,
+              },
+              "weight": Object {
+                "unit": "pounds",
+                "value": 1.4,
+              },
+              "width": Object {
+                "unit": "inches",
+                "value": 0.75,
+              },
+            },
+            "label": "Manning Publications",
+            "manufacturer": "Manning Publications",
+            "materialType": Array [],
+            "model": null,
+            "numberOfItems": 1,
+            "packageDimensions": Object {
+              "height": Object {
+                "unit": "inches",
+                "value": 0.8,
+              },
+              "length": Object {
+                "unit": "inches",
+                "value": 9.1,
+              },
+              "weight": Object {
+                "unit": "pounds",
+                "value": 1.35,
+              },
+              "width": Object {
+                "unit": "inches",
+                "value": 7.3,
+              },
+            },
+            "packageQuantity": null,
+            "partNumber": null,
+            "productGroup": "Book",
+            "productTypeName": "ABIS_BOOK",
+            "publisher": "Manning Publications",
+            "size": null,
+            "smallImage": Object {
+              "height": Object {
+                "unit": "pixels",
+                "value": 75,
+              },
+              "url": "http://ecx.images-amazon.com/images/I/51EEz05N2HL._SL75_.jpg",
+              "width": Object {
+                "unit": "pixels",
+                "value": 60,
+              },
+            },
+            "studio": "Manning Publications",
+            "title": "Algorithms of the Intelligent Web",
+            "warranty": null,
+          },
+          "identifiers": Object {
+            "marketplaceAsin": Object {
+              "asin": "1933988665",
+              "marketplaceId": "ATVPDKIKX0DER",
+            },
+            "skuIdentifier": null,
+          },
+          "offers": Array [],
+          "salesRankings": Array [
+            Object {
+              "productCategoryId": "book_display_on_website",
+              "rank": 59485,
+            },
+            Object {
+              "productCategoryId": "377886011",
+              "rank": 32,
+            },
+            Object {
+              "productCategoryId": "3887",
+              "rank": 66,
+            },
+            Object {
+              "productCategoryId": "3870",
+              "rank": 82,
+            },
+          ],
+        },
+      ],
+      "status": "Success",
+    },
+    Object {
+      "id": "0439708184",
+      "idType": "ISBN",
+      "products": Array [
+        Object {
+          "attributes": Object {
+            "binding": "Paperback",
+            "brand": "Scholastic Press",
+            "color": null,
+            "isAutographed": false,
+            "itemDimensions": Object {
+              "height": Object {
+                "unit": "inches",
+                "value": 0.8,
+              },
+              "length": Object {
+                "unit": "inches",
+                "value": 7.5,
+              },
+              "weight": Object {
+                "unit": "pounds",
+                "value": 0.5,
+              },
+              "width": Object {
+                "unit": "inches",
+                "value": 5.2,
+              },
+            },
+            "label": "Scholastic Paperbacks",
+            "manufacturer": "Scholastic Paperbacks",
+            "materialType": Array [],
+            "model": null,
+            "numberOfItems": 1,
+            "packageDimensions": Object {
+              "height": Object {
+                "unit": "inches",
+                "value": 1,
+              },
+              "length": Object {
+                "unit": "inches",
+                "value": 7.5,
+              },
+              "weight": Object {
+                "unit": "pounds",
+                "value": 0.5,
+              },
+              "width": Object {
+                "unit": "inches",
+                "value": 5.2,
+              },
+            },
+            "packageQuantity": 1,
+            "partNumber": null,
+            "productGroup": "Book",
+            "productTypeName": "ABIS_BOOK",
+            "publisher": "Scholastic Paperbacks",
+            "size": null,
+            "smallImage": Object {
+              "height": Object {
+                "unit": "pixels",
+                "value": 75,
+              },
+              "url": "http://ecx.images-amazon.com/images/I/51MU5VilKpL._SL75_.jpg",
+              "width": Object {
+                "unit": "pixels",
+                "value": 51,
+              },
+            },
+            "studio": "Scholastic Paperbacks",
+            "title": "Harry Potter and the Sorcerer's Stone (Book 1)",
+            "warranty": null,
+          },
+          "identifiers": Object {
+            "marketplaceAsin": Object {
+              "asin": "059035342X",
+              "marketplaceId": "ATVPDKIKX0DER",
+            },
+            "skuIdentifier": null,
+          },
+          "offers": Array [],
+          "salesRankings": Array [
+            Object {
+              "productCategoryId": "book_display_on_website",
+              "rank": 362,
+            },
+            Object {
+              "productCategoryId": "15356791",
+              "rank": 6,
+            },
+            Object {
+              "productCategoryId": "3153",
+              "rank": 9,
+            },
+            Object {
+              "productCategoryId": "3045",
+              "rank": 14,
+            },
+          ],
+        },
+        Object {
+          "attributes": Object {
+            "binding": "Paperback",
+            "brand": null,
+            "color": null,
+            "isAutographed": null,
+            "itemDimensions": null,
+            "label": "Scholastic Paperbacks",
+            "manufacturer": "Scholastic Paperbacks",
+            "materialType": Array [],
+            "model": null,
+            "numberOfItems": 1,
+            "packageDimensions": Object {
+              "height": Object {
+                "unit": "inches",
+                "value": 0.73,
+              },
+              "length": Object {
+                "unit": "inches",
+                "value": 8.43,
+              },
+              "weight": Object {
+                "unit": "pounds",
+                "value": 0.79,
+              },
+              "width": Object {
+                "unit": "inches",
+                "value": 5.85,
+              },
+            },
+            "packageQuantity": null,
+            "partNumber": null,
+            "productGroup": "Book",
+            "productTypeName": "BOOKS_1973_AND_LATER",
+            "publisher": "Scholastic Paperbacks",
+            "size": null,
+            "smallImage": Object {
+              "height": Object {
+                "unit": "pixels",
+                "value": 75,
+              },
+              "url": "http://ecx.images-amazon.com/images/I/51STfI7UiCL._SL75_.jpg",
+              "width": Object {
+                "unit": "pixels",
+                "value": 52,
+              },
+            },
+            "studio": "Scholastic Paperbacks",
+            "title": "Harry Potter and the Sorcerer's Stone",
+            "warranty": null,
+          },
+          "identifiers": Object {
+            "marketplaceAsin": Object {
+              "asin": "0439708184",
+              "marketplaceId": "ATVPDKIKX0DER",
+            },
+            "skuIdentifier": null,
+          },
+          "offers": Array [],
+          "salesRankings": Array [
+            Object {
+              "productCategoryId": "book_display_on_website",
+              "rank": 2091024,
+            },
+          ],
+        },
+      ],
+      "status": "Success",
+    },
+  ],
+  "responseMetadata": Object {
+    "requestId": "7ba3245e-a213-430a-bea9-EXAMPLE38d76",
+  },
+}
+`;
