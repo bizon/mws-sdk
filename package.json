@@ -17,6 +17,7 @@
     "libxmljs": "^0.19.5"
   },
   "devDependencies": {
+    "codecov": "^3.3.0",
     "jest": "^24.7.1",
     "jest-junit": "^6.3.0",
     "xo": "^0.24.0"
@@ -38,7 +39,6 @@
     ],
     "coverageReporters": [
       "lcov",
-      "html",
       "text-summary"
     ]
   },

@@ -68,6 +68,13 @@ jobs:
           name: Test
           command: npm test
 
+      - store_test_results:
+          path: reports/tests/
+
+      - run:
+          name: Upload code coverage to codecov
+          command: npx codecov
+
 workflows:
   version: 2
 
