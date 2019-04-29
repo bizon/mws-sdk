@@ -2,6 +2,30 @@ const parseXml = require('../../../../../lib/client/parsers')
 const parseListFinancialEventsResponse = require('../../../../../lib/client/parsers/finances/list-financial-events-response')
 
 describe('lib.client.parsers.finances.list-financial-event-groups-response', () => {
+  it('should throw when getting an invalid XML', () => {
+    expect(() => parseXml(
+      `<?xml version="1.0"?>
+      <ListFinancialEventsResponse xmlns="http://mws.amazonservices.com/Finances/2015-05-01">
+        <ListFinancialEventsResult>
+          <FinancialEvents>
+            <ProductAdsPaymentEventList />
+            <RentalTransactionEventList />
+            <PayWithAmazonEventList />
+            <ServiceFeeEventList />
+            <ServiceProviderCreditEventList />
+            <SellerDealPaymentEventList>
+              <SellerDealPaymentEvent>
+                <PostedDate>2016-11-21T16:18:15.000Z</PostedDate>
+                <DealDescription>test fees</DealDescription>
+                <DealId>fec11097c1f4379426a7de68bf938b684f677de2</DealId>
+                <EventType>SellerDealComplete</EventType>
+                <FeeType>RunLightningDealFee</FeeType>
+                <FeeAmount>
+                  <CurrencyAmount>16.38</CurrencyAmount>
+                  <Curr`
+    )).toThrow('Premature end of data in tag ListFinancialEventsResponse')
+  })
+
   it('should parse the ListFinancialEvents example response from MWS doc', () => {
     const doc = parseXml(
       `<?xml version="1.0"?>
