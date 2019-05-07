@@ -1,10 +1,14 @@
 {
-  "name": "mws-sdk",
+  "name": "@bizon/mws-sdk",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "TZ=UTC jest"
   },
+  "files": [
+    "index.js",
+    "lib/**/*.js"
+  ],
   "repository": "git@github.com:bizon/mws-sdk.git",
   "author": "Bertrand Marron <bertrand.marron@gmail.com>",
   "dependencies": {
