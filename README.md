@@ -1,7 +1,10 @@
-# mws-sdk [![CircleCI](https://circleci.com/gh/bizon/mws-sdk.svg?style=svg&circle-token=8b71f3bda43c211cd12d978bde3a70170ae4dbce)](https://circleci.com/gh/bizon/mws-sdk)
+# mws-sdk [![CircleCI](https://circleci.com/gh/bizon/mws-sdk.svg?style=svg)](https://circleci.com/gh/bizon/mws-sdk)
 
 > SDK for MWS APIs
 
+[![npm version](https://badgen.net/npm/v/@bizon/mws-sdk)](https://www.npmjs.com/package/@bizon/mws-sdk)
+[![codecov](https://badgen.net/codecov/c/github/bizon/mws-sdk)](https://codecov.io/gh/bizon/mws-sdk)
+[![dependencies Status](https://badgen.net/david/dep/bizon/mws-sdk)](https://david-dm.org/bizon/mws-sdk)
 [![XO code style](https://badgen.net/badge/code%20style/XO/cyan)](https://github.com/xojs/xo)
 
 ## API
@@ -150,6 +153,10 @@ Name | Type | Default
 -----|------|--------
 reportId | `String` |
 format | `Enum[raw, base64]`
+
+## License
+
+MIT
 
 ## Miscellaneous
 
