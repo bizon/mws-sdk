@@ -7,6 +7,12 @@
 [![dependencies Status](https://badgen.net/david/dep/bizon/mws-sdk)](https://david-dm.org/bizon/mws-sdk)
 [![XO code style](https://badgen.net/badge/code%20style/XO/cyan)](https://github.com/xojs/xo)
 
+## Getting started
+
+```bash
+npm install --save @bizon/mws-sdk
+```
+
 ## API
 
 ### Finances
