@@ -2,6 +2,7 @@
   "name": "@bizon/mws-sdk",
   "version": "1.0.0",
   "main": "index.js",
+  "description": "SDK for MWS APIs",
   "scripts": {
     "test": "TZ=UTC jest"
   },
@@ -9,7 +10,13 @@
     "index.js",
     "lib/**/*.js"
   ],
-  "repository": "git@github.com:bizon/mws-sdk.git",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bizon/mws-sdk.git"
+  },
   "author": "Bertrand Marron <bertrand.marron@gmail.com>",
   "dependencies": {
     "content-type": "^1.0.4",
@@ -57,5 +64,10 @@
         ]
       }
     ]
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/bizon/mws-sdk/issues"
+  },
+  "homepage": "https://github.com/bizon/mws-sdk#readme",
+  "license": "MIT"
 }
