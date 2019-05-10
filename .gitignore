@@ -2,5 +2,6 @@ node_modules
 
 /reports
 /coverage
+/playground
 
 *.log
