@@ -160,6 +160,10 @@ Name | Type | Default
 reportId | `String` |
 format | `Enum[raw, base64]`
 
+### Common
+
+All entities except `Reports` support a `getServiceStatus` method to retrieve the API status.
+
 ## License
 
 MIT
