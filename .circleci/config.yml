@@ -40,7 +40,7 @@ jobs:
 
       - run:
           name: Install dependencies
-          command: npm install
+          command: yarn --frozen-lockfile
 
       - save_cache:
           name: Save node_modules cache
@@ -56,7 +56,7 @@ jobs:
 
       - run:
           name: Lint JavaScript
-          command: npx xo
+          command: yarn xo
 
   test:
     <<: *nodejs_container
@@ -66,14 +66,14 @@ jobs:
 
       - run:
           name: Test
-          command: npm test
+          command: yarn test
 
       - store_test_results:
           path: reports/tests/
 
       - run:
           name: Upload code coverage to codecov
-          command: npx codecov
+          command: yarn codecov
 
 workflows:
   version: 2
