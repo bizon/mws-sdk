@@ -1,6 +1,6 @@
 {
   "name": "@bizon/mws-sdk",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "main": "index.js",
   "description": "SDK for MWS APIs",
   "scripts": {
