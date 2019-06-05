@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib.client.sign should generate generate signatures 1`] = `"JKuirYHlrTxwQYwG61ULhe+VkyngRdgokEOPSnnxieo="`;
+
+exports[`lib.client.sign should generate generate signatures 2`] = `"nUS2Ev6IZwnNwnVNRWz8hFjJfns5HJLsBrWlMSGwW/A="`;
