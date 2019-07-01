@@ -181,7 +181,7 @@ Name | Type | Default
 -----|------|--------
 marketplaceId | `String` |
 sqsQueueUrl | `String` |
-isEnabled | `Boolean` |
+isEnabled | `Boolean` | `true`
 notificationType | `String` |
 
 #### `sendTestNotificationToDestination(options)`
