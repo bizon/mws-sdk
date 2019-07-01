@@ -160,6 +160,43 @@ Name | Type | Default
 reportId | `String` |
 format | `Enum[raw, base64]`
 
+### Subscriptions
+
+Version: `2013-07-01`
+
+#### `registerDestination(options)`
+
+Options:
+
+Name | Type | Default
+-----|------|--------
+marketplaceId | `String` |
+sqsQueueUrl | `String` |
+
+#### `createSubscription(options)`
+
+Options:
+
+Name | Type | Default
+-----|------|--------
+marketplaceId | `String` |
+sqsQueueUrl | `String` |
+isEnabled | `Boolean` | `true`
+notificationType | `String` |
+
+#### `sendTestNotificationToDestination(options)`
+
+Options:
+
+Name | Type | Default
+-----|------|--------
+marketplaceId | `String` |
+sqsQueueUrl | `String` |
+
+#### `parseNotification(xml)`
+
+Parse an XML notification. Only `Test` and `AnyOfferChanged` notifications are supported.
+
 ### Common
 
 All entities except `Reports` support a `getServiceStatus` method to retrieve the API status.

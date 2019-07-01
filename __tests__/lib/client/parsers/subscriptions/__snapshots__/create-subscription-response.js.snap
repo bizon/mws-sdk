@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib.client.parsers.subscriptions.create-subscription-response should parse the CreateSubscriptionResponse example response from MWS doc 1`] = `
+Object {
+  "createSubscriptionResult": Object {},
+  "responseMetadata": Object {
+    "requestId": "c9bb2e77-2425-4e1a-9c85-36d00EXAMPLE",
+  },
+}
+`;
