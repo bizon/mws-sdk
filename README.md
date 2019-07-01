@@ -184,6 +184,15 @@ sqsQueueUrl | `String` |
 isEnabled | `Boolean` |
 notificationType | `String` |
 
+#### `sendTestNotificationToDestination(options)`
+
+Options:
+
+Name | Type | Default
+-----|------|--------
+marketplaceId | `String` |
+sqsQueueUrl | `String` |
+
 ### Common
 
 All entities except `Reports` support a `getServiceStatus` method to retrieve the API status.

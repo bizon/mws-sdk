@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib.client.parsers.subscriptions.send-test-notification-to-destination-response should parse the SendTestNotificationToDestination example response from MWS doc 1`] = `
+Object {
+  "responseMetadata": Object {
+    "requestId": "f662dae6-bde0-4e75-a53b-741abEXAMPLE",
+  },
+  "sendTestNotificationToDestinationResult": Object {},
+}
+`;
