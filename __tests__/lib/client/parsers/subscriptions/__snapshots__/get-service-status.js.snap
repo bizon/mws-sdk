@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib.client.parsers.base.get-service-status-response should parse the GetServiceStatusResponse example response from MWS doc 1`] = `
+Object {
+  "getServiceStatusResult": Object {
+    "status": "GREEN",
+    "timestamp": 2013-07-25T18:17:45.167Z,
+  },
+  "responseMetadata": Object {
+    "requestId": "082c41fd-2f6b-4616-a518-7db14EXAMPLE",
+  },
+}
+`;
