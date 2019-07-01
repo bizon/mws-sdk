@@ -1,0 +1,205 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib.client.parsers.products.get-lowest-priced-offers-for-asin-response should parse the GetLowestPricedOffersForASINResponse active but too soon for processing example response from MWS doc 1`] = `
+Object {
+  "getLowestPricedOffersForAsinResult": Object {
+    "asin": "B01DL3WCPI",
+    "identifier": Object {
+      "asin": "B01DL3WCPI",
+      "itemCondition": "New",
+      "marketplaceId": "ATVPDKIKX0DER",
+      "timeOfOfferChange": null,
+    },
+    "itemCondition": "New",
+    "marketplaceId": "ATVPDKIKX0DER",
+    "offers": Array [],
+    "status": "ActiveButTooSoonForProcessing",
+    "summary": Object {
+      "buyBoxEligibleOffers": Array [],
+      "buyBoxPrices": Array [],
+      "listPrice": null,
+      "lowestPrices": Array [],
+      "numberOfOffers": Array [],
+      "offersAvailableTime": 2017-03-08T06:21:05.330Z,
+      "suggestedLowerPricePlusShipping": null,
+      "totalOfferCount": 0,
+    },
+  },
+  "responseMetadata": Object {
+    "requestId": "1212334",
+  },
+}
+`;
+
+exports[`lib.client.parsers.products.get-lowest-priced-offers-for-asin-response should parse the GetLowestPricedOffersForASINResponse missing shipping charge example response from MWS doc 1`] = `
+Object {
+  "getLowestPricedOffersForAsinResult": Object {
+    "asin": "B000EVPGSQ",
+    "identifier": Object {
+      "asin": "B000EVPGSQ",
+      "itemCondition": "New",
+      "marketplaceId": "ATVPDKIKX0DER",
+      "timeOfOfferChange": null,
+    },
+    "itemCondition": "New",
+    "marketplaceId": "ATVPDKIKX0DER",
+    "offers": Array [],
+    "status": "NoOfferDueToMissingShippingCharge",
+    "summary": Object {
+      "buyBoxEligibleOffers": Array [],
+      "buyBoxPrices": Array [],
+      "listPrice": null,
+      "lowestPrices": Array [],
+      "numberOfOffers": Array [],
+      "offersAvailableTime": null,
+      "suggestedLowerPricePlusShipping": null,
+      "totalOfferCount": 0,
+    },
+  },
+  "responseMetadata": Object {
+    "requestId": "2bb867cd-8fa3-406c-adba-eb84c1796d21",
+  },
+}
+`;
+
+exports[`lib.client.parsers.products.get-lowest-priced-offers-for-asin-response should parse the GetLowestPricedOffersForASINResponse success example response from MWS doc 1`] = `
+Object {
+  "getLowestPricedOffersForAsinResult": Object {
+    "asin": "B0002GTTRC",
+    "identifier": Object {
+      "asin": "B0002GTTRC",
+      "itemCondition": "New",
+      "marketplaceId": "ATVPDKIKX0DER",
+      "timeOfOfferChange": 2015-07-19T23:15:11.859Z,
+    },
+    "itemCondition": "New",
+    "marketplaceId": "ATVPDKIKX0DER",
+    "offers": Array [
+      Object {
+        "isBuyBoxWinner": true,
+        "isFeaturedMerchant": true,
+        "isFulfilledByAmazon": true,
+        "listingPrice": Object {
+          "amount": 32.99,
+          "currencyCode": "USD",
+        },
+        "points": null,
+        "sellerFeedbackRating": Object {
+          "feedbackCount": 1,
+          "sellerPositiveFeedbackRating": 100,
+        },
+        "shipping": Object {
+          "amount": 0,
+          "currencyCode": "USD",
+        },
+        "shippingTime": Object {
+          "availabilityType": "NOW",
+          "availableDate": null,
+          "maximumHours": 0,
+          "minimumHours": 0,
+        },
+        "shipsFrom": null,
+        "subcondition": "new",
+      },
+    ],
+    "status": "Success",
+    "summary": Object {
+      "buyBoxEligibleOffers": Array [
+        Object {
+          "condition": "new",
+          "count": 1,
+          "fulfillmentChannel": "Amazon",
+        },
+      ],
+      "buyBoxPrices": Array [
+        Object {
+          "condition": "New",
+          "landedPrice": Object {
+            "amount": 32.99,
+            "currencyCode": "USD",
+          },
+          "listingPrice": Object {
+            "amount": 32.99,
+            "currencyCode": "USD",
+          },
+          "points": null,
+          "shipping": Object {
+            "amount": 0,
+            "currencyCode": "USD",
+          },
+        },
+      ],
+      "listPrice": Object {
+        "amount": 58.34,
+        "currencyCode": "USD",
+      },
+      "lowestPrices": Array [
+        Object {
+          "condition": "new",
+          "fulfillmentChannel": "Amazon",
+          "landedPrice": Object {
+            "amount": 32.99,
+            "currencyCode": "USD",
+          },
+          "listingPrice": Object {
+            "amount": 32.99,
+            "currencyCode": "USD",
+          },
+          "points": null,
+          "shipping": Object {
+            "amount": 0,
+            "currencyCode": "USD",
+          },
+        },
+      ],
+      "numberOfOffers": Array [
+        Object {
+          "condition": "new",
+          "count": 1,
+          "fulfillmentChannel": "Amazon",
+        },
+      ],
+      "offersAvailableTime": null,
+      "suggestedLowerPricePlusShipping": Object {
+        "amount": 32.99,
+        "currencyCode": "USD",
+      },
+      "totalOfferCount": 0,
+    },
+  },
+  "responseMetadata": Object {
+    "requestId": "21534f03-e7e3-4d9a-9bea-0e15add3326d",
+  },
+}
+`;
+
+exports[`lib.client.parsers.products.get-lowest-priced-offers-for-asin-response should parse the GetLowestPricedOffersForASINResponse success with no offers example response from MWS doc 1`] = `
+Object {
+  "getLowestPricedOffersForAsinResult": Object {
+    "asin": "B000EVPGSQ",
+    "identifier": Object {
+      "asin": "B000EVPGSQ",
+      "itemCondition": "New",
+      "marketplaceId": "ATVPDKIKX0DER",
+      "timeOfOfferChange": null,
+    },
+    "itemCondition": "New",
+    "marketplaceId": "ATVPDKIKX0DER",
+    "offers": Array [],
+    "status": "NoBuyableOffers",
+    "summary": Object {
+      "buyBoxEligibleOffers": Array [],
+      "buyBoxPrices": Array [],
+      "listPrice": null,
+      "lowestPrices": Array [],
+      "numberOfOffers": Array [],
+      "offersAvailableTime": null,
+      "suggestedLowerPricePlusShipping": null,
+      "totalOfferCount": 0,
+    },
+  },
+  "responseMetadata": Object {
+    "requestId": "2bb867cd-8fa3-406c-adba-eb84c1796d21",
+  },
+}
+`;

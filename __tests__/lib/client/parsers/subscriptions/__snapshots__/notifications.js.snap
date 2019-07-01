@@ -43,7 +43,7 @@ Object {
         "points": null,
         "primeInformation": null,
         "sellerFeedbackRating": Object {
-          "FeedbackCount": 15400,
+          "feedbackCount": 15400,
           "sellerPositiveFeedbackRating": 96,
         },
         "sellerId": "A2TU82NH1RX1NZ",
@@ -75,7 +75,7 @@ Object {
         "points": null,
         "primeInformation": null,
         "sellerFeedbackRating": Object {
-          "FeedbackCount": 33837,
+          "feedbackCount": 33837,
           "sellerPositiveFeedbackRating": 97,
         },
         "sellerId": "A3SE0BD58ZZU8T",
@@ -107,7 +107,7 @@ Object {
         "points": null,
         "primeInformation": null,
         "sellerFeedbackRating": Object {
-          "FeedbackCount": 2402,
+          "feedbackCount": 2402,
           "sellerPositiveFeedbackRating": 93,
         },
         "sellerId": "A37V740TK9YOGL",
@@ -142,7 +142,7 @@ Object {
         "points": null,
         "primeInformation": null,
         "sellerFeedbackRating": Object {
-          "FeedbackCount": 1082,
+          "feedbackCount": 1082,
           "sellerPositiveFeedbackRating": 100,
         },
         "sellerId": "A2H6E05OPYV8CQ",
@@ -174,7 +174,7 @@ Object {
         "points": null,
         "primeInformation": null,
         "sellerFeedbackRating": Object {
-          "FeedbackCount": 189569,
+          "feedbackCount": 189569,
           "sellerPositiveFeedbackRating": 99,
         },
         "sellerId": "A19NVE4G6SOT2C",
@@ -206,7 +206,7 @@ Object {
         "points": null,
         "primeInformation": null,
         "sellerFeedbackRating": Object {
-          "FeedbackCount": 2016,
+          "feedbackCount": 2016,
           "sellerPositiveFeedbackRating": null,
         },
         "sellerId": "A2P9RBMWEEISS4",
@@ -241,7 +241,7 @@ Object {
         "points": null,
         "primeInformation": null,
         "sellerFeedbackRating": Object {
-          "FeedbackCount": 15138,
+          "feedbackCount": 15138,
           "sellerPositiveFeedbackRating": 94.7,
         },
         "sellerId": "A1JZL1L8ARSOYB",
@@ -276,7 +276,7 @@ Object {
         "points": null,
         "primeInformation": null,
         "sellerFeedbackRating": Object {
-          "FeedbackCount": 13662,
+          "feedbackCount": 13662,
           "sellerPositiveFeedbackRating": 95,
         },
         "sellerId": "A2N1A581RPHNSW",
