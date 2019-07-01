@@ -107,6 +107,16 @@ marketplaceId | `String` |
 asinList | `Array<String>` |
 itemCondition | `String` |
 
+#### `getLowestPricedOffersForAsin(options)`
+
+Options:
+
+Name | Type | Default
+-----|------|--------
+marketplaceId | `String` |
+asin | `String` |
+itemCondition | `String` |
+
 ### Reports
 
 Version: `2009-01-01`
