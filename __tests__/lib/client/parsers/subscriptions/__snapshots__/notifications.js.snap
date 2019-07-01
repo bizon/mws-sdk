@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib.client.parsers.base.get-service-status-response should parse a test notification 1`] = `
+Object {
+  "notificationMetadata": Object {
+    "notificationType": "Test",
+    "payloadVersion": "1.0",
+    "publishTime": 2019-07-01T10:46:29.000Z,
+    "sellerId": "XXXXXXXXXXTest",
+    "uniqueId": "0123456789-ca3b-4127-abe7-82cfbe19a032",
+  },
+  "notificationPayload": Object {},
+}
+`;

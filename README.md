@@ -193,6 +193,10 @@ Name | Type | Default
 marketplaceId | `String` |
 sqsQueueUrl | `String` |
 
+#### `parseNotification(xml)`
+
+Parse an XML notification.
+
 ### Common
 
 All entities except `Reports` support a `getServiceStatus` method to retrieve the API status.
