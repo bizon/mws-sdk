@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib.client.parsers.subscriptions.deregister-destination-response should parse the DeregisterDestinationResponse example response from MWS doc 1`] = `
+Object {
+  "deregisterDestinationResult": Object {},
+  "responseMetadata": Object {
+    "requestId": "b120e610-9cf0-48d7-b615-ca869EXAMPLE",
+  },
+}
+`;
