@@ -183,6 +183,15 @@ Name | Type | Default
 marketplaceId | `String` |
 sqsQueueUrl | `String` |
 
+#### `deregisterDestination(options)`
+
+Options:
+
+Name | Type | Default
+-----|------|--------
+marketplaceId | `String` |
+sqsQueueUrl | `String` |
+
 #### `createSubscription(options)`
 
 Options:
