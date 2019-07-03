@@ -99,7 +99,7 @@ Object {
           "minimumHours": 0,
         },
         "shipsFrom": null,
-        "subcondition": "new",
+        "subCondition": "new",
       },
     ],
     "status": "Success",
