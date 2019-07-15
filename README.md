@@ -25,7 +25,7 @@ Options:
 
 Name | Type | Default
 -----|------|--------
-maxResultsPerPage | `Number` | 100
+maxResultsPerPage | `Number` | `100`
 amazonOrderId | `String` |
 financialEventGroupId | `String` |
 postedAfter | `Date` |
@@ -38,7 +38,7 @@ Options:
 
 Name | Type | Default
 -----|------|--------
-maxResultsPerPage | `Number` | 100
+maxResultsPerPage | `Number` | `100`
 financialEventGroupStartedAfter | `Date` |
 financialEventGroupStartedBefore | `Date` |
 nextToken | `String` |
@@ -70,7 +70,7 @@ fulfillmentChannel | `String` |
 paymentMethod | `String` |
 buyerEmail | `String` |
 sellerOrderId | `String` |
-maxResultsPerPage | `Number` | 100
+maxResultsPerPage | `Number` | `100`
 tfmShipmentStatus | `String` |
 nextToken | `String` |
 
@@ -142,7 +142,7 @@ Name | Type | Default
 reportRequestIdList | `Array<String>` |
 reportTypeList | `Array<String>` |
 reportProcessingStatusList | `Array<String>` |
-maxCount | `Number` | 100
+maxCount | `Number` | `100`
 requestedFromDate | `Date` |
 requestedToDate | `Date` |
 nextToken | `String` |
@@ -153,9 +153,9 @@ Options:
 
 Name | Type | Default
 -----|------|--------
-maxCount | `Number` | 100
+maxCount | `Number` | `100`
 reportTypeList | `Array<String>` |
-acknowledged | Boolean
+acknowledged | `Boolean`
 reportRequestIdList | `Array<String>` |
 availableFromDate | `Date` |
 availableToDate | `Date` |
