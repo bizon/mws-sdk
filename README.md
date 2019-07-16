@@ -13,6 +13,20 @@
 npm install --save @bizon/mws-sdk
 ```
 
+## Usage
+
+```js
+const MWSClient = require('@bizon/mws-sdk')
+
+const client = new MWSClient({
+  accessKeyId: '', // defaults to process.env.MWS_ACCESS_KEY_ID
+  secretAccessKey: '', // defaults to process.env.MWS_SECRET_ACCESS_KEY
+  sellerId: '',
+  mwsToken: '',
+  sellerRegion: ''
+})
+```
+
 ## API
 
 ### Finances
