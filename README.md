@@ -217,6 +217,16 @@ sqsQueueUrl | `String` |
 isEnabled | `Boolean` | `true`
 notificationType | `String` |
 
+#### `deleteSubscription(options)`
+
+Options:
+
+Name | Type | Default
+-----|------|--------
+marketplaceId | `String` |
+sqsQueueUrl | `String` |
+notificationType | `String` |
+
 #### `sendTestNotificationToDestination(options)`
 
 Options:
