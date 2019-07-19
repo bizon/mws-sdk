@@ -228,7 +228,11 @@ sqsQueueUrl | `String` |
 
 #### `parseNotification(xml)`
 
-Parse an XML notification. Only `Test` and `AnyOfferChanged` notifications are supported.
+Parse an XML notification. The following notifications are supported:
+
+- `Test`
+- `AnyOfferChanged`
+- `FeedProcessingFinished`
 
 ### Common
 
