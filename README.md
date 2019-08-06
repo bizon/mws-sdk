@@ -243,6 +243,7 @@ Parse an XML notification. The following notifications are supported:
 - `Test`
 - `AnyOfferChanged`
 - `FeedProcessingFinished`
+- `ReportProcessingFinished`
 
 ### Common
 

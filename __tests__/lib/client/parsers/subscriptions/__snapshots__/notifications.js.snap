@@ -18,6 +18,25 @@ Object {
 }
 `;
 
+exports[`lib.client.parsers.base.get-service-status-response should parse a ReportProcessingFinished notification 1`] = `
+Object {
+  "notificationMetadata": Object {
+    "notificationType": "ReportProcessingFinishedNotification",
+    "payloadVersion": "1.0",
+    "publishTime": 2019-07-01T10:46:29.000Z,
+    "sellerId": "XXXXXXXXXXTest",
+    "uniqueId": "0123456789-ca3b-4127-abe7-82cfbe19a032",
+  },
+  "notificationPayload": Object {
+    "reportId": "1234",
+    "reportProcessingStatus": "DONE_NO_DATA",
+    "reportRequestId": "1234",
+    "reportType": "_GET_FBA_FULFILLMENT_REMOVAL_ORDER_DETAIL_DATA_",
+    "sellerId": "XXXXXXXXXXTest",
+  },
+}
+`;
+
 exports[`lib.client.parsers.base.get-service-status-response should parse a Test notification 1`] = `
 Object {
   "notificationMetadata": Object {
