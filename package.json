@@ -1,6 +1,6 @@
 {
   "name": "@bizon/mws-sdk",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "main": "index.js",
   "description": "SDK for Amazon Marketplace Web Services",
   "scripts": {
