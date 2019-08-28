@@ -31,7 +31,7 @@
   "devDependencies": {
     "codecov": "^3.3.0",
     "jest": "^24.8.0",
-    "jest-junit": "^7.0.0",
+    "jest-junit": "^8.0.0",
     "xo": "^0.24.0"
   },
   "jest": {
@@ -43,7 +43,7 @@
       [
         "jest-junit",
         {
-          "output": "reports/tests/junit.xml"
+          "outputDirectory": "reports/tests"
         }
       ]
     ],
