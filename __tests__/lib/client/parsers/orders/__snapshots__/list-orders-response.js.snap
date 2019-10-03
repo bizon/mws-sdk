@@ -62,7 +62,7 @@ exports[`lib.client.parsers.orders.list-orders-response should parse the ListOrd
 Object {
   "listOrdersResult": Object {
     "createdBefore": null,
-    "lastUpdatedBefore": 2017-02-25T00:00:00.000Z,
+    "lastUpdatedBefore": 2017-02-25T18:10:21.687Z,
     "nextToken": "2YgYW55IGNhcm5hbCBwbGVhc3VyZS4=",
     "orders": Array [
       Object {
@@ -214,7 +214,7 @@ Object {
         "isPremiumOrder": false,
         "isPrime": false,
         "isReplacementOrder": null,
-        "lastUpdateDate": 2017-02-07T00:00:00.000Z,
+        "lastUpdateDate": 2017-02-07T12:43:16.000Z,
         "latestDeliveryDate": null,
         "latestShipDate": null,
         "marketplaceId": "A1VC38T7YXB528",
@@ -255,7 +255,7 @@ Object {
           "COD",
         ],
         "promiseResponseDueDate": 2017-08-31T23:58:44.000Z,
-        "purchaseDate": 2017-02-05T00:00:00.000Z,
+        "purchaseDate": 2017-02-05T00:06:07.000Z,
         "purchaseOrderNumber": null,
         "replacedOrderId": null,
         "salesChannel": null,
