@@ -41,6 +41,10 @@ Object {
             "sellerSku": "SKU2468",
           },
         ],
+        "relationships": Object {
+          "variationChildren": Array [],
+          "variationParent": null,
+        },
         "salesRankings": Array [],
       },
       "status": "Success",

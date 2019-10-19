@@ -1,5 +1,126 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`lib.client.parsers.products.get-matching-product-for-id-response should parse a GetMatchingProductForIdResponse with variation parents 1`] = `
+Object {
+  "getMatchingProductForIdResults": Array [
+    Object {
+      "id": "B002KT3XRQ",
+      "idType": "ASIN",
+      "products": Array [
+        Object {
+          "attributes": Object {
+            "binding": "Apparel",
+            "brand": "Pearl iZUMi",
+            "color": "Black",
+            "isAutographed": null,
+            "itemDimensions": Object {
+              "height": Object {
+                "unit": "inches",
+                "value": 2,
+              },
+              "length": Object {
+                "unit": "inches",
+                "value": 9,
+              },
+              "weight": null,
+              "width": Object {
+                "unit": "inches",
+                "value": 9,
+              },
+            },
+            "label": "Pearl iZUMi",
+            "manufacturer": "Pearl iZUMi",
+            "materialType": Array [],
+            "model": "0275-21-LG",
+            "numberOfItems": null,
+            "packageDimensions": Object {
+              "height": Object {
+                "unit": "inches",
+                "value": 2.2,
+              },
+              "length": Object {
+                "unit": "inches",
+                "value": 9.21,
+              },
+              "weight": Object {
+                "unit": "pounds",
+                "value": 0.4,
+              },
+              "width": Object {
+                "unit": "inches",
+                "value": 7.87,
+              },
+            },
+            "packageQuantity": 1,
+            "partNumber": null,
+            "productGroup": "Apparel",
+            "productTypeName": "ABIS_SPORTS",
+            "publisher": "Pearl iZUMi",
+            "size": "Large",
+            "smallImage": Object {
+              "height": Object {
+                "unit": "pixels",
+                "value": 75,
+              },
+              "url": "http://ecx.images-amazon.com/images/I/41ty3Sn%2BU8L._SL75_.jpg",
+              "width": Object {
+                "unit": "pixels",
+                "value": 58,
+              },
+            },
+            "studio": "Pearl iZUMi",
+            "title": "Pearl iZUMi Men's Quest Cycling Short,Black,Large",
+            "warranty": null,
+          },
+          "identifiers": Object {
+            "marketplaceAsin": Object {
+              "asin": "B002KT3XQM",
+              "marketplaceId": "ATVPDKIKX0DER",
+            },
+            "skuIdentifier": null,
+          },
+          "offers": Array [],
+          "relationships": Object {
+            "variationChildren": Array [],
+            "variationParent": Object {
+              "identifiers": Object {
+                "marketplaceAsin": Object {
+                  "asin": "B002KT3XRQ",
+                  "marketplaceId": "ATVPDKIKX0DER",
+                },
+                "skuIdentifier": null,
+              },
+            },
+          },
+          "salesRankings": Array [
+            Object {
+              "productCategoryId": "261874012",
+              "rank": 90,
+            },
+            Object {
+              "productCategoryId": "271578011",
+              "rank": 3,
+            },
+            Object {
+              "productCategoryId": "355562011",
+              "rank": 1,
+            },
+            Object {
+              "productCategoryId": "173516",
+              "rank": 11,
+            },
+          ],
+        },
+      ],
+      "status": "Success",
+    },
+  ],
+  "responseMetadata": Object {
+    "requestId": "b12caada-d330-4d87-a789-EXAMPLE35872",
+  },
+}
+`;
+
 exports[`lib.client.parsers.products.get-matching-product-for-id-response should parse the GetMatchingProductForIdResponse error example response from MWS doc 1`] = `
 Object {
   "getMatchingProductForIdResults": Array [
@@ -89,6 +210,10 @@ Object {
             "skuIdentifier": null,
           },
           "offers": Array [],
+          "relationships": Object {
+            "variationChildren": Array [],
+            "variationParent": null,
+          },
           "salesRankings": Array [
             Object {
               "productCategoryId": "book_display_on_website",
@@ -201,6 +326,10 @@ Object {
             "skuIdentifier": null,
           },
           "offers": Array [],
+          "relationships": Object {
+            "variationChildren": Array [],
+            "variationParent": null,
+          },
           "salesRankings": Array [
             Object {
               "productCategoryId": "book_display_on_website",
@@ -303,6 +432,10 @@ Object {
             "skuIdentifier": null,
           },
           "offers": Array [],
+          "relationships": Object {
+            "variationChildren": Array [],
+            "variationParent": null,
+          },
           "salesRankings": Array [
             Object {
               "productCategoryId": "book_display_on_website",
@@ -381,6 +514,10 @@ Object {
             "skuIdentifier": null,
           },
           "offers": Array [],
+          "relationships": Object {
+            "variationChildren": Array [],
+            "variationParent": null,
+          },
           "salesRankings": Array [
             Object {
               "productCategoryId": "book_display_on_website",
@@ -394,6 +531,171 @@ Object {
   ],
   "responseMetadata": Object {
     "requestId": "7ba3245e-a213-430a-bea9-EXAMPLE38d76",
+  },
+}
+`;
+
+exports[`lib.client.parsers.products.get-matching-product-for-id-response should parse the GetMatchingProductResponse (modified) example response from MWS doc 1`] = `
+Object {
+  "getMatchingProductForIdResults": Array [
+    Object {
+      "id": "B002KT3XRQ",
+      "idType": "ASIN",
+      "products": Array [
+        Object {
+          "attributes": Object {
+            "binding": "Apparel",
+            "brand": "Pearl iZUMi",
+            "color": null,
+            "isAutographed": null,
+            "itemDimensions": Object {
+              "height": Object {
+                "unit": "inches",
+                "value": 2,
+              },
+              "length": Object {
+                "unit": "inches",
+                "value": 9,
+              },
+              "weight": null,
+              "width": Object {
+                "unit": "inches",
+                "value": 9,
+              },
+            },
+            "label": "Pearl iZUMi",
+            "manufacturer": "Pearl iZUMi",
+            "materialType": Array [],
+            "model": "0275",
+            "numberOfItems": null,
+            "packageDimensions": Object {
+              "height": Object {
+                "unit": "inches",
+                "value": 2.8,
+              },
+              "length": Object {
+                "unit": "inches",
+                "value": 9.75,
+              },
+              "weight": Object {
+                "unit": "pounds",
+                "value": 0.4,
+              },
+              "width": Object {
+                "unit": "inches",
+                "value": 8.4,
+              },
+            },
+            "packageQuantity": 1,
+            "partNumber": null,
+            "productGroup": "Apparel",
+            "productTypeName": "SHORTS",
+            "publisher": "Pearl iZUMi",
+            "size": null,
+            "smallImage": Object {
+              "height": Object {
+                "unit": "pixels",
+                "value": 75,
+              },
+              "url": "http://ecx.images-amazon.com/images/I/41ty3Sn%2BU8L._SL75_.jpg",
+              "width": Object {
+                "unit": "pixels",
+                "value": 58,
+              },
+            },
+            "studio": "Pearl iZUMi",
+            "title": "Pearl iZUMi Men's Quest Cycling Short",
+            "warranty": null,
+          },
+          "identifiers": Object {
+            "marketplaceAsin": Object {
+              "asin": "B002KT3XRQ",
+              "marketplaceId": "ATVPDKIKX0DER",
+            },
+            "skuIdentifier": null,
+          },
+          "offers": Array [],
+          "relationships": Object {
+            "variationChildren": Array [
+              Object {
+                "color": "Black",
+                "identifiers": Object {
+                  "marketplaceAsin": Object {
+                    "asin": "B002KT3XQC",
+                    "marketplaceId": "ATVPDKIKX0DER",
+                  },
+                  "skuIdentifier": null,
+                },
+                "size": "Small",
+              },
+              Object {
+                "color": "Black",
+                "identifiers": Object {
+                  "marketplaceAsin": Object {
+                    "asin": "B002KT3XQW",
+                    "marketplaceId": "ATVPDKIKX0DER",
+                  },
+                  "skuIdentifier": null,
+                },
+                "size": "Medium",
+              },
+              Object {
+                "color": "Black",
+                "identifiers": Object {
+                  "marketplaceAsin": Object {
+                    "asin": "B002KT3XQM",
+                    "marketplaceId": "ATVPDKIKX0DER",
+                  },
+                  "skuIdentifier": null,
+                },
+                "size": "Large",
+              },
+              Object {
+                "color": "Black",
+                "identifiers": Object {
+                  "marketplaceAsin": Object {
+                    "asin": "B002KT3XR6",
+                    "marketplaceId": "ATVPDKIKX0DER",
+                  },
+                  "skuIdentifier": null,
+                },
+                "size": "X-Large",
+              },
+              Object {
+                "color": "Black",
+                "identifiers": Object {
+                  "marketplaceAsin": Object {
+                    "asin": "B002KT3XRG",
+                    "marketplaceId": "ATVPDKIKX0DER",
+                  },
+                  "skuIdentifier": null,
+                },
+                "size": "XX-Large",
+              },
+            ],
+            "variationParent": null,
+          },
+          "salesRankings": Array [
+            Object {
+              "productCategoryId": "apparel_display_on_website",
+              "rank": 159,
+            },
+            Object {
+              "productCategoryId": "2420095011",
+              "rank": 1,
+            },
+            Object {
+              "productCategoryId": "2611189011",
+              "rank": 4,
+            },
+          ],
+        },
+      ],
+      "status": "Success",
+    },
+  ],
+  "responseMetadata": Object {
+    "requestId": "b12caada-d330-4d87-a789-EXAMPLE35872",
   },
 }
 `;
