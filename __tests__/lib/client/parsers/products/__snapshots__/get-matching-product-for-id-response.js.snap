@@ -12,7 +12,14 @@ Object {
             "binding": "Apparel",
             "brand": "Pearl iZUMi",
             "color": "Black",
-            "isAutographed": null,
+            "department": "mens",
+            "features": Array [
+              "Ergonomic 6-panel design with 8 3/4\\" inseam",
+              "Nylon / Lycra blend Sensor fabric",
+              "Seamless Tour 3-D chamois pad",
+              "Pearl Izumi leg gripper",
+              "Quality, value and lifetime guarantee",
+            ],
             "itemDimensions": Object {
               "height": Object {
                 "unit": "inches",
@@ -29,10 +36,12 @@ Object {
               },
             },
             "label": "Pearl iZUMi",
+            "listPrice": Object {
+              "amount": 50,
+              "currencyCode": "USD",
+            },
             "manufacturer": "Pearl iZUMi",
-            "materialType": Array [],
             "model": "0275-21-LG",
-            "numberOfItems": null,
             "packageDimensions": Object {
               "height": Object {
                 "unit": "inches",
@@ -52,7 +61,7 @@ Object {
               },
             },
             "packageQuantity": 1,
-            "partNumber": null,
+            "partNumber": "PZ0275021L",
             "productGroup": "Apparel",
             "productTypeName": "ABIS_SPORTS",
             "publisher": "Pearl iZUMi",
@@ -70,7 +79,6 @@ Object {
             },
             "studio": "Pearl iZUMi",
             "title": "Pearl iZUMi Men's Quest Cycling Short,Black,Large",
-            "warranty": null,
           },
           "identifiers": Object {
             "marketplaceAsin": Object {
@@ -136,10 +144,13 @@ Object {
       "products": Array [
         Object {
           "attributes": Object {
+            "authors": Array [
+              "Marmanis, Haralambos",
+              "Babenko, Dmitry",
+            ],
             "binding": "Paperback",
             "brand": "Marmanis, Haralambos/ Babenko, Dmitry",
-            "color": null,
-            "isAutographed": null,
+            "edition": "1",
             "itemDimensions": Object {
               "height": Object {
                 "unit": "inches",
@@ -159,10 +170,30 @@ Object {
               },
             },
             "label": "Manning Publications",
+            "languages": Array [
+              Object {
+                "audioFormat": null,
+                "name": "english",
+                "type": "Published",
+              },
+              Object {
+                "audioFormat": null,
+                "name": "english",
+                "type": "Original Language",
+              },
+              Object {
+                "audioFormat": null,
+                "name": "english",
+                "type": "Unknown",
+              },
+            ],
+            "listPrice": Object {
+              "amount": 44.99,
+              "currencyCode": "USD",
+            },
             "manufacturer": "Manning Publications",
-            "materialType": Array [],
-            "model": null,
             "numberOfItems": 1,
+            "numberOfPages": 368,
             "packageDimensions": Object {
               "height": Object {
                 "unit": "inches",
@@ -182,11 +213,11 @@ Object {
               },
             },
             "packageQuantity": 1,
-            "partNumber": null,
+            "partNumber": "9781933988665",
             "productGroup": "Book",
             "productTypeName": "ABIS_BOOK",
+            "publicationDate": 2009-07-08T00:00:00.000Z,
             "publisher": "Manning Publications",
-            "size": null,
             "smallImage": Object {
               "height": Object {
                 "unit": "pixels",
@@ -200,7 +231,6 @@ Object {
             },
             "studio": "Manning Publications",
             "title": "Algorithms of the Intelligent Web",
-            "warranty": null,
           },
           "identifiers": Object {
             "marketplaceAsin": Object {
@@ -252,10 +282,13 @@ Object {
       "products": Array [
         Object {
           "attributes": Object {
+            "authors": Array [
+              "Marmanis, Haralambos",
+              "Babenko, Dmitry",
+            ],
             "binding": "Paperback",
-            "brand": null,
-            "color": null,
-            "isAutographed": null,
+            "edition": "1",
+            "isEligibleForTradeIn": true,
             "itemDimensions": Object {
               "height": Object {
                 "unit": "inches",
@@ -275,10 +308,30 @@ Object {
               },
             },
             "label": "Manning Publications",
+            "languages": Array [
+              Object {
+                "audioFormat": null,
+                "name": "english",
+                "type": "Unknown",
+              },
+              Object {
+                "audioFormat": null,
+                "name": "english",
+                "type": "Original Language",
+              },
+              Object {
+                "audioFormat": null,
+                "name": "english",
+                "type": "Published",
+              },
+            ],
+            "listPrice": Object {
+              "amount": 44.99,
+              "currencyCode": "USD",
+            },
             "manufacturer": "Manning Publications",
-            "materialType": Array [],
-            "model": null,
             "numberOfItems": 1,
+            "numberOfPages": 368,
             "packageDimensions": Object {
               "height": Object {
                 "unit": "inches",
@@ -297,12 +350,10 @@ Object {
                 "value": 7.3,
               },
             },
-            "packageQuantity": null,
-            "partNumber": null,
             "productGroup": "Book",
             "productTypeName": "ABIS_BOOK",
+            "publicationDate": 2009-07-05T00:00:00.000Z,
             "publisher": "Manning Publications",
-            "size": null,
             "smallImage": Object {
               "height": Object {
                 "unit": "pixels",
@@ -316,7 +367,6 @@ Object {
             },
             "studio": "Manning Publications",
             "title": "Algorithms of the Intelligent Web",
-            "warranty": null,
           },
           "identifiers": Object {
             "marketplaceAsin": Object {
@@ -358,10 +408,23 @@ Object {
       "products": Array [
         Object {
           "attributes": Object {
+            "authors": Array [
+              "Rowling, J.K.",
+            ],
             "binding": "Paperback",
             "brand": "Scholastic Press",
-            "color": null,
+            "creators": Array [
+              Object {
+                "name": "GrandPrÃ©, Mary",
+                "role": "Illustrator",
+              },
+            ],
+            "edition": "1st",
+            "features": Array [
+              "Recommended Age: 9 years and up",
+            ],
             "isAutographed": false,
+            "isMemorabilia": false,
             "itemDimensions": Object {
               "height": Object {
                 "unit": "inches",
@@ -381,10 +444,30 @@ Object {
               },
             },
             "label": "Scholastic Paperbacks",
+            "languages": Array [
+              Object {
+                "audioFormat": null,
+                "name": "english",
+                "type": "Unknown",
+              },
+              Object {
+                "audioFormat": null,
+                "name": "english",
+                "type": "Original Language",
+              },
+              Object {
+                "audioFormat": null,
+                "name": "english",
+                "type": "Published",
+              },
+            ],
+            "listPrice": Object {
+              "amount": 10.99,
+              "currencyCode": "USD",
+            },
             "manufacturer": "Scholastic Paperbacks",
-            "materialType": Array [],
-            "model": null,
             "numberOfItems": 1,
+            "numberOfPages": 320,
             "packageDimensions": Object {
               "height": Object {
                 "unit": "inches",
@@ -404,11 +487,12 @@ Object {
               },
             },
             "packageQuantity": 1,
-            "partNumber": null,
+            "partNumber": "9780590353427",
             "productGroup": "Book",
             "productTypeName": "ABIS_BOOK",
+            "publicationDate": 1999-10-01T00:00:00.000Z,
             "publisher": "Scholastic Paperbacks",
-            "size": null,
+            "releaseDate": 1999-09-08T00:00:00.000Z,
             "smallImage": Object {
               "height": Object {
                 "unit": "pixels",
@@ -422,7 +506,6 @@ Object {
             },
             "studio": "Scholastic Paperbacks",
             "title": "Harry Potter and the Sorcerer's Stone (Book 1)",
-            "warranty": null,
           },
           "identifiers": Object {
             "marketplaceAsin": Object {
@@ -457,16 +540,26 @@ Object {
         },
         Object {
           "attributes": Object {
+            "authors": Array [
+              "J.K. Rowling, Mary GrandPrÃƒÂ©",
+            ],
             "binding": "Paperback",
-            "brand": null,
-            "color": null,
-            "isAutographed": null,
-            "itemDimensions": null,
             "label": "Scholastic Paperbacks",
+            "languages": Array [
+              Object {
+                "audioFormat": null,
+                "name": "english",
+                "type": "Unknown",
+              },
+              Object {
+                "audioFormat": null,
+                "name": "english",
+                "type": "Published",
+              },
+            ],
             "manufacturer": "Scholastic Paperbacks",
-            "materialType": Array [],
-            "model": null,
             "numberOfItems": 1,
+            "numberOfPages": 784,
             "packageDimensions": Object {
               "height": Object {
                 "unit": "inches",
@@ -485,12 +578,10 @@ Object {
                 "value": 5.85,
               },
             },
-            "packageQuantity": null,
-            "partNumber": null,
             "productGroup": "Book",
             "productTypeName": "BOOKS_1973_AND_LATER",
+            "publicationDate": 1999-09-08T00:00:00.000Z,
             "publisher": "Scholastic Paperbacks",
-            "size": null,
             "smallImage": Object {
               "height": Object {
                 "unit": "pixels",
@@ -504,7 +595,6 @@ Object {
             },
             "studio": "Scholastic Paperbacks",
             "title": "Harry Potter and the Sorcerer's Stone",
-            "warranty": null,
           },
           "identifiers": Object {
             "marketplaceAsin": Object {
@@ -546,8 +636,18 @@ Object {
           "attributes": Object {
             "binding": "Apparel",
             "brand": "Pearl iZUMi",
-            "color": null,
-            "isAutographed": null,
+            "department": "mens",
+            "features": Array [
+              "Select transfer fabric sets the benchmark for moisture transfer and
+                    four-way performance stretch",
+              "6-Panel anatomic design for superior, chafe-free comfort, UPF 50+ sun
+                    protection",
+              "Comfortable silicone leg grippers keep shorts in place,
+                    moisture-wicking, antimicrobial properties",
+              "Tour 3D Chamois is male-specific and non-chafing with padding in
+                    key areas",
+              "86 percent nylon, 14% spandex, 9-Inch inseam",
+            ],
             "itemDimensions": Object {
               "height": Object {
                 "unit": "inches",
@@ -564,10 +664,12 @@ Object {
               },
             },
             "label": "Pearl iZUMi",
+            "listPrice": Object {
+              "amount": 50,
+              "currencyCode": "USD",
+            },
             "manufacturer": "Pearl iZUMi",
-            "materialType": Array [],
             "model": "0275",
-            "numberOfItems": null,
             "packageDimensions": Object {
               "height": Object {
                 "unit": "inches",
@@ -587,11 +689,10 @@ Object {
               },
             },
             "packageQuantity": 1,
-            "partNumber": null,
+            "partNumber": "0275",
             "productGroup": "Apparel",
             "productTypeName": "SHORTS",
             "publisher": "Pearl iZUMi",
-            "size": null,
             "smallImage": Object {
               "height": Object {
                 "unit": "pixels",
@@ -605,7 +706,6 @@ Object {
             },
             "studio": "Pearl iZUMi",
             "title": "Pearl iZUMi Men's Quest Cycling Short",
-            "warranty": null,
           },
           "identifiers": Object {
             "marketplaceAsin": Object {
