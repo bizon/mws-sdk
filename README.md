@@ -131,6 +131,18 @@ marketplaceId | `String` |
 asin | `String` |
 itemCondition | `String` |
 
+### Sellers
+
+Version: `2011-07-01`
+
+#### `listMarketplaceParticipations(options)`
+
+Options:
+
+Name | Type | Default
+-----|------|--------
+nextToken | `String` |
+
 ### Reports
 
 Version: `2009-01-01`
