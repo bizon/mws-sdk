@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib.client.parsers.fulfillment-inventory.list-inventory-supply-response should parse the ListInventorySupply example response from MWS doc 1`] = `
+Object {
+  "listInventorySupplyResult": Object {
+    "inventorySupplyList": Array [
+      Object {
+        "asin": "B00000K3CQ",
+        "condition": "NewItem",
+        "earliestAvailability": Object {
+          "dateTime": null,
+          "timepointType": "Immediately",
+        },
+        "fnSKU": "X0000000FM",
+        "inStockSupplyQuantity": 15,
+        "sellerSKU": "SampleSKU1",
+        "supplyDetail": null,
+        "totalSupplyQuantity": 20,
+      },
+      Object {
+        "asin": "B00004RWQR",
+        "condition": "UsedLikeNew",
+        "earliestAvailability": null,
+        "fnSKU": "X00008FZR1",
+        "inStockSupplyQuantity": 0,
+        "sellerSKU": "SampleSKU2",
+        "supplyDetail": null,
+        "totalSupplyQuantity": 0,
+      },
+    ],
+    "nextToken": null,
+  },
+  "responseMetadata": Object {
+    "requestId": "e8698ffa-8e59-11df-9acb-230ae7a8b736",
+  },
+}
+`;
+
+exports[`lib.client.parsers.fulfillment-inventory.list-inventory-supply-response should parse the ListInventorySupplyByNextToken example response from MWS doc 1`] = `
+Object {
+  "listInventorySupplyResult": Object {
+    "inventorySupplyList": Array [
+      Object {
+        "asin": "B00008UI0R",
+        "condition": "",
+        "earliestAvailability": null,
+        "fnSKU": "B00008UI0R",
+        "inStockSupplyQuantity": 0,
+        "sellerSKU": "SampleSKU5",
+        "supplyDetail": null,
+        "totalSupplyQuantity": 0,
+      },
+      Object {
+        "asin": "B00000K3CQ",
+        "condition": "NewItem",
+        "earliestAvailability": Object {
+          "dateTime": null,
+          "timepointType": "Immediately",
+        },
+        "fnSKU": "X0000000FM",
+        "inStockSupplyQuantity": 5259,
+        "sellerSKU": "SampleSKU6",
+        "supplyDetail": null,
+        "totalSupplyQuantity": 5259,
+      },
+    ],
+    "nextToken": "2YgYW55IGNhcm5hbCBwbGVhc3VyZS4=",
+  },
+  "responseMetadata": Object {
+    "requestId": "b3a020ac-8e5e-11df-9acb-230ae7a8b736",
+  },
+}
+`;

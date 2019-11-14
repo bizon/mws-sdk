@@ -57,6 +57,22 @@ financialEventGroupStartedAfter | `Date` |
 financialEventGroupStartedBefore | `Date` |
 nextToken | `String` |
 
+### FulfillmentInventory
+
+Version: `2011-03-01`
+
+#### `listInventorySupply(options)`
+
+Options:
+
+Name | Type | Default
+-----|------|--------
+sellerSkus | `Array<String>` |
+queryStartDateTime | `Date` |
+responseGroup | `String` |
+marketplaceId | `String` |
+nextToken | `String` |
+
 ### Orders
 
 Version: `2013-09-01`
