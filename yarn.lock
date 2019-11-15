@@ -1130,9 +1130,9 @@ cssstyle@^1.0.0:
     cssom "0.3.x"
 
 csv-parse@^4.4.1:
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/csv-parse/-/csv-parse-4.7.0.tgz#6bcfbd7128bc1c2605d9b7811fa9b285e7a034d1"
-  integrity sha512-gBCu5F47ULzhJl00Pg7Qlpx0orRrobWbYG8yImpTUY5aGXaTe72pxPbsQ5jWMAVbDLGXWQuNQSQzSxJTIDleqg==
+  version "4.8.0"
+  resolved "https://registry.yarnpkg.com/csv-parse/-/csv-parse-4.8.0.tgz#24c9c24198f10ddf22bffddd3db43f550e95d65d"
+  integrity sha512-UzQZdGmj3rzWWrgfQYhSeF2owmfP1MjYwlInMrfntd6NSCMZ3NwNZb32rJsL0eBk55HRPgK4hSY0pHS1Nd82Iw==
   dependencies:
     pad "^3.2.0"
 
