@@ -1,5 +1,328 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`lib.client.parsers.finances.list-financial-event-groups-response should parse a ListFinancialEvents example with service fees 1`] = `
+Object {
+  "listFinancialEventsResult": Object {
+    "financialEvents": Object {
+      "adjustmentEventList": Array [],
+      "affordabilityExpenseEventList": Array [],
+      "affordabilityExpenseReversalEventList": Array [],
+      "chargebackEventList": Array [],
+      "couponPaymentEventList": Array [],
+      "debtRecoveryEventList": Array [],
+      "fbaLiquidationEventList": Array [],
+      "guaranteeClaimEventList": Array [],
+      "imagingServicesFeeEventList": Array [],
+      "loanServicingEventList": Array [],
+      "networkComminglingTransactionEventList": Array [],
+      "payWithAmazonEventList": Array [],
+      "performanceBondRefundEventList": Array [],
+      "productAdsPaymentEventList": Array [],
+      "refundEventList": Array [
+        Object {
+          "amazonOrderId": "123-2345656-89327983",
+          "directPaymentList": Array [],
+          "marketplaceName": "Amazon.de",
+          "orderChargeAdjustmentList": Array [],
+          "orderChargeList": Array [],
+          "orderFeeAdjustmentList": Array [],
+          "orderFeeList": Array [],
+          "postedDate": 2019-11-20T14:34:12.452Z,
+          "sellerOrderId": "123-2345656-89327983",
+          "shipmentFeeAdjustmentList": Array [],
+          "shipmentFeeList": Array [],
+          "shipmentItemAdjustmentList": Array [
+            Object {
+              "costOfPointsGranted": null,
+              "costOfPointsReturned": null,
+              "itemChargeAdjustmentList": Array [
+                Object {
+                  "chargeAmount": Object {
+                    "currencyAmount": -2.29,
+                    "currencyCode": "EUR",
+                  },
+                  "chargeType": "Tax",
+                },
+                Object {
+                  "chargeAmount": Object {
+                    "currencyAmount": -0.13,
+                    "currencyCode": "EUR",
+                  },
+                  "chargeType": "ShippingTax",
+                },
+                Object {
+                  "chargeAmount": Object {
+                    "currencyAmount": -0.71,
+                    "currencyCode": "EUR",
+                  },
+                  "chargeType": "ShippingCharge",
+                },
+                Object {
+                  "chargeAmount": Object {
+                    "currencyAmount": -12.06,
+                    "currencyCode": "EUR",
+                  },
+                  "chargeType": "Principal",
+                },
+              ],
+              "itemChargeList": Array [],
+              "itemFeeAdjustmentList": Array [
+                Object {
+                  "feeAmount": Object {
+                    "currencyAmount": 2.15,
+                    "currencyCode": "EUR",
+                  },
+                  "feeType": "Commission",
+                },
+                Object {
+                  "feeAmount": Object {
+                    "currencyAmount": -0.43,
+                    "currencyCode": "EUR",
+                  },
+                  "feeType": "RefundCommission",
+                },
+              ],
+              "itemFeeList": Array [],
+              "itemTaxWithheldList": Array [],
+              "orderAdjustmentItemId": "3242342352343",
+              "orderItemId": null,
+              "promotionAdjustmentList": Array [
+                Object {
+                  "promotionAmount": Object {
+                    "currencyAmount": 0.13,
+                    "currencyCode": "EUR",
+                  },
+                  "promotionId": "DE Core Free Shipping 2018/04/24 20-00-00",
+                  "promotionType": "PromotionMetaDataDefinitionValue",
+                },
+                Object {
+                  "promotionAmount": Object {
+                    "currencyAmount": 0.71,
+                    "currencyCode": "EUR",
+                  },
+                  "promotionId": "DE Core Free Shipping 2018/04/24 20-00-00",
+                  "promotionType": "PromotionMetaDataDefinitionValue",
+                },
+              ],
+              "promotionList": Array [],
+              "quantityShipped": 1,
+              "sellerSKU": "COOL_SKU-EUR-FBA",
+            },
+          ],
+          "shipmentItemList": Array [],
+        },
+      ],
+      "rentalTransactionEventList": Array [],
+      "retrochargeEventList": Array [],
+      "safeTReimbursementEventList": Array [],
+      "sellerDealPaymentEventList": Array [],
+      "sellerReviewEnrollmentPaymentEventList": Array [],
+      "serviceFeeEventList": Array [
+        Object {
+          "amazonOrderId": "123-2345656-89327983",
+          "asin": null,
+          "feeDescription": "Cool title",
+          "feeList": Array [],
+          "feeReason": null,
+          "fnSKU": null,
+          "sellerSKU": "COOL_SKU-EUR-FBA",
+        },
+        Object {
+          "amazonOrderId": "123-2345656-89327983",
+          "asin": null,
+          "feeDescription": "Cool fee description",
+          "feeList": Array [
+            Object {
+              "feeAmount": Object {
+                "currencyAmount": -2.39,
+                "currencyCode": "EUR",
+              },
+              "feeType": "FBACustomerReturnPerUnitFee",
+            },
+          ],
+          "feeReason": null,
+          "fnSKU": null,
+          "sellerSKU": "COOL_SKU-EUR-FBA",
+        },
+      ],
+      "serviceProviderCreditEventList": Array [],
+      "shipmentEventList": Array [
+        Object {
+          "amazonOrderId": "123-2345656-89327983",
+          "directPaymentList": Array [],
+          "marketplaceName": "Amazon.de",
+          "orderChargeAdjustmentList": Array [],
+          "orderChargeList": Array [],
+          "orderFeeAdjustmentList": Array [],
+          "orderFeeList": Array [],
+          "postedDate": 2019-11-04T09:50:56.966Z,
+          "sellerOrderId": "123-2345656-89327983",
+          "shipmentFeeAdjustmentList": Array [],
+          "shipmentFeeList": Array [],
+          "shipmentItemAdjustmentList": Array [],
+          "shipmentItemList": Array [
+            Object {
+              "costOfPointsGranted": null,
+              "costOfPointsReturned": null,
+              "itemChargeAdjustmentList": Array [],
+              "itemChargeList": Array [
+                Object {
+                  "chargeAmount": Object {
+                    "currencyAmount": 12.06,
+                    "currencyCode": "EUR",
+                  },
+                  "chargeType": "Principal",
+                },
+                Object {
+                  "chargeAmount": Object {
+                    "currencyAmount": 2.29,
+                    "currencyCode": "EUR",
+                  },
+                  "chargeType": "Tax",
+                },
+                Object {
+                  "chargeAmount": Object {
+                    "currencyAmount": 0,
+                    "currencyCode": "EUR",
+                  },
+                  "chargeType": "GiftWrap",
+                },
+                Object {
+                  "chargeAmount": Object {
+                    "currencyAmount": 0,
+                    "currencyCode": "EUR",
+                  },
+                  "chargeType": "GiftWrapTax",
+                },
+                Object {
+                  "chargeAmount": Object {
+                    "currencyAmount": 0.71,
+                    "currencyCode": "EUR",
+                  },
+                  "chargeType": "ShippingCharge",
+                },
+                Object {
+                  "chargeAmount": Object {
+                    "currencyAmount": 0.13,
+                    "currencyCode": "EUR",
+                  },
+                  "chargeType": "ShippingTax",
+                },
+              ],
+              "itemFeeAdjustmentList": Array [],
+              "itemFeeList": Array [
+                Object {
+                  "feeAmount": Object {
+                    "currencyAmount": -2.39,
+                    "currencyCode": "EUR",
+                  },
+                  "feeType": "FBAPerUnitFulfillmentFee",
+                },
+                Object {
+                  "feeAmount": Object {
+                    "currencyAmount": -2.15,
+                    "currencyCode": "EUR",
+                  },
+                  "feeType": "Commission",
+                },
+                Object {
+                  "feeAmount": Object {
+                    "currencyAmount": 0,
+                    "currencyCode": "EUR",
+                  },
+                  "feeType": "FixedClosingFee",
+                },
+                Object {
+                  "feeAmount": Object {
+                    "currencyAmount": 0,
+                    "currencyCode": "EUR",
+                  },
+                  "feeType": "GiftwrapChargeback",
+                },
+                Object {
+                  "feeAmount": Object {
+                    "currencyAmount": 0,
+                    "currencyCode": "EUR",
+                  },
+                  "feeType": "ShippingChargeback",
+                },
+                Object {
+                  "feeAmount": Object {
+                    "currencyAmount": 0,
+                    "currencyCode": "EUR",
+                  },
+                  "feeType": "VariableClosingFee",
+                },
+              ],
+              "itemTaxWithheldList": Array [],
+              "orderAdjustmentItemId": null,
+              "orderItemId": "12345",
+              "promotionAdjustmentList": Array [],
+              "promotionList": Array [
+                Object {
+                  "promotionAmount": Object {
+                    "currencyAmount": 0,
+                    "currencyCode": "EUR",
+                  },
+                  "promotionId": "DE Core Free Shipping 2018/04/24 20-00-00",
+                  "promotionType": "PromotionMetaDataDefinitionValue",
+                },
+                Object {
+                  "promotionAmount": Object {
+                    "currencyAmount": 0,
+                    "currencyCode": "EUR",
+                  },
+                  "promotionId": "DE Core Free Shipping 2018/04/24 20-00-00",
+                  "promotionType": "PromotionMetaDataDefinitionValue",
+                },
+                Object {
+                  "promotionAmount": Object {
+                    "currencyAmount": 0,
+                    "currencyCode": "EUR",
+                  },
+                  "promotionId": "DE Core Free Shipping 2018/04/24 20-00-00",
+                  "promotionType": "PromotionMetaDataDefinitionValue",
+                },
+                Object {
+                  "promotionAmount": Object {
+                    "currencyAmount": 0,
+                    "currencyCode": "EUR",
+                  },
+                  "promotionId": "DE Core Free Shipping 2018/04/24 20-00-00",
+                  "promotionType": "PromotionMetaDataDefinitionValue",
+                },
+                Object {
+                  "promotionAmount": Object {
+                    "currencyAmount": -0.71,
+                    "currencyCode": "EUR",
+                  },
+                  "promotionId": "DE Core Free Shipping 2018/04/24 20-00-00",
+                  "promotionType": "PromotionMetaDataDefinitionValue",
+                },
+                Object {
+                  "promotionAmount": Object {
+                    "currencyAmount": -0.13,
+                    "currencyCode": "EUR",
+                  },
+                  "promotionId": "DE Core Free Shipping 2018/04/24 20-00-00",
+                  "promotionType": "PromotionMetaDataDefinitionValue",
+                },
+              ],
+              "quantityShipped": 1,
+              "sellerSKU": "COOL_SKU-EUR-FBA",
+            },
+          ],
+        },
+      ],
+    },
+    "nextToken": null,
+  },
+  "responseMetadata": Object {
+    "requestId": "508eabb9-3606-4124-b01d-e879190aaf28",
+  },
+}
+`;
+
 exports[`lib.client.parsers.finances.list-financial-event-groups-response should parse the ListFinancialEvents example response from MWS doc 1`] = `
 Object {
   "listFinancialEventsResult": Object {

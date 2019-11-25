@@ -200,6 +200,302 @@ describe('lib.client.parsers.finances.list-financial-event-groups-response', () 
     expect(res).toMatchSnapshot()
   })
 
+  it('should parse a ListFinancialEvents example with service fees', () => {
+    const doc = parseXml(
+      `<?xml version="1.0"?>
+      <ListFinancialEventsResponse xmlns="http://mws.amazonservices.com/Finances/2015-05-01">
+        <ListFinancialEventsResult>
+          <FinancialEvents>
+            <AffordabilityExpenseReversalEventList />
+            <ProductAdsPaymentEventList />
+            <RentalTransactionEventList />
+            <PayWithAmazonEventList />
+            <ServiceFeeEventList>
+              <ServiceFeeEvent>
+                <FeeDescription>Cool title</FeeDescription>
+                <AmazonOrderId>123-2345656-89327983</AmazonOrderId>
+                <SellerSKU>COOL_SKU-EUR-FBA</SellerSKU>
+              </ServiceFeeEvent>
+              <ServiceFeeEvent>
+                <FeeDescription>Cool fee description</FeeDescription>
+                <AmazonOrderId>123-2345656-89327983</AmazonOrderId>
+                <SellerSKU>COOL_SKU-EUR-FBA</SellerSKU>
+                <FeeList>
+                  <FeeComponent>
+                    <FeeAmount>
+                      <CurrencyAmount>-2.39</CurrencyAmount>
+                      <CurrencyCode>EUR</CurrencyCode>
+                    </FeeAmount>
+                    <FeeType>FBACustomerReturnPerUnitFee</FeeType>
+                  </FeeComponent>
+                </FeeList>
+              </ServiceFeeEvent>
+            </ServiceFeeEventList>
+            <CouponPaymentEventList />
+            <ServiceProviderCreditEventList />
+            <ImagingServicesFeeEventList />
+            <SellerDealPaymentEventList />
+            <SellerReviewEnrollmentPaymentEventList />
+            <DebtRecoveryEventList />
+            <ShipmentEventList>
+              <ShipmentEvent>
+                <ShipmentItemList>
+                  <ShipmentItem>
+                    <ItemChargeList>
+                      <ChargeComponent>
+                        <ChargeType>Principal</ChargeType>
+                        <ChargeAmount>
+                          <CurrencyAmount>12.06</CurrencyAmount>
+                          <CurrencyCode>EUR</CurrencyCode>
+                        </ChargeAmount>
+                      </ChargeComponent>
+                      <ChargeComponent>
+                        <ChargeType>Tax</ChargeType>
+                        <ChargeAmount>
+                          <CurrencyAmount>2.29</CurrencyAmount>
+                          <CurrencyCode>EUR</CurrencyCode>
+                        </ChargeAmount>
+                      </ChargeComponent>
+                      <ChargeComponent>
+                        <ChargeType>GiftWrap</ChargeType>
+                        <ChargeAmount>
+                          <CurrencyAmount>0.0</CurrencyAmount>
+                          <CurrencyCode>EUR</CurrencyCode>
+                        </ChargeAmount>
+                      </ChargeComponent>
+                      <ChargeComponent>
+                        <ChargeType>GiftWrapTax</ChargeType>
+                        <ChargeAmount>
+                          <CurrencyAmount>0.0</CurrencyAmount>
+                          <CurrencyCode>EUR</CurrencyCode>
+                        </ChargeAmount>
+                      </ChargeComponent>
+                      <ChargeComponent>
+                        <ChargeType>ShippingCharge</ChargeType>
+                        <ChargeAmount>
+                          <CurrencyAmount>0.71</CurrencyAmount>
+                          <CurrencyCode>EUR</CurrencyCode>
+                        </ChargeAmount>
+                      </ChargeComponent>
+                      <ChargeComponent>
+                        <ChargeType>ShippingTax</ChargeType>
+                        <ChargeAmount>
+                          <CurrencyAmount>0.13</CurrencyAmount>
+                          <CurrencyCode>EUR</CurrencyCode>
+                        </ChargeAmount>
+                      </ChargeComponent>
+                    </ItemChargeList>
+                    <ItemFeeList>
+                      <FeeComponent>
+                        <FeeAmount>
+                          <CurrencyAmount>-2.39</CurrencyAmount>
+                          <CurrencyCode>EUR</CurrencyCode>
+                        </FeeAmount>
+                        <FeeType>FBAPerUnitFulfillmentFee</FeeType>
+                      </FeeComponent>
+                      <FeeComponent>
+                        <FeeAmount>
+                          <CurrencyAmount>-2.15</CurrencyAmount>
+                          <CurrencyCode>EUR</CurrencyCode>
+                        </FeeAmount>
+                        <FeeType>Commission</FeeType>
+                      </FeeComponent>
+                      <FeeComponent>
+                        <FeeAmount>
+                          <CurrencyAmount>0.0</CurrencyAmount>
+                          <CurrencyCode>EUR</CurrencyCode>
+                        </FeeAmount>
+                        <FeeType>FixedClosingFee</FeeType>
+                      </FeeComponent>
+                      <FeeComponent>
+                        <FeeAmount>
+                          <CurrencyAmount>0.0</CurrencyAmount>
+                          <CurrencyCode>EUR</CurrencyCode>
+                        </FeeAmount>
+                        <FeeType>GiftwrapChargeback</FeeType>
+                      </FeeComponent>
+                      <FeeComponent>
+                        <FeeAmount>
+                          <CurrencyAmount>0.0</CurrencyAmount>
+                          <CurrencyCode>EUR</CurrencyCode>
+                        </FeeAmount>
+                        <FeeType>ShippingChargeback</FeeType>
+                      </FeeComponent>
+                      <FeeComponent>
+                        <FeeAmount>
+                          <CurrencyAmount>0.0</CurrencyAmount>
+                          <CurrencyCode>EUR</CurrencyCode>
+                        </FeeAmount>
+                        <FeeType>VariableClosingFee</FeeType>
+                      </FeeComponent>
+                    </ItemFeeList>
+                    <OrderItemId>12345</OrderItemId>
+                    <QuantityShipped>1</QuantityShipped>
+                    <SellerSKU>COOL_SKU-EUR-FBA</SellerSKU>
+                    <PromotionList>
+                      <Promotion>
+                        <PromotionType>PromotionMetaDataDefinitionValue</PromotionType>
+                        <PromotionAmount>
+                          <CurrencyAmount>0.0</CurrencyAmount>
+                          <CurrencyCode>EUR</CurrencyCode>
+                        </PromotionAmount>
+                        <PromotionId>DE Core Free Shipping 2018/04/24 20-00-00</PromotionId>
+                      </Promotion>
+                      <Promotion>
+                        <PromotionType>PromotionMetaDataDefinitionValue</PromotionType>
+                        <PromotionAmount>
+                          <CurrencyAmount>0.0</CurrencyAmount>
+                          <CurrencyCode>EUR</CurrencyCode>
+                        </PromotionAmount>
+                        <PromotionId>DE Core Free Shipping 2018/04/24 20-00-00</PromotionId>
+                      </Promotion>
+                      <Promotion>
+                        <PromotionType>PromotionMetaDataDefinitionValue</PromotionType>
+                        <PromotionAmount>
+                          <CurrencyAmount>0.0</CurrencyAmount>
+                          <CurrencyCode>EUR</CurrencyCode>
+                        </PromotionAmount>
+                        <PromotionId>DE Core Free Shipping 2018/04/24 20-00-00</PromotionId>
+                      </Promotion>
+                      <Promotion>
+                        <PromotionType>PromotionMetaDataDefinitionValue</PromotionType>
+                        <PromotionAmount>
+                          <CurrencyAmount>0.0</CurrencyAmount>
+                          <CurrencyCode>EUR</CurrencyCode>
+                        </PromotionAmount>
+                        <PromotionId>DE Core Free Shipping 2018/04/24 20-00-00</PromotionId>
+                      </Promotion>
+                      <Promotion>
+                        <PromotionType>PromotionMetaDataDefinitionValue</PromotionType>
+                        <PromotionAmount>
+                          <CurrencyAmount>-0.71</CurrencyAmount>
+                          <CurrencyCode>EUR</CurrencyCode>
+                        </PromotionAmount>
+                        <PromotionId>DE Core Free Shipping 2018/04/24 20-00-00</PromotionId>
+                      </Promotion>
+                      <Promotion>
+                        <PromotionType>PromotionMetaDataDefinitionValue</PromotionType>
+                        <PromotionAmount>
+                          <CurrencyAmount>-0.13</CurrencyAmount>
+                          <CurrencyCode>EUR</CurrencyCode>
+                        </PromotionAmount>
+                        <PromotionId>DE Core Free Shipping 2018/04/24 20-00-00</PromotionId>
+                      </Promotion>
+                    </PromotionList>
+                  </ShipmentItem>
+                </ShipmentItemList>
+                <AmazonOrderId>123-2345656-89327983</AmazonOrderId>
+                <PostedDate>2019-11-04T09:50:56.966Z</PostedDate>
+                <MarketplaceName>Amazon.de</MarketplaceName>
+                <SellerOrderId>123-2345656-89327983</SellerOrderId>
+              </ShipmentEvent>
+            </ShipmentEventList>
+            <RetrochargeEventList />
+            <SAFETReimbursementEventList />
+            <GuaranteeClaimEventList />
+            <ChargebackEventList />
+            <NetworkComminglingTransactionEventList />
+            <FBALiquidationEventList />
+            <LoanServicingEventList />
+            <RefundEventList>
+              <ShipmentEvent>
+                <AmazonOrderId>123-2345656-89327983</AmazonOrderId>
+                <PostedDate>2019-11-20T14:34:12.452Z</PostedDate>
+                <ShipmentItemAdjustmentList>
+                  <ShipmentItem>
+                    <ItemFeeAdjustmentList>
+                      <FeeComponent>
+                        <FeeAmount>
+                          <CurrencyAmount>2.15</CurrencyAmount>
+                          <CurrencyCode>EUR</CurrencyCode>
+                        </FeeAmount>
+                        <FeeType>Commission</FeeType>
+                      </FeeComponent>
+                      <FeeComponent>
+                        <FeeAmount>
+                          <CurrencyAmount>-0.43</CurrencyAmount>
+                          <CurrencyCode>EUR</CurrencyCode>
+                        </FeeAmount>
+                        <FeeType>RefundCommission</FeeType>
+                      </FeeComponent>
+                    </ItemFeeAdjustmentList>
+                    <PromotionAdjustmentList>
+                      <Promotion>
+                        <PromotionType>PromotionMetaDataDefinitionValue</PromotionType>
+                        <PromotionAmount>
+                          <CurrencyAmount>0.13</CurrencyAmount>
+                          <CurrencyCode>EUR</CurrencyCode>
+                        </PromotionAmount>
+                        <PromotionId>DE Core Free Shipping 2018/04/24 20-00-00</PromotionId>
+                      </Promotion>
+                      <Promotion>
+                        <PromotionType>PromotionMetaDataDefinitionValue</PromotionType>
+                        <PromotionAmount>
+                          <CurrencyAmount>0.71</CurrencyAmount>
+                          <CurrencyCode>EUR</CurrencyCode>
+                        </PromotionAmount>
+                        <PromotionId>DE Core Free Shipping 2018/04/24 20-00-00</PromotionId>
+                      </Promotion>
+                    </PromotionAdjustmentList>
+                    <OrderAdjustmentItemId>3242342352343</OrderAdjustmentItemId>
+                    <QuantityShipped>1</QuantityShipped>
+                    <ItemChargeAdjustmentList>
+                      <ChargeComponent>
+                        <ChargeType>Tax</ChargeType>
+                        <ChargeAmount>
+                          <CurrencyAmount>-2.29</CurrencyAmount>
+                          <CurrencyCode>EUR</CurrencyCode>
+                        </ChargeAmount>
+                      </ChargeComponent>
+                      <ChargeComponent>
+                        <ChargeType>ShippingTax</ChargeType>
+                        <ChargeAmount>
+                          <CurrencyAmount>-0.13</CurrencyAmount>
+                          <CurrencyCode>EUR</CurrencyCode>
+                        </ChargeAmount>
+                      </ChargeComponent>
+                      <ChargeComponent>
+                        <ChargeType>ShippingCharge</ChargeType>
+                        <ChargeAmount>
+                          <CurrencyAmount>-0.71</CurrencyAmount>
+                          <CurrencyCode>EUR</CurrencyCode>
+                        </ChargeAmount>
+                      </ChargeComponent>
+                      <ChargeComponent>
+                        <ChargeType>Principal</ChargeType>
+                        <ChargeAmount>
+                          <CurrencyAmount>-12.06</CurrencyAmount>
+                          <CurrencyCode>EUR</CurrencyCode>
+                        </ChargeAmount>
+                      </ChargeComponent>
+                    </ItemChargeAdjustmentList>
+                    <SellerSKU>COOL_SKU-EUR-FBA</SellerSKU>
+                  </ShipmentItem>
+                </ShipmentItemAdjustmentList>
+                <MarketplaceName>Amazon.de</MarketplaceName>
+                <SellerOrderId>123-2345656-89327983</SellerOrderId>
+              </ShipmentEvent>
+            </RefundEventList>
+            <RemovalShipmentEventList />
+            <AffordabilityExpenseEventList />
+            <AdjustmentEventList />
+            <PerformanceBondRefundEventList />
+          </FinancialEvents>
+        </ListFinancialEventsResult>
+        <ResponseMetadata>
+          <RequestId>508eabb9-3606-4124-b01d-e879190aaf28</RequestId>
+        </ResponseMetadata>
+      </ListFinancialEventsResponse>`
+    )
+
+    const res = parseListFinancialEventsResponse(
+      '/finances:ListFinancialEventsResponse',
+      doc
+    )
+
+    expect(res).toMatchSnapshot()
+  })
+
   it('should parse the ListFinancialEventsByNextToken example response from MWS doc', () => {
     const doc = parseXml(
       `<?xml version="1.0"?>
