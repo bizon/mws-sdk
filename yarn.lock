@@ -132,9 +132,9 @@
     to-fast-properties "^2.0.0"
 
 "@bizon/amazon-ids@^1.1.1":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@bizon/amazon-ids/-/amazon-ids-1.4.0.tgz#cc5e305ae56e5e645c6e150a14348df187e666a7"
-  integrity sha512-6LBM6fGeEHRVo7c9BtSob6/BjKr1mGRk1Q+by4zRKsgp3rFW4yj7Yvw+QVEPfqA212MQ3dMXBPAHRrqzJNuang==
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@bizon/amazon-ids/-/amazon-ids-1.5.0.tgz#85d0ff24a6de9e956a04d34e62b2f0efc47967a8"
+  integrity sha512-Vi89YrLQqn53xCdulgySUBXqjOV9b4gkqbzYNIMIh9+ppqq3gdRC1l05XxjKpPXsgQ/3qTReyeFDm/gp0pU/Yg==
   dependencies:
     memoizee "^0.4.14"
 
