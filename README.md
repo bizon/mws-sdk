@@ -137,6 +137,16 @@ marketplaceId | `String` |
 asinList | `Array<String>` |
 itemCondition | `String` |
 
+#### `getMyPriceForSku(options)`
+
+Options:
+
+Name | Type | Default
+-----|------|--------
+marketplaceId | `String` |
+sellerSkuList | `Array<String>` |
+itemCondition | `String` |
+
 #### `getLowestPricedOffersForAsin(options)`
 
 Options:
