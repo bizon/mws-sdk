@@ -4,6 +4,7 @@ exports[`lib.client.parsers.products.get-matching-product-for-id-response should
 Object {
   "getMatchingProductForIdResults": Array [
     Object {
+      "error": null,
       "id": "B002KT3XRQ",
       "idType": "ASIN",
       "products": Array [
@@ -133,12 +134,19 @@ exports[`lib.client.parsers.products.get-matching-product-for-id-response should
 Object {
   "getMatchingProductForIdResults": Array [
     Object {
+      "error": Object {
+        "code": "InvalidParameterValue",
+        "detail": null,
+        "message": "Invalid ISBN identifier 0439708623 for marketplace ATVPDKIKX0DER",
+        "type": "Sender",
+      },
       "id": "0439708623",
       "idType": "ISBN",
       "products": Array [],
       "status": "ClientError",
     },
     Object {
+      "error": null,
       "id": "9781933988665",
       "idType": "ISBN",
       "products": Array [
@@ -277,6 +285,7 @@ exports[`lib.client.parsers.products.get-matching-product-for-id-response should
 Object {
   "getMatchingProductForIdResults": Array [
     Object {
+      "error": null,
       "id": "9781933988665",
       "idType": "ISBN",
       "products": Array [
@@ -403,6 +412,7 @@ Object {
       "status": "Success",
     },
     Object {
+      "error": null,
       "id": "0439708184",
       "idType": "ISBN",
       "products": Array [
@@ -629,6 +639,7 @@ exports[`lib.client.parsers.products.get-matching-product-for-id-response should
 Object {
   "getMatchingProductForIdResults": Array [
     Object {
+      "error": null,
       "id": "B002KT3XRQ",
       "idType": "ASIN",
       "products": Array [
