@@ -1,4 +1,6 @@
 const nock = require('nock')
+const MockDate = require('mockdate')
+
 const MWSClient = require('../../../..')
 
 const client = new MWSClient({
@@ -12,9 +14,23 @@ const client = new MWSClient({
 const apiUrl = `https://${client.settings.region.mwsDomain}`
 
 describe('lib.client.models.products', () => {
+  beforeAll(() => {
+    MockDate.set('2019-12-04')
+  })
+
+  afterAll(() => {
+    MockDate.reset()
+  })
+
   it('should call GetMyPriceForASIN', async () => {
+    const {pathname, data} = client.signData('POST', 'Products', '2011-10-01', {
+      Action: 'GetMyPriceForASIN',
+      MarketplaceId: 'ATVPDKIKX0DER',
+      'ASINList.ASIN.1': '1933890517'
+    })
+
     nock(apiUrl)
-      .post('/Products/2011-10-01')
+      .post(pathname, data)
       .reply(
         200,
         `<?xml version="1.0"?>
@@ -63,13 +79,25 @@ describe('lib.client.models.products', () => {
         </GetMyPriceForASINResponse>`
       )
 
-    const result = await client.products.getMyPriceForAsin({})
+    const result = await client.products.getMyPriceForAsin({
+      marketplaceId: 'ATVPDKIKX0DER',
+      asinList: [
+        '1933890517'
+      ]
+    })
+
     expect(result).toMatchSnapshot()
   })
 
   it('should call GetMyPriceForSKU', async () => {
+    const {pathname, data} = client.signData('POST', 'Products', '2011-10-01', {
+      Action: 'GetMyPriceForSKU',
+      MarketplaceId: 'ATVPDKIKX0DER',
+      'SellerSKUList.SellerSKU.1': 'SKU2468'
+    })
+
     nock(apiUrl)
-      .post('/Products/2011-10-01')
+      .post(pathname, data)
       .reply(
         200,
         `<?xml version="1.0"?>
@@ -123,7 +151,13 @@ describe('lib.client.models.products', () => {
         </GetMyPriceForSKUResponse>`
       )
 
-    const result = await client.products.getMyPriceForSku({})
+    const result = await client.products.getMyPriceForSku({
+      marketplaceId: 'ATVPDKIKX0DER',
+      sellerSkuList: [
+        'SKU2468'
+      ]
+    })
+
     expect(result).toMatchSnapshot()
   })
 })
