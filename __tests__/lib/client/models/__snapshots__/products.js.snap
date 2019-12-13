@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib.client.models.products should call GetMyPriceForASIN 1`] = `
+Array [
+  Object {
+    "asin": "1933890517",
+    "product": Object {
+      "attributes": null,
+      "identifiers": Object {
+        "marketplaceAsin": Object {
+          "asin": "1933890517",
+          "marketplaceId": "ATVPDKIKX0DER",
+        },
+        "skuIdentifier": null,
+      },
+      "offers": Array [
+        Object {
+          "buyingPrice": Object {
+            "landedPrice": Object {
+              "amount": 303.99,
+              "currencyCode": "USD",
+            },
+            "listingPrice": Object {
+              "amount": 300,
+              "currencyCode": "USD",
+            },
+            "shipping": Object {
+              "amount": 3.99,
+              "currencyCode": "USD",
+            },
+          },
+          "fulfillmentChannel": "MERCHANT",
+          "itemCondition": "Used",
+          "itemSubCondition": "Acceptable",
+          "regularPrice": Object {
+            "amount": 300,
+            "currencyCode": "USD",
+          },
+          "sellerId": "A1IMEXAMPLEWRC",
+          "sellerSku": "SKU2468",
+        },
+      ],
+      "relationships": Object {
+        "variationChildren": Array [],
+        "variationParent": null,
+      },
+      "salesRankings": Array [],
+    },
+    "status": "Success",
+  },
+]
+`;
+
+exports[`lib.client.models.products should call GetMyPriceForSKU 1`] = `
+Array [
+  Object {
+    "product": Object {
+      "attributes": null,
+      "identifiers": Object {
+        "marketplaceAsin": Object {
+          "asin": "1933890517",
+          "marketplaceId": "ATVPDKIKX0DER",
+        },
+        "skuIdentifier": Object {
+          "marketplaceId": "ATVPDKIKX0DER",
+          "sellerId": "A1IMEXAMPLEWRC",
+          "sellerSKU": "SKU2468",
+        },
+      },
+      "offers": Array [
+        Object {
+          "buyingPrice": Object {
+            "landedPrice": Object {
+              "amount": 303.99,
+              "currencyCode": "USD",
+            },
+            "listingPrice": Object {
+              "amount": 300,
+              "currencyCode": "USD",
+            },
+            "shipping": Object {
+              "amount": 3.99,
+              "currencyCode": "USD",
+            },
+          },
+          "fulfillmentChannel": "MERCHANT",
+          "itemCondition": "Used",
+          "itemSubCondition": "Acceptable",
+          "regularPrice": Object {
+            "amount": 300,
+            "currencyCode": "USD",
+          },
+          "sellerId": "A1IMEXAMPLEWRC",
+          "sellerSku": "SKU2468",
+        },
+      ],
+      "relationships": Object {
+        "variationChildren": Array [],
+        "variationParent": null,
+      },
+      "salesRankings": Array [],
+    },
+    "sellerSku": "SKU2468",
+    "status": "Success",
+  },
+]
+`;
