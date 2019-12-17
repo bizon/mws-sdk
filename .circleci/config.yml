@@ -7,7 +7,7 @@ defaults:
   nodejs_container: &nodejs_container
     working_directory: *workspace_root
     docker:
-      - image: circleci/node:10-stretch
+      - image: circleci/node:12-stretch
 
   attach_workspace: &attach_workspace
     attach_workspace:
@@ -17,9 +17,9 @@ defaults:
     restore_cache:
       name: Restore node_modules cache
       keys:
-        - v2-mws-sdk-node-{{ .Branch }}-{{ checksum "yarn.lock" }}
-        - v2-mws-sdk-node-master-{{ checksum "yarn.lock" }}
-        - v2-mws-sdk-node-master-
+        - v3-mws-sdk-node-{{ .Branch }}-{{ checksum "yarn.lock" }}
+        - v3-mws-sdk-node-master-{{ checksum "yarn.lock" }}
+        - v3-mws-sdk-node-master-
 
 jobs:
   checkout:
@@ -44,7 +44,7 @@ jobs:
 
       - save_cache:
           name: Save node_modules cache
-          key: v2-mws-sdk-node-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          key: v3-mws-sdk-node-{{ .Branch }}-{{ checksum "yarn.lock" }}
           paths:
             - node_modules/
 
