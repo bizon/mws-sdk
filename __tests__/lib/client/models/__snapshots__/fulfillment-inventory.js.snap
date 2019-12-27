@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib.client.models.fulfillment-inventory should call ListInventorySupply 1`] = `
+Object {
+  "inventorySupplyList": Array [
+    Object {
+      "asin": "BT008FQ92Q",
+      "condition": "NewItem",
+      "earliestAvailability": null,
+      "fnSKU": "X0000000EY",
+      "inStockSupplyQuantity": 4,
+      "sellerSKU": "SampleSKU3",
+      "supplyDetail": Array [
+        Object {
+          "earliestAvailableToPick": Object {
+            "dateTime": null,
+            "timepointType": "Immediately",
+          },
+          "latestAvailableToPick": Object {
+            "dateTime": null,
+            "timepointType": "Immediately",
+          },
+          "quantity": 5,
+          "supplyType": "InStock",
+        },
+        Object {
+          "earliestAvailableToPick": Object {
+            "dateTime": 2011-05-04T23:00:00.000Z,
+            "timepointType": "DateTime",
+          },
+          "latestAvailableToPick": Object {
+            "dateTime": 2011-05-04T23:00:00.000Z,
+            "timepointType": "DateTime",
+          },
+          "quantity": 13,
+          "supplyType": "InStock",
+        },
+      ],
+      "totalSupplyQuantity": 18,
+    },
+  ],
+  "nextToken": "H4sIAAAAAAAAADXQzW6CMAAA4FcxXD3AgE5J5pLSiBTQ8ScSblCB0Ap2LSL49O6y7xGr05WbPW8ip3SlDdZK6t3CmuKTH8d9B/0mhCR7gcVE3gpuDaR8850n239tjC17Z3Gg2PmsZJNa14izwUtQAMYp6tOH4NHl/gN492SYVU0P5F0OYwUwmYI0d/YHnMSgDPUF0mvxTPNofZkXr6ww39SIBYJUTlUMNwIWaduUNr/MZYmaySPqugvxiQaTs2Rxgs1gFENKcUV7Ry/8BSUECjcj2sQ7bLTnBvYPd9/ksLbmV5ydt+HUWFx1QMQgD7O5Ey96mZzNZypKo7V9nBUtPNp/AztF/X4Di21K/SkBAAA=",
+}
+`;
