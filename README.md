@@ -59,7 +59,7 @@ nextToken | `String` |
 
 ### FulfillmentInventory
 
-Version: `2011-03-01`
+Version: `2010-10-01`
 
 #### `listInventorySupply(options)`
 
