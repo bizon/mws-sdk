@@ -96,6 +96,7 @@ createdBefore | `Date` |
 lastUpdatedAfter | `Date` |
 lastUpdatedBefore | `Date` |
 orderStatus | `String` |
+marketplaceId | `Array<String>` | Selected region’s marketplaces
 fulfillmentChannel | `String` |
 paymentMethod | `String` |
 buyerEmail | `String` |
