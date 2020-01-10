@@ -57,6 +57,33 @@ financialEventGroupStartedAfter | `Date` |
 financialEventGroupStartedBefore | `Date` |
 nextToken | `String` |
 
+### FulfillmentInboundShipment
+
+Version: `2010-10-01`
+
+#### `listInboundShipments(options)`
+
+Options:
+
+Name | Type | Default
+-----|------|--------
+shipmentStatusList | `Array<String>` |
+shipmentIdList | `Array<String>` |
+lastUpdatedAfter | `Date` |
+lastUpdatedBefore | `Date` |
+nextToken | `String` |
+
+#### `listInboundShipmentItems(options)`
+
+Options:
+
+Name | Type | Default
+-----|------|--------
+shipmentId | `Array<String>` |
+lastUpdatedAfter | `Date` |
+lastUpdatedBefore | `Date` |
+nextToken | `String` |
+
 ### FulfillmentInventory
 
 Version: `2010-10-01`

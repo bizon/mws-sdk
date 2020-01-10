@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib.client.parsers.fulfillment-inbound-shipment.list-inbound-shipment-items-response should parse the ListInboundShipmentItems example response from MWS doc 1`] = `
+Object {
+  "listInboundShipmentItemsResult": Object {
+    "itemData": Array [
+      Object {
+        "fulfillmentNetworkSKU": "B000FADVPQ",
+        "prepDetailsList": Array [],
+        "quantityInCase": 0,
+        "quantityReceived": 0,
+        "quantityShipped": 3,
+        "releaseDate": 2014-12-31T00:00:00.000Z,
+        "sellerSKU": "SampleSKU1",
+        "shipmentId": "SSF85DGIZZ3OF1",
+      },
+      Object {
+        "fulfillmentNetworkSKU": "B0011VECH4",
+        "prepDetailsList": Array [],
+        "quantityInCase": 0,
+        "quantityReceived": 0,
+        "quantityShipped": 10,
+        "releaseDate": null,
+        "sellerSKU": "SampleSKU2",
+        "shipmentId": "SSF85DGIZZ3OF1",
+      },
+    ],
+    "nextToken": null,
+  },
+  "responseMetadata": Object {
+    "requestId": "ffce8932-8e69-11df-8af1-5bf2881764d8",
+  },
+}
+`;
