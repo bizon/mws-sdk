@@ -37,6 +37,7 @@
     "xo": "^0.25.3"
   },
   "jest": {
+    "testEnvironment": "node",
     "testMatch": [
       "<rootDir>/__tests__/**/*.js"
     ],
