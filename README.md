@@ -73,6 +73,17 @@ lastUpdatedAfter | `Date` |
 lastUpdatedBefore | `Date` |
 nextToken | `String` |
 
+#### `listInboundShipmentItems(options)`
+
+Options:
+
+Name | Type | Default
+-----|------|--------
+shipmentId | `Array<String>` |
+lastUpdatedAfter | `Date` |
+lastUpdatedBefore | `Date` |
+nextToken | `String` |
+
 ### FulfillmentInventory
 
 Version: `2010-10-01`
