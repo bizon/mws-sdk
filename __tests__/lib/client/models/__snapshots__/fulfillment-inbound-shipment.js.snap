@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib.client.models.fulfillment-inbound-shipment should call ListInboundShipmentItems 1`] = `
+Object {
+  "itemData": Array [
+    Object {
+      "fulfillmentNetworkSKU": "B000FADVPQ",
+      "prepDetailsList": Array [],
+      "quantityInCase": 0,
+      "quantityReceived": 0,
+      "quantityShipped": 3,
+      "releaseDate": 2014-12-31T00:00:00.000Z,
+      "sellerSKU": "SampleSKU1",
+      "shipmentId": "SSF85DGIZZ3OF1",
+    },
+    Object {
+      "fulfillmentNetworkSKU": "B0011VECH4",
+      "prepDetailsList": Array [],
+      "quantityInCase": 0,
+      "quantityReceived": 0,
+      "quantityShipped": 10,
+      "releaseDate": null,
+      "sellerSKU": "SampleSKU2",
+      "shipmentId": "SSF85DGIZZ3OF1",
+    },
+  ],
+  "nextToken": null,
+}
+`;
+
+exports[`lib.client.models.fulfillment-inbound-shipment should call ListInboundShipments 1`] = `
+Object {
+  "nextToken": null,
+  "shipmentData": Array [
+    Object {
+      "areCasesRequired": true,
+      "boxContentsSource": null,
+      "confirmedNeedByDate": null,
+      "destinationFulfillmentCenterId": "YYZ1",
+      "estimatedBoxContentsFee": null,
+      "labelPrepType": "NO_LABEL",
+      "shipFromAddress": Object {
+        "addressLine1": "Address Line 1",
+        "addressLine2": null,
+        "city": "Vancouver",
+        "countryCode": "CA",
+        "districtOrCounty": null,
+        "name": "jsowprni Devo CA20",
+        "postalCode": "V5V 1A1",
+        "stateOrProvinceCode": "BC",
+      },
+      "shipmentId": "FBAN4QNH",
+      "shipmentName": "FBA (8/27/12 1:55 PM)",
+      "shipmentStatus": "WORKING",
+    },
+    Object {
+      "areCasesRequired": null,
+      "boxContentsSource": "NONE",
+      "confirmedNeedByDate": null,
+      "destinationFulfillmentCenterId": "RIC2",
+      "estimatedBoxContentsFee": Object {
+        "feePerUnit": Object {
+          "currencyCode": "USD",
+          "value": 0.1,
+        },
+        "totalFee": Object {
+          "currencyCode": "USD",
+          "value": 10,
+        },
+        "totalUnits": 10,
+      },
+      "labelPrepType": "NO_LABEL",
+      "shipFromAddress": Object {
+        "addressLine1": "Address 1",
+        "addressLine2": null,
+        "city": "Vancouver",
+        "countryCode": "CA",
+        "districtOrCounty": null,
+        "name": "Janani Arvind FBA QA",
+        "postalCode": "V5V 1A1",
+        "stateOrProvinceCode": "BC",
+      },
+      "shipmentId": "FBA1123",
+      "shipmentName": "Test MWS CA Shipment 1",
+      "shipmentStatus": "WORKING",
+    },
+  ],
+}
+`;
