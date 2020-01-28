@@ -36,6 +36,9 @@
     "nock": "^11.7.0",
     "xo": "^0.25.3"
   },
+  "engines": {
+    "node": ">=10"
+  },
   "jest": {
     "testEnvironment": "node",
     "testMatch": [
