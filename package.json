@@ -3,6 +3,15 @@
   "version": "2.11.0",
   "main": "index.js",
   "description": "SDK for Amazon Marketplace Web Services",
+  "homepage": "https://github.com/bizon/mws-sdk#readme",
+  "license": "MIT",
+  "keywords": [
+    "amazon",
+    "amazon-marketplace",
+    "amazon-mws",
+    "mws",
+    "sellercentral"
+  ],
   "scripts": {
     "test": "TZ=UTC jest"
   },
@@ -38,6 +47,9 @@
   },
   "engines": {
     "node": ">=10"
+  },
+  "bugs": {
+    "url": "https://github.com/bizon/mws-sdk/issues"
   },
   "jest": {
     "testEnvironment": "node",
@@ -75,10 +87,5 @@
         ]
       }
     ]
-  },
-  "bugs": {
-    "url": "https://github.com/bizon/mws-sdk/issues"
-  },
-  "homepage": "https://github.com/bizon/mws-sdk#readme",
-  "license": "MIT"
+  }
 }
