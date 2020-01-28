@@ -19,13 +19,13 @@
   },
   "author": "Bertrand Marron <bertrand.marron@gmail.com>",
   "dependencies": {
-    "@bizon/amazon-ids": "^1.1.1",
+    "@bizon/amazon-ids": "^1.5.0",
     "content-type": "^1.0.4",
-    "csv-parse": "^4.4.1",
-    "date-fns": "^2.4.1",
-    "got": "^10.0.4",
-    "iconv-lite": "^0.5.0",
-    "jschardet": "^2.1.0",
+    "csv-parse": "^4.8.5",
+    "date-fns": "^2.9.0",
+    "got": "^10.3.0",
+    "iconv-lite": "^0.5.1",
+    "jschardet": "^2.1.1",
     "libxmljs": "^0.19.7"
   },
   "devDependencies": {
