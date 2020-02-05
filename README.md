@@ -145,6 +145,15 @@ nextToken | `String` |
 
 Version: `2011-10-01`
 
+#### `getMatchingProduct(options)`
+
+Options:
+
+Name | Type | Default
+-----|------|--------
+marketplaceId | `String` |
+asinList | `Array<String>` |
+
 #### `getMatchingProductForId(options)`
 
 Options:
