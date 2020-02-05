@@ -20,6 +20,7 @@ describe('lib.client.models.fulfillment-inbound-shipment', () => {
 
   afterAll(() => {
     MockDate.reset()
+    client.fulfillmentInboundShipment.abort()
   })
 
   it('should call ListInboundShipments', async () => {

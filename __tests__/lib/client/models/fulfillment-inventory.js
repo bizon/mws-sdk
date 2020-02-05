@@ -20,6 +20,7 @@ describe('lib.client.models.fulfillment-inventory', () => {
 
   afterAll(() => {
     MockDate.reset()
+    client.fulfillmentInventory.abort()
   })
 
   it('should call ListInventorySupply', async () => {

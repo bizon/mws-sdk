@@ -21,6 +21,7 @@ describe('lib.client.models.orders', () => {
 
   afterAll(() => {
     MockDate.reset()
+    client.orders.abort()
   })
 
   it('should call GetOrder', async () => {
