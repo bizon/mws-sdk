@@ -2514,10 +2514,10 @@ globby@^9.0.0:
     pify "^4.0.1"
     slash "^2.0.0"
 
-got@^10.5.2:
-  version "10.5.2"
-  resolved "https://registry.yarnpkg.com/got/-/got-10.5.2.tgz#28a35ed7d6dac64fe58074965d9bb17c941b8fe0"
-  integrity sha512-uN3A7WzRXLBDm/U1dlrQkyvnkWHk8KkVK8TEP4GohWQrit91MQ0/qAzQqB2ylFkNp5l3oKmWq+SNNxXqk2mYUg==
+got@^10.5.4:
+  version "10.5.4"
+  resolved "https://registry.yarnpkg.com/got/-/got-10.5.4.tgz#1cf7bee3436a80be48a314c197d22df3f7dee7e0"
+  integrity sha512-DiyqjDt0yvN3HoGALtOHBGkl6cEZX24DgSm51eDgUk0JvVQF4oqhjDbFnLm81G/pOEl1sn7W0V5tDWkBfBYf+A==
   dependencies:
     "@sindresorhus/is" "^1.0.0"
     "@szmarczak/http-timer" "^4.0.0"
