@@ -20,7 +20,7 @@ describe('lib.client.models.reports', () => {
 
   afterAll(() => {
     MockDate.reset()
-    client.reports.abort()
+    client.reports.clearRestores()
   })
 
   it('should call GetReport and return a raw string', async () => {

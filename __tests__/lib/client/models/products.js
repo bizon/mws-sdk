@@ -20,7 +20,7 @@ describe('lib.client.models.products', () => {
 
   afterAll(() => {
     MockDate.reset()
-    client.products.abort()
+    client.products.clearRestores()
   })
 
   it('should call GetMyPriceForASIN', async () => {
