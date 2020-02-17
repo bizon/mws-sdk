@@ -1,0 +1,1362 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib.client.models.finances should call GetOrder 1`] = `
+Object {
+  "financialEvents": Object {
+    "adjustmentEventList": Array [
+      Object {
+        "adjustmentAmount": Object {
+          "currencyAmount": 100,
+          "currencyCode": "String",
+        },
+        "adjustmentItemList": Array [
+          Object {
+            "asin": "String",
+            "fnSKU": "String",
+            "perUnitAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "productDescription": "String",
+            "quantity": 10,
+            "sellerSKU": "String",
+            "totalAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+          },
+        ],
+        "adjustmentType": "String",
+        "postedDate": 1969-07-21T02:56:03.000Z,
+      },
+    ],
+    "affordabilityExpenseEventList": Array [],
+    "affordabilityExpenseReversalEventList": Array [],
+    "chargebackEventList": Array [
+      Object {
+        "amazonOrderId": "String",
+        "directPaymentList": Array [
+          Object {
+            "directPaymentAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "directPaymentType": "String",
+          },
+        ],
+        "marketplaceName": "String",
+        "orderChargeAdjustmentList": Array [
+          Object {
+            "chargeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "chargeType": "String",
+          },
+        ],
+        "orderChargeList": Array [
+          Object {
+            "chargeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "chargeType": "String",
+          },
+        ],
+        "orderFeeAdjustmentList": Array [
+          Object {
+            "feeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "feeType": "String",
+          },
+        ],
+        "orderFeeList": Array [
+          Object {
+            "feeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "feeType": "String",
+          },
+        ],
+        "postedDate": 1969-07-21T02:56:03.000Z,
+        "sellerOrderId": "String",
+        "shipmentFeeAdjustmentList": Array [
+          Object {
+            "feeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "feeType": "String",
+          },
+        ],
+        "shipmentFeeList": Array [
+          Object {
+            "feeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "feeType": "String",
+          },
+        ],
+        "shipmentItemAdjustmentList": Array [
+          Object {
+            "costOfPointsGranted": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "costOfPointsReturned": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "itemChargeAdjustmentList": Array [
+              Object {
+                "chargeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "chargeType": "String",
+              },
+            ],
+            "itemChargeList": Array [
+              Object {
+                "chargeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "chargeType": "String",
+              },
+            ],
+            "itemFeeAdjustmentList": Array [
+              Object {
+                "feeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "feeType": "String",
+              },
+            ],
+            "itemFeeList": Array [
+              Object {
+                "feeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "feeType": "String",
+              },
+            ],
+            "itemTaxWithheldList": Array [
+              Object {
+                "taxCollectionModel": "String",
+                "taxesWithheld": Array [
+                  Object {
+                    "chargeAmount": Object {
+                      "currencyAmount": 100,
+                      "currencyCode": "String",
+                    },
+                    "chargeType": "String",
+                  },
+                ],
+              },
+            ],
+            "orderAdjustmentItemId": "String",
+            "orderItemId": "String",
+            "promotionAdjustmentList": Array [
+              Object {
+                "promotionAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "promotionId": "String",
+                "promotionType": "String",
+              },
+            ],
+            "promotionList": Array [
+              Object {
+                "promotionAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "promotionId": "String",
+                "promotionType": "String",
+              },
+            ],
+            "quantityShipped": 1,
+            "sellerSKU": "String",
+          },
+        ],
+        "shipmentItemList": Array [
+          Object {
+            "costOfPointsGranted": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "costOfPointsReturned": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "itemChargeAdjustmentList": Array [
+              Object {
+                "chargeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "chargeType": "String",
+              },
+            ],
+            "itemChargeList": Array [
+              Object {
+                "chargeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "chargeType": "String",
+              },
+            ],
+            "itemFeeAdjustmentList": Array [
+              Object {
+                "feeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "feeType": "String",
+              },
+            ],
+            "itemFeeList": Array [
+              Object {
+                "feeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "feeType": "String",
+              },
+            ],
+            "itemTaxWithheldList": Array [
+              Object {
+                "taxCollectionModel": "String",
+                "taxesWithheld": Array [
+                  Object {
+                    "chargeAmount": Object {
+                      "currencyAmount": 100,
+                      "currencyCode": "String",
+                    },
+                    "chargeType": "String",
+                  },
+                ],
+              },
+            ],
+            "orderAdjustmentItemId": "String",
+            "orderItemId": "String",
+            "promotionAdjustmentList": Array [
+              Object {
+                "promotionAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "promotionId": "String",
+                "promotionType": "String",
+              },
+            ],
+            "promotionList": Array [
+              Object {
+                "promotionAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "promotionId": "String",
+                "promotionType": "String",
+              },
+            ],
+            "quantityShipped": 1,
+            "sellerSKU": "String",
+          },
+        ],
+      },
+    ],
+    "couponPaymentEventList": Array [
+      Object {
+        "chargeComponent": Object {
+          "chargeAmount": Object {
+            "currencyAmount": 100,
+            "currencyCode": "String",
+          },
+          "chargeType": "String",
+        },
+        "clipOrRedemptionCount": 1,
+        "couponId": "String",
+        "feeComponent": Object {
+          "feeAmount": Object {
+            "currencyAmount": 100,
+            "currencyCode": "String",
+          },
+          "feeType": "String",
+        },
+        "paymentEventId": "String",
+        "postedDate": 1969-07-21T02:56:03.000Z,
+        "sellerCouponDescription": "String",
+        "totalAmount": Object {
+          "currencyAmount": 100,
+          "currencyCode": "String",
+        },
+      },
+    ],
+    "debtRecoveryEventList": Array [
+      Object {
+        "chargeInstrumentList": Array [
+          Object {
+            "amount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "description": "String",
+            "tail": "String",
+          },
+        ],
+        "debtRecoveryItemList": Array [
+          Object {
+            "groupBeginDate": 1969-07-21T02:56:03.000Z,
+            "groupEndDate": 1969-07-21T02:56:03.000Z,
+            "originalAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "recoveryAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+          },
+        ],
+        "debtRecoveryType": "String",
+        "overPaymentCredit": Object {
+          "currencyAmount": 100,
+          "currencyCode": "String",
+        },
+        "recoveryAmount": Object {
+          "currencyAmount": 100,
+          "currencyCode": "String",
+        },
+      },
+    ],
+    "fbaLiquidationEventList": Array [
+      Object {
+        "liquidationFeeAmount": Object {
+          "currencyAmount": 100,
+          "currencyCode": "String",
+        },
+        "liquidationProceedsAmount": Object {
+          "currencyAmount": 100,
+          "currencyCode": "String",
+        },
+        "originalRemovalOrderId": "String",
+        "postedDate": 1969-07-21T02:56:03.000Z,
+      },
+    ],
+    "guaranteeClaimEventList": Array [
+      Object {
+        "amazonOrderId": "String",
+        "directPaymentList": Array [
+          Object {
+            "directPaymentAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "directPaymentType": "String",
+          },
+        ],
+        "marketplaceName": "String",
+        "orderChargeAdjustmentList": Array [
+          Object {
+            "chargeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "chargeType": "String",
+          },
+        ],
+        "orderChargeList": Array [
+          Object {
+            "chargeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "chargeType": "String",
+          },
+        ],
+        "orderFeeAdjustmentList": Array [
+          Object {
+            "feeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "feeType": "String",
+          },
+        ],
+        "orderFeeList": Array [
+          Object {
+            "feeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "feeType": "String",
+          },
+        ],
+        "postedDate": 1969-07-21T02:56:03.000Z,
+        "sellerOrderId": "String",
+        "shipmentFeeAdjustmentList": Array [
+          Object {
+            "feeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "feeType": "String",
+          },
+        ],
+        "shipmentFeeList": Array [
+          Object {
+            "feeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "feeType": "String",
+          },
+        ],
+        "shipmentItemAdjustmentList": Array [
+          Object {
+            "costOfPointsGranted": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "costOfPointsReturned": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "itemChargeAdjustmentList": Array [
+              Object {
+                "chargeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "chargeType": "String",
+              },
+            ],
+            "itemChargeList": Array [
+              Object {
+                "chargeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "chargeType": "String",
+              },
+            ],
+            "itemFeeAdjustmentList": Array [
+              Object {
+                "feeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "feeType": "String",
+              },
+            ],
+            "itemFeeList": Array [
+              Object {
+                "feeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "feeType": "String",
+              },
+            ],
+            "itemTaxWithheldList": Array [
+              Object {
+                "taxCollectionModel": "String",
+                "taxesWithheld": Array [
+                  Object {
+                    "chargeAmount": Object {
+                      "currencyAmount": 100,
+                      "currencyCode": "String",
+                    },
+                    "chargeType": "String",
+                  },
+                ],
+              },
+            ],
+            "orderAdjustmentItemId": "String",
+            "orderItemId": "String",
+            "promotionAdjustmentList": Array [
+              Object {
+                "promotionAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "promotionId": "String",
+                "promotionType": "String",
+              },
+            ],
+            "promotionList": Array [
+              Object {
+                "promotionAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "promotionId": "String",
+                "promotionType": "String",
+              },
+            ],
+            "quantityShipped": 1,
+            "sellerSKU": "String",
+          },
+        ],
+        "shipmentItemList": Array [
+          Object {
+            "costOfPointsGranted": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "costOfPointsReturned": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "itemChargeAdjustmentList": Array [
+              Object {
+                "chargeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "chargeType": "String",
+              },
+            ],
+            "itemChargeList": Array [
+              Object {
+                "chargeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "chargeType": "String",
+              },
+            ],
+            "itemFeeAdjustmentList": Array [
+              Object {
+                "feeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "feeType": "String",
+              },
+            ],
+            "itemFeeList": Array [
+              Object {
+                "feeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "feeType": "String",
+              },
+            ],
+            "itemTaxWithheldList": Array [
+              Object {
+                "taxCollectionModel": "String",
+                "taxesWithheld": Array [
+                  Object {
+                    "chargeAmount": Object {
+                      "currencyAmount": 100,
+                      "currencyCode": "String",
+                    },
+                    "chargeType": "String",
+                  },
+                ],
+              },
+            ],
+            "orderAdjustmentItemId": "String",
+            "orderItemId": "String",
+            "promotionAdjustmentList": Array [
+              Object {
+                "promotionAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "promotionId": "String",
+                "promotionType": "String",
+              },
+            ],
+            "promotionList": Array [
+              Object {
+                "promotionAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "promotionId": "String",
+                "promotionType": "String",
+              },
+            ],
+            "quantityShipped": 1,
+            "sellerSKU": "String",
+          },
+        ],
+      },
+    ],
+    "imagingServicesFeeEventList": Array [
+      Object {
+        "asin": "String",
+        "feeList": Array [
+          Object {
+            "feeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "feeType": "String",
+          },
+        ],
+        "imagingRequestBillingItemId": "String",
+        "postedDate": 1969-07-21T02:56:03.000Z,
+      },
+    ],
+    "loanServicingEventList": Array [
+      Object {
+        "loanAmount": Object {
+          "currencyAmount": 100,
+          "currencyCode": "String",
+        },
+        "sourceBusinessEventType": "String",
+      },
+    ],
+    "networkComminglingTransactionEventList": Array [
+      Object {
+        "asin": "String",
+        "marketplaceId": "String",
+        "netCoTransactionId": "String",
+        "postedDate": 1969-07-21T02:56:03.000Z,
+        "swapReason": "String",
+        "taxAmount": Object {
+          "currencyAmount": 100,
+          "currencyCode": "String",
+        },
+        "taxExclusiveAmount": Object {
+          "currencyAmount": 100,
+          "currencyCode": "String",
+        },
+        "transactionType": "String",
+      },
+    ],
+    "payWithAmazonEventList": Array [
+      Object {
+        "amountDescription": "String",
+        "businessObjectType": "String",
+        "charge": Object {
+          "chargeAmount": Object {
+            "currencyAmount": 100,
+            "currencyCode": "String",
+          },
+          "chargeType": "String",
+        },
+        "feeList": Array [
+          Object {
+            "feeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "feeType": "String",
+          },
+        ],
+        "fulfillmentChannel": "String",
+        "paymentAmountType": "String",
+        "salesChannel": "String",
+        "sellerOrderId": "String",
+        "storeName": "String",
+        "transactionPostedDate": 1969-07-21T02:56:03.000Z,
+      },
+    ],
+    "performanceBondRefundEventList": Array [
+      Object {
+        "amount": Object {
+          "currencyAmount": 100,
+          "currencyCode": "String",
+        },
+        "marketplaceCountryCode": "String",
+        "productGroupList": Array [
+          "String",
+        ],
+      },
+    ],
+    "productAdsPaymentEventList": Array [
+      Object {
+        "baseValue": Object {
+          "currencyAmount": 100,
+          "currencyCode": "String",
+        },
+        "invoiceId": "String",
+        "postedDate": 1969-07-21T02:56:03.000Z,
+        "taxValue": Object {
+          "currencyAmount": 100,
+          "currencyCode": "String",
+        },
+        "transactionType": "String",
+        "transactionValue": Object {
+          "currencyAmount": 100,
+          "currencyCode": "String",
+        },
+      },
+    ],
+    "refundEventList": Array [
+      Object {
+        "amazonOrderId": "String",
+        "directPaymentList": Array [
+          Object {
+            "directPaymentAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "directPaymentType": "String",
+          },
+        ],
+        "marketplaceName": "String",
+        "orderChargeAdjustmentList": Array [
+          Object {
+            "chargeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "chargeType": "String",
+          },
+        ],
+        "orderChargeList": Array [
+          Object {
+            "chargeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "chargeType": "String",
+          },
+        ],
+        "orderFeeAdjustmentList": Array [
+          Object {
+            "feeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "feeType": "String",
+          },
+        ],
+        "orderFeeList": Array [
+          Object {
+            "feeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "feeType": "String",
+          },
+        ],
+        "postedDate": 1969-07-21T02:56:03.000Z,
+        "sellerOrderId": "String",
+        "shipmentFeeAdjustmentList": Array [
+          Object {
+            "feeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "feeType": "String",
+          },
+        ],
+        "shipmentFeeList": Array [
+          Object {
+            "feeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "feeType": "String",
+          },
+        ],
+        "shipmentItemAdjustmentList": Array [
+          Object {
+            "costOfPointsGranted": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "costOfPointsReturned": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "itemChargeAdjustmentList": Array [
+              Object {
+                "chargeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "chargeType": "String",
+              },
+            ],
+            "itemChargeList": Array [
+              Object {
+                "chargeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "chargeType": "String",
+              },
+            ],
+            "itemFeeAdjustmentList": Array [
+              Object {
+                "feeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "feeType": "String",
+              },
+            ],
+            "itemFeeList": Array [
+              Object {
+                "feeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "feeType": "String",
+              },
+            ],
+            "itemTaxWithheldList": Array [
+              Object {
+                "taxCollectionModel": "String",
+                "taxesWithheld": Array [
+                  Object {
+                    "chargeAmount": Object {
+                      "currencyAmount": 100,
+                      "currencyCode": "String",
+                    },
+                    "chargeType": "String",
+                  },
+                ],
+              },
+            ],
+            "orderAdjustmentItemId": "String",
+            "orderItemId": "String",
+            "promotionAdjustmentList": Array [
+              Object {
+                "promotionAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "promotionId": "String",
+                "promotionType": "String",
+              },
+            ],
+            "promotionList": Array [
+              Object {
+                "promotionAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "promotionId": "String",
+                "promotionType": "String",
+              },
+            ],
+            "quantityShipped": 1,
+            "sellerSKU": "String",
+          },
+        ],
+        "shipmentItemList": Array [
+          Object {
+            "costOfPointsGranted": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "costOfPointsReturned": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "itemChargeAdjustmentList": Array [
+              Object {
+                "chargeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "chargeType": "String",
+              },
+            ],
+            "itemChargeList": Array [
+              Object {
+                "chargeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "chargeType": "String",
+              },
+            ],
+            "itemFeeAdjustmentList": Array [
+              Object {
+                "feeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "feeType": "String",
+              },
+            ],
+            "itemFeeList": Array [
+              Object {
+                "feeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "feeType": "String",
+              },
+            ],
+            "itemTaxWithheldList": Array [
+              Object {
+                "taxCollectionModel": "String",
+                "taxesWithheld": Array [
+                  Object {
+                    "chargeAmount": Object {
+                      "currencyAmount": 100,
+                      "currencyCode": "String",
+                    },
+                    "chargeType": "String",
+                  },
+                ],
+              },
+            ],
+            "orderAdjustmentItemId": "String",
+            "orderItemId": "String",
+            "promotionAdjustmentList": Array [
+              Object {
+                "promotionAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "promotionId": "String",
+                "promotionType": "String",
+              },
+            ],
+            "promotionList": Array [
+              Object {
+                "promotionAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "promotionId": "String",
+                "promotionType": "String",
+              },
+            ],
+            "quantityShipped": 1,
+            "sellerSKU": "String",
+          },
+        ],
+      },
+    ],
+    "rentalTransactionEventList": Array [
+      Object {
+        "amazonOrderId": "String",
+        "extensionLength": 1,
+        "marketplaceName": "String",
+        "postedDate": 1969-07-21T02:56:03.000Z,
+        "rentalChargeList": Array [
+          Object {
+            "chargeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "chargeType": "String",
+          },
+        ],
+        "rentalEventType": "String",
+        "rentalFeeList": Array [
+          Object {
+            "feeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "feeType": "String",
+          },
+        ],
+        "rentalInitialValue": Object {
+          "currencyAmount": 100,
+          "currencyCode": "String",
+        },
+        "rentalReimbursement": Object {
+          "currencyAmount": 100,
+          "currencyCode": "String",
+        },
+        "rentalTaxWithheldList": Array [
+          Object {
+            "taxCollectionModel": "String",
+            "taxesWithheld": Array [
+              Object {
+                "chargeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "chargeType": "String",
+              },
+            ],
+          },
+        ],
+      },
+    ],
+    "retrochargeEventList": Array [
+      Object {
+        "amazonOrderId": "String",
+        "baseTax": Object {
+          "currencyAmount": 100,
+          "currencyCode": "String",
+        },
+        "bhippingTax": Object {
+          "currencyAmount": 100,
+          "currencyCode": "String",
+        },
+        "marketplaceName": "String",
+        "postedDate": 1969-07-21T02:56:03.000Z,
+        "retrochargeEventType": "String",
+      },
+    ],
+    "safeTReimbursementEventList": Array [
+      Object {
+        "postedDate": 1969-07-21T02:56:03.000Z,
+        "reimbursedAmount": Object {
+          "currencyAmount": 100,
+          "currencyCode": "String",
+        },
+        "safeTClaimId": "String",
+        "safeTReimbursementItemList": Array [
+          Object {
+            "itemChargeList": Array [
+              Object {
+                "chargeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "chargeType": "String",
+              },
+            ],
+            "productDescription": "String",
+            "quantity": 10,
+          },
+        ],
+      },
+    ],
+    "sellerDealPaymentEventList": Array [
+      Object {
+        "dealDescription": "String",
+        "dealId": "String",
+        "eventType": "String",
+        "feeAmount": Object {
+          "currencyAmount": 100,
+          "currencyCode": "String",
+        },
+        "feeType": "String",
+        "postedDate": 1969-07-21T02:56:03.000Z,
+        "taxAmount": Object {
+          "currencyAmount": 100,
+          "currencyCode": "String",
+        },
+        "totalAmount": Object {
+          "currencyAmount": 100,
+          "currencyCode": "String",
+        },
+      },
+    ],
+    "sellerReviewEnrollmentPaymentEventList": Array [
+      Object {
+        "chargeComponent": Object {
+          "chargeAmount": Object {
+            "currencyAmount": 100,
+            "currencyCode": "String",
+          },
+          "chargeType": "String",
+        },
+        "enrollmentId": "String",
+        "feeComponent": Object {
+          "feeAmount": Object {
+            "currencyAmount": 100,
+            "currencyCode": "String",
+          },
+          "feeType": "String",
+        },
+        "parentASIN": "String",
+        "postedDate": 1969-07-21T02:56:03.000Z,
+        "totalAmount": Object {
+          "currencyAmount": 100,
+          "currencyCode": "String",
+        },
+      },
+    ],
+    "serviceFeeEventList": Array [
+      Object {
+        "amazonOrderId": "String",
+        "asin": "String",
+        "feeDescription": "String",
+        "feeList": Array [
+          Object {
+            "feeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "feeType": "String",
+          },
+        ],
+        "feeReason": "String",
+        "fnSKU": "String",
+        "sellerSKU": "String",
+      },
+    ],
+    "serviceProviderCreditEventList": Array [
+      Object {
+        "marketplaceCountryCode": "String",
+        "marketplaceId": "String",
+        "postedDate": "1969-07-21T02:56:03Z",
+        "providerId": "String",
+        "providerStoreName": "String",
+        "providerTransactionType": "String",
+        "sellerId": "String",
+        "sellerOrderId": "String",
+        "sellerStoreName": "String",
+        "transactionAmount": Object {
+          "currencyAmount": 100,
+          "currencyCode": "String",
+        },
+      },
+    ],
+    "shipmentEventList": Array [
+      Object {
+        "amazonOrderId": "String",
+        "directPaymentList": Array [
+          Object {
+            "directPaymentAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "directPaymentType": "String",
+          },
+        ],
+        "marketplaceName": "String",
+        "orderChargeAdjustmentList": Array [
+          Object {
+            "chargeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "chargeType": "String",
+          },
+        ],
+        "orderChargeList": Array [
+          Object {
+            "chargeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "chargeType": "String",
+          },
+        ],
+        "orderFeeAdjustmentList": Array [
+          Object {
+            "feeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "feeType": "String",
+          },
+        ],
+        "orderFeeList": Array [
+          Object {
+            "feeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "feeType": "String",
+          },
+        ],
+        "postedDate": 1969-07-21T02:56:03.000Z,
+        "sellerOrderId": "String",
+        "shipmentFeeAdjustmentList": Array [
+          Object {
+            "feeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "feeType": "String",
+          },
+        ],
+        "shipmentFeeList": Array [
+          Object {
+            "feeAmount": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "feeType": "String",
+          },
+        ],
+        "shipmentItemAdjustmentList": Array [
+          Object {
+            "costOfPointsGranted": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "costOfPointsReturned": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "itemChargeAdjustmentList": Array [
+              Object {
+                "chargeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "chargeType": "String",
+              },
+            ],
+            "itemChargeList": Array [
+              Object {
+                "chargeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "chargeType": "String",
+              },
+            ],
+            "itemFeeAdjustmentList": Array [
+              Object {
+                "feeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "feeType": "String",
+              },
+            ],
+            "itemFeeList": Array [
+              Object {
+                "feeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "feeType": "String",
+              },
+            ],
+            "itemTaxWithheldList": Array [
+              Object {
+                "taxCollectionModel": "String",
+                "taxesWithheld": Array [
+                  Object {
+                    "chargeAmount": Object {
+                      "currencyAmount": 100,
+                      "currencyCode": "String",
+                    },
+                    "chargeType": "String",
+                  },
+                ],
+              },
+            ],
+            "orderAdjustmentItemId": "String",
+            "orderItemId": "String",
+            "promotionAdjustmentList": Array [
+              Object {
+                "promotionAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "promotionId": "String",
+                "promotionType": "String",
+              },
+            ],
+            "promotionList": Array [
+              Object {
+                "promotionAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "promotionId": "String",
+                "promotionType": "String",
+              },
+            ],
+            "quantityShipped": 1,
+            "sellerSKU": "String",
+          },
+        ],
+        "shipmentItemList": Array [
+          Object {
+            "costOfPointsGranted": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "costOfPointsReturned": Object {
+              "currencyAmount": 100,
+              "currencyCode": "String",
+            },
+            "itemChargeAdjustmentList": Array [
+              Object {
+                "chargeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "chargeType": "String",
+              },
+            ],
+            "itemChargeList": Array [
+              Object {
+                "chargeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "chargeType": "String",
+              },
+            ],
+            "itemFeeAdjustmentList": Array [
+              Object {
+                "feeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "feeType": "String",
+              },
+            ],
+            "itemFeeList": Array [
+              Object {
+                "feeAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "feeType": "String",
+              },
+            ],
+            "itemTaxWithheldList": Array [
+              Object {
+                "taxCollectionModel": "String",
+                "taxesWithheld": Array [
+                  Object {
+                    "chargeAmount": Object {
+                      "currencyAmount": 100,
+                      "currencyCode": "String",
+                    },
+                    "chargeType": "String",
+                  },
+                ],
+              },
+            ],
+            "orderAdjustmentItemId": "String",
+            "orderItemId": "String",
+            "promotionAdjustmentList": Array [
+              Object {
+                "promotionAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "promotionId": "String",
+                "promotionType": "String",
+              },
+            ],
+            "promotionList": Array [
+              Object {
+                "promotionAmount": Object {
+                  "currencyAmount": 100,
+                  "currencyCode": "String",
+                },
+                "promotionId": "String",
+                "promotionType": "String",
+              },
+            ],
+            "quantityShipped": 1,
+            "sellerSKU": "String",
+          },
+        ],
+      },
+    ],
+  },
+  "nextToken": "String",
+}
+`;
