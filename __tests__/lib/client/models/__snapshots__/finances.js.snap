@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`lib.client.models.finances should call GetOrder 1`] = `
+exports[`lib.client.models.finances should call ListFinancialEventsByNextToken 1`] = `
 Object {
   "financialEvents": Object {
     "adjustmentEventList": Array [

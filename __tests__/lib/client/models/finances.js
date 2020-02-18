@@ -23,7 +23,7 @@ describe('lib.client.models.finances', () => {
     client.finances.clearRestores()
   })
 
-  it('should call GetOrder', async () => {
+  it('should call ListFinancialEventsByNextToken', async () => {
     const {pathname, data} = client.signData('POST', 'Finances', '2015-05-01', {
       Action: 'ListFinancialEventsByNextToken',
       NextToken: 'String'
