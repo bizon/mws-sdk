@@ -23,9 +23,49 @@ const client = new MWSClient({
   secretAccessKey: '', // defaults to process.env.MWS_SECRET_ACCESS_KEY
   sellerId: '',
   mwsToken: '',
-  sellerRegion: ''
+  mwsRegion: ''
 })
 ```
+
+### Region and Marketplaces
+
+[The MWS documentation](https://github.com/bizon/mws-api-doc/blob/master/doc/en_FR/dev_guide/DG_Endpoints.md) defines a list of regions and marketplaces available in each region.
+
+The marketplaces in a region do not all share a common API endpoint, so this library defines a new concept of *MWS region*, based on the API endpoint. Here’s the list of the available MWS regions:
+
+**Generic MWS regions:**
+
+Region | API Endpoint
+-------|-------------
+na | mws.amazonservices.com
+eu | mws-eu.amazonservices.com
+fe | mws-fe.amazonservices.com
+
+**Country specific MWS regions:**
+
+Region | API Endpoint
+-------|-------------
+ae | mws.amazonservices.ae
+in | mws.amazonservices.in
+jp | mws.amazonservices.jp
+au | mws.amazonservices.com.au
+
+This library also allows to specify a list of marketplaces (either 2 letter country codes or Marketplaces IDs) so you can restrict API calls to your marketplace participations:
+
+```js
+const client = new MWSClient({
+  accessKeyId: '',
+  secretAccessKey: '',
+  sellerId: '',
+  mwsToken: '',
+  marketplaces: [
+    'A1F83G8C2ARO7P', // UK
+    'fr'
+  ]
+})
+```
+
+Keep in mind that the specified marketplaces will have to share their MWS API endpoint.
 
 ## API
 

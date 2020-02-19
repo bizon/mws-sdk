@@ -8,10 +8,10 @@ const client = new MWSClient({
   secretAccessKey: 'SECRET_KEY',
   sellerId: 'SELLER_ID',
   mwsToken: 'MWS_TOKEN',
-  sellerRegion: 'eu'
+  mwsRegion: 'eu'
 })
 
-const apiUrl = `https://${client.settings.region.mwsDomain}`
+const apiUrl = `https://${client.settings.mwsDomain}`
 
 describe('lib.client.models.finances', () => {
   beforeAll(() => {
