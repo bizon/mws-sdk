@@ -33,6 +33,22 @@ describe('lib.client.marketplaces', () => {
       ])).toHaveLength(1)
     })
 
+    it('should ignore marketplaces without an API endpoint', () => {
+      expect(getMarketplaces([
+        'A13V1IB3VIYZZH',
+        'A1805IZSGTT6HS',
+        'A1F83G8C2ARO7P',
+        'A1PA6795UKMFR9',
+        'A1RKKUPIHCS9HS',
+        'A1ZFFQZ3HTUKT9',
+        'A38D8NSA03LJTC',
+        'A62U237T8HV6N',
+        'AFQLKURYRPEL8',
+        'APJ6JRA9NG5V4',
+        'AZMDEXL2RVFNN'
+      ])).toMatchSnapshot()
+    })
+
     it('should throw if the specified marketplaces are on multiple mws domains', () => {
       expect(
         () => getMarketplaces([
