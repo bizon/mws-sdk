@@ -55,7 +55,7 @@ describe('lib.client.index', () => {
         mwsToken: 'token',
         mwsRegion: 'unknown'
       })
-    ).toThrow('unknown is not a valid MWS region, use one of eu,na,fe,ae,in,jp,au')
+    ).toThrow('unknown is not a valid MWS region, use one of eu,na,fe,ca,mx,ae,in,jp,au')
   })
 
   it('should grab accessKeyId and secretAccessKey from the environment', () => {

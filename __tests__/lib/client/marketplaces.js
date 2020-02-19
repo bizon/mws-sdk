@@ -5,7 +5,7 @@ describe('lib.client.marketplaces', () => {
     it('should throw if the provided region is unknown', () => {
       expect(
         () => getMarketplacesFromRegion('what')
-      ).toThrow('what is not a valid MWS region, use one of eu,na,fe,ae,in,jp,au')
+      ).toThrow('what is not a valid MWS region, use one of eu,na,fe,ca,mx,ae,in,jp,au')
     })
 
     it('should return a list of eu marketplaces', () => {
