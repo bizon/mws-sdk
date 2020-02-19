@@ -35,22 +35,22 @@ The marketplaces in a region do not all share a common API endpoint, so this lib
 
 **Generic MWS regions:**
 
-Region | API Endpoint
--------|-------------
-na | mws.amazonservices.com
-eu | mws-eu.amazonservices.com
-fe | mws-fe.amazonservices.com
+Region | API Endpoint | Name
+-------|--------------|-----
+na | mws.amazonservices.com | North America
+eu | mws-eu.amazonservices.com | Europe
+fe | mws-fe.amazonservices.com | Far East
 
 **Country specific MWS regions:**
 
-Region | API Endpoint
--------|-------------
-ca | mws.amazonservices.ca
-mx | mws.amazonservices.com.mx
-ae | mws.amazonservices.ae
-in | mws.amazonservices.in
-jp | mws.amazonservices.jp
-au | mws.amazonservices.com.au
+Region | API Endpoint | Name
+-------|--------------|-----
+ca | mws.amazonservices.ca | Canada
+mx | mws.amazonservices.com.mx | Mexico
+ae | mws.amazonservices.ae | United Arab Emirates
+in | mws.amazonservices.in | India
+jp | mws.amazonservices.jp | Japan
+au | mws.amazonservices.com.au | Australia
 
 This library also allows to specify a list of marketplaces (either 2 letter country codes or Marketplaces IDs) so you can restrict API calls to your marketplace participations:
 
