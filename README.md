@@ -45,6 +45,8 @@ fe | mws-fe.amazonservices.com
 
 Region | API Endpoint
 -------|-------------
+ca | mws.amazonservices.ca
+mx | mws.amazonservices.com.mx
 ae | mws.amazonservices.ae
 in | mws.amazonservices.in
 jp | mws.amazonservices.jp
