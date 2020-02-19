@@ -24,26 +24,14 @@ describe('lib.client.index', () => {
   })
 
   it('should fail if one of marketplaces or mwsRegion is not defined ', () => {
-    const tests = [
+    expect(
       () => new MWSClient({
         accessKeyId: 'foo',
         secretAccessKey: 'bar',
         sellerId: 'baz',
         mwsToken: 'token'
-      }),
-      () => new MWSClient({
-        accessKeyId: 'foo',
-        secretAccessKey: 'bar',
-        sellerId: 'baz',
-        mwsToken: 'token',
-        mwsRegion: 'eu',
-        marketplaces: ['fr']
       })
-    ]
-
-    for (const test of tests) {
-      expect(test).toThrow('Specify one of mwsRegion or marketplaces')
-    }
+    ).toThrow('Specify one of mwsRegion or marketplaces')
   })
 
   it('should fail if the region is unknown', () => {

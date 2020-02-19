@@ -13,6 +13,15 @@ Array [
     "vendorId": "A1X6FK5RDHNB96",
   },
   Object {
+    "code": "nl",
+    "domain": "amazon.nl",
+    "id": "A1805IZSGTT6HS",
+    "imagesDomain": "images-eu.ssl-images-amazon.com",
+    "mwsDomain": "mws-eu.amazonservices.com",
+    "name": "Netherlands",
+    "region": "eu",
+  },
+  Object {
     "code": "uk",
     "domain": "amazon.co.uk",
     "id": "A1F83G8C2ARO7P",
@@ -132,6 +141,15 @@ Array [
     "imagesDomain": "images-eu.ssl-images-amazon.com",
     "mwsDomain": "mws-eu.amazonservices.com",
     "name": "Saudi Arabia",
+    "region": "eu",
+  },
+  Object {
+    "code": "nl",
+    "domain": "amazon.nl",
+    "id": "A1805IZSGTT6HS",
+    "imagesDomain": "images-eu.ssl-images-amazon.com",
+    "mwsDomain": "mws-eu.amazonservices.com",
+    "name": "Netherlands",
     "region": "eu",
   },
 ]
