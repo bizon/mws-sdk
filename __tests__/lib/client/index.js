@@ -23,6 +23,29 @@ describe('lib.client.index', () => {
     }
   })
 
+  it('should fail if one of marketplaces or mwsRegion is not defined ', () => {
+    const tests = [
+      () => new MWSClient({
+        accessKeyId: 'foo',
+        secretAccessKey: 'bar',
+        sellerId: 'baz',
+        mwsToken: 'token'
+      }),
+      () => new MWSClient({
+        accessKeyId: 'foo',
+        secretAccessKey: 'bar',
+        sellerId: 'baz',
+        mwsToken: 'token',
+        mwsRegion: 'eu',
+        marketplaces: ['fr']
+      })
+    ]
+
+    for (const test of tests) {
+      expect(test).toThrow('Specify one of mwsRegion or marketplaces')
+    }
+  })
+
   it('should fail if the region is unknown', () => {
     expect(
       () => new MWSClient({
@@ -30,9 +53,9 @@ describe('lib.client.index', () => {
         secretAccessKey: 'bar',
         sellerId: 'baz',
         mwsToken: 'token',
-        sellerRegion: 'unknown'
+        mwsRegion: 'unknown'
       })
-    ).toThrow('Unknown region unknown')
+    ).toThrow('unknown is not a valid MWS region, use one of eu,na,fe,ae,in,jp,au')
   })
 
   it('should grab accessKeyId and secretAccessKey from the environment', () => {
@@ -42,7 +65,7 @@ describe('lib.client.index', () => {
     const client = new MWSClient({
       sellerId: 'baz',
       mwsToken: 'token',
-      sellerRegion: 'eu'
+      mwsRegion: 'eu'
     })
 
     expect(client.settings.accessKeyId).toBe(process.env.MWS_ACCESS_KEY_ID)

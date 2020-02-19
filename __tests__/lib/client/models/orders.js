@@ -9,10 +9,10 @@ const client = new MWSClient({
   secretAccessKey: 'SECRET_KEY',
   sellerId: 'SELLER_ID',
   mwsToken: 'MWS_TOKEN',
-  sellerRegion: 'eu'
+  mwsRegion: 'eu'
 })
 
-const apiUrl = `https://${client.settings.region.mwsDomain}`
+const apiUrl = `https://${client.settings.mwsDomain}`
 
 describe('lib.client.models.orders', () => {
   beforeAll(() => {
@@ -83,7 +83,7 @@ describe('lib.client.models.orders', () => {
     const {pathname, data} = client.signData('GET', 'Orders', '2013-09-01', {
       Action: 'ListOrders',
       MaxResultsPerPage: 100,
-      ...arrayToObject('MarketplaceId.Id', client.settings.region.marketplaces.map(m => m.id))
+      ...arrayToObject('MarketplaceId.Id', client.settings.marketplaces.map(m => m.id))
     })
 
     nock(apiUrl)
