@@ -3,6 +3,7 @@
 exports[`lib.client.marketplaces getMarketplaces should ignore marketplaces without an API endpoint 1`] = `
 Array [
   Object {
+    "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "fr",
     "domain": "amazon.fr",
     "id": "A13V1IB3VIYZZH",
@@ -22,6 +23,7 @@ Array [
     "region": "eu",
   },
   Object {
+    "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "uk",
     "domain": "amazon.co.uk",
     "id": "A1F83G8C2ARO7P",
@@ -32,6 +34,7 @@ Array [
     "vendorId": "A3P5ROKL5A1OLE",
   },
   Object {
+    "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "de",
     "domain": "amazon.de",
     "id": "A1PA6795UKMFR9",
@@ -42,6 +45,7 @@ Array [
     "vendorId": "A3JWKAKR8XB7XF",
   },
   Object {
+    "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "es",
     "domain": "amazon.es",
     "id": "A1RKKUPIHCS9HS",
@@ -52,6 +56,7 @@ Array [
     "vendorId": "A1AT7YVPFBWXBL",
   },
   Object {
+    "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "it",
     "domain": "amazon.it",
     "id": "APJ6JRA9NG5V4",
@@ -67,6 +72,7 @@ Array [
 exports[`lib.client.marketplaces getMarketplacesFromRegion should return a list of eu marketplaces 1`] = `
 Array [
   Object {
+    "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "de",
     "domain": "amazon.de",
     "id": "A1PA6795UKMFR9",
@@ -77,6 +83,7 @@ Array [
     "vendorId": "A3JWKAKR8XB7XF",
   },
   Object {
+    "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "es",
     "domain": "amazon.es",
     "id": "A1RKKUPIHCS9HS",
@@ -87,6 +94,7 @@ Array [
     "vendorId": "A1AT7YVPFBWXBL",
   },
   Object {
+    "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "fr",
     "domain": "amazon.fr",
     "id": "A13V1IB3VIYZZH",
@@ -97,6 +105,7 @@ Array [
     "vendorId": "A1X6FK5RDHNB96",
   },
   Object {
+    "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "it",
     "domain": "amazon.it",
     "id": "APJ6JRA9NG5V4",
@@ -107,6 +116,7 @@ Array [
     "vendorId": "A11IL2PNWYJU7H",
   },
   Object {
+    "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "uk",
     "domain": "amazon.co.uk",
     "id": "A1F83G8C2ARO7P",
