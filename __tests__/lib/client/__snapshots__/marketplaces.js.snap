@@ -69,7 +69,7 @@ Array [
 ]
 `;
 
-exports[`lib.client.marketplaces getMarketplacesFromRegion should return a list of eu marketplaces 1`] = `
+exports[`lib.client.marketplaces getMarketplacesFromRegion should return a list of marketplaces for all MWS regions 1`] = `
 Array [
   Object {
     "advertisingApiDomain": "advertising-api-eu.amazon.com",
@@ -161,6 +161,139 @@ Array [
     "mwsDomain": "mws-eu.amazonservices.com",
     "name": "Netherlands",
     "region": "eu",
+  },
+]
+`;
+
+exports[`lib.client.marketplaces getMarketplacesFromRegion should return a list of marketplaces for all MWS regions 2`] = `
+Array [
+  Object {
+    "advertisingApiDomain": "advertising-api.amazon.com",
+    "code": "us",
+    "domain": "amazon.com",
+    "id": "ATVPDKIKX0DER",
+    "imagesDomain": "images-na.ssl-images-amazon.com",
+    "mwsDomain": "mws.amazonservices.com",
+    "name": "United States",
+    "region": "na",
+    "vendorId": "ATVPDKIKX0DER",
+  },
+  Object {
+    "code": "br",
+    "domain": "amazon.com.br",
+    "id": "A2Q3Y263D00KWC",
+    "imagesDomain": "images-na.ssl-images-amazon.com",
+    "mwsDomain": "mws.amazonservices.com",
+    "name": "Brazil",
+    "region": "na",
+    "vendorId": "A1ZZFT5FULY4LN",
+  },
+]
+`;
+
+exports[`lib.client.marketplaces getMarketplacesFromRegion should return a list of marketplaces for all MWS regions 3`] = `
+Array [
+  Object {
+    "code": "sg",
+    "domain": "amazon.sg",
+    "id": "A19VAU5U5O7RUS",
+    "imagesDomain": "images-fe.ssl-images-amazon.com",
+    "mwsDomain": "mws-fe.amazonservices.com",
+    "name": "Singapore",
+    "region": "fe",
+  },
+]
+`;
+
+exports[`lib.client.marketplaces getMarketplacesFromRegion should return a list of marketplaces for all MWS regions 4`] = `
+Array [
+  Object {
+    "advertisingApiDomain": "advertising-api.amazon.com",
+    "code": "ca",
+    "domain": "amazon.ca",
+    "id": "A2EUQ1WTGCTBG2",
+    "imagesDomain": "images-na.ssl-images-amazon.com",
+    "mwsDomain": "mws.amazonservices.ca",
+    "name": "Canada",
+    "region": "na",
+    "vendorId": "A3DWYIK6Y9EEQB",
+  },
+]
+`;
+
+exports[`lib.client.marketplaces getMarketplacesFromRegion should return a list of marketplaces for all MWS regions 5`] = `
+Array [
+  Object {
+    "code": "mx",
+    "domain": "amazon.com.mx",
+    "id": "A1AM78C64UM0Y8",
+    "imagesDomain": "images-na.ssl-images-amazon.com",
+    "mwsDomain": "mws.amazonservices.com.mx",
+    "name": "Mexico",
+    "region": "na",
+    "vendorId": "AVDBXBAVVSXLQ",
+  },
+]
+`;
+
+exports[`lib.client.marketplaces getMarketplacesFromRegion should return a list of marketplaces for all MWS regions 6`] = `
+Array [
+  Object {
+    "advertisingApiDomain": "advertising-api-eu.amazon.com",
+    "code": "ae",
+    "domain": "amazon.ae",
+    "id": "A2VIGQ35RCS4UG",
+    "imagesDomain": "images-eu.ssl-images-amazon.com",
+    "mwsDomain": "mws.amazonservices.ae",
+    "name": "United Arab Emirates",
+    "region": "eu",
+    "vendorId": "A2KKU8J8O8784X",
+  },
+]
+`;
+
+exports[`lib.client.marketplaces getMarketplacesFromRegion should return a list of marketplaces for all MWS regions 7`] = `
+Array [
+  Object {
+    "code": "in",
+    "domain": "amazon.in",
+    "id": "A21TJRUUN4KGV",
+    "imagesDomain": "images-eu.ssl-images-amazon.com",
+    "mwsDomain": "mws.amazonservices.in",
+    "name": "India",
+    "region": "eu",
+  },
+]
+`;
+
+exports[`lib.client.marketplaces getMarketplacesFromRegion should return a list of marketplaces for all MWS regions 8`] = `
+Array [
+  Object {
+    "advertisingApiDomain": "advertising-api-fe.amazon.com",
+    "code": "jp",
+    "domain": "amazon.co.jp",
+    "id": "A1VC38T7YXB528",
+    "imagesDomain": "images-fe.ssl-images-amazon.com",
+    "mwsDomain": "mws.amazonservices.jp",
+    "name": "Japan",
+    "region": "fe",
+    "vendorId": "AN1VRQENFRJN5",
+  },
+]
+`;
+
+exports[`lib.client.marketplaces getMarketplacesFromRegion should return a list of marketplaces for all MWS regions 9`] = `
+Array [
+  Object {
+    "advertisingApiDomain": "advertising-api-fe.amazon.com",
+    "code": "au",
+    "domain": "amazon.com.au",
+    "id": "A39IBJ37TRP1C6",
+    "imagesDomain": "images-fe.ssl-images-amazon.com",
+    "mwsDomain": "mws.amazonservices.com.au",
+    "name": "Australia",
+    "region": "fe",
+    "vendorId": "ANEGB3WVEVKZB",
   },
 ]
 `;

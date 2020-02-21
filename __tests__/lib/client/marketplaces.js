@@ -1,4 +1,8 @@
-const {getMarketplaces, getMarketplacesFromRegion} = require('../../../lib/client/marketplaces')
+const {
+  mwsRegionDomains,
+  getMarketplaces,
+  getMarketplacesFromRegion
+} = require('../../../lib/client/marketplaces')
 
 describe('lib.client.marketplaces', () => {
   describe('getMarketplacesFromRegion', () => {
@@ -8,10 +12,16 @@ describe('lib.client.marketplaces', () => {
       ).toThrow('what is not a valid MWS region, use one of eu,na,fe,ca,mx,ae,in,jp,au')
     })
 
-    it('should return a list of eu marketplaces', () => {
-      expect(
-        getMarketplacesFromRegion('eu')
-      ).toMatchSnapshot()
+    it('should return a list of marketplaces for all MWS regions', () => {
+      for (const [mwsRegion, mwsDomain] of Object.entries(mwsRegionDomains)) {
+        const marketplaces = getMarketplacesFromRegion(mwsRegion)
+
+        expect(marketplaces).toMatchSnapshot()
+
+        for (const marketplace of marketplaces) {
+          expect(marketplace).toHaveProperty('mwsDomain', mwsDomain)
+        }
+      }
     })
   })
 
