@@ -1,3 +1,4 @@
+const {orderBy} = require('lodash')
 const {
   mwsRegionDomains,
   getMarketplaces,
@@ -9,11 +10,18 @@ describe('lib.client.marketplaces', () => {
     it('should throw if the provided region is unknown', () => {
       expect(
         () => getMarketplacesFromRegion('what')
-      ).toThrow('what is not a valid MWS region, use one of eu,na,fe,ca,mx,ae,in,jp,au')
+      ).toThrow('what is not a valid MWS region')
     })
 
     it('should return a list of marketplaces for all MWS regions', () => {
-      for (const [mwsRegion, mwsDomain] of Object.entries(mwsRegionDomains)) {
+      // Order by MWS region so that snapshot order does not change.
+      const entries = orderBy(
+        Object.entries(mwsRegionDomains),
+        ([mwsRegion]) => mwsRegion,
+        'asc'
+      )
+
+      for (const [mwsRegion, mwsDomain] of entries) {
         const marketplaces = getMarketplacesFromRegion(mwsRegion)
 
         expect(marketplaces).toMatchSnapshot()
