@@ -30,7 +30,7 @@
   "dependencies": {
     "@bizon/amazon-ids": "^1.8.0",
     "content-type": "^1.0.4",
-    "csv-parse": "^4.8.5",
+    "csv-parse": "^4.8.6",
     "date-fns": "^2.9.0",
     "got": "^10.6.0",
     "iconv-lite": "^0.5.1",
