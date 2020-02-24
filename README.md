@@ -67,7 +67,7 @@ const client = new MWSClient({
 })
 ```
 
-Keep in mind that the specified marketplaces will have to share their MWS API endpoint.
+Keep in mind that the specified marketplaces will have to be in the same MWS region, otherwise an error will be thrown.
 
 ## API
 
