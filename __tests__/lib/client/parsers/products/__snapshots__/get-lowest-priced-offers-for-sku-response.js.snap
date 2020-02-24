@@ -1,51 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`lib.client.parsers.products.get-lowest-priced-offers-for-asin-response should parse the GetLowestPricedOffersForASINResponse active but too soon for processing example response from MWS doc 1`] = `
+exports[`lib.client.parsers.products.get-lowest-priced-offers-for-sku-response should parse the GetLowestPricedOffersForSKUResponse missing shipping charge example response from MWS doc 1`] = `
 Object {
-  "getLowestPricedOffersForAsinResult": Object {
-    "asin": "B01DL3WCPI",
+  "getLowestPricedOffersForSkuResult": Object {
     "identifier": Object {
-      "asin": "B01DL3WCPI",
+      "asin": null,
       "itemCondition": "New",
       "marketplaceId": "ATVPDKIKX0DER",
-      "sellerSku": null,
+      "sellerSku": "0I-RIAS-6UA0",
       "timeOfOfferChange": null,
     },
-    "itemCondition": "New",
+    "itemCondition": "new",
     "marketplaceId": "ATVPDKIKX0DER",
     "offers": Array [],
-    "status": "ActiveButTooSoonForProcessing",
-    "summary": Object {
-      "buyBoxEligibleOffers": Array [],
-      "buyBoxPrices": Array [],
-      "listPrice": null,
-      "lowestPrices": Array [],
-      "numberOfOffers": Array [],
-      "offersAvailableTime": 2017-03-08T06:21:05.330Z,
-      "suggestedLowerPricePlusShipping": null,
-      "totalOfferCount": 0,
-    },
-  },
-  "responseMetadata": Object {
-    "requestId": "1212334",
-  },
-}
-`;
-
-exports[`lib.client.parsers.products.get-lowest-priced-offers-for-asin-response should parse the GetLowestPricedOffersForASINResponse missing shipping charge example response from MWS doc 1`] = `
-Object {
-  "getLowestPricedOffersForAsinResult": Object {
-    "asin": "B000EVPGSQ",
-    "identifier": Object {
-      "asin": "B000EVPGSQ",
-      "itemCondition": "New",
-      "marketplaceId": "ATVPDKIKX0DER",
-      "sellerSku": null,
-      "timeOfOfferChange": null,
-    },
-    "itemCondition": "New",
-    "marketplaceId": "ATVPDKIKX0DER",
-    "offers": Array [],
+    "sku": "0I-RIAS-6UA0",
     "status": "NoOfferDueToMissingShippingCharge",
     "summary": Object {
       "buyBoxEligibleOffers": Array [],
@@ -59,20 +27,19 @@ Object {
     },
   },
   "responseMetadata": Object {
-    "requestId": "2bb867cd-8fa3-406c-adba-eb84c1796d21",
+    "requestId": "75621aa7-9c8b-40be-9bf9-3ac1efdcdb87",
   },
 }
 `;
 
-exports[`lib.client.parsers.products.get-lowest-priced-offers-for-asin-response should parse the GetLowestPricedOffersForASINResponse success example response from MWS doc 1`] = `
+exports[`lib.client.parsers.products.get-lowest-priced-offers-for-sku-response should parse the GetLowestPricedOffersForSKUResponse success example response from MWS doc 1`] = `
 Object {
-  "getLowestPricedOffersForAsinResult": Object {
-    "asin": "B0002GTTRC",
+  "getLowestPricedOffersForSkuResult": Object {
     "identifier": Object {
-      "asin": "B0002GTTRC",
+      "asin": null,
       "itemCondition": "New",
       "marketplaceId": "ATVPDKIKX0DER",
-      "sellerSku": null,
+      "sellerSku": "GE Product",
       "timeOfOfferChange": 2015-07-19T23:15:11.859Z,
     },
     "itemCondition": "New",
@@ -86,7 +53,7 @@ Object {
           "amount": 32.99,
           "currencyCode": "USD",
         },
-        "myOffer": null,
+        "myOffer": false,
         "points": null,
         "sellerFeedbackRating": Object {
           "feedbackCount": 1,
@@ -106,6 +73,7 @@ Object {
         "subCondition": "new",
       },
     ],
+    "sku": "GE Product",
     "status": "Success",
     "summary": Object {
       "buyBoxEligibleOffers": Array [
@@ -168,29 +136,29 @@ Object {
         "amount": 32.99,
         "currencyCode": "USD",
       },
-      "totalOfferCount": 0,
+      "totalOfferCount": 1,
     },
   },
   "responseMetadata": Object {
-    "requestId": "21534f03-e7e3-4d9a-9bea-0e15add3326d",
+    "requestId": "fd2e6c6d-0b6d-499b-9fea-074175c0547a",
   },
 }
 `;
 
-exports[`lib.client.parsers.products.get-lowest-priced-offers-for-asin-response should parse the GetLowestPricedOffersForASINResponse success with no offers example response from MWS doc 1`] = `
+exports[`lib.client.parsers.products.get-lowest-priced-offers-for-sku-response should parse the GetLowestPricedOffersForSKUResponse success with no offers example response from MWS doc 1`] = `
 Object {
-  "getLowestPricedOffersForAsinResult": Object {
-    "asin": "B000EVPGSQ",
+  "getLowestPricedOffersForSkuResult": Object {
     "identifier": Object {
-      "asin": "B000EVPGSQ",
+      "asin": null,
       "itemCondition": "New",
       "marketplaceId": "ATVPDKIKX0DER",
-      "sellerSku": null,
+      "sellerSku": "0I-RIAS-6UA0",
       "timeOfOfferChange": null,
     },
-    "itemCondition": "New",
+    "itemCondition": "new",
     "marketplaceId": "ATVPDKIKX0DER",
     "offers": Array [],
+    "sku": "0I-RIAS-6UA0",
     "status": "NoBuyableOffers",
     "summary": Object {
       "buyBoxEligibleOffers": Array [],
@@ -204,7 +172,39 @@ Object {
     },
   },
   "responseMetadata": Object {
-    "requestId": "2bb867cd-8fa3-406c-adba-eb84c1796d21",
+    "requestId": "75621aa7-9c8b-40be-9bf9-3ac1efdcdb87",
+  },
+}
+`;
+
+exports[`lib.client.parsers.products.get-lowest-priced-offers-for-sku-response should parse the GetLowestPricedOffersForSKUResponse too soon for processing example response from MWS doc 1`] = `
+Object {
+  "getLowestPricedOffersForSkuResult": Object {
+    "identifier": Object {
+      "asin": null,
+      "itemCondition": "New",
+      "marketplaceId": "A2EUQ1WTGCTBG2",
+      "sellerSku": "ACA-8039-6PK-DL57",
+      "timeOfOfferChange": null,
+    },
+    "itemCondition": "New",
+    "marketplaceId": "A2EUQ1WTGCTBG2",
+    "offers": Array [],
+    "sku": "ACA-8039-6PK-DL57",
+    "status": "ActiveButTooSoonForProcessing",
+    "summary": Object {
+      "buyBoxEligibleOffers": Array [],
+      "buyBoxPrices": Array [],
+      "listPrice": null,
+      "lowestPrices": Array [],
+      "numberOfOffers": Array [],
+      "offersAvailableTime": 2017-03-08T07:13:21.763Z,
+      "suggestedLowerPricePlusShipping": null,
+      "totalOfferCount": 0,
+    },
+  },
+  "responseMetadata": Object {
+    "requestId": "1212334",
   },
 }
 `;

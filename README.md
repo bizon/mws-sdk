@@ -236,6 +236,16 @@ marketplaceId | `String` |
 asin | `String` |
 itemCondition | `String` |
 
+#### `getLowestPricedOffersForSku(options)`
+
+Options:
+
+Name | Type | Default
+-----|------|--------
+marketplaceId | `String` |
+sellerSku | `String` |
+itemCondition | `String` |
+
 ### Sellers
 
 Version: `2011-07-01`
