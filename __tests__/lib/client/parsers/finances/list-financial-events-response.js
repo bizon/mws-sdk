@@ -184,6 +184,16 @@ describe('lib.client.parsers.finances.list-financial-event-groups-response', () 
                 </TotalExpense>
               </AffordabilityExpenseReversalEvent>
             </AffordabilityExpenseReversalEventList>
+            <TDSReimbursementEventList>
+              <TDSReimbursementEvent>
+                <ReimbursedAmount>
+                  <CurrencyCode>INR</CurrencyCode>
+                  <CurrencyAmount>3.98</CurrencyAmount>
+                </ReimbursedAmount>
+                <PostedDate>2019-08-01T16:18:15.000Z</PostedDate>
+                <TdsOrderId>TDS-1235</TdsOrderId>
+              </TDSReimbursementEvent>
+            </TDSReimbursementEventList>
           </FinancialEvents>
         </ListFinancialEventsResult>
         <ResponseMetadata>
