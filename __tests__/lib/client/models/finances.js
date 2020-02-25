@@ -1392,6 +1392,16 @@ describe('lib.client.models.finances', () => {
                   </FeeList>
                 </ImagingServicesFeeEvent>
               </ImagingServicesFeeEventList>
+              <TDSReimbursementEventList>
+                <TDSReimbursementEvent>
+                  <ReimbursedAmount>
+                    <CurrencyCode>String</CurrencyCode>
+                    <CurrencyAmount>100</CurrencyAmount>
+                  </ReimbursedAmount>
+                  <PostedDate>1969-07-21T02:56:03Z</PostedDate>
+                  <TdsOrderId>String</TdsOrderId>
+                </TDSReimbursementEvent>
+              </TDSReimbursementEventList>
             </FinancialEvents>
           </ListFinancialEventsByNextTokenResult>
           <ResponseMetadata>
