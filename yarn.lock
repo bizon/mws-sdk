@@ -1499,10 +1499,10 @@ cssstyle@^2.0.0:
   dependencies:
     cssom "~0.3.6"
 
-csv-parse@^4.8.7:
-  version "4.8.7"
-  resolved "https://registry.yarnpkg.com/csv-parse/-/csv-parse-4.8.7.tgz#8c93994b6460e3b4f4b8e816e9e168ec870391df"
-  integrity sha512-Kgip6VA+sUvd1lYqZ1n8PpJdv2BKnoYV/YP0by7LTMgNSs2FD3Y16fKyMdQcLfcBgSLnjkix/3BNnVxkw5NmpQ==
+csv-parse@^4.8.8:
+  version "4.8.8"
+  resolved "https://registry.yarnpkg.com/csv-parse/-/csv-parse-4.8.8.tgz#0acbc4598c1f28652c4250599108096b3a0a68ae"
+  integrity sha512-Kv3Ilz2GV58dOoHBXRCTF8ijxlLjl80bG3d67XPI6DNqffb3AnbPbKr/WvCUMJq5V0AZYi6sukOaOQAVpfuVbg==
 
 currently-unhandled@^0.4.1:
   version "0.4.1"
