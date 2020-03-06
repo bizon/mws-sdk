@@ -30,6 +30,7 @@ describe('lib.client.parsers.orders.get-order-response', () => {
               <IsBusinessOrder>false</IsBusinessOrder>
               <IsPrime>false</IsPrime>
               <IsPremiumOrder>false</IsPremiumOrder>
+              <IsGlobalExpressEnabled>false</IsGlobalExpressEnabled>
             </Order>
           </Orders>
         </GetOrderResult>

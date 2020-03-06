@@ -55,6 +55,7 @@ describe('lib.client.parsers.orders.list-orders-response', () => {
               <PurchaseOrderNumber>PO12345678</PurchaseOrderNumber>
               <IsPrime>false</IsPrime>
               <IsPremiumOrder>false</IsPremiumOrder>
+              <IsGlobalExpressEnabled>false</IsGlobalExpressEnabled>
             </Order>
             <Order>
               <AmazonOrderId>483-3488972-0896720</AmazonOrderId>
@@ -98,6 +99,7 @@ describe('lib.client.parsers.orders.list-orders-response', () => {
               <IsBusinessOrder>false</IsBusinessOrder>
               <IsPrime>false</IsPrime>
               <IsPremiumOrder>false</IsPremiumOrder>
+              <IsGlobalExpressEnabled>false</IsGlobalExpressEnabled>
             </Order>
             <Order>
               <AmazonOrderId>058-1233752-8214740</AmazonOrderId>
@@ -154,6 +156,7 @@ describe('lib.client.parsers.orders.list-orders-response', () => {
               <IsBusinessOrder>false</IsBusinessOrder>
               <IsPrime>false</IsPrime>
               <IsPremiumOrder>false</IsPremiumOrder>
+              <IsGlobalExpressEnabled>false</IsGlobalExpressEnabled>
               <PromiseResponseDueDate>2017-08-31T23:58:44Z</PromiseResponseDueDate>
               <IsEstimatedShipDateSet>true</IsEstimatedShipDateSet>
             </Order>
