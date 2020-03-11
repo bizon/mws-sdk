@@ -44,7 +44,7 @@
     "jest-junit": "^10.0.0",
     "mockdate": "^2.0.5",
     "nock": "^12.0.2",
-    "xo": "^0.27.2"
+    "xo": "^0.28.0"
   },
   "engines": {
     "node": ">=10"
@@ -80,6 +80,10 @@
   "xo": {
     "semicolon": false,
     "space": 2,
+    "rules": {
+      "unicorn/prevent-abbreviations": "off",
+      "unicorn/string-content": "off"
+    },
     "overrides": [
       {
         "files": "__tests__/**/*.js",

@@ -17,9 +17,9 @@ defaults:
     restore_cache:
       name: Restore node_modules cache
       keys:
-        - v3-mws-sdk-node-{{ .Branch }}-{{ checksum "yarn.lock" }}
-        - v3-mws-sdk-node-master-{{ checksum "yarn.lock" }}
-        - v3-mws-sdk-node-master-
+        - v4-mws-sdk-node-{{ .Branch }}-{{ checksum "yarn.lock" }}
+        - v4-mws-sdk-node-master-{{ checksum "yarn.lock" }}
+        - v4-mws-sdk-node-master-
 
 jobs:
   checkout:
@@ -44,7 +44,7 @@ jobs:
 
       - save_cache:
           name: Save node_modules cache
-          key: v3-mws-sdk-node-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          key: v4-mws-sdk-node-{{ .Branch }}-{{ checksum "yarn.lock" }}
           paths:
             - node_modules/
 
