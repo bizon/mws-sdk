@@ -21,6 +21,7 @@ Array [
     "mwsDomain": "mws-eu.amazonservices.com",
     "name": "Netherlands",
     "region": "eu",
+    "vendorId": "A17D2BRD4YMT0X",
   },
   Object {
     "advertisingApiDomain": "advertising-api-eu.amazon.com",
@@ -209,6 +210,7 @@ Array [
     "mwsDomain": "mws-eu.amazonservices.com",
     "name": "Netherlands",
     "region": "eu",
+    "vendorId": "A17D2BRD4YMT0X",
   },
 ]
 `;
