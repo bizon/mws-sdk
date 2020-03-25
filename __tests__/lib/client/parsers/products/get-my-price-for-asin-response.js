@@ -57,4 +57,29 @@ describe('lib.client.parsers.products.get-my-price-for-asin-response', () => {
 
     expect(res).toMatchSnapshot()
   })
+
+  it('should parse GetMyPriceForASINResponse errors', () => {
+    const doc = parseXml(
+      `<?xml version="1.0"?>
+      <GetMyPriceForASINResponse xmlns="http://mws.amazonservices.com/schema/Products/2011-10-01">
+        <GetMyPriceForASINResult ASIN="1933890517" status="Success">
+          <Error>
+            <Type>Sender</Type>
+            <Code>InvalidParameterValue</Code>
+            <Message>1933890517 is an invalid ASIN for marketplace ATVPDKIKX0DER</Message>
+          </Error>
+        </GetMyPriceForASINResult>
+        <ResponseMetadata>
+          <RequestId>a3381684-87bd-416e-9b95-EXAMPLE9c236</RequestId>
+        </ResponseMetadata>
+      </GetMyPriceForASINResponse>`
+    )
+
+    const res = parseGetMyPriceForAsinResponse(
+      '/products:GetMyPriceForASINResponse',
+      doc
+    )
+
+    expect(res).toMatchSnapshot()
+  })
 })

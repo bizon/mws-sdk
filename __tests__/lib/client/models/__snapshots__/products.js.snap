@@ -4,6 +4,7 @@ exports[`lib.client.models.products should call GetMyPriceForASIN 1`] = `
 Array [
   Object {
     "asin": "1933890517",
+    "error": null,
     "product": Object {
       "attributes": null,
       "identifiers": Object {

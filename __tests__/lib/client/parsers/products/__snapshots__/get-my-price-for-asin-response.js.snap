@@ -1,10 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`lib.client.parsers.products.get-my-price-for-asin-response should parse GetMyPriceForASINResponse errors 1`] = `
+Object {
+  "getMyPriceForAsinResult": Array [
+    Object {
+      "asin": "1933890517",
+      "error": Object {
+        "code": "InvalidParameterValue",
+        "detail": null,
+        "message": "1933890517 is an invalid ASIN for marketplace ATVPDKIKX0DER",
+        "type": "Sender",
+      },
+      "product": null,
+      "status": "Success",
+    },
+  ],
+  "responseMetadata": Object {
+    "requestId": "a3381684-87bd-416e-9b95-EXAMPLE9c236",
+  },
+}
+`;
+
 exports[`lib.client.parsers.products.get-my-price-for-asin-response should parse the GetMyPriceForASINResponse example response from MWS doc 1`] = `
 Object {
   "getMyPriceForAsinResult": Array [
     Object {
       "asin": "1933890517",
+      "error": null,
       "product": Object {
         "attributes": null,
         "identifiers": Object {
