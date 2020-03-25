@@ -1,9 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`lib.client.parsers.products.get-my-price-for-sku-response should parse GetMyPriceForSKUResponse errors 1`] = `
+Object {
+  "getMyPriceForSkuResult": Array [
+    Object {
+      "error": Object {
+        "code": "InvalidParameterValue",
+        "detail": null,
+        "message": "SKU2468 is an invalid SellerSKU for marketplace ATVPDKIKX0DER",
+        "type": "Sender",
+      },
+      "product": null,
+      "sellerSku": "SKU2468",
+      "status": "ClientError",
+    },
+  ],
+  "responseMetadata": Object {
+    "requestId": "bc6e4601-3d74-4612-adcf-EXAMPLEf1796",
+  },
+}
+`;
+
 exports[`lib.client.parsers.products.get-my-price-for-sku-response should parse the GetMyPriceForSKUResponse example response from MWS doc 1`] = `
 Object {
   "getMyPriceForSkuResult": Array [
     Object {
+      "error": null,
       "product": Object {
         "attributes": null,
         "identifiers": Object {
