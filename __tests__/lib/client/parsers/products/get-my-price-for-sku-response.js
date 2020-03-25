@@ -62,4 +62,29 @@ describe('lib.client.parsers.products.get-my-price-for-sku-response', () => {
 
     expect(res).toMatchSnapshot()
   })
+
+  it('should parse GetMyPriceForSKUResponse errors', () => {
+    const doc = parseXml(
+      `<?xml version="1.0"?>
+      <GetMyPriceForSKUResponse xmlns="http://mws.amazonservices.com/schema/Products/2011-10-01">
+        <GetMyPriceForSKUResult SellerSKU="SKU2468" status="ClientError">
+          <Error>
+            <Type>Sender</Type>
+            <Code>InvalidParameterValue</Code>
+            <Message>SKU2468 is an invalid SellerSKU for marketplace ATVPDKIKX0DER</Message>
+          </Error>
+        </GetMyPriceForSKUResult>
+        <ResponseMetadata>
+          <RequestId>bc6e4601-3d74-4612-adcf-EXAMPLEf1796</RequestId>
+        </ResponseMetadata>
+      </GetMyPriceForSKUResponse>`
+    )
+
+    const res = parseGetMyPriceForSkuResponse(
+      '/products:GetMyPriceForSKUResponse',
+      doc
+    )
+
+    expect(res).toMatchSnapshot()
+  })
 })
