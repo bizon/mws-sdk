@@ -107,3 +107,21 @@ Array [
   },
 ]
 `;
+
+exports[`lib.client.models.products should handle GetLowestPricedOffersForSKU errors 1`] = `
+Object {
+  "error": Object {
+    "code": "InvalidParameterValue",
+    "detail": null,
+    "itemCondition": "new",
+    "marketplaceId": "ATVPDKIKX0DER",
+    "message": "SKU2468 is an invalid SKU for marketplace ATVPDKIKX0DER",
+    "sku": "SKU2468",
+    "status": "ClientError",
+    "type": "Sender",
+  },
+  "responseMetadata": Object {
+    "requestId": "bc6e4601-3d74-4612-adcf-EXAMPLEf1796",
+  },
+}
+`;

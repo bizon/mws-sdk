@@ -161,4 +161,43 @@ describe('lib.client.models.products', () => {
 
     expect(result).toMatchSnapshot()
   })
+
+  it('should handle GetLowestPricedOffersForSKU errors', async () => {
+    const {pathname, data} = client.signData('POST', 'Products', '2011-10-01', {
+      Action: 'GetLowestPricedOffersForSKU',
+      MarketplaceId: 'ATVPDKIKX0DER',
+      SellerSKU: 'SKU2468',
+      ItemCondition: 'new'
+    })
+
+    nock(apiUrl)
+      .post(pathname, data)
+      .reply(
+        400,
+        `<?xml version="1.0"?>
+        <ErrorResponse xmlns="http://mws.amazonservices.com/schema/Products/2011-10-01">
+          <Error MarketplaceID="ATVPDKIKX0DER" SKU="SKU2468" ItemCondition="new" status="ClientError">
+            <Code>InvalidParameterValue</Code>
+            <Type>Sender</Type>
+            <Message>SKU2468 is an invalid SKU for marketplace ATVPDKIKX0DER</Message>
+          </Error>
+          <ResponseMetadata>
+            <RequestId>bc6e4601-3d74-4612-adcf-EXAMPLEf1796</RequestId>
+          </ResponseMetadata>
+        </ErrorResponse>`
+      )
+
+    expect.assertions(2)
+
+    try {
+      await client.products.getLowestPricedOffersForSku({
+        marketplaceId: 'ATVPDKIKX0DER',
+        sellerSku: 'SKU2468',
+        itemCondition: 'new'
+      })
+    } catch (error) {
+      expect(error.message).toBe('Products.GetLowestPricedOffersForSKU error: Response code 400 (Bad Request)')
+      expect(error.body).toMatchSnapshot()
+    }
+  })
 })
