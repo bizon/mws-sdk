@@ -62,4 +62,8 @@ describe('lib.client.index', () => {
     delete process.env.MWS_ACCESS_KEY_ID
     delete process.env.MWS_SECRET_ACCESS_KEY
   })
+
+  it('should export the MWSError constructor', () => {
+    expect(MWSClient.MWSError).toBe(require('../../../lib/client/error'))
+  })
 })
