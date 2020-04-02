@@ -1,5 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`lib.client.models.products should call GetLowestPricedOffersForSKU 1`] = `
+Object {
+  "identifier": Object {
+    "asin": null,
+    "itemCondition": "New",
+    "marketplaceId": "ATVPDKIKX0DER",
+    "sellerSku": "SKU2468",
+    "timeOfOfferChange": null,
+  },
+  "itemCondition": "new",
+  "marketplaceId": "ATVPDKIKX0DER",
+  "offers": Array [],
+  "sku": "SKU2468",
+  "status": "NoOfferDueToMissingShippingCharge",
+  "summary": Object {
+    "buyBoxEligibleOffers": Array [],
+    "buyBoxPrices": Array [],
+    "listPrice": null,
+    "lowestPrices": Array [],
+    "numberOfOffers": Array [],
+    "offersAvailableTime": null,
+    "suggestedLowerPricePlusShipping": null,
+    "totalOfferCount": 0,
+  },
+}
+`;
+
 exports[`lib.client.models.products should call GetMyPriceForASIN 1`] = `
 Array [
   Object {

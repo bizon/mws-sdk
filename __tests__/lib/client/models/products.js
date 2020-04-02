@@ -162,6 +162,47 @@ describe('lib.client.models.products', () => {
     expect(result).toMatchSnapshot()
   })
 
+  it('should call GetLowestPricedOffersForSKU', async () => {
+    const {pathname, data} = client.signData('POST', 'Products', '2011-10-01', {
+      Action: 'GetLowestPricedOffersForSKU',
+      MarketplaceId: 'ATVPDKIKX0DER',
+      SellerSKU: 'SKU2468',
+      ItemCondition: 'new'
+    })
+
+    nock(apiUrl)
+      .post(pathname, data)
+      .reply(
+        200,
+        `<?xml version="1.0" encoding="UTF-8"?>
+        <GetLowestPricedOffersForSKUResponse xmlns="http://mws.amazonservices.com/schema/Products/2011-10-01">
+          <GetLowestPricedOffersForSKUResult MarketplaceID="ATVPDKIKX0DER" SKU="SKU2468" ItemCondition="new"
+            status="NoOfferDueToMissingShippingCharge">
+            <Identifier>
+              <MarketplaceId>ATVPDKIKX0DER</MarketplaceId>
+              <SellerSKU>SKU2468</SellerSKU>
+              <ItemCondition>New</ItemCondition>
+            </Identifier>
+            <Summary>
+              <TotalOfferCount>0</TotalOfferCount>
+            </Summary>
+            <Offers />
+          </GetLowestPricedOffersForSKUResult>
+          <ResponseMetadata>
+            <RequestId>75621aa7-9c8b-40be-9bf9-3ac1efdcdb87</RequestId>
+          </ResponseMetadata>
+        </GetLowestPricedOffersForSKUResponse>`
+      )
+
+    const result = await client.products.getLowestPricedOffersForSku({
+      marketplaceId: 'ATVPDKIKX0DER',
+      sellerSku: 'SKU2468',
+      itemCondition: 'new'
+    })
+
+    expect(result).toMatchSnapshot()
+  })
+
   it('should handle GetLowestPricedOffersForSKU errors', async () => {
     const {pathname, data} = client.signData('POST', 'Products', '2011-10-01', {
       Action: 'GetLowestPricedOffersForSKU',
