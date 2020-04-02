@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib.client.error should create a MWSError and parse the response body 1`] = `
+Object {
+  "error": Object {
+    "code": "Bar",
+    "detail": null,
+    "message": "This is a message",
+    "type": "Foo",
+  },
+  "responseMetadata": Object {
+    "requestId": "some_request_id",
+  },
+}
+`;
+
+exports[`lib.client.error should create a MWSError and parse the response body using a custom error response parser 1`] = `
+Object {
+  "bar": "World!",
+  "foo": "Hello",
+}
+`;
