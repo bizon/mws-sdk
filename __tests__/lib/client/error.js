@@ -73,5 +73,6 @@ describe('lib.client.error', () => {
 
     expect(error.message).toBe('Sellers.GetSomething error: Response code 400 (Something wrong happened)')
     expect(error.body).toMatchSnapshot()
+    expect(error.response.statusCode).toBe(400)
   })
 })
