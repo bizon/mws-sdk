@@ -241,4 +241,84 @@ describe('lib.client.models.products', () => {
       expect(error.body).toMatchSnapshot()
     }
   })
+
+  it('should call GetLowestPricedOffersForASIN', async () => {
+    const {pathname, data} = client.signData('POST', 'Products', '2011-10-01', {
+      Action: 'GetLowestPricedOffersForASIN',
+      MarketplaceId: 'ATVPDKIKX0DER',
+      ASIN: '1933890517',
+      ItemCondition: 'new'
+    })
+
+    nock(apiUrl)
+      .post(pathname, data)
+      .reply(
+        200,
+        `<?xml version="1.0"?>
+        <GetLowestPricedOffersForASINResponse xmlns="http://mws.amazonservices.com/schema/Products/2011-10-01">
+          <GetLowestPricedOffersForASINResult MarketplaceID="ATVPDKIKX0DER" ItemCondition="New" ASIN="1933890517"
+            status="NoBuyableOffers">
+            <Identifier>
+              <MarketplaceId>ATVPDKIKX0DER</MarketplaceId>
+              <ASIN>1933890517</ASIN>
+              <ItemCondition>New</ItemCondition>
+            </Identifier>
+            <Summary>
+              <TotalOfferCount>0</TotalOfferCount>
+            </Summary>
+            <Offers />
+          </GetLowestPricedOffersForASINResult>
+          <ResponseMetadata>
+            <RequestId>2bb867cd-8fa3-406c-adba-eb84c1796d21</RequestId>
+          </ResponseMetadata>
+        </GetLowestPricedOffersForASINResponse>`
+      )
+
+    const result = await client.products.getLowestPricedOffersForAsin({
+      marketplaceId: 'ATVPDKIKX0DER',
+      asin: '1933890517',
+      itemCondition: 'new'
+    })
+
+    expect(result).toMatchSnapshot()
+  })
+
+  it('should handle GetLowestPricedOffersForASIN errors', async () => {
+    const {pathname, data} = client.signData('POST', 'Products', '2011-10-01', {
+      Action: 'GetLowestPricedOffersForASIN',
+      MarketplaceId: 'ATVPDKIKX0DER',
+      ASIN: '1933890517',
+      ItemCondition: 'new'
+    })
+
+    nock(apiUrl)
+      .post(pathname, data)
+      .reply(
+        400,
+        `<?xml version="1.0"?>
+        <ErrorResponse xmlns="http://mws.amazonservices.com/schema/Products/2011-10-01">
+          <Error MarketplaceID="ATVPDKIKX0DER" ASIN="1933890517" ItemCondition="new" status="ClientError">
+            <Code>InvalidParameterValue</Code>
+            <Type>Sender</Type>
+            <Message>1933890517 is an invalid ASIN for marketplace ATVPDKIKX0DER</Message>
+          </Error>
+          <ResponseMetadata>
+            <RequestId>bc6e4601-3d74-4612-adcf-EXAMPLEf1796</RequestId>
+          </ResponseMetadata>
+        </ErrorResponse>`
+      )
+
+    expect.assertions(2)
+
+    try {
+      await client.products.getLowestPricedOffersForAsin({
+        marketplaceId: 'ATVPDKIKX0DER',
+        asin: '1933890517',
+        itemCondition: 'new'
+      })
+    } catch (error) {
+      expect(error.message).toBe('Products.GetLowestPricedOffersForASIN error: Response code 400 (Bad Request)')
+      expect(error.body).toMatchSnapshot()
+    }
+  })
 })

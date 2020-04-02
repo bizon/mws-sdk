@@ -1,5 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`lib.client.models.products should call GetLowestPricedOffersForASIN 1`] = `
+Object {
+  "asin": "1933890517",
+  "identifier": Object {
+    "asin": "1933890517",
+    "itemCondition": "New",
+    "marketplaceId": "ATVPDKIKX0DER",
+    "sellerSku": null,
+    "timeOfOfferChange": null,
+  },
+  "itemCondition": "New",
+  "marketplaceId": "ATVPDKIKX0DER",
+  "offers": Array [],
+  "status": "NoBuyableOffers",
+  "summary": Object {
+    "buyBoxEligibleOffers": Array [],
+    "buyBoxPrices": Array [],
+    "listPrice": null,
+    "lowestPrices": Array [],
+    "numberOfOffers": Array [],
+    "offersAvailableTime": null,
+    "suggestedLowerPricePlusShipping": null,
+    "totalOfferCount": 0,
+  },
+}
+`;
+
 exports[`lib.client.models.products should call GetLowestPricedOffersForSKU 1`] = `
 Object {
   "identifier": Object {
@@ -133,6 +160,24 @@ Array [
     "status": "Success",
   },
 ]
+`;
+
+exports[`lib.client.models.products should handle GetLowestPricedOffersForASIN errors 1`] = `
+Object {
+  "error": Object {
+    "asin": "1933890517",
+    "code": "InvalidParameterValue",
+    "detail": null,
+    "itemCondition": "new",
+    "marketplaceId": "ATVPDKIKX0DER",
+    "message": "1933890517 is an invalid ASIN for marketplace ATVPDKIKX0DER",
+    "status": "ClientError",
+    "type": "Sender",
+  },
+  "responseMetadata": Object {
+    "requestId": "bc6e4601-3d74-4612-adcf-EXAMPLEf1796",
+  },
+}
 `;
 
 exports[`lib.client.models.products should handle GetLowestPricedOffersForSKU errors 1`] = `
