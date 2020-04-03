@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib.client.index should throw default a MWSError when encountering an unhandled HTTPError on GET 1`] = `
+Object {
+  "error": Object {
+    "code": "QuotaExceeded",
+    "detail": null,
+    "message": "You exceeded your quota of 200.0 requests per 1 hour for operation CustomResource/1988-10-13/CustomAction.  Your quota will reset on Thu Apr 04 18:46:00 UTC 2020",
+    "type": "",
+  },
+  "responseMetadata": Object {
+    "requestId": "bc6e4601-3d74-4612-adcf-EXAMPLEf1796",
+  },
+}
+`;
+
+exports[`lib.client.index should throw default a MWSError when encountering an unhandled HTTPError on POST 1`] = `
+Object {
+  "error": Object {
+    "code": "ClientError",
+    "detail": null,
+    "message": "bar is not valid for Foo",
+    "type": null,
+  },
+  "responseMetadata": Object {
+    "requestId": "bc6e4601-3d74-4612-adcf-EXAMPLEf1796",
+  },
+}
+`;
