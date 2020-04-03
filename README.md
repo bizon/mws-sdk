@@ -69,6 +69,27 @@ const client = new MWSClient({
 
 Keep in mind that the specified marketplaces will have to be in the same MWS region, otherwise an error will be thrown.
 
+## Error handling
+
+Whenever the MWS API returns a non 200 HTTP status, a `MWSError` will be thrown. Use `error.body` to inspect the contents of the error, and `error.response` to access the raw HTTP response.
+
+```js
+const {MWSError} = '@bizon/mws-sdk'
+
+try {
+  const result = await client.products.getLowestPricedOffersForSku({
+    marketplaceId: 'A1F83G8C2ARO7P',
+    sellerSku: 'some-sku',
+    itemCondition: 'new'
+  })
+} catch (error) {
+  if (error instanceof MWSError) {
+    console.log(error.body) // This will contain the parsed XML body
+    console.log(error.response.statusCode)
+  }
+}
+```
+
 ## API
 
 ### Finances
