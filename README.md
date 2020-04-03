@@ -96,7 +96,7 @@ try {
 
 Version: `2015-05-01`
 
-#### `listFinancialEvents(options)`
+#### `finances.listFinancialEvents(options)`
 
 Options:
 
@@ -109,7 +109,7 @@ postedAfter | `Date` |
 postedBefore | `Date` |
 nextToken | `String` |
 
-#### `listFinancialEventGroups(options)`
+#### `finances.listFinancialEventGroups(options)`
 
 Options:
 
@@ -124,7 +124,7 @@ nextToken | `String` |
 
 Version: `2010-10-01`
 
-#### `listInboundShipments(options)`
+#### `fulfillmentInboundShipment.listInboundShipments(options)`
 
 Options:
 
@@ -136,7 +136,7 @@ lastUpdatedAfter | `Date` |
 lastUpdatedBefore | `Date` |
 nextToken | `String` |
 
-#### `listInboundShipmentItems(options)`
+#### `fulfillmentInboundShipment.listInboundShipmentItems(options)`
 
 Options:
 
@@ -151,7 +151,7 @@ nextToken | `String` |
 
 Version: `2010-10-01`
 
-#### `listInventorySupply(options)`
+#### `fulfillmentInventory.listInventorySupply(options)`
 
 Options:
 
@@ -167,7 +167,7 @@ nextToken | `String` |
 
 Version: `2013-09-01`
 
-#### `getOrders(options)`
+#### `orders.getOrders(options)`
 
 Options:
 
@@ -175,7 +175,7 @@ Name | Type | Default
 -----|------|--------
 amazonOrderIds | `Array<String>` |
 
-#### `listOrders(options)`
+#### `orders.listOrders(options)`
 
 Options:
 
@@ -195,7 +195,7 @@ maxResultsPerPage | `Number` | `100`
 tfmShipmentStatus | `String` |
 nextToken | `String` |
 
-#### `listOrderItems(options)`
+#### `orders.listOrderItems(options)`
 
 Options:
 
@@ -208,7 +208,7 @@ nextToken | `String` |
 
 Version: `2011-10-01`
 
-#### `getMatchingProduct(options)`
+#### `products.getMatchingProduct(options)`
 
 Options:
 
@@ -217,7 +217,7 @@ Name | Type | Default
 marketplaceId | `String` |
 asinList | `Array<String>` |
 
-#### `getMatchingProductForId(options)`
+#### `products.getMatchingProductForId(options)`
 
 Options:
 
@@ -227,7 +227,7 @@ marketplaceId | `String` |
 idType | `String` |
 idList | `Array<String>` |
 
-#### `getMyPriceForAsin(options)`
+#### `products.getMyPriceForAsin(options)`
 
 Options:
 
@@ -237,7 +237,7 @@ marketplaceId | `String` |
 asinList | `Array<String>` |
 itemCondition | `String` |
 
-#### `getMyPriceForSku(options)`
+#### `products.getMyPriceForSku(options)`
 
 Options:
 
@@ -247,7 +247,7 @@ marketplaceId | `String` |
 sellerSkuList | `Array<String>` |
 itemCondition | `String` |
 
-#### `getLowestPricedOffersForAsin(options)`
+#### `products.getLowestPricedOffersForAsin(options)`
 
 Options:
 
@@ -257,7 +257,7 @@ marketplaceId | `String` |
 asin | `String` |
 itemCondition | `String` |
 
-#### `getLowestPricedOffersForSku(options)`
+#### `products.getLowestPricedOffersForSku(options)`
 
 Options:
 
@@ -267,23 +267,11 @@ marketplaceId | `String` |
 sellerSku | `String` |
 itemCondition | `String` |
 
-### Sellers
-
-Version: `2011-07-01`
-
-#### `listMarketplaceParticipations(options)`
-
-Options:
-
-Name | Type | Default
------|------|--------
-nextToken | `String` |
-
 ### Reports
 
 Version: `2009-01-01`
 
-#### `requestReport(options)`
+#### `reports.requestReport(options)`
 
 Options:
 
@@ -295,7 +283,7 @@ endDate | `Date` |
 marketplaces | `Array<String>` |
 reportOptions | `String` |
 
-#### `getReportRequestList(options)`
+#### `reports.getReportRequestList(options)`
 
 Options:
 
@@ -309,7 +297,7 @@ requestedFromDate | `Date` |
 requestedToDate | `Date` |
 nextToken | `String` |
 
-#### `getReportList(options)`
+#### `reports.getReportList(options)`
 
 Options:
 
@@ -323,7 +311,7 @@ availableFromDate | `Date` |
 availableToDate | `Date` |
 nextToken | `String` |
 
-#### `getReport(options)`
+#### `reports.getReport(options)`
 
 Options:
 
@@ -332,11 +320,23 @@ Name | Type | Default
 reportId | `String` |
 format | `Enum[raw, base64]`
 
+### Sellers
+
+Version: `2011-07-01`
+
+#### `sellers.listMarketplaceParticipations(options)`
+
+Options:
+
+Name | Type | Default
+-----|------|--------
+nextToken | `String` |
+
 ### Subscriptions
 
 Version: `2013-07-01`
 
-#### `registerDestination(options)`
+#### `subscriptions.registerDestination(options)`
 
 Options:
 
@@ -345,7 +345,7 @@ Name | Type | Default
 marketplaceId | `String` |
 sqsQueueUrl | `String` |
 
-#### `deregisterDestination(options)`
+#### `subscriptions.deregisterDestination(options)`
 
 Options:
 
@@ -354,7 +354,7 @@ Name | Type | Default
 marketplaceId | `String` |
 sqsQueueUrl | `String` |
 
-#### `createSubscription(options)`
+#### `subscriptions.createSubscription(options)`
 
 Options:
 
@@ -365,7 +365,7 @@ sqsQueueUrl | `String` |
 isEnabled | `Boolean` | `true`
 notificationType | `String` |
 
-#### `deleteSubscription(options)`
+#### `subscriptions.deleteSubscription(options)`
 
 Options:
 
@@ -375,7 +375,7 @@ marketplaceId | `String` |
 sqsQueueUrl | `String` |
 notificationType | `String` |
 
-#### `sendTestNotificationToDestination(options)`
+#### `subscriptions.sendTestNotificationToDestination(options)`
 
 Options:
 
@@ -384,7 +384,7 @@ Name | Type | Default
 marketplaceId | `String` |
 sqsQueueUrl | `String` |
 
-#### `parseNotification(xml)`
+#### `subscriptions.parseNotification(xml)`
 
 Parse an XML notification. The following notifications are supported:
 
