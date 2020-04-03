@@ -1,6 +1,17 @@
+const nock = require('nock')
+const MockDate = require('mockdate')
+
 const MWSClient = require('../../../lib/client')
 
 describe('lib.client.index', () => {
+  beforeAll(() => {
+    MockDate.set('2020-04-03')
+  })
+
+  afterAll(() => {
+    MockDate.reset()
+  })
+
   it('should fail if accessKeyId, secretAccessKey, sellerId or mwsToken is not specified', () => {
     const tests = [
       () => new MWSClient(),
@@ -85,5 +96,95 @@ describe('lib.client.index', () => {
 
   it('should export the MWSError constructor', () => {
     expect(MWSClient.MWSError).toBe(require('../../../lib/client/error'))
+  })
+
+  it('should throw default a MWSError when encountering an unhandled HTTPError on GET', async () => {
+    const client = new MWSClient({
+      accessKeyId: 'foo',
+      secretAccessKey: 'bar',
+      sellerId: 'baz',
+      mwsToken: 'token',
+      mwsRegion: 'eu'
+    })
+
+    const {pathname, data} = client.signData('GET', 'CustomResource', '1988-10-13', {
+      Action: 'CustomGetAction'
+    })
+
+    nock(`https://${client.settings.mwsDomain}`)
+      .get(pathname)
+      .query(data)
+      .reply(
+        503,
+        `<?xml version="1.0"?>
+        <ErrorResponse xmlns="http://mws.amazonservices.com/schema/CustomResource/1988-10-13">
+          <Error ThisAttribute="WillBeIgnored">
+            <Code>QuotaExceeded</Code>
+            <Type></Type>
+            <Message>You exceeded your quota of 200.0 requests per 1 hour for operation CustomResource/1988-10-13/CustomAction.  Your quota will reset on Thu Apr 04 18:46:00 UTC 2020</Message>
+          </Error>
+          <ResponseMetadata>
+            <RequestId>bc6e4601-3d74-4612-adcf-EXAMPLEf1796</RequestId>
+          </ResponseMetadata>
+        </ErrorResponse>`
+      )
+
+    expect.assertions(3)
+
+    try {
+      await client.get('CustomResource', '1988-10-13', {
+        Action: 'CustomGetAction'
+      }, {
+        retry: 0 // Disable retries so got doesn’t eat our expected 503
+      })
+    } catch (error) {
+      expect(error).toBeInstanceOf(MWSClient.MWSError)
+      expect(error.message).toBe('CustomResource.CustomGetAction error: Response code 503 (Service Unavailable)')
+      expect(error.body).toMatchSnapshot()
+    }
+  })
+
+  it('should throw default a MWSError when encountering an unhandled HTTPError on POST', async () => {
+    const client = new MWSClient({
+      accessKeyId: 'foo',
+      secretAccessKey: 'bar',
+      sellerId: 'baz',
+      mwsToken: 'token',
+      mwsRegion: 'eu'
+    })
+
+    const {pathname, data} = client.signData('POST', 'CustomResource', '1988-10-13', {
+      Action: 'CustomPostAction',
+      Foo: 'bar'
+    })
+
+    nock(`https://${client.settings.mwsDomain}`)
+      .post(pathname, data)
+      .reply(
+        400,
+        `<?xml version="1.0"?>
+        <ErrorResponse xmlns="http://mws.amazonservices.com/schema/CustomResource/1988-10-13">
+          <Error ThisAttribute="WillBeIgnored">
+            <Code>ClientError</Code>
+            <Message>bar is not valid for Foo</Message>
+          </Error>
+          <ResponseMetadata>
+            <RequestId>bc6e4601-3d74-4612-adcf-EXAMPLEf1796</RequestId>
+          </ResponseMetadata>
+        </ErrorResponse>`
+      )
+
+    expect.assertions(3)
+
+    try {
+      await client.post('CustomResource', '1988-10-13', {
+        Action: 'CustomPostAction',
+        Foo: 'bar'
+      })
+    } catch (error) {
+      expect(error).toBeInstanceOf(MWSClient.MWSError)
+      expect(error.message).toBe('CustomResource.CustomPostAction error: Response code 400 (Bad Request)')
+      expect(error.body).toMatchSnapshot()
+    }
   })
 })

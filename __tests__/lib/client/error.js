@@ -18,14 +18,45 @@ describe('lib.client.error', () => {
     }
   })
 
-  it('should fail if resource or method is not defined', () => {
+  it('should fail if resource or action is not defined', () => {
     const tests = [
       () => new MWSError(new HTTPError({})),
       () => new MWSError(new HTTPError({}), 'Order')
     ]
 
     for (const test of tests) {
-      expect(test).toThrow('The resource and method parameters are required')
+      expect(test).toThrow('The resource and action parameters are required')
+    }
+  })
+
+  it('should not allow updating error properties', () => {
+    const error = new MWSError(
+      new HTTPError({
+        statusCode: 400,
+        statusMessage: 'Something wrong happened',
+        body: `<ErrorResponse>
+          <Error>
+            <Message>This is a message</Message>
+          </Error>
+        </ErrorResponse>`
+      }),
+      'ResourceName',
+      'Function'
+    )
+
+    const properties = [
+      'response',
+      'resource',
+      'action',
+      'body'
+    ]
+
+    for (const property of properties) {
+      error[property] = 'override'
+      expect(error[property]).not.toEqual('override')
+
+      delete error[property]
+      expect(error[property]).toBeDefined()
     }
   })
 
