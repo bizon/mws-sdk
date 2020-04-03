@@ -5,3 +5,5 @@ node_modules
 /playground
 
 *.log
+
+CHANGELOG.md

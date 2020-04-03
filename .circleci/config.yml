@@ -4,10 +4,19 @@ defaults:
   workspace_root: &workspace_root
     ~/mws-sdk
 
+  default_filters: &default_filters
+    tags:
+      only: '/v[0-9]+(\.[0-9]+)*/'
+
   nodejs_container: &nodejs_container
     working_directory: *workspace_root
     docker:
       - image: circleci/node:12-stretch
+
+  golang_container: &golang_container
+    working_directory: *workspace_root
+    docker:
+      - image: circleci/golang:1-stretch
 
   attach_workspace: &attach_workspace
     attach_workspace:
@@ -75,21 +84,81 @@ jobs:
           name: Upload code coverage to codecov
           command: yarn codecov
 
+  changelog:
+    <<: *nodejs_container
+    steps:
+      - *attach_workspace
+      - *restore_node_modules
+
+      - run:
+          name: Generate changelog
+          command: |
+            if [ $CIRCLE_TAG ]; then
+              PREV_TAG=$(git describe --abbrev=0 --tags $CIRCLE_TAG^)
+              echo "[+] Running for range $PREV_TAG...$CIRCLE_TAG"
+              yarn --silent lerna-changelog --from $PREV_TAG --to $CIRCLE_TAG > CHANGELOG.md
+            else
+              PREV_TAG=$(git describe --abbrev=0 --tags)
+              echo "[+] Running from $PREV_TAG"
+              yarn --silent lerna-changelog --from $PREV_TAG > CHANGELOG.md
+            fi
+
+      - run:
+          name: Display changelog
+          command: cat CHANGELOG.md
+
+      - persist_to_workspace:
+          name: Persist changelog
+          root: *workspace_root
+          paths:
+            - CHANGELOG.md
+
+  release:
+    <<: *golang_container
+    steps:
+      - *attach_workspace
+
+      - run:
+          name: Install github-release
+          command: go get github.com/aktau/github-release
+
+      - run:
+          name: Create GitHub release
+          command: github-release release --user $CIRCLE_PROJECT_USERNAME --repo $CIRCLE_PROJECT_REPONAME --tag $CIRCLE_TAG --description "$(cat CHANGELOG.md)" --name $CIRCLE_TAG
+
 workflows:
   version: 2
 
   push:
     jobs:
-      - checkout
+      - checkout:
+          filters: *default_filters
+
 
       - install:
           requires:
             - checkout
+          filters: *default_filters
 
       - lint:
           requires:
             - install
+          filters: *default_filters
 
       - test:
           requires:
             - install
+          filters: *default_filters
+
+      - changelog:
+          requires:
+            - install
+          filters: *default_filters
+
+      - release:
+          requires:
+            - changelog
+          filters:
+            <<: *default_filters
+            branches:
+              ignore: /.*/
