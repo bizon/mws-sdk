@@ -45,7 +45,7 @@
     "lerna-changelog": "^1.0.1",
     "mockdate": "^2.0.5",
     "nock": "^12.0.3",
-    "xo": "^0.28.2"
+    "xo": "^0.28.3"
   },
   "engines": {
     "node": ">=10"
