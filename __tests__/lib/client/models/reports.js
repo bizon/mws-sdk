@@ -41,6 +41,44 @@ describe('lib.client.models.reports', () => {
     expect(result).toEqual('Hello world!')
   })
 
+  it('should call GetReport and transform the encoding from ISO-8859-1 to UTF-8', async () => {
+    const {pathname, data} = client.signData('POST', 'Reports', '2009-01-01', {
+      Action: 'GetReport',
+      ReportId: 'REPORT-1'
+    })
+
+    nock(apiUrl)
+      .post(pathname, data)
+      .reply(200, Buffer.from('6eAg52EgdmEgPw==', 'base64'))
+
+    const result = await client.reports.getReport({
+      reportId: 'REPORT-1',
+      format: 'raw'
+    })
+
+    expect(result).toEqual('éà ça va ?')
+  })
+
+  it('should call GetReport and transform the encoding the specified encoding to UTF-8', async () => {
+    const {pathname, data} = client.signData('POST', 'Reports', '2009-01-01', {
+      Action: 'GetReport',
+      ReportId: 'REPORT-1'
+    })
+
+    nock(apiUrl)
+      .post(pathname, data)
+      .reply(200, Buffer.from('6eAg52EgdmEgPw==', 'base64'), {
+        'content-type': 'text/plain; charset=iso-8859-3'
+      })
+
+    const result = await client.reports.getReport({
+      reportId: 'REPORT-1',
+      format: 'raw'
+    })
+
+    expect(result).toEqual('éà ça va ?')
+  })
+
   it('should call GetReport and return a base64 string', async () => {
     const {pathname, data} = client.signData('POST', 'Reports', '2009-01-01', {
       Action: 'GetReport',
