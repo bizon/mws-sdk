@@ -34,7 +34,6 @@
     "date-fns": "^2.11.1",
     "got": "^10.7.0",
     "iconv-lite": "^0.5.1",
-    "jschardet": "^2.1.1",
     "libxmljs": "^0.19.7",
     "lodash": "^4.17.15"
   },
