@@ -94,6 +94,18 @@ describe('lib.client.index', () => {
     delete process.env.MWS_SECRET_ACCESS_KEY
   })
 
+  it('should not enumerate secret properties', () => {
+    const client = new MWSClient({
+      accessKeyId: 'not enumerable',
+      secretAccessKey: 'not enumerable',
+      sellerId: 'seller identifier',
+      mwsToken: 'not enumerable',
+      mwsRegion: 'eu'
+    })
+
+    expect(Object.keys(client.settings)).toMatchSnapshot()
+  })
+
   it('should export the MWSError constructor', () => {
     expect(MWSClient.MWSError).toBe(require('../../../lib/client/error'))
   })

@@ -1,5 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`lib.client.index should not enumerate secret properties 1`] = `
+Array [
+  "sellerId",
+  "mwsDomain",
+  "marketplaces",
+]
+`;
+
 exports[`lib.client.index should throw default a MWSError when encountering an unhandled HTTPError on GET 1`] = `
 Object {
   "error": Object {
