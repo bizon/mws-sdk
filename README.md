@@ -94,308 +94,494 @@ try {
 
 ### Finances ![](https://badgen.net/badge/status/complete?label&color=green)
 
-Version: `2015-05-01`
+<details>
+  <summary>listFinancialEvents</summary>
 
-#### `finances.listFinancialEvents(options)`
+  ```js
+  const result = await client.finances.listFinancialEvents({
+    // Options
+  })
+  ```
 
-Options:
+  Options:
 
-Name | Type | Default
------|------|--------
-maxResultsPerPage | `Number` | `100`
-amazonOrderId | `String` |
-financialEventGroupId | `String` |
-postedAfter | `Date` |
-postedBefore | `Date` |
-nextToken | `String` |
+  Name | Type | Default
+  -----|------|--------
+  maxResultsPerPage | `Number` | `100`
+  amazonOrderId | `String` |
+  financialEventGroupId | `String` |
+  postedAfter | `Date` |
+  postedBefore | `Date` |
+  nextToken | `String` |
+</details>
 
-#### `finances.listFinancialEventGroups(options)`
+<details>
+  <summary>listFinancialEventGroups</summary>
 
-Options:
+  ```js
+  const result = await client.finances.listFinancialEventGroups({
+    // Options
+  })
+  ```
 
-Name | Type | Default
------|------|--------
-maxResultsPerPage | `Number` | `100`
-financialEventGroupStartedAfter | `Date` |
-financialEventGroupStartedBefore | `Date` |
-nextToken | `String` |
+  Options:
 
-### FulfillmentInboundShipment ![](https://badgen.net/badge/status/complete?label&color=green)
+  Name | Type | Default
+  -----|------|--------
+  maxResultsPerPage | `Number` | `100`
+  financialEventGroupStartedAfter | `Date` |
+  financialEventGroupStartedBefore | `Date` |
+  nextToken | `String` |
+</details>
 
-Version: `2010-10-01`
+### FulfillmentInboundShipment
 
-#### `fulfillmentInboundShipment.listInboundShipments(options)`
+<details>
+  <summary>listInboundShipments</summary>
 
-Options:
+  ```js
+  const result = await client.fulfillmentInboundShipment.listInboundShipments({
+    // Options
+  })
+  ```
 
-Name | Type | Default
------|------|--------
-shipmentStatusList | `Array<String>` |
-shipmentIdList | `Array<String>` |
-lastUpdatedAfter | `Date` |
-lastUpdatedBefore | `Date` |
-nextToken | `String` |
+  Options:
 
-#### `fulfillmentInboundShipment.listInboundShipmentItems(options)`
+  Name | Type | Default
+  -----|------|--------
+  shipmentStatusList | `Array<String>` |
+  shipmentIdList | `Array<String>` |
+  lastUpdatedAfter | `Date` |
+  lastUpdatedBefore | `Date` |
+  nextToken | `String` |
+</details>
 
-Options:
+<details>
+  <summary>listInboundShipmentItems</summary>
 
-Name | Type | Default
------|------|--------
-shipmentId | `Array<String>` |
-lastUpdatedAfter | `Date` |
-lastUpdatedBefore | `Date` |
-nextToken | `String` |
+  ```js
+  const result = await client.fulfillmentInboundShipment.listInboundShipmentItems({
+    // Options
+  })
+  ```
 
-### FulfillmentInventory
+  Options:
 
-Version: `2010-10-01`
+  Name | Type | Default
+  -----|------|--------
+  shipmentId | `Array<String>` |
+  lastUpdatedAfter | `Date` |
+  lastUpdatedBefore | `Date` |
+  nextToken | `String` |
+</details>
 
-#### `fulfillmentInventory.listInventorySupply(options)`
 
-Options:
+### FulfillmentInventory ![](https://badgen.net/badge/status/complete?label&color=green)
 
-Name | Type | Default
------|------|--------
-sellerSkus | `Array<String>` |
-queryStartDateTime | `Date` |
-responseGroup | `String` |
-marketplaceId | `String` |
-nextToken | `String` |
+<details>
+  <summary>listInventorySupply</summary>
+
+  ```js
+  const result = await client.fulfillmentInventory.listInventorySupply({
+    // Options
+  })
+  ```
+
+  Options:
+
+  Name | Type | Default
+  -----|------|--------
+  sellerSkus | `Array<String>` |
+  queryStartDateTime | `Date` |
+  responseGroup | `String` |
+  marketplaceId | `String` |
+  nextToken | `String` |
+</details>
+
 
 ### Orders ![](https://badgen.net/badge/status/complete?label&color=green)
 
-Version: `2013-09-01`
+<details>
+  <summary>getOrders</summary>
 
-#### `orders.getOrders(options)`
+  ```js
+  const result = await client.orders.getOrders({
+    // Options
+  })
+  ```
 
-Options:
+  Options:
 
-Name | Type | Default
------|------|--------
-amazonOrderIds | `Array<String>` |
+  Name | Type | Default
+  -----|------|--------
+  amazonOrderIds | `Array<String>` |
+</details>
 
-#### `orders.listOrders(options)`
+<details>
+  <summary>listOrders</summary>
 
-Options:
+  ```js
+  const result = await client.orders.listOrders({
+    // Options
+  })
+  ```
 
-Name | Type | Default
------|------|--------
-createdAfter | `Date` |
-createdBefore | `Date` |
-lastUpdatedAfter | `Date` |
-lastUpdatedBefore | `Date` |
-orderStatus | `String` |
-marketplaceId | `Array<String>` | Selected region’s marketplaces
-fulfillmentChannel | `String` |
-paymentMethod | `String` |
-buyerEmail | `String` |
-sellerOrderId | `String` |
-maxResultsPerPage | `Number` | `100`
-tfmShipmentStatus | `String` |
-nextToken | `String` |
+  Options:
 
-#### `orders.listOrderItems(options)`
+  Name | Type | Default
+  -----|------|--------
+  createdAfter | `Date` |
+  createdBefore | `Date` |
+  lastUpdatedAfter | `Date` |
+  lastUpdatedBefore | `Date` |
+  orderStatus | `String` |
+  marketplaceId | `Array<String>` | Selected region’s marketplaces
+  fulfillmentChannel | `String` |
+  paymentMethod | `String` |
+  buyerEmail | `String` |
+  sellerOrderId | `String` |
+  maxResultsPerPage | `Number` | `100`
+  tfmShipmentStatus | `String` |
+  nextToken | `String` |
+</details>
 
-Options:
+<details>
+  <summary>listOrderItems</summary>
 
-Name | Type | Default
------|------|--------
-amazonOrderId | `String` |
-nextToken | `String` |
+  ```js
+  const result = await client.orders.listOrderItems({
+    // Options
+  })
+  ```
+
+  Options:
+
+  Name | Type | Default
+  -----|------|--------
+  amazonOrderId | `String` |
+  nextToken | `String` |
+</details>
 
 ### Products
 
-Version: `2011-10-01`
+<details>
+  <summary>getMatchingProduct</summary>
 
-#### `products.getMatchingProduct(options)`
+  ```js
+  const result = await client.products.getMatchingProduct({
+    // Options
+  })
+  ```
 
-Options:
+  Options:
 
-Name | Type | Default
------|------|--------
-marketplaceId | `String` |
-asinList | `Array<String>` |
+  Name | Type | Default
+  -----|------|--------
+  marketplaceId | `String` |
+  asinList | `Array<String>` |
+</details>
 
-#### `products.getMatchingProductForId(options)`
+<details>
+  <summary>getMatchingProductForId</summary>
 
-Options:
+  ```js
+  const result = await client.products.getMatchingProductForId({
+    // Options
+  })
+  ```
 
-Name | Type | Default
------|------|--------
-marketplaceId | `String` |
-idType | `String` |
-idList | `Array<String>` |
+  Options:
 
-#### `products.getMyPriceForAsin(options)`
+  Name | Type | Default
+  -----|------|--------
+  marketplaceId | `String` |
+  idType | `String` |
+  idList | `Array<String>` |
+</details>
 
-Options:
+<details>
+  <summary>getMyPriceForAsin</summary>
 
-Name | Type | Default
------|------|--------
-marketplaceId | `String` |
-asinList | `Array<String>` |
-itemCondition | `String` |
+  ```js
+  const result = await client.products.getMyPriceForAsin({
+    // Options
+  })
+  ```
 
-#### `products.getMyPriceForSku(options)`
+  Options:
 
-Options:
+  Name | Type | Default
+  -----|------|--------
+  marketplaceId | `String` |
+  asinList | `Array<String>` |
+  itemCondition | `String` |
+</details>
 
-Name | Type | Default
------|------|--------
-marketplaceId | `String` |
-sellerSkuList | `Array<String>` |
-itemCondition | `String` |
+<details>
+  <summary>getMyPriceForSku</summary>
 
-#### `products.getLowestPricedOffersForAsin(options)`
+  ```js
+  const result = await client.products.getMyPriceForSku({
+    // Options
+  })
+  ```
 
-Options:
+  Options:
 
-Name | Type | Default
------|------|--------
-marketplaceId | `String` |
-asin | `String` |
-itemCondition | `String` |
+  Name | Type | Default
+  -----|------|--------
+  marketplaceId | `String` |
+  sellerSkuList | `Array<String>` |
+  itemCondition | `String` |
+</details>
 
-#### `products.getLowestPricedOffersForSku(options)`
+<details>
+  <summary>getLowestPricedOffersForAsin</summary>
 
-Options:
+  ```js
+  const result = await client.products.getLowestPricedOffersForAsin({
+    // Options
+  })
+  ```
 
-Name | Type | Default
------|------|--------
-marketplaceId | `String` |
-sellerSku | `String` |
-itemCondition | `String` |
+  Options:
+
+  Name | Type | Default
+  -----|------|--------
+  marketplaceId | `String` |
+  asin | `String` |
+  itemCondition | `String` |
+</details>
+
+<details>
+  <summary>getLowestPricedOffersForSku</summary>
+
+  ```js
+  const result = await client.products.getLowestPricedOffersForSku({
+    // Options
+  })
+  ```
+
+  Options:
+
+  Name | Type | Default
+  -----|------|--------
+  marketplaceId | `String` |
+  sellerSku | `String` |
+  itemCondition | `String` |
+</details>
 
 ### Reports
 
-Version: `2009-01-01`
+<details>
+  <summary>requestReport</summary>
 
-#### `reports.requestReport(options)`
+  ```js
+  const result = await client.reports.requestReport({
+    // Options
+  })
+  ```
 
-Options:
+  Options:
 
-Name | Type | Default
------|------|--------
-reportType | `String` |
-startDate | `Date` |
-endDate | `Date` |
-marketplaces | `Array<String>` |
-reportOptions | `String` |
+  Name | Type | Default
+  -----|------|--------
+  reportType | `String` |
+  startDate | `Date` |
+  endDate | `Date` |
+  marketplaces | `Array<String>` |
+  reportOptions | `String` |
+</details>
 
-#### `reports.getReportRequestList(options)`
+<details>
+  <summary>getReportRequestList</summary>
 
-Options:
+  ```js
+  const result = await client.reports.getReportRequestList({
+    // Options
+  })
+  ```
 
-Name | Type | Default
------|------|--------
-reportRequestIdList | `Array<String>` |
-reportTypeList | `Array<String>` |
-reportProcessingStatusList | `Array<String>` |
-maxCount | `Number` | `100`
-requestedFromDate | `Date` |
-requestedToDate | `Date` |
-nextToken | `String` |
+  Options:
 
-#### `reports.getReportList(options)`
+  Name | Type | Default
+  -----|------|--------
+  reportRequestIdList | `Array<String>` |
+  reportTypeList | `Array<String>` |
+  reportProcessingStatusList | `Array<String>` |
+  maxCount | `Number` | `100`
+  requestedFromDate | `Date` |
+  requestedToDate | `Date` |
+  nextToken | `String` |
+</details>
 
-Options:
+<details>
+  <summary>getReportList</summary>
 
-Name | Type | Default
------|------|--------
-maxCount | `Number` | `100`
-reportTypeList | `Array<String>` |
-acknowledged | `Boolean`
-reportRequestIdList | `Array<String>` |
-availableFromDate | `Date` |
-availableToDate | `Date` |
-nextToken | `String` |
+  ```js
+  const result = await client.reports.getReportList({
+    // Options
+  })
+  ```
 
-#### `reports.getReport(options)`
+  Options:
 
-Options:
+  Name | Type | Default
+  -----|------|--------
+  maxCount | `Number` | `100`
+  reportTypeList | `Array<String>` |
+  acknowledged | `Boolean`
+  reportRequestIdList | `Array<String>` |
+  availableFromDate | `Date` |
+  availableToDate | `Date` |
+  nextToken | `String` |
+</details>
 
-Name | Type | Default
------|------|--------
-reportId | `String` |
-format | `Enum[raw, base64]`
+<details>
+  <summary>getReport</summary>
+
+  ```js
+  const result = await client.reports.getReport({
+    // Options
+  })
+  ```
+
+  Options:
+
+  Name | Type | Default
+  -----|------|--------
+  reportId | `String` |
+  format | `Enum[raw, base64]`
+</details>
 
 ### Sellers ![](https://badgen.net/badge/status/complete?label&color=green)
 
-Version: `2011-07-01`
+<details>
+  <summary>listMarketplaceParticipations</summary>
 
-#### `sellers.listMarketplaceParticipations(options)`
+  ```js
+  const result = await client.sellers.listMarketplaceParticipations({
+    // Options
+  })
+  ```
 
-Options:
+  Options:
 
-Name | Type | Default
------|------|--------
-nextToken | `String` |
+  Name | Type | Default
+  -----|------|--------
+  nextToken | `String` |
+</details>
 
 ### Subscriptions
 
-Version: `2013-07-01`
+<details>
+  <summary>registerDestination</summary>
 
-#### `subscriptions.registerDestination(options)`
+  ```js
+  const result = await client.subscriptions.registerDestination({
+    // Options
+  })
+  ```
 
-Options:
+  Options:
 
-Name | Type | Default
------|------|--------
-marketplaceId | `String` |
-sqsQueueUrl | `String` |
+  Name | Type | Default
+  -----|------|--------
+  marketplaceId | `String` |
+  sqsQueueUrl | `String` |
+</details>
 
-#### `subscriptions.deregisterDestination(options)`
+<details>
+  <summary>deregisterDestination</summary>
 
-Options:
+  ```js
+  const result = await client.subscriptions.deregisterDestination({
+    // Options
+  })
+  ```
 
-Name | Type | Default
------|------|--------
-marketplaceId | `String` |
-sqsQueueUrl | `String` |
+  Options:
 
-#### `subscriptions.sendTestNotificationToDestination(options)`
+  Name | Type | Default
+  -----|------|--------
+  marketplaceId | `String` |
+  sqsQueueUrl | `String` |
+</details>
 
-Options:
+<details>
+  <summary>sendTestNotificationToDestination</summary>
 
-Name | Type | Default
------|------|--------
-marketplaceId | `String` |
-sqsQueueUrl | `String` |
+  ```js
+  const result = await client.subscriptions.sendTestNotificationToDestination({
+    // Options
+  })
+  ```
 
-#### `subscriptions.createSubscription(options)`
+  Options:
 
-Options:
+  Name | Type | Default
+  -----|------|--------
+  marketplaceId | `String` |
+  sqsQueueUrl | `String` |
+</details>
 
-Name | Type | Default
------|------|--------
-marketplaceId | `String` |
-sqsQueueUrl | `String` |
-isEnabled | `Boolean` | `true`
-notificationType | `String` |
+<details>
+  <summary>createSubscription</summary>
 
-#### `subscriptions.deleteSubscription(options)`
+  ```js
+  const result = await client.subscriptions.createSubscription({
+    // Options
+  })
+  ```
 
-Options:
+  Options:
 
-Name | Type | Default
------|------|--------
-marketplaceId | `String` |
-sqsQueueUrl | `String` |
-notificationType | `String` |
+  Name | Type | Default
+  -----|------|--------
+  marketplaceId | `String` |
+  sqsQueueUrl | `String` |
+  isEnabled | `Boolean` | `true`
+  notificationType | `String` |
+</details>
 
-#### `subscriptions.parseNotification(xml)`
+<details>
+  <summary>deleteSubscription</summary>
 
-Parse an XML notification. The following notifications are supported:
+  ```js
+  const result = await client.subscriptions.deleteSubscription({
+    // Options
+  })
+  ```
 
-- `Test`
-- `AnyOfferChanged`
-- `FeedProcessingFinished`
-- `ReportProcessingFinished`
+  Options:
+
+  Name | Type | Default
+  -----|------|--------
+  marketplaceId | `String` |
+  sqsQueueUrl | `String` |
+  notificationType | `String` |
+</details>
+
+<details>
+  <summary>parseNotification</summary>
+
+  ```js
+  const result = await client.subscriptions.parseNotification('<any-xml />')
+  ```
+
+  Options: Takes an XML string.
+  The following notifications are supported:
+
+  - `Test`
+  - `AnyOfferChanged`
+  - `FeedProcessingFinished`
+  - `ReportProcessingFinished`
+</details>
+
 
 ### Common
 
-All entities except `Reports` support a `getServiceStatus` method to retrieve the API status.
+All entities except `reports` support a `getServiceStatus` method to retrieve the API status.
 
 ## License
 
