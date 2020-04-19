@@ -92,7 +92,7 @@ try {
 
 ## API
 
-### Finances
+### Finances ![](https://badgen.net/badge/status/complete?label&color=green)
 
 Version: `2015-05-01`
 
@@ -120,7 +120,7 @@ financialEventGroupStartedAfter | `Date` |
 financialEventGroupStartedBefore | `Date` |
 nextToken | `String` |
 
-### FulfillmentInboundShipment
+### FulfillmentInboundShipment ![](https://badgen.net/badge/status/complete?label&color=green)
 
 Version: `2010-10-01`
 
@@ -163,7 +163,7 @@ responseGroup | `String` |
 marketplaceId | `String` |
 nextToken | `String` |
 
-### Orders
+### Orders ![](https://badgen.net/badge/status/complete?label&color=green)
 
 Version: `2013-09-01`
 
@@ -320,7 +320,7 @@ Name | Type | Default
 reportId | `String` |
 format | `Enum[raw, base64]`
 
-### Sellers
+### Sellers ![](https://badgen.net/badge/status/complete?label&color=green)
 
 Version: `2011-07-01`
 
@@ -354,6 +354,15 @@ Name | Type | Default
 marketplaceId | `String` |
 sqsQueueUrl | `String` |
 
+#### `subscriptions.sendTestNotificationToDestination(options)`
+
+Options:
+
+Name | Type | Default
+-----|------|--------
+marketplaceId | `String` |
+sqsQueueUrl | `String` |
+
 #### `subscriptions.createSubscription(options)`
 
 Options:
@@ -374,15 +383,6 @@ Name | Type | Default
 marketplaceId | `String` |
 sqsQueueUrl | `String` |
 notificationType | `String` |
-
-#### `subscriptions.sendTestNotificationToDestination(options)`
-
-Options:
-
-Name | Type | Default
------|------|--------
-marketplaceId | `String` |
-sqsQueueUrl | `String` |
 
 #### `subscriptions.parseNotification(xml)`
 
