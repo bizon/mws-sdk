@@ -265,6 +265,24 @@ try {
 ### Products
 
 <details>
+  <summary>listMatchingProducts</summary>
+
+  ```js
+  const result = await client.products.listMatchingProducts({
+    // Options
+  })
+  ```
+
+  Options:
+
+  Name | Type | Default
+  -----|------|--------
+  marketplaceId | `String` |
+  query | `String` |
+  queryContextId | `String` |
+</details>
+
+<details>
   <summary>getMatchingProduct</summary>
 
   ```js
