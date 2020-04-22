@@ -2,7 +2,7 @@ const parseXml = require('../../../../../lib/client/parsers')
 const parseListMatchingProductsResponse = require('../../../../../lib/client/parsers/products/list-matching-products-response')
 
 describe('lib.client.parsers.products.list-matching-products-response', () => {
-  it('should parse the ListMatchingProducts example response from MWS doc', () => {
+  it('should parse the ListMatchingProductsResponse example response from MWS doc', () => {
     const doc = parseXml(
       `<?xml version="1.0"?>
       <ListMatchingProductsResponse xmlns="http://mws.amazonservices.com/schema/Products/2011-10-01">

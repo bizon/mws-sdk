@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`lib.client.parsers.products.list-matching-products-response should parse the ListMatchingProducts example response from MWS doc 1`] = `
+exports[`lib.client.parsers.products.list-matching-products-response should parse the ListMatchingProductsResponse example response from MWS doc 1`] = `
 Object {
   "listMatchingProductsResult": Object {
     "products": Array [
