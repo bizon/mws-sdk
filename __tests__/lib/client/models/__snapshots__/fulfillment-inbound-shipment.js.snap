@@ -1,5 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`lib.client.models.fulfillment-inbound-shipment should call GetBillOfLading 1`] = `
+Object {
+  "transportDocument": Object {
+    "checksum": "WGQwqA+NlzMVL1plHc/7ZA==",
+    "pdfDocument": "ABEAAAAAAlbHMucGRmUEsFBgAAAAABAAEAPwAAALQXAQAAAA==",
+  },
+}
+`;
+
 exports[`lib.client.models.fulfillment-inbound-shipment should call ListInboundShipmentItems 1`] = `
 Object {
   "itemData": Array [

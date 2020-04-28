@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib.client.parsers.fulfillment-inbound-shipment.get-bill-of-lading-response should parse the GetBillOfLadingResponse example response from MWS doc 1`] = `
+Object {
+  "getBillOfLadingResult": Object {
+    "transportDocument": Object {
+      "checksum": "WGQwqA+NlzMVL1plHc/7ZA==",
+      "pdfDocument": "ABEAAAAAAlbHMucGRmUEsFBgAAAAABAAEAPwAAALQXAQAAAA==",
+    },
+  },
+  "responseMetadata": Object {
+    "requestId": "985a3fa9-3ce2-46fb-a1c7-321439269d2b",
+  },
+}
+`;

@@ -23,6 +23,39 @@ describe('lib.client.models.fulfillment-inbound-shipment', () => {
     client.fulfillmentInboundShipment.clearRestores()
   })
 
+  it('should call GetBillOfLading', async () => {
+    const {pathname, data} = client.signData('GET', 'FulfillmentInboundShipment', '2010-10-01', {
+      Action: 'GetBillOfLading',
+      ShipmentId: 'FBAQFGQZ'
+    })
+
+    nock(apiUrl)
+      .get(pathname)
+      .query(data)
+      .reply(
+        200,
+        `<?xml version="1.0"?>
+        <GetBillOfLadingResponse xmlns="http://mws.amazonaws.com/FulfillmentInboundShipment/2010-10-01/">
+          <GetBillOfLadingResult>
+            <TransportDocument>
+              <PdfDocument>ABEAAAAAAlbHMucGRmUEsFBgAAAAABAAEAPwAAALQXAQAAAA==
+              </PdfDocument>
+              <Checksum>WGQwqA+NlzMVL1plHc/7ZA==</Checksum>
+            </TransportDocument>
+          </GetBillOfLadingResult>
+          <ResponseMetadata>
+            <RequestId>985a3fa9-3ce2-46fb-a1c7-321439269d2b</RequestId>
+          </ResponseMetadata>
+        </GetBillOfLadingResponse>`
+      )
+
+    const result = await client.fulfillmentInboundShipment.getBillOfLading({
+      shipmentId: 'FBAQFGQZ'
+    })
+
+    expect(result).toMatchSnapshot()
+  })
+
   it('should call ListInboundShipments', async () => {
     const {pathname, data} = client.signData('GET', 'FulfillmentInboundShipment', '2010-10-01', {
       Action: 'ListInboundShipments',
