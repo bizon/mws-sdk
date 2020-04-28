@@ -137,6 +137,22 @@ try {
 ### FulfillmentInboundShipment
 
 <details>
+  <summary>getBillOfLading</summary>
+
+  ```js
+  const result = await client.fulfillmentInboundShipment.getBillOfLading({
+    // Options
+  })
+  ```
+
+  Options:
+
+  Name | Type | Default
+  -----|------|--------
+  shipmentId | `String` |
+</details>
+
+<details>
   <summary>listInboundShipments</summary>
 
   ```js
