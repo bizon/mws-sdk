@@ -44,7 +44,7 @@
     "lerna-changelog": "^1.0.1",
     "mockdate": "^2.0.5",
     "nock": "^12.0.3",
-    "xo": "^0.29.1"
+    "xo": "^0.30.0"
   },
   "engines": {
     "node": ">=10"
@@ -81,6 +81,7 @@
     "semicolon": false,
     "space": 2,
     "rules": {
+      "unicorn/no-fn-reference-in-iterator": "off",
       "unicorn/prevent-abbreviations": "off",
       "unicorn/string-content": "off"
     },
