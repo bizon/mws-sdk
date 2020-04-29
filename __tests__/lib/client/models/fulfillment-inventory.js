@@ -80,7 +80,7 @@ describe('lib.client.models.fulfillment-inventory', () => {
       )
 
     const result = await client.fulfillmentInventory.listInventorySupply({
-      queryStartDateTime: new Date().toISOString()
+      queryStartDateTime: new Date()
     })
 
     expect(result).toMatchSnapshot()
