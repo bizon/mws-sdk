@@ -457,7 +457,7 @@ try {
   reportType | `String` |
   startDate | `Date` |
   endDate | `Date` |
-  marketplaces | `Array<String>` |
+  marketplaceIdList | `Array<String>` |
   reportOptions | `String` |
 </details>
 

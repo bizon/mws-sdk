@@ -23,6 +23,50 @@ describe('lib.client.models.reports', () => {
     client.reports.clearRestores()
   })
 
+  it('should call RequestReport', async () => {
+    const {pathname, data} = client.signData('POST', 'Reports', '2009-01-01', {
+      Action: 'RequestReport',
+      ReportType: '_GET_MERCHANT_LISTINGS_DATA_',
+      StartDate: '2009-01-03T18:12:21.000Z',
+      EndDate: '2008-06-26T18:12:21.000Z',
+      'MarketplaceIdList.Id.1': 'ATVPDKIKX0DER'
+    })
+
+    nock(apiUrl)
+      .post(pathname, data)
+      .reply(
+        200,
+        `<?xml version="1.0"?>
+        <RequestReportResponse xmlns="http://mws.amazonaws.com/doc/2009-01-01/">
+          <RequestReportResult>
+            <ReportRequestInfo>
+              <ReportRequestId>2291326454</ReportRequestId>
+              <ReportType>_GET_MERCHANT_LISTINGS_DATA_</ReportType>
+              <StartDate>2009-01-21T02:10:39+00:00</StartDate>
+              <EndDate>2009-02-13T02:10:39+00:00</EndDate>
+              <Scheduled>false</Scheduled>
+              <SubmittedDate>2009-02-20T02:10:39+00:00</SubmittedDate>
+              <ReportProcessingStatus>_SUBMITTED_</ReportProcessingStatus>
+            </ReportRequestInfo>
+          </RequestReportResult>
+          <ResponseMetadata>
+            <RequestId>88faca76-b600-46d2-b53c-0c8c4533e43a</RequestId>
+          </ResponseMetadata>
+        </RequestReportResponse>`
+      )
+
+    const result = await client.reports.requestReport({
+      reportType: '_GET_MERCHANT_LISTINGS_DATA_',
+      startDate: '2009-01-03T18:12:21',
+      endDate: '2008-06-26T18:12:21',
+      marketplaceIdList: [
+        'ATVPDKIKX0DER'
+      ]
+    })
+
+    expect(result).toMatchSnapshot()
+  })
+
   it('should call GetReport and return a raw string', async () => {
     const {pathname, data} = client.signData('POST', 'Reports', '2009-01-01', {
       Action: 'GetReport',
