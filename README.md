@@ -334,42 +334,6 @@ try {
 </details>
 
 <details>
-  <summary>getMyPriceForAsin</summary>
-
-  ```js
-  const result = await client.products.getMyPriceForAsin({
-    // Options
-  })
-  ```
-
-  Options:
-
-  Name | Type | Default
-  -----|------|--------
-  marketplaceId | `String` |
-  asinList | `Array<String>` |
-  itemCondition | `String` |
-</details>
-
-<details>
-  <summary>getMyPriceForSku</summary>
-
-  ```js
-  const result = await client.products.getMyPriceForSku({
-    // Options
-  })
-  ```
-
-  Options:
-
-  Name | Type | Default
-  -----|------|--------
-  marketplaceId | `String` |
-  sellerSkuList | `Array<String>` |
-  itemCondition | `String` |
-</details>
-
-<details>
   <summary>getLowestPricedOffersForAsin</summary>
 
   ```js
@@ -402,6 +366,42 @@ try {
   -----|------|--------
   marketplaceId | `String` |
   sellerSku | `String` |
+  itemCondition | `String` |
+</details>
+
+<details>
+  <summary>getMyPriceForAsin</summary>
+
+  ```js
+  const result = await client.products.getMyPriceForAsin({
+    // Options
+  })
+  ```
+
+  Options:
+
+  Name | Type | Default
+  -----|------|--------
+  marketplaceId | `String` |
+  asinList | `Array<String>` |
+  itemCondition | `String` |
+</details>
+
+<details>
+  <summary>getMyPriceForSku</summary>
+
+  ```js
+  const result = await client.products.getMyPriceForSku({
+    // Options
+  })
+  ```
+
+  Options:
+
+  Name | Type | Default
+  -----|------|--------
+  marketplaceId | `String` |
+  sellerSkuList | `Array<String>` |
   itemCondition | `String` |
 </details>
 
