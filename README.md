@@ -97,7 +97,7 @@ try {
 <details>
   <summary>listFinancialEventGroups</summary>
 
-  <br>**Example:**
+  **Example:**
 
   ```js
   const result = await client.finances.listFinancialEventGroups({
@@ -119,7 +119,7 @@ try {
 <details>
   <summary>listFinancialEvents</summary>
 
-  <br>**Example:**
+  **Example:**
 
   ```js
   const result = await client.finances.listFinancialEvents({
@@ -144,7 +144,7 @@ try {
 <details>
   <summary>getBillOfLading</summary>
 
-  <br>**Example:**
+  **Example:**
 
   ```js
   const result = await client.fulfillmentInboundShipment.getBillOfLading({
@@ -162,7 +162,7 @@ try {
 <details>
   <summary>listInboundShipments</summary>
 
-  <br>**Example:**
+  **Example:**
 
   ```js
   const result = await client.fulfillmentInboundShipment.listInboundShipments({
@@ -194,7 +194,7 @@ try {
 <details>
   <summary>listInboundShipmentItems</summary>
 
-  <br>**Example:**
+  **Example:**
 
   ```js
   const result = await client.fulfillmentInboundShipment.listInboundShipmentItems({
@@ -218,7 +218,7 @@ try {
 <details>
   <summary>listInventorySupply</summary>
 
-  <br>**Example:**
+  **Example:**
 
   ```js
   const result = await client.fulfillmentInventory.listInventorySupply({
@@ -247,7 +247,7 @@ try {
 <details>
   <summary>listOrders</summary>
 
-  <br>**Example:**
+  **Example:**
 
   ```js
   const result = await client.orders.listOrders({
@@ -293,7 +293,7 @@ try {
 <details>
   <summary>getOrder</summary>
 
-  <br>**Example:**
+  **Example:**
 
   ```js
   const result = await client.orders.getOrders({
@@ -332,7 +332,7 @@ try {
 <details>
   <summary>listMatchingProducts</summary>
 
-  <br>**Example:**
+  **Example:**
 
   ```js
   const result = await client.products.listMatchingProducts({
@@ -353,7 +353,7 @@ try {
 <details>
   <summary>getMatchingProduct</summary>
 
-  <br>**Example:**
+  **Example:**
 
   ```js
   const result = await client.products.getMatchingProduct({
@@ -375,7 +375,7 @@ try {
 <details>
   <summary>getMatchingProductForId</summary>
 
-  <br>**Example:**
+  **Example:**
 
   ```js
   const result = await client.products.getMatchingProductForId({
@@ -400,7 +400,7 @@ try {
 <details>
   <summary>getLowestPricedOffersForSku</summary>
 
-  <br>**Example:**
+  **Example:**
 
   ```js
   const result = await client.products.getLowestPricedOffersForSku({
@@ -422,7 +422,7 @@ try {
 <details>
   <summary>getLowestPricedOffersForAsin</summary>
 
-  <br>**Example:**
+  **Example:**
 
   ```js
   const result = await client.products.getLowestPricedOffersForAsin({
@@ -444,7 +444,7 @@ try {
 <details>
   <summary>getMyPriceForSku</summary>
 
-  <br>**Example:**
+  **Example:**
 
   ```js
   const result = await client.products.getMyPriceForSku({
@@ -467,7 +467,7 @@ try {
 <details>
   <summary>getMyPriceForAsin</summary>
 
-  <br>**Example:**
+  **Example:**
 
   ```js
   const result = await client.products.getMyPriceForAsin({
@@ -490,7 +490,7 @@ try {
 <details>
   <summary>getProductCategoriesForSku</summary>
 
-  <br>**Example:**
+  **Example:**
 
   ```js
   const result = await client.products.getProductCategoriesForSku({
@@ -510,7 +510,7 @@ try {
 <details>
   <summary>getProductCategoriesForAsin</summary>
 
-  <br>**Example:**
+  **Example:**
 
   ```js
   const result = await client.products.getProductCategoriesForAsin({
@@ -532,7 +532,7 @@ try {
 <details>
   <summary>requestReport</summary>
 
-  <br>**Example:**
+  **Example:**
 
   ```js
   const result = await client.reports.requestReport({
@@ -559,7 +559,7 @@ try {
 <details>
   <summary>getReportRequestList</summary>
 
-  <br>**Example:**
+  **Example:**
 
   ```js
   const result = await client.reports.getReportRequestList({
@@ -592,7 +592,7 @@ try {
 <details>
   <summary>getReportList</summary>
 
-  <br>**Example:**
+  **Example:**
 
   ```js
   const result = await client.reports.getReportList({
@@ -623,7 +623,7 @@ try {
 <details>
   <summary>getReport</summary>
 
-  <br>**Example:**
+  **Example:**
 
   ```js
   const result = await client.reports.getReport({
@@ -645,7 +645,7 @@ try {
 <details>
   <summary>listMarketplaceParticipations</summary>
 
-  <br>**Example:**
+  **Example:**
 
   ```js
   const result = await client.sellers.listMarketplaceParticipations()
@@ -663,7 +663,7 @@ try {
 <details>
   <summary>registerDestination</summary>
 
-  <br>**Example:**
+  **Example:**
 
   ```js
   const result = await client.subscriptions.registerDestination({
@@ -683,7 +683,7 @@ try {
 <details>
   <summary>deregisterDestination</summary>
 
-  <br>**Example:**
+  **Example:**
 
   ```js
   const result = await client.subscriptions.deregisterDestination({
@@ -703,7 +703,7 @@ try {
 <details>
   <summary>sendTestNotificationToDestination</summary>
 
-  <br>**Example:**
+  **Example:**
 
   ```js
   const result = await client.subscriptions.sendTestNotificationToDestination({
@@ -723,7 +723,7 @@ try {
 <details>
   <summary>createSubscription</summary>
 
-  <br>**Example:**
+  **Example:**
 
   ```js
   const result = await client.subscriptions.createSubscription({
@@ -747,7 +747,7 @@ try {
 <details>
   <summary>deleteSubscription</summary>
 
-  <br>**Example:**
+  **Example:**
 
   ```js
   const result = await client.subscriptions.deleteSubscription({
@@ -769,7 +769,7 @@ try {
 <details>
   <summary>parseNotification</summary>
 
-  <br>**Example:**
+  **Example:**
 
   ```js
   const result = await client.subscriptions.parseNotification(
