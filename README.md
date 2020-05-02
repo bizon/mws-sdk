@@ -422,6 +422,23 @@ try {
   sellerSku | `String` |
 </details>
 
+<details>
+  <summary>getProductCategoriesForAsin</summary>
+
+  ```js
+  const result = await client.products.getProductCategoriesForAsin({
+    // Options
+  })
+  ```
+
+  Options:
+
+  Name | Type | Default
+  -----|------|--------
+  marketplaceId | `String` |
+  asin | `String` |
+</details>
+
 ### Reports
 
 <details>

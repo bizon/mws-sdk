@@ -162,6 +162,42 @@ Array [
 ]
 `;
 
+exports[`lib.client.models.products should call GetProductCategoriesForASIN 1`] = `
+Object {
+  "categories": Array [
+    Object {
+      "parent": Object {
+        "parent": Object {
+          "parent": Object {
+            "parent": Object {
+              "parent": Object {
+                "parent": Object {
+                  "parent": null,
+                  "productCategoryId": "3375251",
+                  "productCategoryName": "Categories",
+                },
+                "productCategoryId": "3375301",
+                "productCategoryName": "Categories",
+              },
+              "productCategoryId": "2232464011",
+              "productCategoryName": "Bikes & Scooters",
+            },
+            "productCategoryId": "3403201",
+            "productCategoryName": "Bikes & Accessories",
+          },
+          "productCategoryId": "2371051011",
+          "productCategoryName": "Clothing",
+        },
+        "productCategoryId": "2419332011",
+        "productCategoryName": "Men",
+      },
+      "productCategoryId": "2420095011",
+      "productCategoryName": "Compression Shorts",
+    },
+  ],
+}
+`;
+
 exports[`lib.client.models.products should call GetProductCategoriesForSKU 1`] = `
 Object {
   "categories": Array [

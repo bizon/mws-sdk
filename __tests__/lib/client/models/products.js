@@ -511,4 +511,61 @@ describe('lib.client.models.products', () => {
 
     expect(result).toMatchSnapshot()
   })
+
+  it('should call GetProductCategoriesForASIN', async () => {
+    const {pathname, data} = client.signData('POST', 'Products', '2011-10-01', {
+      Action: 'GetProductCategoriesForASIN',
+      MarketplaceId: 'ATVPDKIKX0DER',
+      ASIN: 'B002KT3XQM'
+    })
+
+    nock(apiUrl)
+      .post(pathname, data)
+      .reply(
+        200,
+        `<?xml version="1.0"?>
+        <GetProductCategoriesForASINResponse xmlns="http://mws.amazonservices.com/schema/Products/2011-10-01">
+          <GetProductCategoriesForASINResult>
+            <Self>
+              <ProductCategoryId>2420095011</ProductCategoryId>
+              <ProductCategoryName>Compression Shorts</ProductCategoryName>
+              <Parent>
+                <ProductCategoryId>2419332011</ProductCategoryId>
+                <ProductCategoryName>Men</ProductCategoryName>
+                <Parent>
+                  <ProductCategoryId>2371051011</ProductCategoryId>
+                  <ProductCategoryName>Clothing</ProductCategoryName>
+                  <Parent>
+                    <ProductCategoryId>3403201</ProductCategoryId>
+                    <ProductCategoryName>Bikes &#x26; Accessories</ProductCategoryName>
+                    <Parent>
+                      <ProductCategoryId>2232464011</ProductCategoryId>
+                      <ProductCategoryName>Bikes &#x26; Scooters</ProductCategoryName>
+                      <Parent>
+                        <ProductCategoryId>3375301</ProductCategoryId>
+                        <ProductCategoryName>Categories</ProductCategoryName>
+                        <Parent>
+                          <ProductCategoryId>3375251</ProductCategoryId>
+                          <ProductCategoryName>Categories</ProductCategoryName>
+                        </Parent>
+                      </Parent>
+                    </Parent>
+                  </Parent>
+                </Parent>
+              </Parent>
+            </Self>
+          </GetProductCategoriesForASINResult>
+          <ResponseMetadata>
+            <RequestId>fbce5b62-67cc-4ab8-86f3-EXAMPLE22e4e</RequestId>
+          </ResponseMetadata>
+        </GetProductCategoriesForASINResponse>`
+      )
+
+    const result = await client.products.getProductCategoriesForAsin({
+      marketplaceId: 'ATVPDKIKX0DER',
+      asin: 'B002KT3XQM'
+    })
+
+    expect(result).toMatchSnapshot()
+  })
 })
