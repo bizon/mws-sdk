@@ -88,7 +88,7 @@ do {
 
 ## Error handling
 
-Whenever the MWS API returns a non 200 HTTP status, a `MWSError` will be thrown. Use `error.body` to inspect the contents of the error, and `error.response` to access the raw HTTP response.
+Whenever the MWS API returns a non-OK HTTP status, a `MWSError` will be thrown. Use `error.body` to inspect the contents of the error, and `error.response` to access the raw HTTP response.
 
 ```js
 const {MWSError} = '@bizon/mws-sdk'
