@@ -264,8 +264,16 @@ describe('lib.client.models.orders', () => {
   it('should call ListOrders with marketplaceIds', async () => {
     const {pathname, data} = client.signData('GET', 'Orders', '2013-09-01', {
       Action: 'ListOrders',
+      LastUpdatedAfter: '2017-02-01T18:12:21.000Z',
       MaxResultsPerPage: 100,
-      'MarketplaceId.Id.1': 'MARKETPLACE1'
+      'MarketplaceId.Id.1': 'ATVPDKIKX0DER',
+      'MarketplaceId.Id.2': 'A2Q3Y263D00KWC',
+      'MarketplaceId.Id.3': 'A1VC38T7YXB528',
+      'FulfillmentChannel.Channel.1': 'MFN',
+      'PaymentMethod.Method.1': 'COD',
+      'PaymentMethod.Method.2': 'Other',
+      'OrderStatus.Status.1': 'Unshipped',
+      'OrderStatus.Status.2': 'PendingAvailability'
     })
 
     nock(apiUrl)
@@ -438,7 +446,23 @@ describe('lib.client.models.orders', () => {
       )
 
     const result = await client.orders.listOrders({
-      marketplaceId: 'MARKETPLACE1'
+      lastUpdatedAfter: '2017-02-01T18:12:21',
+      marketplaceId: [
+        'ATVPDKIKX0DER',
+        'A2Q3Y263D00KWC',
+        'A1VC38T7YXB528'
+      ],
+      fulfillmentChannel: [
+        'MFN'
+      ],
+      paymentMethod: [
+        'COD',
+        'Other'
+      ],
+      orderStatus: [
+        'Unshipped',
+        'PendingAvailability'
+      ]
     })
 
     expect(result).toMatchSnapshot()

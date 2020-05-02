@@ -252,12 +252,12 @@ try {
   lastUpdatedBefore | `Date` |
   orderStatus | `String` |
   marketplaceId | `Array<String>` | Selected region’s marketplaces
-  fulfillmentChannel | `String` |
-  paymentMethod | `String` |
+  fulfillmentChannel | `Array<String>` |
+  paymentMethod | `Array<String>` |
   buyerEmail | `String` |
   sellerOrderId | `String` |
   maxResultsPerPage | `Number` | `100`
-  tfmShipmentStatus | `String` |
+  easyShipShipmentStatus | `Array<String>` |
   nextToken | `String` |
 </details>
 
