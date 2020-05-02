@@ -144,145 +144,6 @@ describe('lib.client.models.products', () => {
     expect(result).toMatchSnapshot()
   })
 
-  it('should call GetMyPriceForASIN', async () => {
-    const {pathname, data} = client.signData('POST', 'Products', '2011-10-01', {
-      Action: 'GetMyPriceForASIN',
-      MarketplaceId: 'ATVPDKIKX0DER',
-      'ASINList.ASIN.1': '1933890517'
-    })
-
-    nock(apiUrl)
-      .post(pathname, data)
-      .reply(
-        200,
-        `<?xml version="1.0"?>
-        <GetMyPriceForASINResponse xmlns="http://mws.amazonservices.com/schema/Products/2011-10-01">
-          <GetMyPriceForASINResult ASIN="1933890517" status="Success">
-            <Product xmlns="http://mws.amazonservices.com/schema/Products/2011-10-01"
-              xmlns:ns2="http://mws.amazonservices.com/schema/Products/2011-10-01/default.xsd">
-              <Identifiers>
-                <MarketplaceASIN>
-                  <MarketplaceId>ATVPDKIKX0DER</MarketplaceId>
-                  <ASIN>1933890517</ASIN>
-                </MarketplaceASIN>
-              </Identifiers>
-              <Offers>
-                <Offer>
-                  <BuyingPrice>
-                    <LandedPrice>
-                      <CurrencyCode>USD</CurrencyCode>
-                      <Amount>303.99</Amount>
-                    </LandedPrice>
-                    <ListingPrice>
-                      <CurrencyCode>USD</CurrencyCode>
-                      <Amount>300.00</Amount>
-                    </ListingPrice>
-                    <Shipping>
-                      <CurrencyCode>USD</CurrencyCode>
-                      <Amount>3.99</Amount>
-                    </Shipping>
-                  </BuyingPrice>
-                  <RegularPrice>
-                    <CurrencyCode>USD</CurrencyCode>
-                    <Amount>300.00</Amount>
-                  </RegularPrice>
-                  <FulfillmentChannel>MERCHANT</FulfillmentChannel>
-                  <ItemCondition>Used</ItemCondition>
-                  <ItemSubCondition>Acceptable</ItemSubCondition>
-                  <SellerId>A1IMEXAMPLEWRC</SellerId>
-                  <SellerSKU>SKU2468</SellerSKU>
-                </Offer>
-              </Offers>
-            </Product>
-          </GetMyPriceForASINResult>
-          <ResponseMetadata>
-            <RequestId>a3381684-87bd-416e-9b95-EXAMPLE9c236</RequestId>
-          </ResponseMetadata>
-        </GetMyPriceForASINResponse>`
-      )
-
-    const result = await client.products.getMyPriceForAsin({
-      marketplaceId: 'ATVPDKIKX0DER',
-      asinList: [
-        '1933890517'
-      ]
-    })
-
-    expect(result).toMatchSnapshot()
-  })
-
-  it('should call GetMyPriceForSKU', async () => {
-    const {pathname, data} = client.signData('POST', 'Products', '2011-10-01', {
-      Action: 'GetMyPriceForSKU',
-      MarketplaceId: 'ATVPDKIKX0DER',
-      'SellerSKUList.SellerSKU.1': 'SKU2468'
-    })
-
-    nock(apiUrl)
-      .post(pathname, data)
-      .reply(
-        200,
-        `<?xml version="1.0"?>
-        <GetMyPriceForSKUResponse xmlns="http://mws.amazonservices.com/schema/Products/2011-10-01">
-          <GetMyPriceForSKUResult SellerSKU="SKU2468" status="Success">
-            <Product xmlns="http://mws.amazonservices.com/schema/Products/2011-10-01"
-              xmlns:ns2="http://mws.amazonservices.com/schema/Products/2011-10-01/default.xsd">
-              <Identifiers>
-                <MarketplaceASIN>
-                  <MarketplaceId>ATVPDKIKX0DER</MarketplaceId>
-                  <ASIN>1933890517</ASIN>
-                </MarketplaceASIN>
-                <SKUIdentifier>
-                  <MarketplaceId>ATVPDKIKX0DER</MarketplaceId>
-                  <SellerId>A1IMEXAMPLEWRC</SellerId>
-                  <SellerSKU>SKU2468</SellerSKU>
-                </SKUIdentifier>
-              </Identifiers>
-              <Offers>
-                <Offer>
-                  <BuyingPrice>
-                    <LandedPrice>
-                      <CurrencyCode>USD</CurrencyCode>
-                      <Amount>303.99</Amount>
-                    </LandedPrice>
-                    <ListingPrice>
-                      <CurrencyCode>USD</CurrencyCode>
-                      <Amount>300.00</Amount>
-                    </ListingPrice>
-                    <Shipping>
-                      <CurrencyCode>USD</CurrencyCode>
-                      <Amount>3.99</Amount>
-                    </Shipping>
-                  </BuyingPrice>
-                  <RegularPrice>
-                    <CurrencyCode>USD</CurrencyCode>
-                    <Amount>300.00</Amount>
-                  </RegularPrice>
-                  <FulfillmentChannel>MERCHANT</FulfillmentChannel>
-                  <ItemCondition>Used</ItemCondition>
-                  <ItemSubCondition>Acceptable</ItemSubCondition>
-                  <SellerId>A1IMEXAMPLEWRC</SellerId>
-                  <SellerSKU>SKU2468</SellerSKU>
-                </Offer>
-              </Offers>
-            </Product>
-          </GetMyPriceForSKUResult>
-          <ResponseMetadata>
-            <RequestId>bc6e4601-3d74-4612-adcf-EXAMPLEf1796</RequestId>
-          </ResponseMetadata>
-        </GetMyPriceForSKUResponse>`
-      )
-
-    const result = await client.products.getMyPriceForSku({
-      marketplaceId: 'ATVPDKIKX0DER',
-      sellerSkuList: [
-        'SKU2468'
-      ]
-    })
-
-    expect(result).toMatchSnapshot()
-  })
-
   it('should call GetLowestPricedOffersForSKU', async () => {
     const {pathname, data} = client.signData('POST', 'Products', '2011-10-01', {
       Action: 'GetLowestPricedOffersForSKU',
@@ -441,5 +302,270 @@ describe('lib.client.models.products', () => {
       expect(error.message).toBe('Products.GetLowestPricedOffersForASIN error: Response code 400 (Bad Request)')
       expect(error.body).toMatchSnapshot()
     }
+  })
+
+  it('should call GetMyPriceForASIN', async () => {
+    const {pathname, data} = client.signData('POST', 'Products', '2011-10-01', {
+      Action: 'GetMyPriceForASIN',
+      MarketplaceId: 'ATVPDKIKX0DER',
+      'ASINList.ASIN.1': '1933890517'
+    })
+
+    nock(apiUrl)
+      .post(pathname, data)
+      .reply(
+        200,
+        `<?xml version="1.0"?>
+        <GetMyPriceForASINResponse xmlns="http://mws.amazonservices.com/schema/Products/2011-10-01">
+          <GetMyPriceForASINResult ASIN="1933890517" status="Success">
+            <Product xmlns="http://mws.amazonservices.com/schema/Products/2011-10-01"
+              xmlns:ns2="http://mws.amazonservices.com/schema/Products/2011-10-01/default.xsd">
+              <Identifiers>
+                <MarketplaceASIN>
+                  <MarketplaceId>ATVPDKIKX0DER</MarketplaceId>
+                  <ASIN>1933890517</ASIN>
+                </MarketplaceASIN>
+              </Identifiers>
+              <Offers>
+                <Offer>
+                  <BuyingPrice>
+                    <LandedPrice>
+                      <CurrencyCode>USD</CurrencyCode>
+                      <Amount>303.99</Amount>
+                    </LandedPrice>
+                    <ListingPrice>
+                      <CurrencyCode>USD</CurrencyCode>
+                      <Amount>300.00</Amount>
+                    </ListingPrice>
+                    <Shipping>
+                      <CurrencyCode>USD</CurrencyCode>
+                      <Amount>3.99</Amount>
+                    </Shipping>
+                  </BuyingPrice>
+                  <RegularPrice>
+                    <CurrencyCode>USD</CurrencyCode>
+                    <Amount>300.00</Amount>
+                  </RegularPrice>
+                  <FulfillmentChannel>MERCHANT</FulfillmentChannel>
+                  <ItemCondition>Used</ItemCondition>
+                  <ItemSubCondition>Acceptable</ItemSubCondition>
+                  <SellerId>A1IMEXAMPLEWRC</SellerId>
+                  <SellerSKU>SKU2468</SellerSKU>
+                </Offer>
+              </Offers>
+            </Product>
+          </GetMyPriceForASINResult>
+          <ResponseMetadata>
+            <RequestId>a3381684-87bd-416e-9b95-EXAMPLE9c236</RequestId>
+          </ResponseMetadata>
+        </GetMyPriceForASINResponse>`
+      )
+
+    const result = await client.products.getMyPriceForAsin({
+      marketplaceId: 'ATVPDKIKX0DER',
+      asinList: [
+        '1933890517'
+      ]
+    })
+
+    expect(result).toMatchSnapshot()
+  })
+
+  it('should call GetMyPriceForSKU', async () => {
+    const {pathname, data} = client.signData('POST', 'Products', '2011-10-01', {
+      Action: 'GetMyPriceForSKU',
+      MarketplaceId: 'ATVPDKIKX0DER',
+      'SellerSKUList.SellerSKU.1': 'SKU2468'
+    })
+
+    nock(apiUrl)
+      .post(pathname, data)
+      .reply(
+        200,
+        `<?xml version="1.0"?>
+        <GetMyPriceForSKUResponse xmlns="http://mws.amazonservices.com/schema/Products/2011-10-01">
+          <GetMyPriceForSKUResult SellerSKU="SKU2468" status="Success">
+            <Product xmlns="http://mws.amazonservices.com/schema/Products/2011-10-01"
+              xmlns:ns2="http://mws.amazonservices.com/schema/Products/2011-10-01/default.xsd">
+              <Identifiers>
+                <MarketplaceASIN>
+                  <MarketplaceId>ATVPDKIKX0DER</MarketplaceId>
+                  <ASIN>1933890517</ASIN>
+                </MarketplaceASIN>
+                <SKUIdentifier>
+                  <MarketplaceId>ATVPDKIKX0DER</MarketplaceId>
+                  <SellerId>A1IMEXAMPLEWRC</SellerId>
+                  <SellerSKU>SKU2468</SellerSKU>
+                </SKUIdentifier>
+              </Identifiers>
+              <Offers>
+                <Offer>
+                  <BuyingPrice>
+                    <LandedPrice>
+                      <CurrencyCode>USD</CurrencyCode>
+                      <Amount>303.99</Amount>
+                    </LandedPrice>
+                    <ListingPrice>
+                      <CurrencyCode>USD</CurrencyCode>
+                      <Amount>300.00</Amount>
+                    </ListingPrice>
+                    <Shipping>
+                      <CurrencyCode>USD</CurrencyCode>
+                      <Amount>3.99</Amount>
+                    </Shipping>
+                  </BuyingPrice>
+                  <RegularPrice>
+                    <CurrencyCode>USD</CurrencyCode>
+                    <Amount>300.00</Amount>
+                  </RegularPrice>
+                  <FulfillmentChannel>MERCHANT</FulfillmentChannel>
+                  <ItemCondition>Used</ItemCondition>
+                  <ItemSubCondition>Acceptable</ItemSubCondition>
+                  <SellerId>A1IMEXAMPLEWRC</SellerId>
+                  <SellerSKU>SKU2468</SellerSKU>
+                </Offer>
+              </Offers>
+            </Product>
+          </GetMyPriceForSKUResult>
+          <ResponseMetadata>
+            <RequestId>bc6e4601-3d74-4612-adcf-EXAMPLEf1796</RequestId>
+          </ResponseMetadata>
+        </GetMyPriceForSKUResponse>`
+      )
+
+    const result = await client.products.getMyPriceForSku({
+      marketplaceId: 'ATVPDKIKX0DER',
+      sellerSkuList: [
+        'SKU2468'
+      ]
+    })
+
+    expect(result).toMatchSnapshot()
+  })
+
+  it('should call GetProductCategoriesForSKU', async () => {
+    const {pathname, data} = client.signData('POST', 'Products', '2011-10-01', {
+      Action: 'GetProductCategoriesForSKU',
+      MarketplaceId: 'ATVPDKIKX0DER',
+      SellerSKU: 'SKU2468'
+    })
+
+    nock(apiUrl)
+      .post(pathname, data)
+      .reply(
+        200,
+        `<?xml version="1.0"?>
+        <GetProductCategoriesForSKUResponse xmlns="http://mws.amazonservices.com/schema/Products/2011-10-01">
+          <GetProductCategoriesForSKUResult>
+            <Self>
+              <ProductCategoryId>271578011</ProductCategoryId>
+              <ProductCategoryName>Project Management</ProductCategoryName>
+              <Parent>
+                <ProductCategoryId>2675</ProductCategoryId>
+                <ProductCategoryName>Management &#x26; Leadership</ProductCategoryName>
+                <Parent>
+                  <ProductCategoryId>3</ProductCategoryId>
+                  <ProductCategoryName>Business &#x26; Investing</ProductCategoryName>
+                  <Parent>
+                    <ProductCategoryId>1000</ProductCategoryId>
+                    <ProductCategoryName>Subjects</ProductCategoryName>
+                    <Parent>
+                      <ProductCategoryId>283155</ProductCategoryId>
+                      <ProductCategoryName>Subjects</ProductCategoryName>
+                    </Parent>
+                  </Parent>
+                </Parent>
+              </Parent>
+            </Self>
+            <Self>
+              <ProductCategoryId>684248011</ProductCategoryId>
+              <ProductCategoryName>Management</ProductCategoryName>
+              <Parent>
+                <ProductCategoryId>468220</ProductCategoryId>
+                <ProductCategoryName>Business &#x26; Finance</ProductCategoryName>
+                <Parent>
+                  <ProductCategoryId>465600</ProductCategoryId>
+                  <ProductCategoryName>New, Used &#x26; Rental Textbooks</ProductCategoryName>
+                  <Parent>
+                    <ProductCategoryId>2349030011</ProductCategoryId>
+                    <ProductCategoryName>Specialty Boutique</ProductCategoryName>
+                    <Parent>
+                      <ProductCategoryId>283155</ProductCategoryId>
+                      <ProductCategoryName>Specialty Boutique</ProductCategoryName>
+                    </Parent>
+                  </Parent>
+                </Parent>
+              </Parent>
+            </Self>
+          </GetProductCategoriesForSKUResult>
+          <ResponseMetadata>
+            <RequestId>e058aabd-b4c3-48ba-9bfa-EXAMPLE9a267</RequestId>
+          </ResponseMetadata>
+        </GetProductCategoriesForSKUResponse>`
+      )
+
+    const result = await client.products.getProductCategoriesForSku({
+      marketplaceId: 'ATVPDKIKX0DER',
+      sellerSku: 'SKU2468'
+    })
+
+    expect(result).toMatchSnapshot()
+  })
+
+  it('should call GetProductCategoriesForASIN', async () => {
+    const {pathname, data} = client.signData('POST', 'Products', '2011-10-01', {
+      Action: 'GetProductCategoriesForASIN',
+      MarketplaceId: 'ATVPDKIKX0DER',
+      ASIN: 'B002KT3XQM'
+    })
+
+    nock(apiUrl)
+      .post(pathname, data)
+      .reply(
+        200,
+        `<?xml version="1.0"?>
+        <GetProductCategoriesForASINResponse xmlns="http://mws.amazonservices.com/schema/Products/2011-10-01">
+          <GetProductCategoriesForASINResult>
+            <Self>
+              <ProductCategoryId>2420095011</ProductCategoryId>
+              <ProductCategoryName>Compression Shorts</ProductCategoryName>
+              <Parent>
+                <ProductCategoryId>2419332011</ProductCategoryId>
+                <ProductCategoryName>Men</ProductCategoryName>
+                <Parent>
+                  <ProductCategoryId>2371051011</ProductCategoryId>
+                  <ProductCategoryName>Clothing</ProductCategoryName>
+                  <Parent>
+                    <ProductCategoryId>3403201</ProductCategoryId>
+                    <ProductCategoryName>Bikes &#x26; Accessories</ProductCategoryName>
+                    <Parent>
+                      <ProductCategoryId>2232464011</ProductCategoryId>
+                      <ProductCategoryName>Bikes &#x26; Scooters</ProductCategoryName>
+                      <Parent>
+                        <ProductCategoryId>3375301</ProductCategoryId>
+                        <ProductCategoryName>Categories</ProductCategoryName>
+                        <Parent>
+                          <ProductCategoryId>3375251</ProductCategoryId>
+                          <ProductCategoryName>Categories</ProductCategoryName>
+                        </Parent>
+                      </Parent>
+                    </Parent>
+                  </Parent>
+                </Parent>
+              </Parent>
+            </Self>
+          </GetProductCategoriesForASINResult>
+          <ResponseMetadata>
+            <RequestId>fbce5b62-67cc-4ab8-86f3-EXAMPLE22e4e</RequestId>
+          </ResponseMetadata>
+        </GetProductCategoriesForASINResponse>`
+      )
+
+    const result = await client.products.getProductCategoriesForAsin({
+      marketplaceId: 'ATVPDKIKX0DER',
+      asin: 'B002KT3XQM'
+    })
+
+    expect(result).toMatchSnapshot()
   })
 })
