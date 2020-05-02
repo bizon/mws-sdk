@@ -13,3 +13,18 @@ Array [
   ],
 ]
 `;
+
+exports[`lib.client.models.reports should call RequestReport 1`] = `
+Object {
+  "completedDate": null,
+  "endDate": 2009-02-13T02:10:39.000Z,
+  "generatedReportId": null,
+  "reportProcessingStatus": "_SUBMITTED_",
+  "reportRequestId": "2291326454",
+  "reportType": "_GET_MERCHANT_LISTINGS_DATA_",
+  "scheduled": false,
+  "startDate": 2009-01-21T02:10:39.000Z,
+  "startedProcessingDate": null,
+  "submittedDate": 2009-02-20T02:10:39.000Z,
+}
+`;
