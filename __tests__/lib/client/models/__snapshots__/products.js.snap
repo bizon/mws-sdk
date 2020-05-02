@@ -162,6 +162,55 @@ Array [
 ]
 `;
 
+exports[`lib.client.models.products should call GetProductCategoriesForSKU 1`] = `
+Object {
+  "categories": Array [
+    Object {
+      "parent": Object {
+        "parent": Object {
+          "parent": Object {
+            "parent": Object {
+              "parent": null,
+              "productCategoryId": "283155",
+              "productCategoryName": "Subjects",
+            },
+            "productCategoryId": "1000",
+            "productCategoryName": "Subjects",
+          },
+          "productCategoryId": "3",
+          "productCategoryName": "Business & Investing",
+        },
+        "productCategoryId": "2675",
+        "productCategoryName": "Management & Leadership",
+      },
+      "productCategoryId": "271578011",
+      "productCategoryName": "Project Management",
+    },
+    Object {
+      "parent": Object {
+        "parent": Object {
+          "parent": Object {
+            "parent": Object {
+              "parent": null,
+              "productCategoryId": "283155",
+              "productCategoryName": "Specialty Boutique",
+            },
+            "productCategoryId": "2349030011",
+            "productCategoryName": "Specialty Boutique",
+          },
+          "productCategoryId": "465600",
+          "productCategoryName": "New, Used & Rental Textbooks",
+        },
+        "productCategoryId": "468220",
+        "productCategoryName": "Business & Finance",
+      },
+      "productCategoryId": "684248011",
+      "productCategoryName": "Management",
+    },
+  ],
+}
+`;
+
 exports[`lib.client.models.products should call ListMatchingProducts 1`] = `
 Object {
   "products": Array [

@@ -405,6 +405,23 @@ try {
   itemCondition | `String` |
 </details>
 
+<details>
+  <summary>getProductCategoriesForSku</summary>
+
+  ```js
+  const result = await client.products.getProductCategoriesForSku({
+    // Options
+  })
+  ```
+
+  Options:
+
+  Name | Type | Default
+  -----|------|--------
+  marketplaceId | `String` |
+  sellerSku | `String` |
+</details>
+
 ### Reports
 
 <details>

@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lib.client.parsers.products.get-product-categories-for-sku-response should parse the GetProductCategoriesForSKUResponse example response from MWS doc 1`] = `
+Object {
+  "getProductCategoriesForSkuResult": Object {
+    "categories": Array [
+      Object {
+        "parent": Object {
+          "parent": Object {
+            "parent": Object {
+              "parent": Object {
+                "parent": null,
+                "productCategoryId": "283155",
+                "productCategoryName": "Subjects",
+              },
+              "productCategoryId": "1000",
+              "productCategoryName": "Subjects",
+            },
+            "productCategoryId": "3",
+            "productCategoryName": "Business & Investing",
+          },
+          "productCategoryId": "2675",
+          "productCategoryName": "Management & Leadership",
+        },
+        "productCategoryId": "271578011",
+        "productCategoryName": "Project Management",
+      },
+      Object {
+        "parent": Object {
+          "parent": Object {
+            "parent": Object {
+              "parent": Object {
+                "parent": null,
+                "productCategoryId": "283155",
+                "productCategoryName": "Specialty Boutique",
+              },
+              "productCategoryId": "2349030011",
+              "productCategoryName": "Specialty Boutique",
+            },
+            "productCategoryId": "465600",
+            "productCategoryName": "New, Used & Rental Textbooks",
+          },
+          "productCategoryId": "468220",
+          "productCategoryName": "Business & Finance",
+        },
+        "productCategoryId": "684248011",
+        "productCategoryName": "Management",
+      },
+    ],
+  },
+  "responseMetadata": Object {
+    "requestId": "e058aabd-b4c3-48ba-9bfa-EXAMPLE9a267",
+  },
+}
+`;
