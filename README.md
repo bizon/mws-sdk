@@ -69,6 +69,23 @@ const client = new MWSClient({
 
 Keep in mind that the specified marketplaces will have to be in the same MWS region, otherwise an error will be thrown.
 
+## Pagination
+
+The MWS API defines multiple API calls for pagination. They have been abstracted in this SDK. Whenever there are more retrievable results, a `nextToken` property will be available in the operation’s result. The `nextToken` can then be used as an option of that same operation to fetch an additional page.
+
+```js
+let nextToken
+
+do {
+  const result = await client.orders.listOrders({
+    nextToken, // If nextToken is truthy, all the other options are ignored.
+    lastUpdatedAfter: new Date(2020, 0, 1)
+  })
+
+  nextToken = result.nextToken
+} while (nextToken)
+```
+
 ## Error handling
 
 Whenever the MWS API returns a non 200 HTTP status, a `MWSError` will be thrown. Use `error.body` to inspect the contents of the error, and `error.response` to access the raw HTTP response.
