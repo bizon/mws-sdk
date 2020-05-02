@@ -334,24 +334,6 @@ try {
 </details>
 
 <details>
-  <summary>getLowestPricedOffersForAsin</summary>
-
-  ```js
-  const result = await client.products.getLowestPricedOffersForAsin({
-    // Options
-  })
-  ```
-
-  Options:
-
-  Name | Type | Default
-  -----|------|--------
-  marketplaceId | `String` |
-  asin | `String` |
-  itemCondition | `String` |
-</details>
-
-<details>
   <summary>getLowestPricedOffersForSku</summary>
 
   ```js
@@ -370,10 +352,10 @@ try {
 </details>
 
 <details>
-  <summary>getMyPriceForAsin</summary>
+  <summary>getLowestPricedOffersForAsin</summary>
 
   ```js
-  const result = await client.products.getMyPriceForAsin({
+  const result = await client.products.getLowestPricedOffersForAsin({
     // Options
   })
   ```
@@ -383,7 +365,7 @@ try {
   Name | Type | Default
   -----|------|--------
   marketplaceId | `String` |
-  asinList | `Array<String>` |
+  asin | `String` |
   itemCondition | `String` |
 </details>
 
@@ -402,6 +384,24 @@ try {
   -----|------|--------
   marketplaceId | `String` |
   sellerSkuList | `Array<String>` |
+  itemCondition | `String` |
+</details>
+
+<details>
+  <summary>getMyPriceForAsin</summary>
+
+  ```js
+  const result = await client.products.getMyPriceForAsin({
+    // Options
+  })
+  ```
+
+  Options:
+
+  Name | Type | Default
+  -----|------|--------
+  marketplaceId | `String` |
+  asinList | `Array<String>` |
   itemCondition | `String` |
 </details>
 
