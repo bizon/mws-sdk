@@ -95,15 +95,39 @@ try {
 ### Finances ![](https://badgen.net/badge/status/complete?label&color=green)
 
 <details>
-  <summary>listFinancialEvents</summary>
+  <summary>listFinancialEventGroups</summary>
+
+  <br>**Example:**
 
   ```js
-  const result = await client.finances.listFinancialEvents({
-    // Options
+  const result = await client.finances.listFinancialEventGroups({
+    financialEventGroupStartedAfter: new Date(2015, 2, 1),
+    financialEventGroupStartedBefore: new Date(2015, 4, 1)
   })
   ```
 
-  Options:
+  **Options:**
+
+  Name | Type | Default
+  -----|------|--------
+  maxResultsPerPage | `Number` | `100`
+  financialEventGroupStartedAfter | `Date` |
+  financialEventGroupStartedBefore | `Date` |
+  nextToken | `String` |
+</details>
+
+<details>
+  <summary>listFinancialEvents</summary>
+
+  <br>**Example:**
+
+  ```js
+  const result = await client.finances.listFinancialEvents({
+    amazonOrderId: '333-7777777-7777777'
+  })
+  ```
+
+  **Options:**
 
   Name | Type | Default
   -----|------|--------
@@ -115,37 +139,20 @@ try {
   nextToken | `String` |
 </details>
 
-<details>
-  <summary>listFinancialEventGroups</summary>
-
-  ```js
-  const result = await client.finances.listFinancialEventGroups({
-    // Options
-  })
-  ```
-
-  Options:
-
-  Name | Type | Default
-  -----|------|--------
-  maxResultsPerPage | `Number` | `100`
-  financialEventGroupStartedAfter | `Date` |
-  financialEventGroupStartedBefore | `Date` |
-  nextToken | `String` |
-</details>
-
 ### FulfillmentInboundShipment
 
 <details>
   <summary>getBillOfLading</summary>
 
+  <br>**Example:**
+
   ```js
   const result = await client.fulfillmentInboundShipment.getBillOfLading({
-    // Options
+    shipmentId: 'FBAQFGQZ'
   })
   ```
 
-  Options:
+  **Options:**
 
   Name | Type | Default
   -----|------|--------
@@ -155,13 +162,25 @@ try {
 <details>
   <summary>listInboundShipments</summary>
 
+  <br>**Example:**
+
   ```js
   const result = await client.fulfillmentInboundShipment.listInboundShipments({
-    // Options
+    lastUpdatedAfter: '2015-10-02T12:00:54Z',
+    lastUpdatedBefore: '2015-11-02T12:00:54Z',
+    shipmentStatusList: [
+      'WORKING',
+      'CLOSED'
+    ],
+    shipmentIdList: [
+      'FBA44JV8R',
+      'FBA4X8YLS',
+      'FBA4X9FML'
+    ]
   })
   ```
 
-  Options:
+  **Options:**
 
   Name | Type | Default
   -----|------|--------
@@ -175,13 +194,15 @@ try {
 <details>
   <summary>listInboundShipmentItems</summary>
 
+  <br>**Example:**
+
   ```js
   const result = await client.fulfillmentInboundShipment.listInboundShipmentItems({
-    // Options
+    shipmentId: 'SSF85DGIZZ3OF1'
   })
   ```
 
-  Options:
+  **Options:**
 
   Name | Type | Default
   -----|------|--------
@@ -197,13 +218,19 @@ try {
 <details>
   <summary>listInventorySupply</summary>
 
+  <br>**Example:**
+
   ```js
   const result = await client.fulfillmentInventory.listInventorySupply({
-    // Options
+    sellerSkus: [
+      'SampleSKU1',
+      'SampleSKU2'
+    ],
+    responseGroup: 'Basic'
   })
   ```
 
-  Options:
+  **Options:**
 
   Name | Type | Default
   -----|------|--------
@@ -220,13 +247,31 @@ try {
 <details>
   <summary>listOrders</summary>
 
+  <br>**Example:**
+
   ```js
   const result = await client.orders.listOrders({
-    // Options
+    lastUpdatedAfter: '2017-02-01T18:12:21',
+    marketplaceId: [
+      'ATVPDKIKX0DER',
+      'A2Q3Y263D00KWC',
+      'A1VC38T7YXB528'
+    ],
+    fulfillmentChannel: [
+      'MFN'
+    ],
+    paymentMethod: [
+      'COD',
+      'Other'
+    ],
+    orderStatus: [
+      'Unshipped',
+      'PendingAvailability'
+    ]
   })
   ```
 
-  Options:
+  **Options:**
 
   Name | Type | Default
   -----|------|--------
@@ -248,13 +293,17 @@ try {
 <details>
   <summary>getOrder</summary>
 
+  <br>**Example:**
+
   ```js
-  const result = await client.orders.getOrder({
-    // Options
+  const result = await client.orders.getOrders({
+    amazonOrderId: [
+      '902-3159896-1390916'
+    ]
   })
   ```
 
-  Options:
+  **Options:**
 
   Name | Type | Default
   -----|------|--------
@@ -266,11 +315,11 @@ try {
 
   ```js
   const result = await client.orders.listOrderItems({
-    // Options
+    amazonOrderId: '058-1233752-8214740'
   })
   ```
 
-  Options:
+  **Options:**
 
   Name | Type | Default
   -----|------|--------
@@ -283,13 +332,16 @@ try {
 <details>
   <summary>listMatchingProducts</summary>
 
+  <br>**Example:**
+
   ```js
   const result = await client.products.listMatchingProducts({
-    // Options
+    marketplaceId: 'ATVPDKIKX0DER',
+    query: '0439708184'
   })
   ```
 
-  Options:
+  **Options:**
 
   Name | Type | Default
   -----|------|--------
@@ -301,13 +353,18 @@ try {
 <details>
   <summary>getMatchingProduct</summary>
 
+  <br>**Example:**
+
   ```js
   const result = await client.products.getMatchingProduct({
-    // Options
+    marketplaceId: 'ATVPDKIKX0DER',
+    asinList: [
+      'B002KT3XRQ'
+    ]
   })
   ```
 
-  Options:
+  **Options:**
 
   Name | Type | Default
   -----|------|--------
@@ -318,13 +375,20 @@ try {
 <details>
   <summary>getMatchingProductForId</summary>
 
+  <br>**Example:**
+
   ```js
   const result = await client.products.getMatchingProductForId({
-    // Options
+    marketplaceId: 'ATVPDKIKX0DER',
+    idType: 'ISBN',
+    idList: [
+      '9781933988665',
+      '0439708184'
+    ]
   })
   ```
 
-  Options:
+  **Options:**
 
   Name | Type | Default
   -----|------|--------
@@ -336,13 +400,17 @@ try {
 <details>
   <summary>getLowestPricedOffersForSku</summary>
 
+  <br>**Example:**
+
   ```js
   const result = await client.products.getLowestPricedOffersForSku({
-    // Options
+    marketplaceId: 'ATVPDKIKX0DER',
+    sellerSku: '24478624',
+    itemCondition: 'New'
   })
   ```
 
-  Options:
+  **Options:**
 
   Name | Type | Default
   -----|------|--------
@@ -354,13 +422,17 @@ try {
 <details>
   <summary>getLowestPricedOffersForAsin</summary>
 
+  <br>**Example:**
+
   ```js
   const result = await client.products.getLowestPricedOffersForAsin({
-    // Options
+    marketplaceId: 'ATVPDKIKX0DER',
+    asin: 'B00COK3FD8',
+    itemCondition: 'New'
   })
   ```
 
-  Options:
+  **Options:**
 
   Name | Type | Default
   -----|------|--------
@@ -372,13 +444,18 @@ try {
 <details>
   <summary>getMyPriceForSku</summary>
 
+  <br>**Example:**
+
   ```js
   const result = await client.products.getMyPriceForSku({
-    // Options
+    marketplaceId: 'ATVPDKIKX0DER',
+    sellerSkuList: [
+      'SKU2468'
+    ]
   })
   ```
 
-  Options:
+  **Options:**
 
   Name | Type | Default
   -----|------|--------
@@ -390,13 +467,18 @@ try {
 <details>
   <summary>getMyPriceForAsin</summary>
 
+  <br>**Example:**
+
   ```js
   const result = await client.products.getMyPriceForAsin({
-    // Options
+    marketplaceId: 'ATVPDKIKX0DER',
+    asinList: [
+      '1933890517'
+    ]
   })
   ```
 
-  Options:
+  **Options:**
 
   Name | Type | Default
   -----|------|--------
@@ -408,13 +490,16 @@ try {
 <details>
   <summary>getProductCategoriesForSku</summary>
 
+  <br>**Example:**
+
   ```js
   const result = await client.products.getProductCategoriesForSku({
-    // Options
+    marketplaceId: 'ATVPDKIKX0DER',
+    sellerSku: 'SKU2468'
   })
   ```
 
-  Options:
+  **Options:**
 
   Name | Type | Default
   -----|------|--------
@@ -425,13 +510,16 @@ try {
 <details>
   <summary>getProductCategoriesForAsin</summary>
 
+  <br>**Example:**
+
   ```js
   const result = await client.products.getProductCategoriesForAsin({
-    // Options
+    marketplaceId: 'ATVPDKIKX0DER',
+    asin: 'B002KT3XQM'
   })
   ```
 
-  Options:
+  **Options:**
 
   Name | Type | Default
   -----|------|--------
@@ -444,13 +532,20 @@ try {
 <details>
   <summary>requestReport</summary>
 
+  <br>**Example:**
+
   ```js
   const result = await client.reports.requestReport({
-    // Options
+    reportType: '_GET_MERCHANT_LISTINGS_DATA_',
+    startDate: '2009-01-03T18:12:21',
+    endDate: '2008-06-26T18:12:21',
+    marketplaceIdList: [
+      'ATVPDKIKX0DER'
+    ]
   })
   ```
 
-  Options:
+  **Options:**
 
   Name | Type | Default
   -----|------|--------
@@ -464,13 +559,24 @@ try {
 <details>
   <summary>getReportRequestList</summary>
 
+  <br>**Example:**
+
   ```js
   const result = await client.reports.getReportRequestList({
-    // Options
+    reportRequestIdList: [
+      '2291326454'
+    ],
+    reportTypeList: [
+      '_GET_ORDERS_DATA_',
+      '_GET_MERCHANT_LISTINGS_DATA_'
+    ],
+    reportProcessingStatusList: [
+      '_DONE_'
+    ]
   })
   ```
 
-  Options:
+  **Options:**
 
   Name | Type | Default
   -----|------|--------
@@ -486,13 +592,22 @@ try {
 <details>
   <summary>getReportList</summary>
 
+  <br>**Example:**
+
   ```js
   const result = await client.reports.getReportList({
-    // Options
+    reportTypeList: [
+      '_GET_ORDERS_DATA_'
+    ],
+    acknowledged: false,
+    reportRequestIdList: [
+      '2291326454',
+      '2294446454'
+    ]
   })
   ```
 
-  Options:
+  **Options:**
 
   Name | Type | Default
   -----|------|--------
@@ -508,13 +623,16 @@ try {
 <details>
   <summary>getReport</summary>
 
+  <br>**Example:**
+
   ```js
   const result = await client.reports.getReport({
-    // Options
+    reportId: '624169093',
+    format: 'raw'
   })
   ```
 
-  Options:
+  **Options:**
 
   Name | Type | Default
   -----|------|--------
@@ -527,13 +645,13 @@ try {
 <details>
   <summary>listMarketplaceParticipations</summary>
 
+  <br>**Example:**
+
   ```js
-  const result = await client.sellers.listMarketplaceParticipations({
-    // Options
-  })
+  const result = await client.sellers.listMarketplaceParticipations()
   ```
 
-  Options:
+  **Options:**
 
   Name | Type | Default
   -----|------|--------
@@ -545,13 +663,16 @@ try {
 <details>
   <summary>registerDestination</summary>
 
+  <br>**Example:**
+
   ```js
   const result = await client.subscriptions.registerDestination({
-    // Options
+    marketplaceId: 'AKIAEEXAMPLESA',
+    sqsQueueUrl: 'https://sqs.us-east-1.amazonaws.com/51471EXAMPLE/mws_notifications'
   })
   ```
 
-  Options:
+  **Options:**
 
   Name | Type | Default
   -----|------|--------
@@ -562,13 +683,16 @@ try {
 <details>
   <summary>deregisterDestination</summary>
 
+  <br>**Example:**
+
   ```js
   const result = await client.subscriptions.deregisterDestination({
-    // Options
+    marketplaceId: 'AKIAEEXAMPLESA',
+    sqsQueueUrl: 'https://sqs.us-east-1.amazonaws.com/51471EXAMPLE/mws_notifications'
   })
   ```
 
-  Options:
+  **Options:**
 
   Name | Type | Default
   -----|------|--------
@@ -579,13 +703,16 @@ try {
 <details>
   <summary>sendTestNotificationToDestination</summary>
 
+  <br>**Example:**
+
   ```js
   const result = await client.subscriptions.sendTestNotificationToDestination({
-    // Options
+    marketplaceId: 'AKIAEEXAMPLESA',
+    sqsQueueUrl: 'https://sqs.us-east-1.amazonaws.com/51471EXAMPLE/mws_notifications'
   })
   ```
 
-  Options:
+  **Options:**
 
   Name | Type | Default
   -----|------|--------
@@ -596,13 +723,18 @@ try {
 <details>
   <summary>createSubscription</summary>
 
+  <br>**Example:**
+
   ```js
   const result = await client.subscriptions.createSubscription({
-    // Options
+    marketplaceId: 'AKIAEEXAMPLESA',
+    sqsQueueUrl: 'https://sqs.us-east-1.amazonaws.com/51471EXAMPLE/mws_notifications',
+    isEnabled: true,
+    notificationType: 'AnyOfferChanged'
   })
   ```
 
-  Options:
+  **Options:**
 
   Name | Type | Default
   -----|------|--------
@@ -615,13 +747,17 @@ try {
 <details>
   <summary>deleteSubscription</summary>
 
+  <br>**Example:**
+
   ```js
   const result = await client.subscriptions.deleteSubscription({
-    // Options
+    marketplaceId: 'AKIAEEXAMPLESA',
+    sqsQueueUrl: 'https://sqs.us-east-1.amazonaws.com/51471EXAMPLE/mws_notifications',
+    notificationType: 'AnyOfferChanged'
   })
   ```
 
-  Options:
+  **Options:**
 
   Name | Type | Default
   -----|------|--------
@@ -633,11 +769,27 @@ try {
 <details>
   <summary>parseNotification</summary>
 
+  <br>**Example:**
+
   ```js
-  const result = await client.subscriptions.parseNotification('<any-xml />')
+  const result = await client.subscriptions.parseNotification(
+    `<Notification>
+      <NotificationMetaData>
+        <NotificationType>Test</NotificationType>
+        <PayloadVersion>1.0</PayloadVersion>
+        <UniqueId>0123456789-ca3b-4127-abe7-82cfbe19a032</UniqueId>
+        <PublishTime>2019-07-01T10:46:29Z</PublishTime>
+        <SellerId>XXXXXXXXXXTest</SellerId>
+      </NotificationMetaData>
+      <NotificationPayload>
+        <TestNotification />
+      </NotificationPayload>
+    </Notification>`
+  )
   ```
 
-  Options: Takes an XML string.
+  **Options:** Takes an XML string.
+
   The following notifications are supported:
 
   - `Test`
