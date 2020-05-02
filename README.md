@@ -218,22 +218,6 @@ try {
 ### Orders ![](https://badgen.net/badge/status/complete?label&color=green)
 
 <details>
-  <summary>getOrders</summary>
-
-  ```js
-  const result = await client.orders.getOrders({
-    // Options
-  })
-  ```
-
-  Options:
-
-  Name | Type | Default
-  -----|------|--------
-  amazonOrderIds | `Array<String>` |
-</details>
-
-<details>
   <summary>listOrders</summary>
 
   ```js
@@ -259,6 +243,22 @@ try {
   maxResultsPerPage | `Number` | `100`
   easyShipShipmentStatus | `Array<String>` |
   nextToken | `String` |
+</details>
+
+<details>
+  <summary>getOrder</summary>
+
+  ```js
+  const result = await client.orders.getOrder({
+    // Options
+  })
+  ```
+
+  Options:
+
+  Name | Type | Default
+  -----|------|--------
+  amazonOrderId | `Array<String>` |
 </details>
 
 <details>
