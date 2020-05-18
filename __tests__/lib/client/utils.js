@@ -1,4 +1,8 @@
-const {dateToISOString} = require('../../../lib/client/utils')
+const {
+  dateToISOString,
+  normalizeSearchParams,
+  reportOptionsToString
+} = require('../../../lib/client/utils')
 
 describe('lib.client.utils', () => {
   describe('dateToISOString', () => {
@@ -45,6 +49,58 @@ describe('lib.client.utils', () => {
 
       for (const test of tests) {
         expect(dateToISOString(test)).toBe('2019-01-01T00:00:00.000Z')
+      }
+    })
+  })
+
+  describe('reportOptionsToString', () => {
+    it('should serialize ReportOptions', () => {
+      const tests = [
+        [
+          null,
+          null
+        ],
+        [
+          'custom=true',
+          'custom=true'
+        ],
+        [
+          {custom: true},
+          'custom=true'
+        ],
+        [
+          {MarketplaceId: 'ATVPDKIKX0DER', BrowseNodeId: '15706661'},
+          'MarketplaceId=ATVPDKIKX0DER;BrowseNodeId=15706661'
+        ]
+      ]
+
+      for (const [test, expected] of tests) {
+        expect(reportOptionsToString(test)).toBe(expected)
+      }
+    })
+
+    it('should serialize ReportOptions search param', () => {
+      const tests = [
+        [
+          'custom=true',
+          'ReportOptions=custom%3Dtrue'
+        ],
+        [
+          {custom: true},
+          'ReportOptions=custom%3Dtrue'
+        ],
+        [
+          {MarketplaceId: 'ATVPDKIKX0DER', BrowseNodeId: '15706661'},
+          'ReportOptions=MarketplaceId%3DATVPDKIKX0DER%3BBrowseNodeId%3D15706661'
+        ]
+      ]
+
+      for (const [test, expected] of tests) {
+        expect(
+          normalizeSearchParams({
+            ReportOptions: reportOptionsToString(test)
+          })
+        ).toBe(expected)
       }
     })
   })
