@@ -52,7 +52,7 @@ in | mws.amazonservices.in | India
 jp | mws.amazonservices.jp | Japan
 au | mws.amazonservices.com.au | Australia
 
-This library also allows to specify a list of marketplaces (either 2 letter country codes or Marketplaces IDs) so you can restrict API calls to your marketplace participations:
+This library also allows to specify a list of marketplaces (either 2 letter country codes, marketplace IDs or domains) so you can restrict API calls to your marketplace participations:
 
 ```js
 const client = new MWSClient({
@@ -62,7 +62,8 @@ const client = new MWSClient({
   mwsToken: '',
   marketplaces: [
     'A1F83G8C2ARO7P', // UK
-    'fr'
+    'fr',
+    'Amazon.it'
   ]
 })
 ```

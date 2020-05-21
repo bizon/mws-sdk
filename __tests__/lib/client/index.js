@@ -60,8 +60,8 @@ describe('lib.client.index', () => {
   it('should fail when passing invalid marketplaces', () => {
     const tests = [
       [[], 'Specify one of mwsRegion or marketplaces'],
-      [['332'], '332 is not a valid marketplace code or ID'],
-      [['fr', 'unknown'], 'unknown is not a valid marketplace code or ID']
+      [['332'], '332 is not a valid marketplace code, ID or domain'],
+      [['fr', 'unknown'], 'unknown is not a valid marketplace code, ID or domain']
     ]
 
     for (const [marketplaces, error] of tests) {

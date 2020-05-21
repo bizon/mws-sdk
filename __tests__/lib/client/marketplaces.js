@@ -41,12 +41,13 @@ describe('lib.client.marketplaces', () => {
           'what',
           'A1PA6795UKMFR9'
         ])
-      ).toThrow('what is not a valid marketplace code or ID')
+      ).toThrow('what is not a valid marketplace code, ID or domain')
     })
 
     it('should deduplicate marketplaces', () => {
       expect(getMarketplaces([
         'fr',
+        'amazon.fr',
         'A13V1IB3VIYZZH' // France
       ])).toHaveLength(1)
     })
