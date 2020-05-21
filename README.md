@@ -555,12 +555,15 @@ try {
 
   ```js
   const result = await client.reports.requestReport({
-    reportType: '_GET_MERCHANT_LISTINGS_DATA_',
+    reportType: '_GET_FLAT_FILE_OPEN_LISTINGS_DATA_',
     startDate: '2009-01-03T18:12:21',
     endDate: '2008-06-26T18:12:21',
     marketplaceIdList: [
       'ATVPDKIKX0DER'
-    ]
+    ],
+    reportOptions: {
+      custom: true
+    }
   })
   ```
 
@@ -572,7 +575,11 @@ try {
   startDate | `Date` |
   endDate | `Date` |
   marketplaceIdList | `Array<String>` |
-  reportOptions | `String` |
+  reportOptions | `String` or `Object` |
+
+  **Caveats:**
+
+  When defining `reportOptions` as an object, keep in mind that the options’ casing must match the [MWS documentation](https://github.com/bizon/mws-api-doc/blob/master/doc/en_FR/reports/Reports_ReportType.md).
 </details>
 
 <details>
