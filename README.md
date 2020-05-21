@@ -101,6 +101,8 @@ try {
   })
 } catch (error) {
   if (error instanceof MWSError) {
+    console.log(error.sellerId)
+    console.log(error.marketplaces)
     console.log(error.body) // This will contain the parsed XML body
     console.log(error.response.statusCode)
   }

@@ -1,11 +1,22 @@
 const nock = require('nock')
 const got = require('got')
 
+const {inspectError} = require('../../__helpers__/inspect')
+
+const MWSClient = require('../../../lib/client')
 const MWSError = require('../../../lib/client/error')
 
 const {parseStr} = require('../../../lib/client/parsers/base')
 
 describe('lib.client.error', () => {
+  const client = new MWSClient({
+    accessKeyId: 'accessKeyId',
+    secretAccessKey: 'secretAccessKey',
+    sellerId: 'sellerId',
+    mwsToken: 'mwsToken',
+    mwsRegion: 'eu'
+  })
+
   it('should rethrow if httpError is not a valid got HTTPError', () => {
     const errors = [
       new Error(),
@@ -19,14 +30,22 @@ describe('lib.client.error', () => {
     }
   })
 
-  it('should fail if resource or action is not defined', () => {
+  it('should fail if client, resource or action is not defined', () => {
+    const httpError = new got.HTTPError({})
+
     const tests = [
-      () => new MWSError(new got.HTTPError({})),
-      () => new MWSError(new got.HTTPError({}), 'Order')
+      () => new MWSError(httpError),
+      () => new MWSError(httpError, {
+        client
+      }),
+      () => new MWSError(httpError, {
+        client,
+        resource: 'Orders'
+      })
     ]
 
     for (const test of tests) {
-      expect(test).toThrow('The resource and action parameters are required')
+      expect(test).toThrow('The client, resource and action parameters are required')
     }
   })
 
@@ -45,14 +64,17 @@ describe('lib.client.error', () => {
       throwHttpErrors: false
     })
 
-    const error = new MWSError(
-      new got.HTTPError(response),
-      'ResourceName',
-      'Function'
-    )
+    const error = new MWSError(new got.HTTPError(response), {
+      client,
+      resource: 'ResourceName',
+      action: 'Function'
+    })
 
     const properties = [
       'response',
+      'sellerId',
+      'mwsDomain',
+      'marketplaces',
       'resource',
       'action',
       'body'
@@ -65,6 +87,8 @@ describe('lib.client.error', () => {
       delete error[property]
       expect(error[property]).toBeDefined()
     }
+
+    expect(inspectError(error)).toMatchSnapshot()
   })
 
   it('should create a MWSError and parse the response body', async () => {
@@ -87,11 +111,11 @@ describe('lib.client.error', () => {
       throwHttpErrors: false
     })
 
-    const error = new MWSError(
-      new got.HTTPError(response),
-      'ResourceName',
-      'Function'
-    )
+    const error = new MWSError(new got.HTTPError(response), {
+      client,
+      resource: 'ResourceName',
+      action: 'Function'
+    })
 
     expect(error.message).toBe('ResourceName.Function error: Response code 400 (Bad Request)')
     expect(error.body).toMatchSnapshot()
@@ -111,15 +135,15 @@ describe('lib.client.error', () => {
       throwHttpErrors: false
     })
 
-    const error = new MWSError(
-      new got.HTTPError(response),
-      'Sellers',
-      'GetSomething',
-      (key, node) => ({
+    const error = new MWSError(new got.HTTPError(response), {
+      client,
+      resource: 'Sellers',
+      action: 'GetSomething',
+      parseErrorResponse: (key, node) => ({
         foo: parseStr(`${key}/sellers:Foo`, node),
         bar: parseStr(`${key}/sellers:Bar`, node)
       })
-    )
+    })
 
     expect(error.message).toBe('Sellers.GetSomething error: Response code 401 (Unauthorized)')
     expect(error.body).toMatchSnapshot()
