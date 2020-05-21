@@ -1,7 +1,7 @@
-const {parseDate} = require('../../../lib/client/utils')
+const {dateToISOString} = require('../../../lib/client/utils')
 
 describe('lib.client.utils', () => {
-  describe('parseDate', () => {
+  describe('dateToISOString', () => {
     it('should return undefined if the input is not truthy', () => {
       const tests = [
         '',
@@ -12,7 +12,7 @@ describe('lib.client.utils', () => {
       ]
 
       for (const test of tests) {
-        expect(parseDate(test)).toBeUndefined()
+        expect(dateToISOString(test)).toBeUndefined()
       }
     })
 
@@ -26,7 +26,7 @@ describe('lib.client.utils', () => {
       ]
 
       for (const test of tests) {
-        expect(() => parseDate(test)).toThrow(`${String(test)} is not a valid date`)
+        expect(() => dateToISOString(test)).toThrow(`${String(test)} is not a valid date`)
       }
     })
 
@@ -44,7 +44,7 @@ describe('lib.client.utils', () => {
       ]
 
       for (const test of tests) {
-        expect(parseDate(test)).toBe('2019-01-01T00:00:00.000Z')
+        expect(dateToISOString(test)).toBe('2019-01-01T00:00:00.000Z')
       }
     })
   })
