@@ -42,7 +42,7 @@
     "jest": "^26.0.1",
     "jest-junit": "^10.0.0",
     "lerna-changelog": "^1.0.1",
-    "mockdate": "^3.0.1",
+    "mockdate": "^3.0.2",
     "nock": "^12.0.3",
     "xo": "^0.30.0"
   },
