@@ -57,6 +57,9 @@
     "testMatch": [
       "<rootDir>/__tests__/**/*.js"
     ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/__tests__/__helpers__/"
+    ],
     "reporters": [
       "default",
       [
