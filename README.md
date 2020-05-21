@@ -316,7 +316,7 @@ try {
   **Example:**
 
   ```js
-  const result = await client.orders.getOrders({
+  const result = await client.orders.getOrder({
     amazonOrderId: [
       '902-3159896-1390916'
     ]
