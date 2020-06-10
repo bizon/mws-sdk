@@ -86,7 +86,7 @@
     "rules": {
       "unicorn/no-fn-reference-in-iterator": "off",
       "unicorn/prevent-abbreviations": "off",
-      "unicorn/string-content": "off"
+      "unicorn/no-reduce": "off"
     },
     "overrides": [
       {
