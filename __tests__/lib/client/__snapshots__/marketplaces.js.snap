@@ -147,12 +147,13 @@ Array [
   },
   Object {
     "code": "sa",
-    "domain": "amazon.com.sa",
+    "domain": "amazon.sa",
     "id": "A17E79C6D8DWNP",
     "imagesDomain": "images-eu.ssl-images-amazon.com",
     "mwsDomain": "mws-eu.amazonservices.com",
     "name": "Saudi Arabia",
     "region": "eu",
+    "vendorId": "A2XPWB6MYN7ZDK",
   },
   Object {
     "code": "nl",
