@@ -1,6 +1,4 @@
-const {orderBy} = require('lodash')
 const {
-  mwsRegionDomains,
   getMarketplaces,
   getMarketplacesFromRegion
 } = require('../../../lib/client/marketplaces')
@@ -13,22 +11,13 @@ describe('lib.client.marketplaces', () => {
       ).toThrow('what is not a valid MWS region')
     })
 
-    it('should return a list of marketplaces for all MWS regions', () => {
-      // Order by MWS region so that snapshot order does not change.
-      const entries = orderBy(
-        Object.entries(mwsRegionDomains),
-        ([mwsRegion]) => mwsRegion,
-        'asc'
-      )
+    it('should return a list of marketplaces for MWS regions', () => {
+      const tests = ['eu', 'na', 'fe', 'ca', 'in', 'jp']
 
-      for (const [mwsRegion, mwsDomain] of entries) {
+      for (const mwsRegion of tests) {
         const marketplaces = getMarketplacesFromRegion(mwsRegion)
 
         expect(marketplaces).toMatchSnapshot()
-
-        for (const marketplace of marketplaces) {
-          expect(marketplace).toHaveProperty('mwsDomain', mwsDomain)
-        }
       }
     })
   })
