@@ -151,11 +151,13 @@ workflows:
           filters: *default_filters
 
       - changelog:
+          context: 'Github Changelogs'
           requires:
             - install
           filters: *default_filters
 
       - release:
+          context: 'Github Changelogs'
           requires:
             - changelog
           filters:
