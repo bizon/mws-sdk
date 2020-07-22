@@ -38,7 +38,7 @@
     "lodash": "^4.17.19"
   },
   "devDependencies": {
-    "codecov": "^3.7.1",
+    "codecov": "^3.7.2",
     "jest": "^26.1.0",
     "jest-junit": "^11.0.1",
     "lerna-changelog": "^1.0.1",
