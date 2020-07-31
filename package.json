@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "codecov": "^3.7.2",
-    "jest": "^26.2.1",
+    "jest": "^26.2.2",
     "jest-junit": "^11.1.0",
     "lerna-changelog": "^1.0.1",
     "mockdate": "^3.0.2",
