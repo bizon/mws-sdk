@@ -23,14 +23,14 @@ describe('lib.client.marketplaces', () => {
   })
 
   describe('getMarketplaces', () => {
-    it('should throw if one of the requested marketplaces does not exist', () => {
-      expect(
-        () => getMarketplaces([
-          'fr',
-          'what',
-          'A1PA6795UKMFR9'
-        ])
-      ).toThrow('what is not a valid marketplace code, ID or domain')
+    it('should filter out unknown marketplaces', () => {
+      const marketplaces = getMarketplaces([
+        'fr',
+        'what',
+        'A1PA6795UKMFR9'
+      ])
+
+      expect(marketplaces).toMatchSnapshot()
     })
 
     it('should deduplicate marketplaces', () => {

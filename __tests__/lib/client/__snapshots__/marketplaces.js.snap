@@ -1,5 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`lib.client.marketplaces getMarketplaces should filter out unknown marketplaces 1`] = `
+Array [
+  Object {
+    "advertisingApiDomain": "advertising-api-eu.amazon.com",
+    "code": "fr",
+    "domain": "amazon.fr",
+    "id": "A13V1IB3VIYZZH",
+    "imagesDomain": "images-eu.ssl-images-amazon.com",
+    "mwsDomain": "mws-eu.amazonservices.com",
+    "name": "France",
+    "region": "eu",
+    "vendorId": "A1X6FK5RDHNB96",
+  },
+  Object {
+    "advertisingApiDomain": "advertising-api-eu.amazon.com",
+    "code": "de",
+    "domain": "amazon.de",
+    "id": "A1PA6795UKMFR9",
+    "imagesDomain": "images-eu.ssl-images-amazon.com",
+    "mwsDomain": "mws-eu.amazonservices.com",
+    "name": "Germany",
+    "region": "eu",
+    "vendorId": "A3JWKAKR8XB7XF",
+  },
+]
+`;
+
 exports[`lib.client.marketplaces getMarketplaces should ignore marketplaces without an API endpoint 1`] = `
 Array [
   Object {
