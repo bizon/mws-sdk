@@ -57,11 +57,10 @@ describe('lib.client.index', () => {
     ).toThrow('unknown is not a valid MWS region')
   })
 
-  it('should fail when passing invalid marketplaces', () => {
+  it('should fail when none of the specified marketplaces are valid', () => {
     const tests = [
       [[], 'Specify one of mwsRegion or marketplaces'],
-      [['332'], '332 is not a valid marketplace code, ID or domain'],
-      [['fr', 'unknown'], 'unknown is not a valid marketplace code, ID or domain']
+      [['332'], 'None of the specified marketplaces define a MWS domain']
     ]
 
     for (const [marketplaces, error] of tests) {
