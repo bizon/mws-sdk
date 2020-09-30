@@ -35,6 +35,7 @@ Object {
       "requestId": null,
     },
   },
+  "code": undefined,
   "marketplaces": Array [
     Object {
       "advertisingApiDomain": "advertising-api-eu.amazon.com",
@@ -143,5 +144,6 @@ Object {
   "name": "MWSError",
   "resource": "ResourceName",
   "sellerId": "sellerId",
+  "timings": Any<Object>,
 }
 `;

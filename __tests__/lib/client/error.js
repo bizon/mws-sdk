@@ -88,7 +88,9 @@ describe('lib.client.error', () => {
       expect(error[property]).toBeDefined()
     }
 
-    expect(inspectError(error)).toMatchSnapshot()
+    expect(inspectError(error)).toMatchSnapshot({
+      timings: expect.any(Object)
+    })
   })
 
   it('should create a MWSError and parse the response body', async () => {
