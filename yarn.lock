@@ -459,10 +459,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@bizon/amazon-ids@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@bizon/amazon-ids/-/amazon-ids-2.2.0.tgz#90f9abf0640e86bdbe692ef0f488ac8678d8ff1a"
-  integrity sha512-FgvTXI/fTNpFedPzRshjyLvilW0TW7rWX8kU2BAEhCAvfkOA53OzG0TOrvOQB/6Xsq1bmNRASLQjIrQDZzoyqw==
+"@bizon/amazon-ids@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@bizon/amazon-ids/-/amazon-ids-2.3.0.tgz#b052a443a30db77a4e6a43e7cdc3d0fea6e42745"
+  integrity sha512-vGFvMkUiba6rbJV06R5cLRpU3JZEIA51E66nvSa2lSxOJlcEvH9iqtTBfYuhvQJ7N0LFqAHSJ0HIVatAYh/g8A==
   dependencies:
     memoizee "^0.4.14"
 
