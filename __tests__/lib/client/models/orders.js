@@ -53,10 +53,22 @@ describe('lib.client.models.orders', () => {
                   <Name>Buyer name</Name>
                   <AddressLine1>1234 Any St.</AddressLine1>
                   <City>Seattle</City>
+                  <StateOrRegion>WA</StateOrRegion>
                   <PostalCode>98103</PostalCode>
                   <CountryCode>US</CountryCode>
                   <AddressType>Commercial</AddressType>
                 </ShippingAddress>
+                <DefaultShipFromLocationAddress>
+                  <Name>Seller name</Name>
+                  <AddressLine1>15606 NE Any street</AddressLine1>
+                  <AddressLine2>Suite 2</AddressLine2>
+                  <City>Redmond</City>
+                  <StateOrRegion>WA</StateOrRegion>
+                  <PostalCode>98052</PostalCode>
+                  <CountryCode>US</CountryCode>
+                  <Phone>555 555-5555</Phone>
+                  <isAddressSharingConfidential>false</isAddressSharingConfidential>
+                </DefaultShipFromLocationAddress>
                 <OrderTotal>
                   <CurrencyCode>USD</CurrencyCode>
                   <Amount>25.00</Amount>
