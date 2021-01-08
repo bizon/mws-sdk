@@ -19,8 +19,8 @@ describe('lib.client.error', () => {
 
   it('should rethrow if httpError is not a valid got HTTPError', () => {
     const errors = [
-      new Error(),
-      new TypeError()
+      new Error('Error'),
+      new TypeError('TypeError')
     ]
 
     for (const error of errors) {
