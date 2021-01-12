@@ -92,7 +92,7 @@ do {
 Whenever the MWS API returns a non-OK HTTP status, a `MWSError` will be thrown. Use `error.body` to inspect the contents of the error, and `error.response` to access the raw HTTP response.
 
 ```js
-const {MWSError} = '@bizon/mws-sdk'
+const {MWSError} = require('@bizon/mws-sdk')
 
 try {
   const result = await client.products.getLowestPricedOffersForSku({
