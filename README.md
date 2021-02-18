@@ -246,7 +246,8 @@ try {
       'SampleSKU1',
       'SampleSKU2'
     ],
-    responseGroup: 'Basic'
+    responseGroup: 'Basic',
+    marketplaceId: 'ATVPDKIKX0DER'
   })
   ```
 

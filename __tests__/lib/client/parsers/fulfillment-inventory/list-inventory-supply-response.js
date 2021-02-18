@@ -45,6 +45,72 @@ describe('lib.client.parsers.fulfillment-inventory.list-inventory-supply-respons
     expect(res).toMatchSnapshot()
   })
 
+  it('should parse a ListInventorySupplyResponse with a MarketplaceId', () => {
+    const doc = parseXml(
+      `<?xml version="1.0"?>
+      <ListInventorySupplyResponse xmlns="http://mws.amazonaws.com/FulfillmentInventory/2010-10-01/">
+        <ListInventorySupplyResult>
+          <MarketplaceId>A13V1IB3VIYZZH</MarketplaceId>
+          <InventorySupplyList>
+            <member>
+              <Condition>NewItem</Condition>
+              <SupplyDetail>
+                <member>
+                  <LatestAvailableToPick>
+                    <TimepointType>Immediately</TimepointType>
+                  </LatestAvailableToPick>
+                  <EarliestAvailableToPick>
+                    <TimepointType>Immediately</TimepointType>
+                  </EarliestAvailableToPick>
+                  <Quantity>11</Quantity>
+                  <SupplyType>InStock</SupplyType>
+                </member>
+                <member>
+                  <LatestAvailableToPick>
+                    <TimepointType>Immediately</TimepointType>
+                  </LatestAvailableToPick>
+                  <EarliestAvailableToPick>
+                    <TimepointType>Immediately</TimepointType>
+                  </EarliestAvailableToPick>
+                  <Quantity>16</Quantity>
+                  <SupplyType>InStock</SupplyType>
+                </member>
+                <member>
+                  <LatestAvailableToPick>
+                    <TimepointType>Immediately</TimepointType>
+                  </LatestAvailableToPick>
+                  <EarliestAvailableToPick>
+                    <TimepointType>Immediately</TimepointType>
+                  </EarliestAvailableToPick>
+                  <Quantity>1</Quantity>
+                  <SupplyType>InStock</SupplyType>
+                </member>
+              </SupplyDetail>
+              <TotalSupplyQuantity>28</TotalSupplyQuantity>
+              <EarliestAvailability>
+                <TimepointType>Immediately</TimepointType>
+              </EarliestAvailability>
+              <FNSKU>X00008FZR1</FNSKU>
+              <InStockSupplyQuantity>28</InStockSupplyQuantity>
+              <ASIN>B00004RWQR</ASIN>
+              <SellerSKU>SampleSKU1</SellerSKU>
+            </member>
+          </InventorySupplyList>
+        </ListInventorySupplyResult>
+        <ResponseMetadata>
+          <RequestId>8734426a-a50f-4c8e-a3cd-d8d39e532d76</RequestId>
+        </ResponseMetadata>
+      </ListInventorySupplyResponse>`
+    )
+
+    const res = parseListInventorySupplyResponse(
+      '/fulfillmentInventory:ListInventorySupplyResponse',
+      doc
+    )
+
+    expect(res).toMatchSnapshot()
+  })
+
   it('should parse the ListInventorySupplyByNextToken example response from MWS doc', () => {
     const doc = parseXml(
       `<?xml version="1.0"?>
