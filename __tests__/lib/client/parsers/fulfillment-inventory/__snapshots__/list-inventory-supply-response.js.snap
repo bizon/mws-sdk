@@ -1,5 +1,133 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`lib.client.parsers.fulfillment-inventory.list-inventory-supply-response should parse a ListInventorySupplyByNextToken with a MarketplaceId 1`] = `
+Object {
+  "listInventorySupplyResult": Object {
+    "inventorySupplyList": Array [
+      Object {
+        "asin": "B00004RWQR",
+        "condition": "NewItem",
+        "earliestAvailability": Object {
+          "dateTime": null,
+          "timepointType": "Immediately",
+        },
+        "fnSKU": "X00008FZR1",
+        "inStockSupplyQuantity": 28,
+        "sellerSKU": "SampleSKU1",
+        "supplyDetail": Array [
+          Object {
+            "earliestAvailableToPick": Object {
+              "dateTime": null,
+              "timepointType": "Immediately",
+            },
+            "latestAvailableToPick": Object {
+              "dateTime": null,
+              "timepointType": "Immediately",
+            },
+            "quantity": 11,
+            "supplyType": "InStock",
+          },
+          Object {
+            "earliestAvailableToPick": Object {
+              "dateTime": null,
+              "timepointType": "Immediately",
+            },
+            "latestAvailableToPick": Object {
+              "dateTime": null,
+              "timepointType": "Immediately",
+            },
+            "quantity": 16,
+            "supplyType": "InStock",
+          },
+          Object {
+            "earliestAvailableToPick": Object {
+              "dateTime": null,
+              "timepointType": "Immediately",
+            },
+            "latestAvailableToPick": Object {
+              "dateTime": null,
+              "timepointType": "Immediately",
+            },
+            "quantity": 1,
+            "supplyType": "InStock",
+          },
+        ],
+        "totalSupplyQuantity": 28,
+      },
+    ],
+    "marketplaceId": "A13V1IB3VIYZZH",
+    "nextToken": null,
+  },
+  "responseMetadata": Object {
+    "requestId": "8734426a-a50f-4c8e-a3cd-d8d39e532d76",
+  },
+}
+`;
+
+exports[`lib.client.parsers.fulfillment-inventory.list-inventory-supply-response should parse a ListInventorySupplyResponse with a MarketplaceId 1`] = `
+Object {
+  "listInventorySupplyResult": Object {
+    "inventorySupplyList": Array [
+      Object {
+        "asin": "B00004RWQR",
+        "condition": "NewItem",
+        "earliestAvailability": Object {
+          "dateTime": null,
+          "timepointType": "Immediately",
+        },
+        "fnSKU": "X00008FZR1",
+        "inStockSupplyQuantity": 28,
+        "sellerSKU": "SampleSKU1",
+        "supplyDetail": Array [
+          Object {
+            "earliestAvailableToPick": Object {
+              "dateTime": null,
+              "timepointType": "Immediately",
+            },
+            "latestAvailableToPick": Object {
+              "dateTime": null,
+              "timepointType": "Immediately",
+            },
+            "quantity": 11,
+            "supplyType": "InStock",
+          },
+          Object {
+            "earliestAvailableToPick": Object {
+              "dateTime": null,
+              "timepointType": "Immediately",
+            },
+            "latestAvailableToPick": Object {
+              "dateTime": null,
+              "timepointType": "Immediately",
+            },
+            "quantity": 16,
+            "supplyType": "InStock",
+          },
+          Object {
+            "earliestAvailableToPick": Object {
+              "dateTime": null,
+              "timepointType": "Immediately",
+            },
+            "latestAvailableToPick": Object {
+              "dateTime": null,
+              "timepointType": "Immediately",
+            },
+            "quantity": 1,
+            "supplyType": "InStock",
+          },
+        ],
+        "totalSupplyQuantity": 28,
+      },
+    ],
+    "marketplaceId": "A13V1IB3VIYZZH",
+    "nextToken": null,
+  },
+  "responseMetadata": Object {
+    "requestId": "8734426a-a50f-4c8e-a3cd-d8d39e532d76",
+  },
+}
+`;
+
 exports[`lib.client.parsers.fulfillment-inventory.list-inventory-supply-response should parse the ListInventorySupply example response from MWS doc 1`] = `
 Object {
   "listInventorySupplyResult": Object {
@@ -28,6 +156,7 @@ Object {
         "totalSupplyQuantity": 0,
       },
     ],
+    "marketplaceId": null,
     "nextToken": null,
   },
   "responseMetadata": Object {
@@ -64,6 +193,7 @@ Object {
         "totalSupplyQuantity": 5259,
       },
     ],
+    "marketplaceId": null,
     "nextToken": "2YgYW55IGNhcm5hbCBwbGVhc3VyZS4=",
   },
   "responseMetadata": Object {
