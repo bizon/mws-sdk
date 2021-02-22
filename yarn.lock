@@ -2138,10 +2138,10 @@ cssstyle@^2.2.0:
   dependencies:
     cssom "~0.3.6"
 
-csv-parse@^4.15.1:
-  version "4.15.1"
-  resolved "https://registry.yarnpkg.com/csv-parse/-/csv-parse-4.15.1.tgz#fc5a0a1b24eaa6d4c24892daa387c46f7f92f8d2"
-  integrity sha512-TXIvRtNp0fqMJbk3yPR35bQIDzMH4khDwduElzE7Fl1wgnl25mnWYLSLqd/wS5GsDoX1rWtysivEYMNsz5jKwQ==
+csv-parse@^4.15.2:
+  version "4.15.2"
+  resolved "https://registry.yarnpkg.com/csv-parse/-/csv-parse-4.15.2.tgz#632f7f2100bf3012c4fc0a729a21fd3a56762921"
+  integrity sha512-eOGCQgkGOywLlWgMzrrUnZfXzRloLySmAvGVoNmOLF7nH9rcn+XBs4zxgvohSNFHsBkgVIm5P3BLh9rHymgAsQ==
 
 d@1:
   version "1.0.1"
