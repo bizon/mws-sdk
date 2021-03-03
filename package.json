@@ -35,7 +35,7 @@
     "debug": "^4.3.1",
     "got": "^11.8.2",
     "iconv-lite": "^0.6.2",
-    "libxmljs": "^0.19.7",
+    "libxmljs2": "^0.26.6",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
@@ -48,7 +48,7 @@
     "xo": "^0.38.2"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "bugs": {
     "url": "https://github.com/bizon/mws-sdk/issues"
