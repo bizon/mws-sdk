@@ -36,7 +36,7 @@
     "got": "^11.8.1",
     "iconv-lite": "^0.6.2",
     "libxmljs": "^0.19.7",
-    "lodash": "^4.17.20"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "codecov": "^3.8.1",
