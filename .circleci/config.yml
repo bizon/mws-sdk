@@ -16,7 +16,7 @@ defaults:
   golang_container: &golang_container
     working_directory: *workspace_root
     docker:
-      - image: circleci/golang:1-stretch
+      - image: cimg/golang:1.16
 
   attach_workspace: &attach_workspace
     attach_workspace:
