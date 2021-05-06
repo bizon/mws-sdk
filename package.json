@@ -35,7 +35,7 @@
     "debug": "^4.3.1",
     "got": "^11.8.2",
     "iconv-lite": "^0.6.2",
-    "libxmljs2": "^0.26.7",
+    "libxmljs2": "^0.27.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
