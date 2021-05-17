@@ -5158,10 +5158,10 @@ levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-libxmljs2@^0.26.7:
-  version "0.26.7"
-  resolved "https://registry.yarnpkg.com/libxmljs2/-/libxmljs2-0.26.7.tgz#30e8f3ba0f149f24cdb07554194c97581666dca0"
-  integrity sha512-7Yk/gpICDJypKpWgNsZNIHOLeuBUsAnYrA0fVy92PgtQZVO4Tu2SMLiZ50X9u7DEhvjzx1MF8P1iQM+6qky1Bg==
+libxmljs2@^0.27.0:
+  version "0.27.0"
+  resolved "https://registry.yarnpkg.com/libxmljs2/-/libxmljs2-0.27.0.tgz#28d8d2d174f2cb39131694e7050e0cf2d4da6e44"
+  integrity sha512-YZGSL9FihGls/oozT0JI8PQEjFeCs/5tAqd4B63krzh4PTd4pxqwCm430/QLxGaHuOeJa+yGBM7fgk1DrtWplA==
   dependencies:
     "@mapbox/node-pre-gyp" "^1.0.1"
     bindings "~1.5.0"
