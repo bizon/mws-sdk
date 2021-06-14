@@ -31,7 +31,7 @@
     "@bizon/amazon-ids": "^2.4.0",
     "content-type": "^1.0.4",
     "csv-parse": "^4.16.0",
-    "date-fns": "^2.21.3",
+    "date-fns": "^2.22.1",
     "debug": "^4.3.1",
     "got": "^11.8.2",
     "iconv-lite": "^0.6.3",
