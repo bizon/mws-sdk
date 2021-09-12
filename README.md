@@ -1,10 +1,15 @@
-# mws-sdk [![CircleCI](https://circleci.com/gh/bizon/mws-sdk.svg?style=svg)](https://circleci.com/gh/bizon/mws-sdk)
+# mws-sdk
 
 > SDK for Amazon Marketplace Web Services
 
 [![npm version](https://badgen.net/npm/v/@bizon/mws-sdk)](https://www.npmjs.com/package/@bizon/mws-sdk)
 [![codecov](https://badgen.net/codecov/c/github/bizon/mws-sdk)](https://codecov.io/gh/bizon/mws-sdk)
 [![XO code style](https://badgen.net/badge/code%20style/XO/cyan)](https://github.com/xojs/xo)
+
+## CI
+
+[![Tests](https://github.com/bizon/mws-sdk/actions/workflows/tests.yml/badge.svg)](https://github.com/bizon/mws-sdk/actions/workflows/tests.yml)
+[![Release](https://github.com/bizon/mws-sdk/actions/workflows/release.yml/badge.svg)](https://github.com/bizon/mws-sdk/actions/workflows/release.yml)
 
 ## Getting started
 
