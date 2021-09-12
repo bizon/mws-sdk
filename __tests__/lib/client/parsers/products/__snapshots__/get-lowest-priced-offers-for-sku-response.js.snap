@@ -18,10 +18,12 @@ Object {
     "summary": Object {
       "buyBoxEligibleOffers": Array [],
       "buyBoxPrices": Array [],
+      "competitivePriceThreshold": null,
       "listPrice": null,
       "lowestPrices": Array [],
       "numberOfOffers": Array [],
       "offersAvailableTime": null,
+      "salesRankings": Array [],
       "suggestedLowerPricePlusShipping": null,
       "totalOfferCount": 0,
     },
@@ -32,7 +34,7 @@ Object {
 }
 `;
 
-exports[`lib.client.parsers.products.get-lowest-priced-offers-for-sku-response should parse the GetLowestPricedOffersForSKUResponse success example response from MWS doc 1`] = `
+exports[`lib.client.parsers.products.get-lowest-priced-offers-for-sku-response should parse the GetLowestPricedOffersForSKUResponse success example response from MWS doc (updated) 1`] = `
 Object {
   "getLowestPricedOffersForSkuResult": Object {
     "identifier": Object {
@@ -46,6 +48,7 @@ Object {
     "marketplaceId": "ATVPDKIKX0DER",
     "offers": Array [
       Object {
+        "conditionNotes": "Some notes",
         "isBuyBoxWinner": true,
         "isFeaturedMerchant": true,
         "isFulfilledByAmazon": true,
@@ -55,10 +58,15 @@ Object {
         },
         "myOffer": false,
         "points": null,
+        "primeInformation": Object {
+          "isNationalPrime": true,
+          "isPrime": true,
+        },
         "sellerFeedbackRating": Object {
           "feedbackCount": 1,
           "sellerPositiveFeedbackRating": 100,
         },
+        "sellerId": "SELLERID",
         "shipping": Object {
           "amount": 0,
           "currencyCode": "USD",
@@ -101,6 +109,7 @@ Object {
           },
         },
       ],
+      "competitivePriceThreshold": null,
       "listPrice": Object {
         "amount": 58.34,
         "currencyCode": "USD",
@@ -132,6 +141,24 @@ Object {
         },
       ],
       "offersAvailableTime": null,
+      "salesRankings": Array [
+        Object {
+          "productCategoryId": "book_display_on_website",
+          "rank": 401,
+        },
+        Object {
+          "productCategoryId": "15356791",
+          "rank": 5,
+        },
+        Object {
+          "productCategoryId": "3153",
+          "rank": 8,
+        },
+        Object {
+          "productCategoryId": "17468",
+          "rank": 16,
+        },
+      ],
       "suggestedLowerPricePlusShipping": Object {
         "amount": 32.99,
         "currencyCode": "USD",
@@ -163,10 +190,12 @@ Object {
     "summary": Object {
       "buyBoxEligibleOffers": Array [],
       "buyBoxPrices": Array [],
+      "competitivePriceThreshold": null,
       "listPrice": null,
       "lowestPrices": Array [],
       "numberOfOffers": Array [],
       "offersAvailableTime": null,
+      "salesRankings": Array [],
       "suggestedLowerPricePlusShipping": null,
       "totalOfferCount": 0,
     },
@@ -195,10 +224,12 @@ Object {
     "summary": Object {
       "buyBoxEligibleOffers": Array [],
       "buyBoxPrices": Array [],
+      "competitivePriceThreshold": null,
       "listPrice": null,
       "lowestPrices": Array [],
       "numberOfOffers": Array [],
       "offersAvailableTime": 2017-03-08T07:13:21.763Z,
+      "salesRankings": Array [],
       "suggestedLowerPricePlusShipping": null,
       "totalOfferCount": 0,
     },

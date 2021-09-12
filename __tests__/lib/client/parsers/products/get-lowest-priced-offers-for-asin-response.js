@@ -2,7 +2,7 @@ const parseXml = require('../../../../../lib/client/parsers')
 const parseGetLowestPricedOffersForAsinResponse = require('../../../../../lib/client/parsers/products/get-lowest-priced-offers-for-asin-response')
 
 describe('lib.client.parsers.products.get-lowest-priced-offers-for-asin-response', () => {
-  it('should parse the GetLowestPricedOffersForASINResponse success example response from MWS doc', () => {
+  it('should parse the GetLowestPricedOffersForASINResponse success example response from MWS doc (updated)', () => {
     const doc = parseXml(
       `<?xml version="1.0"?>
       <GetLowestPricedOffersForASINResponse xmlns="http://mws.amazonservices.com/schema/Products/2011-10-01">
@@ -51,6 +51,24 @@ describe('lib.client.parsers.products.get-lowest-priced-offers-for-asin-response
                 </Shipping>
               </BuyBoxPrice>
             </BuyBoxPrices>
+            <SalesRankings>
+              <SalesRank>
+                <ProductCategoryId>book_display_on_website</ProductCategoryId>
+                <Rank>401</Rank>
+              </SalesRank>
+              <SalesRank>
+                <ProductCategoryId>15356791</ProductCategoryId>
+                <Rank>5</Rank>
+              </SalesRank>
+              <SalesRank>
+                <ProductCategoryId>3153</ProductCategoryId>
+                <Rank>8</Rank>
+              </SalesRank>
+              <SalesRank>
+                <ProductCategoryId>17468</ProductCategoryId>
+                <Rank>16</Rank>
+              </SalesRank>
+            </SalesRankings>
             <ListPrice>
               <CurrencyCode>USD</CurrencyCode>
               <Amount>58.34</Amount>
@@ -65,6 +83,7 @@ describe('lib.client.parsers.products.get-lowest-priced-offers-for-asin-response
           </Summary>
           <Offers>
             <Offer>
+              <SellerId>SELLERID</SellerId>
               <SubCondition>new</SubCondition>
               <SellerFeedbackRating>
                 <SellerPositiveFeedbackRating>100.0</SellerPositiveFeedbackRating>
@@ -82,6 +101,11 @@ describe('lib.client.parsers.products.get-lowest-priced-offers-for-asin-response
               <IsFulfilledByAmazon>true</IsFulfilledByAmazon>
               <IsBuyBoxWinner>true</IsBuyBoxWinner>
               <IsFeaturedMerchant>true</IsFeaturedMerchant>
+              <ConditionNotes>Some notes!</ConditionNotes>
+              <PrimeInformation>
+                <IsNationalPrime>false</IsNationalPrime>
+                <IsPrime>false</IsPrime>
+              </PrimeInformation>
             </Offer>
           </Offers>
         </GetLowestPricedOffersForASINResult>

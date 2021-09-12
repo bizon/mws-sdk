@@ -2,7 +2,7 @@ const parseXml = require('../../../../../lib/client/parsers')
 const parseGetLowestPricedOffersForSkuResponse = require('../../../../../lib/client/parsers/products/get-lowest-priced-offers-for-sku-response')
 
 describe('lib.client.parsers.products.get-lowest-priced-offers-for-sku-response', () => {
-  it('should parse the GetLowestPricedOffersForSKUResponse success example response from MWS doc', () => {
+  it('should parse the GetLowestPricedOffersForSKUResponse success example response from MWS doc (updated)', () => {
     const doc = parseXml(
       `<?xml version="1.0"?>
       <GetLowestPricedOffersForSKUResponse xmlns="http://mws.amazonservices.com/schema/Products/2011-10-01">
@@ -35,6 +35,24 @@ describe('lib.client.parsers.products.get-lowest-priced-offers-for-sku-response'
                 </Shipping>
               </LowestPrice>
             </LowestPrices>
+            <SalesRankings>
+              <SalesRank>
+                <ProductCategoryId>book_display_on_website</ProductCategoryId>
+                <Rank>401</Rank>
+              </SalesRank>
+              <SalesRank>
+                <ProductCategoryId>15356791</ProductCategoryId>
+                <Rank>5</Rank>
+              </SalesRank>
+              <SalesRank>
+                <ProductCategoryId>3153</ProductCategoryId>
+                <Rank>8</Rank>
+              </SalesRank>
+              <SalesRank>
+                <ProductCategoryId>17468</ProductCategoryId>
+                <Rank>16</Rank>
+              </SalesRank>
+            </SalesRankings>
             <BuyBoxPrices>
               <BuyBoxPrice condition="New">
                 <LandedPrice>
@@ -65,6 +83,7 @@ describe('lib.client.parsers.products.get-lowest-priced-offers-for-sku-response'
           </Summary>
           <Offers>
             <Offer>
+              <SellerId>SELLERID</SellerId>
               <MyOffer>false</MyOffer>
               <SubCondition>new</SubCondition>
               <SellerFeedbackRating>
@@ -83,6 +102,11 @@ describe('lib.client.parsers.products.get-lowest-priced-offers-for-sku-response'
               <IsFulfilledByAmazon>true</IsFulfilledByAmazon>
               <IsBuyBoxWinner>true</IsBuyBoxWinner>
               <IsFeaturedMerchant>true</IsFeaturedMerchant>
+              <ConditionNotes>Some notes</ConditionNotes>
+              <PrimeInformation>
+                <IsNationalPrime>true</IsNationalPrime>
+                <IsPrime>true</IsPrime>
+              </PrimeInformation>
             </Offer>
           </Offers>
         </GetLowestPricedOffersForSKUResult>
