@@ -39,12 +39,13 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "codecov": "^3.8.2",
+    "@bizon/semantic-release-config": "^1.0.1",
     "jest": "^27.0.4",
     "jest-junit": "^12.2.0",
     "lerna-changelog": "^1.0.1",
     "mockdate": "^3.0.5",
     "nock": "^13.1.0",
+    "semantic-release": "^17.4.7",
     "xo": "^0.39.1"
   },
   "engines": {
@@ -60,15 +61,6 @@
     ],
     "testPathIgnorePatterns": [
       "<rootDir>/__tests__/__helpers__/"
-    ],
-    "reporters": [
-      "default",
-      [
-        "jest-junit",
-        {
-          "outputDirectory": "reports/tests"
-        }
-      ]
     ],
     "globalSetup": "./jest.setup.js",
     "collectCoverage": true,
@@ -97,5 +89,8 @@
         ]
       }
     ]
+  },
+  "release": {
+    "extends": "@bizon/semantic-release-config"
   }
 }
