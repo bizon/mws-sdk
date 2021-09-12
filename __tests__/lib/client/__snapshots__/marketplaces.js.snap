@@ -166,11 +166,13 @@ Array [
   },
   Object {
     "code": "eg",
+    "domain": "amazon.eg",
     "id": "ARBP9OOSHTCHU",
     "imagesDomain": "images-eu.ssl-images-amazon.com",
     "mwsDomain": "mws-eu.amazonservices.com",
     "name": "Egypt",
     "region": "eu",
+    "vendorId": "A1ZVRGNO5AYLOV",
   },
   Object {
     "code": "sa",
@@ -210,6 +212,7 @@ Array [
     "mwsDomain": "mws-eu.amazonservices.com",
     "name": "Poland",
     "region": "eu",
+    "vendorId": "A2R2221NX79QZP",
   },
 ]
 `;
