@@ -4,7 +4,7 @@ const {
   parseAttributeStr,
   parseAttributeNumber,
   parseAttributeDecimal,
-  parseAttributeDate
+  parseAttributeDate,
 } = require('../../../../../lib/client/parsers/base/attributes')
 
 describe('lib.client.parsers.base.attributes', () => {
@@ -13,7 +13,7 @@ describe('lib.client.parsers.base.attributes', () => {
       const value = parseAttributeNumber(
         '/NotHere',
         parseXml('<Foo bar="" />'),
-        'bar'
+        'bar',
       )
 
       expect(value).toBeNull()
@@ -29,8 +29,8 @@ describe('lib.client.parsers.base.attributes', () => {
               <Foo bar="b" />'
             </Wrapper>
           `),
-          'bar'
-        )
+          'bar',
+        ),
       ).toThrow('Multiple nodes found')
     })
 
@@ -38,7 +38,7 @@ describe('lib.client.parsers.base.attributes', () => {
       const value = parseAttributeStr(
         '.',
         parseXml('<Foo bar="a" />'),
-        'notHere'
+        'notHere',
       )
 
       expect(value).toBeNull()
@@ -48,7 +48,7 @@ describe('lib.client.parsers.base.attributes', () => {
       const value = parseAttributeStr(
         '.',
         parseXml('<Foo bar="" />'),
-        'bar'
+        'bar',
       )
 
       expect(value).toBe('')
@@ -58,7 +58,7 @@ describe('lib.client.parsers.base.attributes', () => {
       const value = parseAttributeStr(
         '.',
         parseXml('<Foo bar=" with spaces around  " />'),
-        'bar'
+        'bar',
       )
 
       expect(value).toBe('with spaces around')
@@ -70,7 +70,7 @@ describe('lib.client.parsers.base.attributes', () => {
       const value = parseAttributeNumber(
         '.',
         parseXml('<Foo bar="" />'),
-        'bar'
+        'bar',
       )
 
       expect(value).toBeNull()
@@ -80,7 +80,7 @@ describe('lib.client.parsers.base.attributes', () => {
       const value = parseAttributeNumber(
         '.',
         parseXml('<Foo bar="not a number" />'),
-        'bar'
+        'bar',
       )
 
       expect(value).toBeNaN()
@@ -90,7 +90,7 @@ describe('lib.client.parsers.base.attributes', () => {
       const value = parseAttributeNumber(
         '.',
         parseXml('<Foo bar="3.1" />'),
-        'bar'
+        'bar',
       )
 
       expect(value).toBe(3)
@@ -102,7 +102,7 @@ describe('lib.client.parsers.base.attributes', () => {
       const value = parseAttributeDecimal(
         '.',
         parseXml('<Foo bar="" />'),
-        'bar'
+        'bar',
       )
 
       expect(value).toBeNull()
@@ -112,7 +112,7 @@ describe('lib.client.parsers.base.attributes', () => {
       const value = parseAttributeDecimal(
         '.',
         parseXml('<Foo bar="not a number" />'),
-        'bar'
+        'bar',
       )
 
       expect(value).toBeNaN()
@@ -122,7 +122,7 @@ describe('lib.client.parsers.base.attributes', () => {
       const value = parseAttributeDecimal(
         '.',
         parseXml('<Foo bar="3.1" />'),
-        'bar'
+        'bar',
       )
 
       expect(value).toBe(3.1)
@@ -134,7 +134,7 @@ describe('lib.client.parsers.base.attributes', () => {
       const value = parseAttributeDate(
         '.',
         parseXml('<Foo bar="" />'),
-        'bar'
+        'bar',
       )
 
       expect(value).toBeNull()
@@ -144,7 +144,7 @@ describe('lib.client.parsers.base.attributes', () => {
       const value = parseAttributeDate(
         '.',
         parseXml('<Foo bar="not a number" />'),
-        'bar'
+        'bar',
       )
 
       expect(value.getDate()).toBeNaN()
@@ -154,7 +154,7 @@ describe('lib.client.parsers.base.attributes', () => {
       const value = parseAttributeDate(
         '.',
         parseXml('<Foo bar="2019-02-04" />'),
-        'bar'
+        'bar',
       )
 
       expect(value).toEqual(new Date(2019, 1, 4))

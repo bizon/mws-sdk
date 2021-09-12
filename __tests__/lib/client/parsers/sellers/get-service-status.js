@@ -10,12 +10,12 @@ describe('lib.client.parsers.base.get-service-status-response', () => {
           <Status>GREEN</Status>
           <Timestamp>2010-09-24T21:38:09.676Z</Timestamp>
         </GetServiceStatusResult>
-      </GetServiceStatusResponse>`
+      </GetServiceStatusResponse>`,
     )
 
     const res = parseGetServiceStatusResponse(
       '/sellers:GetServiceStatusResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()

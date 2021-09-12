@@ -52,12 +52,12 @@ describe('lib.client.parsers.products.get-my-price-for-sku-response', () => {
         <ResponseMetadata>
           <RequestId>bc6e4601-3d74-4612-adcf-EXAMPLEf1796</RequestId>
         </ResponseMetadata>
-      </GetMyPriceForSKUResponse>`
+      </GetMyPriceForSKUResponse>`,
     )
 
     const res = parseGetMyPriceForSkuResponse(
       '/products:GetMyPriceForSKUResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()
@@ -77,12 +77,12 @@ describe('lib.client.parsers.products.get-my-price-for-sku-response', () => {
         <ResponseMetadata>
           <RequestId>bc6e4601-3d74-4612-adcf-EXAMPLEf1796</RequestId>
         </ResponseMetadata>
-      </GetMyPriceForSKUResponse>`
+      </GetMyPriceForSKUResponse>`,
     )
 
     const res = parseGetMyPriceForSkuResponse(
       '/products:GetMyPriceForSKUResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()

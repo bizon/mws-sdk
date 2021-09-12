@@ -27,12 +27,12 @@ describe('lib.client.parsers.reports.get-report-request-list-response', () => {
         <ResponseMetadata>
           <RequestId>732480cb-84a8-4c15-9084-a46bd9a0889b</RequestId>
         </ResponseMetadata>
-      </GetReportRequestListResponse>`
+      </GetReportRequestListResponse>`,
     )
 
     const res = parseGetReportRequestListReponse(
       '/reports:GetReportRequestListResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()
@@ -58,13 +58,13 @@ describe('lib.client.parsers.reports.get-report-request-list-response', () => {
         <ResponseMetadata>
           <RequestId>732480cb-84a8-4c15-9084-a46bd9a0889b</RequestId>
         </ResponseMetadata>
-      </GetReportRequestListByNextTokenResponse>`
+      </GetReportRequestListByNextTokenResponse>`,
     )
 
     const res = parseGetReportRequestListReponse(
       '/reports:GetReportRequestListByNextTokenResponse',
       doc,
-      true
+      true,
     )
 
     expect(res).toMatchSnapshot()

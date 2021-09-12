@@ -113,12 +113,12 @@ describe('lib.client.parsers.products.get-lowest-priced-offers-for-sku-response'
         <ResponseMetadata>
           <RequestId>fd2e6c6d-0b6d-499b-9fea-074175c0547a</RequestId>
         </ResponseMetadata>
-      </GetLowestPricedOffersForSKUResponse>`
+      </GetLowestPricedOffersForSKUResponse>`,
     )
 
     const res = parseGetLowestPricedOffersForSkuResponse(
       '/products:GetLowestPricedOffersForSKUResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()
@@ -143,12 +143,12 @@ describe('lib.client.parsers.products.get-lowest-priced-offers-for-sku-response'
         <ResponseMetadata>
           <RequestId>75621aa7-9c8b-40be-9bf9-3ac1efdcdb87</RequestId>
         </ResponseMetadata>
-      </GetLowestPricedOffersForSKUResponse>`
+      </GetLowestPricedOffersForSKUResponse>`,
     )
 
     const res = parseGetLowestPricedOffersForSkuResponse(
       '/products:GetLowestPricedOffersForSKUResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()
@@ -173,12 +173,12 @@ describe('lib.client.parsers.products.get-lowest-priced-offers-for-sku-response'
         <ResponseMetadata>
           <RequestId>75621aa7-9c8b-40be-9bf9-3ac1efdcdb87</RequestId>
         </ResponseMetadata>
-      </GetLowestPricedOffersForSKUResponse>`
+      </GetLowestPricedOffersForSKUResponse>`,
     )
 
     const res = parseGetLowestPricedOffersForSkuResponse(
       '/products:GetLowestPricedOffersForSKUResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()
@@ -204,12 +204,12 @@ describe('lib.client.parsers.products.get-lowest-priced-offers-for-sku-response'
         <ResponseMetadata>
           <RequestId>1212334</RequestId>
         </ResponseMetadata>
-      </GetLowestPricedOffersForSKUResponse>`
+      </GetLowestPricedOffersForSKUResponse>`,
     )
 
     const res = parseGetLowestPricedOffersForSkuResponse(
       '/products:GetLowestPricedOffersForSKUResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()

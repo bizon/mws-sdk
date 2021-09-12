@@ -13,12 +13,12 @@ describe('lib.client.parsers.base.get-service-status-response', () => {
         <ResponseMetadata>
           <RequestId>d80c6c7b-f7c7-4fa7-bdd7-854711cb3bcc</RequestId>
         </ResponseMetadata>
-      </GetServiceStatusResponse>`
+      </GetServiceStatusResponse>`,
     )
 
     const res = parseGetServiceStatusResponse(
       '/fulfillmentInventory:GetServiceStatusResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()

@@ -10,12 +10,12 @@ describe('lib.client.parsers.subscriptions.deregister-destination-response', () 
         <ResponseMetadata>
           <RequestId>b120e610-9cf0-48d7-b615-ca869EXAMPLE</RequestId>
         </ResponseMetadata>
-      </DeregisterDestinationResponse>`
+      </DeregisterDestinationResponse>`,
     )
 
     const res = parseDeregisterDestinationResponse(
       '/subscriptions:DeregisterDestinationResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()

@@ -22,7 +22,7 @@ describe('lib.client.parsers.finances.list-financial-event-groups-response', () 
                 <FeeType>RunLightningDealFee</FeeType>
                 <FeeAmount>
                   <CurrencyAmount>16.38</CurrencyAmount>
-                  <Curr`
+                  <Curr`,
     )).toThrow('Premature end of data in tag ListFinancialEventsResponse')
   })
 
@@ -199,12 +199,12 @@ describe('lib.client.parsers.finances.list-financial-event-groups-response', () 
         <ResponseMetadata>
           <RequestId>6a2929e5-5c77-470e-ad71-36f30bfaffcc</RequestId>
         </ResponseMetadata>
-      </ListFinancialEventsResponse>`
+      </ListFinancialEventsResponse>`,
     )
 
     const res = parseListFinancialEventsResponse(
       '/finances:ListFinancialEventsResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()
@@ -495,12 +495,12 @@ describe('lib.client.parsers.finances.list-financial-event-groups-response', () 
         <ResponseMetadata>
           <RequestId>508eabb9-3606-4124-b01d-e879190aaf28</RequestId>
         </ResponseMetadata>
-      </ListFinancialEventsResponse>`
+      </ListFinancialEventsResponse>`,
     )
 
     const res = parseListFinancialEventsResponse(
       '/finances:ListFinancialEventsResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()
@@ -675,13 +675,13 @@ describe('lib.client.parsers.finances.list-financial-event-groups-response', () 
         <ResponseMetadata>
           <RequestId>c07d1dd2-12f9-415f-a167-8ab5f7726dbf</RequestId>
         </ResponseMetadata>
-      </ListFinancialEventsByNextTokenResponse>`
+      </ListFinancialEventsByNextTokenResponse>`,
     )
 
     const res = parseListFinancialEventsResponse(
       '/finances:ListFinancialEventsByNextTokenResponse',
       doc,
-      true
+      true,
     )
 
     expect(res).toMatchSnapshot()

@@ -112,12 +112,12 @@ describe('lib.client.parsers.products.get-lowest-priced-offers-for-asin-response
         <ResponseMetadata>
           <RequestId>21534f03-e7e3-4d9a-9bea-0e15add3326d</RequestId>
         </ResponseMetadata>
-      </GetLowestPricedOffersForASINResponse>`
+      </GetLowestPricedOffersForASINResponse>`,
     )
 
     const res = parseGetLowestPricedOffersForAsinResponse(
       '/products:GetLowestPricedOffersForASINResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()
@@ -142,12 +142,12 @@ describe('lib.client.parsers.products.get-lowest-priced-offers-for-asin-response
         <ResponseMetadata>
           <RequestId>2bb867cd-8fa3-406c-adba-eb84c1796d21</RequestId>
         </ResponseMetadata>
-      </GetLowestPricedOffersForASINResponse>`
+      </GetLowestPricedOffersForASINResponse>`,
     )
 
     const res = parseGetLowestPricedOffersForAsinResponse(
       '/products:GetLowestPricedOffersForASINResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()
@@ -172,12 +172,12 @@ describe('lib.client.parsers.products.get-lowest-priced-offers-for-asin-response
         <ResponseMetadata>
           <RequestId>2bb867cd-8fa3-406c-adba-eb84c1796d21</RequestId>
         </ResponseMetadata>
-      </GetLowestPricedOffersForASINResponse>`
+      </GetLowestPricedOffersForASINResponse>`,
     )
 
     const res = parseGetLowestPricedOffersForAsinResponse(
       '/products:GetLowestPricedOffersForASINResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()
@@ -203,12 +203,12 @@ describe('lib.client.parsers.products.get-lowest-priced-offers-for-asin-response
         <ResponseMetadata>
           <RequestId>1212334</RequestId>
         </ResponseMetadata>
-      </GetLowestPricedOffersForASINResponse>`
+      </GetLowestPricedOffersForASINResponse>`,
     )
 
     const res = parseGetLowestPricedOffersForAsinResponse(
       '/products:GetLowestPricedOffersForASINResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()

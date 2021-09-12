@@ -1,3 +1,5 @@
+const process = require('process')
+
 const nock = require('nock')
 const MockDate = require('mockdate')
 
@@ -16,17 +18,17 @@ describe('lib.client.index', () => {
     const tests = [
       () => new MWSClient(),
       () => new MWSClient({
-        accessKeyId: 'foo'
-      }),
-      () => new MWSClient({
         accessKeyId: 'foo',
-        secretAccessKey: 'bar'
       }),
       () => new MWSClient({
         accessKeyId: 'foo',
         secretAccessKey: 'bar',
-        sellerId: 'baz'
-      })
+      }),
+      () => new MWSClient({
+        accessKeyId: 'foo',
+        secretAccessKey: 'bar',
+        sellerId: 'baz',
+      }),
     ]
 
     for (const test of tests) {
@@ -40,8 +42,8 @@ describe('lib.client.index', () => {
         accessKeyId: 'foo',
         secretAccessKey: 'bar',
         sellerId: 'baz',
-        mwsToken: 'token'
-      })
+        mwsToken: 'token',
+      }),
     ).toThrow('Specify one of mwsRegion or marketplaces')
   })
 
@@ -52,15 +54,15 @@ describe('lib.client.index', () => {
         secretAccessKey: 'bar',
         sellerId: 'baz',
         mwsToken: 'token',
-        mwsRegion: 'unknown'
-      })
+        mwsRegion: 'unknown',
+      }),
     ).toThrow('unknown is not a valid MWS region')
   })
 
   it('should fail when none of the specified marketplaces are valid', () => {
     const tests = [
       [[], 'Specify one of mwsRegion or marketplaces'],
-      [['332'], 'None of the specified marketplaces define a MWS domain']
+      [['332'], 'None of the specified marketplaces define a MWS domain'],
     ]
 
     for (const [marketplaces, error] of tests) {
@@ -70,8 +72,8 @@ describe('lib.client.index', () => {
           secretAccessKey: 'bar',
           sellerId: 'baz',
           mwsToken: 'token',
-          marketplaces
-        })
+          marketplaces,
+        }),
       ).toThrow(error)
     }
   })
@@ -83,7 +85,7 @@ describe('lib.client.index', () => {
     const client = new MWSClient({
       sellerId: 'baz',
       mwsToken: 'token',
-      mwsRegion: 'eu'
+      mwsRegion: 'eu',
     })
 
     expect(client.settings.accessKeyId).toBe(process.env.MWS_ACCESS_KEY_ID)
@@ -99,7 +101,7 @@ describe('lib.client.index', () => {
       secretAccessKey: 'not enumerable',
       sellerId: 'seller identifier',
       mwsToken: 'not enumerable',
-      mwsRegion: 'eu'
+      mwsRegion: 'eu',
     })
 
     expect(Object.keys(client.settings)).toMatchSnapshot()
@@ -115,11 +117,11 @@ describe('lib.client.index', () => {
       secretAccessKey: 'bar',
       sellerId: 'baz',
       mwsToken: 'token',
-      mwsRegion: 'eu'
+      mwsRegion: 'eu',
     })
 
     const {pathname, data} = client.signData('GET', 'CustomResource', '1988-10-13', {
-      Action: 'CustomGetAction'
+      Action: 'CustomGetAction',
     })
 
     nock(`https://${client.settings.mwsDomain}`)
@@ -137,16 +139,16 @@ describe('lib.client.index', () => {
           <ResponseMetadata>
             <RequestId>bc6e4601-3d74-4612-adcf-EXAMPLEf1796</RequestId>
           </ResponseMetadata>
-        </ErrorResponse>`
+        </ErrorResponse>`,
       )
 
     expect.assertions(3)
 
     try {
       await client.get('CustomResource', '1988-10-13', {
-        Action: 'CustomGetAction'
+        Action: 'CustomGetAction',
       }, {
-        retry: 0 // Disable retries so got doesn’t eat our expected 503
+        retry: 0, // Disable retries so got doesn’t eat our expected 503
       })
     } catch (error) {
       expect(error).toBeInstanceOf(MWSClient.MWSError)
@@ -161,12 +163,12 @@ describe('lib.client.index', () => {
       secretAccessKey: 'bar',
       sellerId: 'baz',
       mwsToken: 'token',
-      mwsRegion: 'eu'
+      mwsRegion: 'eu',
     })
 
     const {pathname, data} = client.signData('POST', 'CustomResource', '1988-10-13', {
       Action: 'CustomPostAction',
-      Foo: 'bar'
+      Foo: 'bar',
     })
 
     nock(`https://${client.settings.mwsDomain}`)
@@ -182,7 +184,7 @@ describe('lib.client.index', () => {
           <ResponseMetadata>
             <RequestId>bc6e4601-3d74-4612-adcf-EXAMPLEf1796</RequestId>
           </ResponseMetadata>
-        </ErrorResponse>`
+        </ErrorResponse>`,
       )
 
     expect.assertions(3)
@@ -190,7 +192,7 @@ describe('lib.client.index', () => {
     try {
       await client.post('CustomResource', '1988-10-13', {
         Action: 'CustomPostAction',
-        Foo: 'bar'
+        Foo: 'bar',
       })
     } catch (error) {
       expect(error).toBeInstanceOf(MWSClient.MWSError)

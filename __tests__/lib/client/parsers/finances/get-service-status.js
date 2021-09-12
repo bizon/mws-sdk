@@ -13,12 +13,12 @@ describe('lib.client.parsers.base.get-service-status-response', () => {
         <ResponseMetadata>
           <RequestId>082c41fd-2f6b-4616-a518-7db14EXAMPLE</RequestId>
         </ResponseMetadata>
-      </GetServiceStatusResponse>`
+      </GetServiceStatusResponse>`,
     )
 
     const res = parseGetServiceStatusResponse(
       '/finances:GetServiceStatusResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()

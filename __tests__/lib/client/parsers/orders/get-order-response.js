@@ -37,12 +37,12 @@ describe('lib.client.parsers.orders.get-order-response', () => {
         <ResponseMetadata>
           <RequestId>88faca76-b600-46d2-b53c-0c8c4533e43a</RequestId>
         </ResponseMetadata>
-      </GetOrderResponse>`
+      </GetOrderResponse>`,
     )
 
     const res = parseGetOrderResponse(
       '/orders:GetOrderResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()

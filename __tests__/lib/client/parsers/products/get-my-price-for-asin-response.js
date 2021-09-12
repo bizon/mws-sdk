@@ -47,12 +47,12 @@ describe('lib.client.parsers.products.get-my-price-for-asin-response', () => {
         <ResponseMetadata>
           <RequestId>a3381684-87bd-416e-9b95-EXAMPLE9c236</RequestId>
         </ResponseMetadata>
-      </GetMyPriceForASINResponse>`
+      </GetMyPriceForASINResponse>`,
     )
 
     const res = parseGetMyPriceForAsinResponse(
       '/products:GetMyPriceForASINResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()
@@ -72,12 +72,12 @@ describe('lib.client.parsers.products.get-my-price-for-asin-response', () => {
         <ResponseMetadata>
           <RequestId>a3381684-87bd-416e-9b95-EXAMPLE9c236</RequestId>
         </ResponseMetadata>
-      </GetMyPriceForASINResponse>`
+      </GetMyPriceForASINResponse>`,
     )
 
     const res = parseGetMyPriceForAsinResponse(
       '/products:GetMyPriceForASINResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()

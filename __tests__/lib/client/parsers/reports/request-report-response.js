@@ -20,12 +20,12 @@ describe('lib.client.parsers.reports.request-report-response', () => {
         <ResponseMetadata>
           <RequestId>88faca76-b600-46d2-b53c-0c8c4533e43a</RequestId>
         </ResponseMetadata>
-      </RequestReportResponse>`
+      </RequestReportResponse>`,
     )
 
     const res = parseRequestReportResponse(
       '/reports:RequestReportResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()

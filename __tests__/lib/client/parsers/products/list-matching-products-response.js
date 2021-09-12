@@ -103,12 +103,12 @@ describe('lib.client.parsers.products.list-matching-products-response', () => {
         <ResponseMetadata>
           <RequestId>3b805a12-689a-4367-ba86-EXAMPLE91c0b</RequestId>
         </ResponseMetadata>
-      </ListMatchingProductsResponse>`
+      </ListMatchingProductsResponse>`,
     )
 
     const res = parseListMatchingProductsResponse(
       '/products:ListMatchingProductsResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()

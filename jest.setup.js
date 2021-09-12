@@ -1,3 +1,5 @@
+const process = require('process')
+
 const nock = require('nock')
 
 process.env.DEBUG = 'bizon:mws-sdk:*'

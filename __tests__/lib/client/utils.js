@@ -1,7 +1,7 @@
 const {
   dateToISOString,
   normalizeSearchParams,
-  reportOptionsToString
+  reportOptionsToString,
 } = require('../../../lib/client/utils')
 
 describe('lib.client.utils', () => {
@@ -12,7 +12,7 @@ describe('lib.client.utils', () => {
         Number.NaN,
         undefined,
         null,
-        0
+        0,
       ]
 
       for (const test of tests) {
@@ -26,7 +26,7 @@ describe('lib.client.utils', () => {
         {a: 1},
         Number.NEGATIVE_INFINITY,
         new Error('what'),
-        new Date('no')
+        new Date('no'),
       ]
 
       for (const test of tests) {
@@ -36,7 +36,7 @@ describe('lib.client.utils', () => {
 
     it('should transform dates to ISO string', () => {
       const tests = [
-        1546300800000,
+        1_546_300_800_000,
         new Date(2019, 0, 1),
         '2019',
         '2019-01',
@@ -44,7 +44,7 @@ describe('lib.client.utils', () => {
         '2019-01-01T00:00',
         '2019-01-01T00:00.000',
         '2019-01-01T00:00.000Z',
-        '2019-01-01T00:00.000+000'
+        '2019-01-01T00:00.000+000',
       ]
 
       for (const test of tests) {
@@ -58,20 +58,20 @@ describe('lib.client.utils', () => {
       const tests = [
         [
           null,
-          null
+          null,
         ],
         [
           'custom=true',
-          'custom=true'
+          'custom=true',
         ],
         [
           {custom: true},
-          'custom=true'
+          'custom=true',
         ],
         [
           {MarketplaceId: 'ATVPDKIKX0DER', BrowseNodeId: '15706661'},
-          'MarketplaceId=ATVPDKIKX0DER;BrowseNodeId=15706661'
-        ]
+          'MarketplaceId=ATVPDKIKX0DER;BrowseNodeId=15706661',
+        ],
       ]
 
       for (const [test, expected] of tests) {
@@ -83,23 +83,23 @@ describe('lib.client.utils', () => {
       const tests = [
         [
           'custom=true',
-          'ReportOptions=custom%3Dtrue'
+          'ReportOptions=custom%3Dtrue',
         ],
         [
           {custom: true},
-          'ReportOptions=custom%3Dtrue'
+          'ReportOptions=custom%3Dtrue',
         ],
         [
           {MarketplaceId: 'ATVPDKIKX0DER', BrowseNodeId: '15706661'},
-          'ReportOptions=MarketplaceId%3DATVPDKIKX0DER%3BBrowseNodeId%3D15706661'
-        ]
+          'ReportOptions=MarketplaceId%3DATVPDKIKX0DER%3BBrowseNodeId%3D15706661',
+        ],
       ]
 
       for (const [test, expected] of tests) {
         expect(
           normalizeSearchParams({
-            ReportOptions: reportOptionsToString(test)
-          })
+            ReportOptions: reportOptionsToString(test),
+          }),
         ).toBe(expected)
       }
     })

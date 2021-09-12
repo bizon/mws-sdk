@@ -8,7 +8,7 @@ const client = new MWSClient({
   secretAccessKey: 'SECRET_KEY',
   sellerId: 'SELLER_ID',
   mwsToken: 'MWS_TOKEN',
-  mwsRegion: 'eu'
+  mwsRegion: 'eu',
 })
 
 const apiUrl = `https://${client.settings.mwsDomain}`
@@ -27,7 +27,7 @@ describe('lib.client.models.products', () => {
     const {pathname, data} = client.signData('POST', 'Products', '2011-10-01', {
       Action: 'ListMatchingProducts',
       MarketplaceId: 'ATVPDKIKX0DER',
-      Query: '0439708184'
+      Query: '0439708184',
     })
 
     nock(apiUrl)
@@ -133,12 +133,12 @@ describe('lib.client.models.products', () => {
           <ResponseMetadata>
             <RequestId>3b805a12-689a-4367-ba86-EXAMPLE91c0b</RequestId>
           </ResponseMetadata>
-        </ListMatchingProductsResponse>`
+        </ListMatchingProductsResponse>`,
       )
 
     const result = await client.products.listMatchingProducts({
       marketplaceId: 'ATVPDKIKX0DER',
-      query: '0439708184'
+      query: '0439708184',
     })
 
     expect(result).toMatchSnapshot()
@@ -149,7 +149,7 @@ describe('lib.client.models.products', () => {
       Action: 'GetLowestPricedOffersForSKU',
       MarketplaceId: 'ATVPDKIKX0DER',
       SellerSKU: 'SKU2468',
-      ItemCondition: 'new'
+      ItemCondition: 'new',
     })
 
     nock(apiUrl)
@@ -173,13 +173,13 @@ describe('lib.client.models.products', () => {
           <ResponseMetadata>
             <RequestId>75621aa7-9c8b-40be-9bf9-3ac1efdcdb87</RequestId>
           </ResponseMetadata>
-        </GetLowestPricedOffersForSKUResponse>`
+        </GetLowestPricedOffersForSKUResponse>`,
       )
 
     const result = await client.products.getLowestPricedOffersForSku({
       marketplaceId: 'ATVPDKIKX0DER',
       sellerSku: 'SKU2468',
-      itemCondition: 'new'
+      itemCondition: 'new',
     })
 
     expect(result).toMatchSnapshot()
@@ -190,7 +190,7 @@ describe('lib.client.models.products', () => {
       Action: 'GetLowestPricedOffersForSKU',
       MarketplaceId: 'ATVPDKIKX0DER',
       SellerSKU: 'SKU2468',
-      ItemCondition: 'new'
+      ItemCondition: 'new',
     })
 
     nock(apiUrl)
@@ -207,7 +207,7 @@ describe('lib.client.models.products', () => {
           <ResponseMetadata>
             <RequestId>bc6e4601-3d74-4612-adcf-EXAMPLEf1796</RequestId>
           </ResponseMetadata>
-        </ErrorResponse>`
+        </ErrorResponse>`,
       )
 
     expect.assertions(2)
@@ -216,7 +216,7 @@ describe('lib.client.models.products', () => {
       await client.products.getLowestPricedOffersForSku({
         marketplaceId: 'ATVPDKIKX0DER',
         sellerSku: 'SKU2468',
-        itemCondition: 'new'
+        itemCondition: 'new',
       })
     } catch (error) {
       expect(error.message).toBe('Products.GetLowestPricedOffersForSKU error: Response code 400 (Bad Request)')
@@ -229,7 +229,7 @@ describe('lib.client.models.products', () => {
       Action: 'GetLowestPricedOffersForASIN',
       MarketplaceId: 'ATVPDKIKX0DER',
       ASIN: '1933890517',
-      ItemCondition: 'new'
+      ItemCondition: 'new',
     })
 
     nock(apiUrl)
@@ -253,13 +253,13 @@ describe('lib.client.models.products', () => {
           <ResponseMetadata>
             <RequestId>2bb867cd-8fa3-406c-adba-eb84c1796d21</RequestId>
           </ResponseMetadata>
-        </GetLowestPricedOffersForASINResponse>`
+        </GetLowestPricedOffersForASINResponse>`,
       )
 
     const result = await client.products.getLowestPricedOffersForAsin({
       marketplaceId: 'ATVPDKIKX0DER',
       asin: '1933890517',
-      itemCondition: 'new'
+      itemCondition: 'new',
     })
 
     expect(result).toMatchSnapshot()
@@ -270,7 +270,7 @@ describe('lib.client.models.products', () => {
       Action: 'GetLowestPricedOffersForASIN',
       MarketplaceId: 'ATVPDKIKX0DER',
       ASIN: '1933890517',
-      ItemCondition: 'new'
+      ItemCondition: 'new',
     })
 
     nock(apiUrl)
@@ -287,7 +287,7 @@ describe('lib.client.models.products', () => {
           <ResponseMetadata>
             <RequestId>bc6e4601-3d74-4612-adcf-EXAMPLEf1796</RequestId>
           </ResponseMetadata>
-        </ErrorResponse>`
+        </ErrorResponse>`,
       )
 
     expect.assertions(2)
@@ -296,7 +296,7 @@ describe('lib.client.models.products', () => {
       await client.products.getLowestPricedOffersForAsin({
         marketplaceId: 'ATVPDKIKX0DER',
         asin: '1933890517',
-        itemCondition: 'new'
+        itemCondition: 'new',
       })
     } catch (error) {
       expect(error.message).toBe('Products.GetLowestPricedOffersForASIN error: Response code 400 (Bad Request)')
@@ -308,7 +308,7 @@ describe('lib.client.models.products', () => {
     const {pathname, data} = client.signData('POST', 'Products', '2011-10-01', {
       Action: 'GetMyPriceForASIN',
       MarketplaceId: 'ATVPDKIKX0DER',
-      'ASINList.ASIN.1': '1933890517'
+      'ASINList.ASIN.1': '1933890517',
     })
 
     nock(apiUrl)
@@ -358,14 +358,14 @@ describe('lib.client.models.products', () => {
           <ResponseMetadata>
             <RequestId>a3381684-87bd-416e-9b95-EXAMPLE9c236</RequestId>
           </ResponseMetadata>
-        </GetMyPriceForASINResponse>`
+        </GetMyPriceForASINResponse>`,
       )
 
     const result = await client.products.getMyPriceForAsin({
       marketplaceId: 'ATVPDKIKX0DER',
       asinList: [
-        '1933890517'
-      ]
+        '1933890517',
+      ],
     })
 
     expect(result).toMatchSnapshot()
@@ -375,7 +375,7 @@ describe('lib.client.models.products', () => {
     const {pathname, data} = client.signData('POST', 'Products', '2011-10-01', {
       Action: 'GetMyPriceForSKU',
       MarketplaceId: 'ATVPDKIKX0DER',
-      'SellerSKUList.SellerSKU.1': 'SKU2468'
+      'SellerSKUList.SellerSKU.1': 'SKU2468',
     })
 
     nock(apiUrl)
@@ -430,14 +430,14 @@ describe('lib.client.models.products', () => {
           <ResponseMetadata>
             <RequestId>bc6e4601-3d74-4612-adcf-EXAMPLEf1796</RequestId>
           </ResponseMetadata>
-        </GetMyPriceForSKUResponse>`
+        </GetMyPriceForSKUResponse>`,
       )
 
     const result = await client.products.getMyPriceForSku({
       marketplaceId: 'ATVPDKIKX0DER',
       sellerSkuList: [
-        'SKU2468'
-      ]
+        'SKU2468',
+      ],
     })
 
     expect(result).toMatchSnapshot()
@@ -447,7 +447,7 @@ describe('lib.client.models.products', () => {
     const {pathname, data} = client.signData('POST', 'Products', '2011-10-01', {
       Action: 'GetProductCategoriesForSKU',
       MarketplaceId: 'ATVPDKIKX0DER',
-      SellerSKU: 'SKU2468'
+      SellerSKU: 'SKU2468',
     })
 
     nock(apiUrl)
@@ -501,12 +501,12 @@ describe('lib.client.models.products', () => {
           <ResponseMetadata>
             <RequestId>e058aabd-b4c3-48ba-9bfa-EXAMPLE9a267</RequestId>
           </ResponseMetadata>
-        </GetProductCategoriesForSKUResponse>`
+        </GetProductCategoriesForSKUResponse>`,
       )
 
     const result = await client.products.getProductCategoriesForSku({
       marketplaceId: 'ATVPDKIKX0DER',
-      sellerSku: 'SKU2468'
+      sellerSku: 'SKU2468',
     })
 
     expect(result).toMatchSnapshot()
@@ -516,7 +516,7 @@ describe('lib.client.models.products', () => {
     const {pathname, data} = client.signData('POST', 'Products', '2011-10-01', {
       Action: 'GetProductCategoriesForASIN',
       MarketplaceId: 'ATVPDKIKX0DER',
-      ASIN: 'B002KT3XQM'
+      ASIN: 'B002KT3XQM',
     })
 
     nock(apiUrl)
@@ -558,12 +558,12 @@ describe('lib.client.models.products', () => {
           <ResponseMetadata>
             <RequestId>fbce5b62-67cc-4ab8-86f3-EXAMPLE22e4e</RequestId>
           </ResponseMetadata>
-        </GetProductCategoriesForASINResponse>`
+        </GetProductCategoriesForASINResponse>`,
       )
 
     const result = await client.products.getProductCategoriesForAsin({
       marketplaceId: 'ATVPDKIKX0DER',
-      asin: 'B002KT3XQM'
+      asin: 'B002KT3XQM',
     })
 
     expect(result).toMatchSnapshot()

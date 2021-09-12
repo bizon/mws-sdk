@@ -9,7 +9,7 @@ const client = new MWSClient({
   secretAccessKey: 'SECRET_KEY',
   sellerId: 'SELLER_ID',
   mwsToken: 'MWS_TOKEN',
-  mwsRegion: 'eu'
+  mwsRegion: 'eu',
 })
 
 const apiUrl = `https://${client.settings.mwsDomain}`
@@ -28,7 +28,7 @@ describe('lib.client.models.orders', () => {
     const {pathname, data} = client.signData('GET', 'Orders', '2013-09-01', {
       Action: 'ListOrders',
       MaxResultsPerPage: 100,
-      ...arrayToObject('MarketplaceId.Id', client.settings.marketplaces.map(m => m.id))
+      ...arrayToObject('MarketplaceId.Id', client.settings.marketplaces.map(m => m.id)),
     })
 
     nock(apiUrl)
@@ -209,7 +209,7 @@ describe('lib.client.models.orders', () => {
           <ResponseMetadata>
             <RequestId>88faca76-b600-46d2-b53c-0c8c4533e43a</RequestId>
           </ResponseMetadata>
-        </ListOrdersResponse>`
+        </ListOrdersResponse>`,
       )
 
     const result = await client.orders.listOrders({})
@@ -229,7 +229,7 @@ describe('lib.client.models.orders', () => {
       'PaymentMethod.Method.1': 'COD',
       'PaymentMethod.Method.2': 'Other',
       'OrderStatus.Status.1': 'Unshipped',
-      'OrderStatus.Status.2': 'PendingAvailability'
+      'OrderStatus.Status.2': 'PendingAvailability',
     })
 
     nock(apiUrl)
@@ -398,7 +398,7 @@ describe('lib.client.models.orders', () => {
           <ResponseMetadata>
             <RequestId>88faca76-b600-46d2-b53c-0c8c4533e43a</RequestId>
           </ResponseMetadata>
-        </ListOrdersResponse>`
+        </ListOrdersResponse>`,
       )
 
     const result = await client.orders.listOrders({
@@ -406,19 +406,19 @@ describe('lib.client.models.orders', () => {
       marketplaceId: [
         'ATVPDKIKX0DER',
         'A2Q3Y263D00KWC',
-        'A1VC38T7YXB528'
+        'A1VC38T7YXB528',
       ],
       fulfillmentChannel: [
-        'MFN'
+        'MFN',
       ],
       paymentMethod: [
         'COD',
-        'Other'
+        'Other',
       ],
       orderStatus: [
         'Unshipped',
-        'PendingAvailability'
-      ]
+        'PendingAvailability',
+      ],
     })
 
     expect(result).toMatchSnapshot()
@@ -427,7 +427,7 @@ describe('lib.client.models.orders', () => {
   it('should call GetOrder', async () => {
     const {pathname, data} = client.signData('GET', 'Orders', '2013-09-01', {
       Action: 'GetOrder',
-      'AmazonOrderId.Id.1': '902-3159896-1390916'
+      'AmazonOrderId.Id.1': '902-3159896-1390916',
     })
 
     nock(apiUrl)
@@ -468,13 +468,13 @@ describe('lib.client.models.orders', () => {
           <ResponseMetadata>
             <RequestId>88faca76-b600-46d2-b53c-0c8c4533e43a</RequestId>
           </ResponseMetadata>
-        </GetOrderResponse>`
+        </GetOrderResponse>`,
       )
 
     const result = await client.orders.getOrder({
       amazonOrderId: [
-        '902-3159896-1390916'
-      ]
+        '902-3159896-1390916',
+      ],
     })
 
     expect(result).toMatchSnapshot()

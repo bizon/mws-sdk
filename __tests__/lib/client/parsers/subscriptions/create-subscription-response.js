@@ -10,12 +10,12 @@ describe('lib.client.parsers.subscriptions.create-subscription-response', () => 
         <ResponseMetadata>
           <RequestId>c9bb2e77-2425-4e1a-9c85-36d00EXAMPLE</RequestId>
         </ResponseMetadata>
-      </CreateSubscriptionResponse>`
+      </CreateSubscriptionResponse>`,
     )
 
     const res = parseCreateSubscriptionResponse(
       '/subscriptions:CreateSubscriptionResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()

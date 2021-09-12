@@ -8,9 +8,9 @@ describe('lib.client.sign', () => {
         domain: 'mws-eu.amazonservices.com',
         path: 'Products/2011-10-01',
         data: {
-          Cool: 'Test with spaces'
-        }
-      })
+          Cool: 'Test with spaces',
+        },
+      }),
     ).toMatchSnapshot()
 
     expect(
@@ -19,9 +19,9 @@ describe('lib.client.sign', () => {
         domain: 'mws-eu.amazonservices.com',
         path: 'Products/2011-10-01',
         data: {
-          Method: 'Example'
-        }
-      })
+          Method: 'Example',
+        },
+      }),
     ).toMatchSnapshot()
   })
 })

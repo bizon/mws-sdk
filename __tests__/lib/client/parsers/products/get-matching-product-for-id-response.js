@@ -245,12 +245,12 @@ describe('lib.client.parsers.products.get-matching-product-for-id-response', () 
         <ResponseMetadata>
           <RequestId>7ba3245e-a213-430a-bea9-EXAMPLE38d76</RequestId>
         </ResponseMetadata>
-      </GetMatchingProductForIdResponse>`
+      </GetMatchingProductForIdResponse>`,
     )
 
     const res = parseGetMatchingProductForIdResponse(
       '/products:GetMatchingProductForIdResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()
@@ -358,12 +358,12 @@ describe('lib.client.parsers.products.get-matching-product-for-id-response', () 
         <ResponseMetadata>
           <RequestId>a34b6cca-d7dc-4939-b226-b13ea3ac1d88</RequestId>
         </ResponseMetadata>
-      </GetMatchingProductForIdResponse>`
+      </GetMatchingProductForIdResponse>`,
     )
 
     const res = parseGetMatchingProductForIdResponse(
       '/products:GetMatchingProductForIdResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()
@@ -511,12 +511,12 @@ describe('lib.client.parsers.products.get-matching-product-for-id-response', () 
         <ResponseMetadata>
           <RequestId>b12caada-d330-4d87-a789-EXAMPLE35872</RequestId>
         </ResponseMetadata>
-      </GetMatchingProductForIdResponse>`
+      </GetMatchingProductForIdResponse>`,
     )
 
     const res = parseGetMatchingProductForIdResponse(
       '/products:GetMatchingProductForIdResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()
@@ -614,12 +614,12 @@ describe('lib.client.parsers.products.get-matching-product-for-id-response', () 
         <ResponseMetadata>
           <RequestId>b12caada-d330-4d87-a789-EXAMPLE35872</RequestId>
         </ResponseMetadata>
-      </GetMatchingProductForIdResponse>`
+      </GetMatchingProductForIdResponse>`,
     )
 
     const res = parseGetMatchingProductForIdResponse(
       '/products:GetMatchingProductForIdResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()
