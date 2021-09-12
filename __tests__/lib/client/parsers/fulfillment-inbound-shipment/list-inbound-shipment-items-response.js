@@ -30,12 +30,12 @@ describe('lib.client.parsers.fulfillment-inbound-shipment.list-inbound-shipment-
         <ResponseMetadata>
           <RequestId>ffce8932-8e69-11df-8af1-5bf2881764d8</RequestId>
         </ResponseMetadata>
-      </ListInboundShipmentItemsResponse>`
+      </ListInboundShipmentItemsResponse>`,
     )
 
     const res = parseListInboundShipmentItemsResponse(
       '/fulfillmentInboundShipment:ListInboundShipmentItemsResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()

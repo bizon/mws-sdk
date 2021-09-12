@@ -10,12 +10,12 @@ describe('lib.client.parsers.subscriptions.register-destination-response', () =>
         <ResponseMetadata>
           <RequestId>b120e610-9cf0-48d7-b615-ca869EXAMPLE</RequestId>
         </ResponseMetadata>
-      </RegisterDestinationResponse>`
+      </RegisterDestinationResponse>`,
     )
 
     const res = parseRegisterDestinationResponse(
       '/subscriptions:RegisterDestinationResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()

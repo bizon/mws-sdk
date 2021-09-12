@@ -16,12 +16,12 @@ describe('lib.client.parsers.fulfillment-inbound-shipment.get-bill-of-lading-res
         <ResponseMetadata>
           <RequestId>985a3fa9-3ce2-46fb-a1c7-321439269d2b</RequestId>
         </ResponseMetadata>
-      </GetBillOfLadingResponse>`
+      </GetBillOfLadingResponse>`,
     )
 
     const res = parseGetBillOfLadingResponse(
       '/fulfillmentInboundShipment:GetBillOfLadingResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()

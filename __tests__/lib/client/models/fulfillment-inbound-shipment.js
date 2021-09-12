@@ -8,7 +8,7 @@ const client = new MWSClient({
   secretAccessKey: 'SECRET_KEY',
   sellerId: 'SELLER_ID',
   mwsToken: 'MWS_TOKEN',
-  mwsRegion: 'eu'
+  mwsRegion: 'eu',
 })
 
 const apiUrl = `https://${client.settings.mwsDomain}`
@@ -26,7 +26,7 @@ describe('lib.client.models.fulfillment-inbound-shipment', () => {
   it('should call GetBillOfLading', async () => {
     const {pathname, data} = client.signData('GET', 'FulfillmentInboundShipment', '2010-10-01', {
       Action: 'GetBillOfLading',
-      ShipmentId: 'FBAQFGQZ'
+      ShipmentId: 'FBAQFGQZ',
     })
 
     nock(apiUrl)
@@ -46,11 +46,11 @@ describe('lib.client.models.fulfillment-inbound-shipment', () => {
           <ResponseMetadata>
             <RequestId>985a3fa9-3ce2-46fb-a1c7-321439269d2b</RequestId>
           </ResponseMetadata>
-        </GetBillOfLadingResponse>`
+        </GetBillOfLadingResponse>`,
       )
 
     const result = await client.fulfillmentInboundShipment.getBillOfLading({
-      shipmentId: 'FBAQFGQZ'
+      shipmentId: 'FBAQFGQZ',
     })
 
     expect(result).toMatchSnapshot()
@@ -60,7 +60,7 @@ describe('lib.client.models.fulfillment-inbound-shipment', () => {
     const {pathname, data} = client.signData('GET', 'FulfillmentInboundShipment', '2010-10-01', {
       Action: 'ListInboundShipments',
       'ShipmentIdList.member.1': 'FBAN4QNH',
-      'ShipmentIdList.member.2': 'FBA1123'
+      'ShipmentIdList.member.2': 'FBA1123',
     })
 
     nock(apiUrl)
@@ -117,14 +117,14 @@ describe('lib.client.models.fulfillment-inbound-shipment', () => {
               </member>
             </ShipmentData>
           </ListInboundShipmentsResult>
-        </ListInboundShipmentsResponse>`
+        </ListInboundShipmentsResponse>`,
       )
 
     const result = await client.fulfillmentInboundShipment.listInboundShipments({
       shipmentIdList: [
         'FBAN4QNH',
-        'FBA1123'
-      ]
+        'FBA1123',
+      ],
     })
 
     expect(result).toMatchSnapshot()
@@ -133,7 +133,7 @@ describe('lib.client.models.fulfillment-inbound-shipment', () => {
   it('should call ListInboundShipmentItems', async () => {
     const {pathname, data} = client.signData('GET', 'FulfillmentInboundShipment', '2010-10-01', {
       Action: 'ListInboundShipmentItems',
-      ShipmentId: 'SSF85DGIZZ3OF1'
+      ShipmentId: 'SSF85DGIZZ3OF1',
     })
 
     nock(apiUrl)
@@ -167,11 +167,11 @@ describe('lib.client.models.fulfillment-inbound-shipment', () => {
           <ResponseMetadata>
             <RequestId>ffce8932-8e69-11df-8af1-5bf2881764d8</RequestId>
           </ResponseMetadata>
-        </ListInboundShipmentItemsResponse>`
+        </ListInboundShipmentItemsResponse>`,
       )
 
     const result = await client.fulfillmentInboundShipment.listInboundShipmentItems({
-      shipmentId: 'SSF85DGIZZ3OF1'
+      shipmentId: 'SSF85DGIZZ3OF1',
     })
 
     expect(result).toMatchSnapshot()

@@ -51,12 +51,12 @@ describe('lib.client.parsers.products.get-product-categories-for-sku-response', 
         <ResponseMetadata>
           <RequestId>e058aabd-b4c3-48ba-9bfa-EXAMPLE9a267</RequestId>
         </ResponseMetadata>
-      </GetProductCategoriesForSKUResponse>`
+      </GetProductCategoriesForSKUResponse>`,
     )
 
     const res = parseGetProductCategoriesForSkuResponse(
       '/products:GetProductCategoriesForSKUResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()
@@ -115,14 +115,14 @@ describe('lib.client.parsers.products.get-product-categories-for-sku-response', 
         <ResponseMetadata>
           <RequestId>e058aabd-b4c3-48ba-9bfa-EXAMPLE9a267</RequestId>
         </ResponseMetadata>
-      </GetProductCategoriesForSKUResponse>`
+      </GetProductCategoriesForSKUResponse>`,
     )
 
     expect(
       () => parseGetProductCategoriesForSkuResponse(
         '/products:GetProductCategoriesForSKUResponse',
-        doc
-      )
+        doc,
+      ),
     ).toThrow('Failed parsing product category: more than 10 levels of depth')
   })
 })

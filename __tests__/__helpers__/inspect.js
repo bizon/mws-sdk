@@ -1,12 +1,7 @@
 function inspectError(error) {
-  return Object
-    .entries(error)
-    .reduce((obj, [key, value]) => {
-      obj[key] = value
-      return obj
-    }, {})
+  return Object.fromEntries(Object.entries(error))
 }
 
 module.exports = {
-  inspectError
+  inspectError,
 }

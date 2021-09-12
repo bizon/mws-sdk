@@ -87,12 +87,12 @@ describe('lib.client.parsers.orders.list-order-items-response', () => {
         <ResponseMetadata>
           <RequestId>88faca76-b600-46d2-b53c-0c8c4533e43a</RequestId>
         </ResponseMetadata>
-      </ListOrderItemsResponse>`
+      </ListOrderItemsResponse>`,
     )
 
     const res = parseListOrderItemsResponse(
       '/orders:ListOrderItemsResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()
@@ -167,13 +167,13 @@ describe('lib.client.parsers.orders.list-order-items-response', () => {
         <ResponseMetadata>
           <RequestId>88faca76-b600-46d2-b53c-0c8c4533e43a</RequestId>
         </ResponseMetadata>
-      </ListOrderItemsByNextTokenResponse>`
+      </ListOrderItemsByNextTokenResponse>`,
     )
 
     const res = parseListOrderItemsResponse(
       '/orders:ListOrderItemsByNextTokenResponse',
       doc,
-      true
+      true,
     )
 
     expect(res).toMatchSnapshot()

@@ -1,3 +1,5 @@
+const {Buffer} = require('buffer')
+
 const nock = require('nock')
 const MockDate = require('mockdate')
 
@@ -8,7 +10,7 @@ const client = new MWSClient({
   secretAccessKey: 'SECRET_KEY',
   sellerId: 'SELLER_ID',
   mwsToken: 'MWS_TOKEN',
-  mwsRegion: 'eu'
+  mwsRegion: 'eu',
 })
 
 const apiUrl = `https://${client.settings.mwsDomain}`
@@ -29,7 +31,7 @@ describe('lib.client.models.reports', () => {
       ReportType: '_GET_MERCHANT_LISTINGS_DATA_',
       StartDate: '2009-01-03T18:12:21.000Z',
       EndDate: '2008-06-26T18:12:21.000Z',
-      'MarketplaceIdList.Id.1': 'ATVPDKIKX0DER'
+      'MarketplaceIdList.Id.1': 'ATVPDKIKX0DER',
     })
 
     nock(apiUrl)
@@ -52,7 +54,7 @@ describe('lib.client.models.reports', () => {
           <ResponseMetadata>
             <RequestId>88faca76-b600-46d2-b53c-0c8c4533e43a</RequestId>
           </ResponseMetadata>
-        </RequestReportResponse>`
+        </RequestReportResponse>`,
       )
 
     const result = await client.reports.requestReport({
@@ -60,8 +62,8 @@ describe('lib.client.models.reports', () => {
       startDate: '2009-01-03T18:12:21',
       endDate: '2008-06-26T18:12:21',
       marketplaceIdList: [
-        'ATVPDKIKX0DER'
-      ]
+        'ATVPDKIKX0DER',
+      ],
     })
 
     expect(result).toMatchSnapshot()
@@ -70,7 +72,7 @@ describe('lib.client.models.reports', () => {
   it('should call GetReport and return a raw string', async () => {
     const {pathname, data} = client.signData('POST', 'Reports', '2009-01-01', {
       Action: 'GetReport',
-      ReportId: 'REPORT-1'
+      ReportId: 'REPORT-1',
     })
 
     nock(apiUrl)
@@ -79,7 +81,7 @@ describe('lib.client.models.reports', () => {
 
     const result = await client.reports.getReport({
       reportId: 'REPORT-1',
-      format: 'raw'
+      format: 'raw',
     })
 
     expect(result).toEqual('Hello world!')
@@ -88,7 +90,7 @@ describe('lib.client.models.reports', () => {
   it('should call GetReport and transform the encoding from ISO-8859-1 to UTF-8', async () => {
     const {pathname, data} = client.signData('POST', 'Reports', '2009-01-01', {
       Action: 'GetReport',
-      ReportId: 'REPORT-1'
+      ReportId: 'REPORT-1',
     })
 
     nock(apiUrl)
@@ -97,7 +99,7 @@ describe('lib.client.models.reports', () => {
 
     const result = await client.reports.getReport({
       reportId: 'REPORT-1',
-      format: 'raw'
+      format: 'raw',
     })
 
     expect(result).toEqual('éà ça va ?')
@@ -106,26 +108,26 @@ describe('lib.client.models.reports', () => {
   it('should call GetReport and transform the encoding the specified encoding to UTF-8', async () => {
     const {pathname, data} = client.signData('POST', 'Reports', '2009-01-01', {
       Action: 'GetReport',
-      ReportId: 'REPORT-1'
+      ReportId: 'REPORT-1',
     })
 
     const tests = [
       ['win1252', '6eAg52EgdmEgPw=='],
       ['utf8', 'w6nDoCDDp2EgdmEgPw=='],
       ['utf16', 'AOkA4AAgAOcAYQAgAHYAYQAgAD8='],
-      ['utf32', 'AAAA6QAAAOAAAAAgAAAA5wAAAGEAAAAgAAAAdgAAAGEAAAAgAAAAPw==']
+      ['utf32', 'AAAA6QAAAOAAAAAgAAAA5wAAAGEAAAAgAAAAdgAAAGEAAAAgAAAAPw=='],
     ]
 
     for await (const [charset, base64] of tests) {
       nock(apiUrl)
         .post(pathname, data)
         .reply(200, Buffer.from(base64, 'base64'), {
-          'content-type': `text/plain; charset=${charset}`
+          'content-type': `text/plain; charset=${charset}`,
         })
 
       const result = await client.reports.getReport({
         reportId: 'REPORT-1',
-        format: 'raw'
+        format: 'raw',
       })
 
       expect(result).toEqual('éà ça va ?')
@@ -135,7 +137,7 @@ describe('lib.client.models.reports', () => {
   it('should call GetReport and return a base64 string', async () => {
     const {pathname, data} = client.signData('POST', 'Reports', '2009-01-01', {
       Action: 'GetReport',
-      ReportId: 'REPORT-1'
+      ReportId: 'REPORT-1',
     })
 
     nock(apiUrl)
@@ -144,7 +146,7 @@ describe('lib.client.models.reports', () => {
 
     const result = await client.reports.getReport({
       reportId: 'REPORT-1',
-      format: 'base64'
+      format: 'base64',
     })
 
     expect(result).toEqual('SGVsbG8gd29ybGQh')
@@ -153,7 +155,7 @@ describe('lib.client.models.reports', () => {
   it('should call GetReport and return a parsed CSV', async () => {
     const {pathname, data} = client.signData('POST', 'Reports', '2009-01-01', {
       Action: 'GetReport',
-      ReportId: 'REPORT-1'
+      ReportId: 'REPORT-1',
     })
 
     nock(apiUrl)
@@ -161,7 +163,7 @@ describe('lib.client.models.reports', () => {
       .reply(200, Buffer.from('asin,title\nA1,cool product\nA2,other product'))
 
     const result = await client.reports.getReport({
-      reportId: 'REPORT-1'
+      reportId: 'REPORT-1',
     })
 
     expect(result).toMatchSnapshot()

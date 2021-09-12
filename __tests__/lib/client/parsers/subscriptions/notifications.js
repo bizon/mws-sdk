@@ -15,12 +15,12 @@ describe('lib.client.parsers.base.get-service-status-response', () => {
         <NotificationPayload>
           <TestNotification />
         </NotificationPayload>
-      </Notification>`
+      </Notification>`,
     )
 
     const res = parseNotification(
       '/Notification',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()
@@ -320,12 +320,12 @@ describe('lib.client.parsers.base.get-service-status-response', () => {
             </Offers>
           </AnyOfferChangedNotification>
         </NotificationPayload>
-      </Notification>`
+      </Notification>`,
     )
 
     const res = parseNotification(
       '/Notification',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()
@@ -349,12 +349,12 @@ describe('lib.client.parsers.base.get-service-status-response', () => {
             <FeedProcessingStatus>_DONE_</FeedProcessingStatus>
           </FeedProcessingFinishedNotification>
         </NotificationPayload>
-      </Notification>`
+      </Notification>`,
     )
 
     const res = parseNotification(
       '/Notification',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()
@@ -379,12 +379,12 @@ describe('lib.client.parsers.base.get-service-status-response', () => {
             <ReportProcessingStatus>DONE_NO_DATA</ReportProcessingStatus>
           </ReportProcessingFinishedNotification>
         </NotificationPayload>
-      </Notification>`
+      </Notification>`,
     )
 
     const res = parseNotification(
       '/Notification',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()

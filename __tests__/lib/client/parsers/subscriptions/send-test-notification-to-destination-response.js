@@ -10,12 +10,12 @@ describe('lib.client.parsers.subscriptions.send-test-notification-to-destination
         <ResponseMetadata>
           <RequestId>f662dae6-bde0-4e75-a53b-741abEXAMPLE</RequestId>
         </ResponseMetadata>
-      </SendTestNotificationToDestinationResponse>`
+      </SendTestNotificationToDestinationResponse>`,
     )
 
     const res = parseSendTestNotificationToDestinationResponse(
       '/subscriptions:SendTestNotificationToDestinationResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()

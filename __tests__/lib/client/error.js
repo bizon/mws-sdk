@@ -14,18 +14,18 @@ describe('lib.client.error', () => {
     secretAccessKey: 'secretAccessKey',
     sellerId: 'sellerId',
     mwsToken: 'mwsToken',
-    mwsRegion: 'eu'
+    mwsRegion: 'eu',
   })
 
   it('should rethrow if httpError is not a valid got HTTPError', () => {
     const errors = [
       new Error('Error'),
-      new TypeError('TypeError')
+      new TypeError('TypeError'),
     ]
 
     for (const error of errors) {
       expect(
-        () => new MWSError(error)
+        () => new MWSError(error),
       ).toThrow(error)
     }
   })
@@ -36,12 +36,12 @@ describe('lib.client.error', () => {
     const tests = [
       () => new MWSError(httpError),
       () => new MWSError(httpError, {
-        client
+        client,
       }),
       () => new MWSError(httpError, {
         client,
-        resource: 'Orders'
-      })
+        resource: 'Orders',
+      }),
     ]
 
     for (const test of tests) {
@@ -56,18 +56,18 @@ describe('lib.client.error', () => {
         <Error>
           <Message>This is a message</Message>
         </Error>
-      </ErrorResponse>`
+      </ErrorResponse>`,
     )
 
     const response = await got.get('http://example.org', {
       retry: 0,
-      throwHttpErrors: false
+      throwHttpErrors: false,
     })
 
     const error = new MWSError(new got.HTTPError(response), {
       client,
       resource: 'ResourceName',
-      action: 'Function'
+      action: 'Function',
     })
 
     const properties = [
@@ -77,7 +77,7 @@ describe('lib.client.error', () => {
       'marketplaces',
       'resource',
       'action',
-      'body'
+      'body',
     ]
 
     for (const property of properties) {
@@ -89,7 +89,7 @@ describe('lib.client.error', () => {
     }
 
     expect(inspectError(error)).toMatchSnapshot({
-      timings: expect.any(Object)
+      timings: expect.any(Object),
     })
   })
 
@@ -105,18 +105,18 @@ describe('lib.client.error', () => {
         <ResponseMetadata>
           <RequestId>some_request_id</RequestId>
         </ResponseMetadata>
-      </ErrorResponse>`
+      </ErrorResponse>`,
     )
 
     const response = await got.get('http://example.org', {
       retry: 0,
-      throwHttpErrors: false
+      throwHttpErrors: false,
     })
 
     const error = new MWSError(new got.HTTPError(response), {
       client,
       resource: 'ResourceName',
-      action: 'Function'
+      action: 'Function',
     })
 
     expect(error.message).toBe('ResourceName.Function error: Response code 400 (Bad Request)')
@@ -129,12 +129,12 @@ describe('lib.client.error', () => {
       `<ErrorResponse xmlns="https://mws.amazonservices.com/Sellers/2011-07-01">
         <Foo>Hello</Foo>
         <Bar>World!</Bar>
-      </ErrorResponse>`
+      </ErrorResponse>`,
     )
 
     const response = await got.get('http://example.org', {
       retry: 0,
-      throwHttpErrors: false
+      throwHttpErrors: false,
     })
 
     const error = new MWSError(new got.HTTPError(response), {
@@ -143,8 +143,8 @@ describe('lib.client.error', () => {
       action: 'GetSomething',
       parseErrorResponse: (key, node) => ({
         foo: parseStr(`${key}/sellers:Foo`, node),
-        bar: parseStr(`${key}/sellers:Bar`, node)
-      })
+        bar: parseStr(`${key}/sellers:Bar`, node),
+      }),
     })
 
     expect(error.message).toBe('Sellers.GetSomething error: Response code 401 (Unauthorized)')

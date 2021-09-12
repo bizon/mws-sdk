@@ -8,7 +8,7 @@ const client = new MWSClient({
   secretAccessKey: 'SECRET_KEY',
   sellerId: 'SELLER_ID',
   mwsToken: 'MWS_TOKEN',
-  mwsRegion: 'eu'
+  mwsRegion: 'eu',
 })
 
 const apiUrl = `https://${client.settings.mwsDomain}`
@@ -26,7 +26,7 @@ describe('lib.client.models.fulfillment-inventory', () => {
   it('should call ListInventorySupply', async () => {
     const {pathname, data} = client.signData('GET', 'FulfillmentInventory', '2010-10-01', {
       Action: 'ListInventorySupply',
-      QueryStartDateTime: new Date().toISOString()
+      QueryStartDateTime: new Date().toISOString(),
     })
 
     nock(apiUrl)
@@ -76,11 +76,11 @@ describe('lib.client.models.fulfillment-inventory', () => {
           <ResponseMetadata>
             <RequestId>e26d8d21-8e5c-11df-9acb-230ae7a8b736</RequestId>
           </ResponseMetadata>
-        </ListInventorySupplyResponse>`
+        </ListInventorySupplyResponse>`,
       )
 
     const result = await client.fulfillmentInventory.listInventorySupply({
-      queryStartDateTime: new Date()
+      queryStartDateTime: new Date(),
     })
 
     expect(result).toMatchSnapshot()

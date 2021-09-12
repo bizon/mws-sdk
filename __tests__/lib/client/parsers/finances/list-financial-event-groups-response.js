@@ -42,12 +42,12 @@ describe('lib.client.parsers.finances.list-financial-event-groups-response', () 
         <ResponseMetadata>
           <RequestId>1105b931-6f1c-4480-8e97-f3b46EXAMPLE</RequestId>
         </ResponseMetadata>
-      </ListFinancialEventGroupsResponse>`
+      </ListFinancialEventGroupsResponse>`,
     )
 
     const res = parseListFinancialEventGroupsResponse(
       '/finances:ListFinancialEventGroupsResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()
@@ -93,13 +93,13 @@ describe('lib.client.parsers.finances.list-financial-event-groups-response', () 
         <ResponseMetadata>
           <RequestId>1105b931-6f1c-4480-8e97-f3b46EXAMPLE</RequestId>
         </ResponseMetadata>
-      </ListFinancialEventGroupsByNextTokenResponse>`
+      </ListFinancialEventGroupsByNextTokenResponse>`,
     )
 
     const res = parseListFinancialEventGroupsResponse(
       '/finances:ListFinancialEventGroupsByNextTokenResponse',
       doc,
-      true
+      true,
     )
 
     expect(res).toMatchSnapshot()

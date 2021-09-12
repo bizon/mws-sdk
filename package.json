@@ -76,9 +76,12 @@
     "semicolon": false,
     "space": 2,
     "rules": {
-      "unicorn/prevent-abbreviations": "off",
-      "unicorn/no-array-reduce": "off",
-      "unicorn/no-array-callback-reference": "off"
+      "import/extensions": "off",
+      "unicorn/no-array-callback-reference": "off",
+      "unicorn/no-array-method-this-argument": "off",
+      "unicorn/prefer-module": "off",
+      "unicorn/prefer-node-protocol": "off",
+      "unicorn/prevent-abbreviations": "off"
     },
     "overrides": [
       {

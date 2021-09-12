@@ -39,12 +39,12 @@ describe('lib.client.parsers.products.get-product-categories-for-asin-response',
         <ResponseMetadata>
           <RequestId>fbce5b62-67cc-4ab8-86f3-EXAMPLE22e4e</RequestId>
         </ResponseMetadata>
-      </GetProductCategoriesForASINResponse>`
+      </GetProductCategoriesForASINResponse>`,
     )
 
     const res = parseGetProductCategoriesForAsinResponse(
       '/products:GetProductCategoriesForASINResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()
@@ -103,14 +103,14 @@ describe('lib.client.parsers.products.get-product-categories-for-asin-response',
         <ResponseMetadata>
           <RequestId>e058aabd-b4c3-48ba-9bfa-EXAMPLE9a267</RequestId>
         </ResponseMetadata>
-      </GetProductCategoriesForASINResponse>`
+      </GetProductCategoriesForASINResponse>`,
     )
 
     expect(
       () => parseGetProductCategoriesForAsinResponse(
         '/products:GetProductCategoriesForASINResponse',
-        doc
-      )
+        doc,
+      ),
     ).toThrow('Failed parsing product category: more than 10 levels of depth')
   })
 })

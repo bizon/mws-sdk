@@ -1,13 +1,13 @@
 const {
   getMarketplaces,
-  getMarketplacesFromRegion
+  getMarketplacesFromRegion,
 } = require('../../../lib/client/marketplaces')
 
 describe('lib.client.marketplaces', () => {
   describe('getMarketplacesFromRegion', () => {
     it('should throw if the provided region is unknown', () => {
       expect(
-        () => getMarketplacesFromRegion('what')
+        () => getMarketplacesFromRegion('what'),
       ).toThrow('what is not a valid MWS region')
     })
 
@@ -27,7 +27,7 @@ describe('lib.client.marketplaces', () => {
       const marketplaces = getMarketplaces([
         'fr',
         'what',
-        'A1PA6795UKMFR9'
+        'A1PA6795UKMFR9',
       ])
 
       expect(marketplaces).toMatchSnapshot()
@@ -37,7 +37,7 @@ describe('lib.client.marketplaces', () => {
       expect(getMarketplaces([
         'fr',
         'amazon.fr',
-        'A13V1IB3VIYZZH' // France
+        'A13V1IB3VIYZZH', // France
       ])).toHaveLength(1)
     })
 
@@ -53,7 +53,7 @@ describe('lib.client.marketplaces', () => {
         'A62U237T8HV6N',
         'AFQLKURYRPEL8',
         'APJ6JRA9NG5V4',
-        'AZMDEXL2RVFNN'
+        'AZMDEXL2RVFNN',
       ])).toMatchSnapshot()
     })
 
@@ -61,8 +61,8 @@ describe('lib.client.marketplaces', () => {
       expect(
         () => getMarketplaces([
           'fr',
-          'ae'
-        ])
+          'ae',
+        ]),
       ).toThrow('The specified marketplaces should all be on the same MWS domain, found mws-eu.amazonservices.com,mws.amazonservices.ae')
     })
   })

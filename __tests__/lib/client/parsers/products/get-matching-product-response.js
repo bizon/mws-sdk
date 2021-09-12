@@ -142,12 +142,12 @@ describe('lib.client.parsers.products.get-matching-product-response', () => {
         <ResponseMetadata>
           <RequestId>b12caada-d330-4d87-a789-EXAMPLE35872</RequestId>
         </ResponseMetadata>
-      </GetMatchingProductResponse>`
+      </GetMatchingProductResponse>`,
     )
 
     const res = parseGetMatchingProductResponse(
       '/products:GetMatchingProductResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()

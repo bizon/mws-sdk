@@ -8,7 +8,7 @@ const client = new MWSClient({
   secretAccessKey: 'SECRET_KEY',
   sellerId: 'SELLER_ID',
   mwsToken: 'MWS_TOKEN',
-  mwsRegion: 'eu'
+  mwsRegion: 'eu',
 })
 
 const apiUrl = `https://${client.settings.mwsDomain}`
@@ -26,7 +26,7 @@ describe('lib.client.models.finances', () => {
   it('should call ListFinancialEventsByNextToken', async () => {
     const {pathname, data} = client.signData('POST', 'Finances', '2015-05-01', {
       Action: 'ListFinancialEventsByNextToken',
-      NextToken: 'String'
+      NextToken: 'String',
     })
 
     // XML from https://github.com/caponica/AmazonMwsComplete <3
@@ -1407,11 +1407,11 @@ describe('lib.client.models.finances', () => {
           <ResponseMetadata>
             <RequestId>String</RequestId>
           </ResponseMetadata>
-        </ListFinancialEventsByNextTokenResponse>`
+        </ListFinancialEventsByNextTokenResponse>`,
       )
 
     const result = await client.finances.listFinancialEvents({
-      nextToken: 'String'
+      nextToken: 'String',
     })
 
     expect(result).toMatchSnapshot()

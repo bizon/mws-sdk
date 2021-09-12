@@ -34,12 +34,12 @@ describe('lib.client.parsers.fulfillment-inventory.list-inventory-supply-respons
         <ResponseMetadata>
           <RequestId>e8698ffa-8e59-11df-9acb-230ae7a8b736</RequestId>
         </ResponseMetadata>
-      </ListInventorySupplyResponse>`
+      </ListInventorySupplyResponse>`,
     )
 
     const res = parseListInventorySupplyResponse(
       '/fulfillmentInventory:ListInventorySupplyResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()
@@ -100,12 +100,12 @@ describe('lib.client.parsers.fulfillment-inventory.list-inventory-supply-respons
         <ResponseMetadata>
           <RequestId>8734426a-a50f-4c8e-a3cd-d8d39e532d76</RequestId>
         </ResponseMetadata>
-      </ListInventorySupplyResponse>`
+      </ListInventorySupplyResponse>`,
     )
 
     const res = parseListInventorySupplyResponse(
       '/fulfillmentInventory:ListInventorySupplyResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()
@@ -144,13 +144,13 @@ describe('lib.client.parsers.fulfillment-inventory.list-inventory-supply-respons
         <ResponseMetadata>
           <RequestId>b3a020ac-8e5e-11df-9acb-230ae7a8b736</RequestId>
         </ResponseMetadata>
-      </ListInventorySupplyByNextTokenResponse>`
+      </ListInventorySupplyByNextTokenResponse>`,
     )
 
     const res = parseListInventorySupplyResponse(
       '/fulfillmentInventory:ListInventorySupplyByNextTokenResponse',
       doc,
-      true
+      true,
     )
 
     expect(res).toMatchSnapshot()
@@ -211,13 +211,13 @@ describe('lib.client.parsers.fulfillment-inventory.list-inventory-supply-respons
         <ResponseMetadata>
           <RequestId>8734426a-a50f-4c8e-a3cd-d8d39e532d76</RequestId>
         </ResponseMetadata>
-      </ListInventorySupplyByNextTokenResponse>`
+      </ListInventorySupplyByNextTokenResponse>`,
     )
 
     const res = parseListInventorySupplyResponse(
       '/fulfillmentInventory:ListInventorySupplyByNextTokenResponse',
       doc,
-      true
+      true,
     )
 
     expect(res).toMatchSnapshot()

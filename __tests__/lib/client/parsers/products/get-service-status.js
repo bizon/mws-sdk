@@ -14,12 +14,12 @@ describe('lib.client.parsers.base.get-service-status-response', () => {
           <ResponseMetadata>
               <RequestId>0a51dc17-20bf-4e0d-8ac5-5d53bd1129cf</RequestId>
           </ResponseMetadata>
-      </GetServiceStatusResponse>`
+      </GetServiceStatusResponse>`,
     )
 
     const res = parseGetServiceStatusResponse(
       '/products:GetServiceStatusResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()

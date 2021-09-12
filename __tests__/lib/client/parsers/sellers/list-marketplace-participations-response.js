@@ -29,12 +29,12 @@ describe('lib.client.parsers.sellers.list-marketplace-participations-response', 
         <ResponseMetadata>
           <RequestId>efeab958-74e2-45d4-9018-2323084413b5</RequestId>
         </ResponseMetadata>
-      </ListMarketplaceParticipationsResponse>`
+      </ListMarketplaceParticipationsResponse>`,
     )
 
     const res = parseListMarketplaceParticipationsResponse(
       '/sellers:ListMarketplaceParticipationsResponse',
-      doc
+      doc,
     )
 
     expect(res).toMatchSnapshot()
@@ -67,13 +67,13 @@ describe('lib.client.parsers.sellers.list-marketplace-participations-response', 
         <ResponseMetadata>
           <RequestId>efeab958-74e2-45d4-9018-2323084413b5</RequestId>
         </ResponseMetadata>
-      </ListMarketplaceParticipationsByNextTokenResponse>`
+      </ListMarketplaceParticipationsByNextTokenResponse>`,
     )
 
     const res = parseListMarketplaceParticipationsResponse(
       '/sellers:ListMarketplaceParticipationsByNextTokenResponse',
       doc,
-      true
+      true,
     )
 
     expect(res).toMatchSnapshot()
