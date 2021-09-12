@@ -23,7 +23,7 @@ describe('lib.client.parsers.finances.list-financial-event-groups-response', () 
                 <FeeAmount>
                   <CurrencyAmount>16.38</CurrencyAmount>
                   <Curr`,
-    )).toThrow('Premature end of data in tag ListFinancialEventsResponse')
+    )).toThrow('Premature end of data in tag FeeAmount line 17')
   })
 
   it('should parse the ListFinancialEvents example response from MWS doc', () => {
