@@ -4,6 +4,7 @@ exports[`lib.client.models.orders should call GetOrder 1`] = `
 Array [
   Object {
     "amazonOrderId": "902-3159896-1390916",
+    "automatedShippingSettings": null,
     "buyerCounty": null,
     "buyerEmail": null,
     "buyerName": null,
@@ -57,6 +58,7 @@ Object {
   "orders": Array [
     Object {
       "amazonOrderId": "902-3159896-1390916",
+      "automatedShippingSettings": null,
       "buyerCounty": null,
       "buyerEmail": "5vlhEXAMPLEh9h5@marketplace.amazon.com",
       "buyerName": "Buyer name",
@@ -125,6 +127,7 @@ Object {
     },
     Object {
       "amazonOrderId": "483-3488972-0896720",
+      "automatedShippingSettings": null,
       "buyerCounty": "Vila Olimpia",
       "buyerEmail": "5vlhEXAMPLEh9h5@marketplace.amazon.com.br",
       "buyerName": "John Jones",
@@ -193,6 +196,7 @@ Object {
     },
     Object {
       "amazonOrderId": "058-1233752-8214740",
+      "automatedShippingSettings": null,
       "buyerCounty": null,
       "buyerEmail": "5vlhEXAMPLEh9h5@marketplace.amazon.co.jp",
       "buyerName": "Jane Smith",
@@ -284,6 +288,7 @@ Object {
   "orders": Array [
     Object {
       "amazonOrderId": "902-3159896-1390916",
+      "automatedShippingSettings": null,
       "buyerCounty": null,
       "buyerEmail": "5vlhEXAMPLEh9h5@marketplace.amazon.com",
       "buyerName": "Buyer name",
@@ -365,6 +370,7 @@ Object {
     },
     Object {
       "amazonOrderId": "483-3488972-0896720",
+      "automatedShippingSettings": null,
       "buyerCounty": "Vila Olimpia",
       "buyerEmail": "5vlhEXAMPLEh9h5@marketplace.amazon.com.br",
       "buyerName": "John Jones",
@@ -433,6 +439,7 @@ Object {
     },
     Object {
       "amazonOrderId": "058-1233752-8214740",
+      "automatedShippingSettings": null,
       "buyerCounty": null,
       "buyerEmail": "5vlhEXAMPLEh9h5@marketplace.amazon.co.jp",
       "buyerName": "Jane Smith",

@@ -6,6 +6,7 @@ Object {
     "orders": Array [
       Object {
         "amazonOrderId": "902-3159896-1390916",
+        "automatedShippingSettings": null,
         "buyerCounty": null,
         "buyerEmail": null,
         "buyerName": null,
