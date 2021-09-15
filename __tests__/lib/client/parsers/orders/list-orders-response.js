@@ -2,7 +2,7 @@ const parseXml = require('../../../../../lib/client/parsers')
 const parseListOrdersResponse = require('../../../../../lib/client/parsers/orders/list-orders-response')
 
 describe('lib.client.parsers.orders.list-orders-response', () => {
-  it('should parse the ListOrdersResponse example response from MWS doc', () => {
+  it('should parse the ListOrdersResponse example response from MWS doc (updated)', () => {
     const doc = parseXml(
       `<?xml version="1.0"?>
       <ListOrdersResponse xmlns="https://mws.amazonservices.com/Orders/2013-09-01">
@@ -21,10 +21,22 @@ describe('lib.client.parsers.orders.list-orders-response', () => {
                 <Name>Buyer name</Name>
                 <AddressLine1>1234 Any St.</AddressLine1>
                 <City>Seattle</City>
+                <StateOrRegion>WA</StateOrRegion>
                 <PostalCode>98103</PostalCode>
                 <CountryCode>US</CountryCode>
                 <AddressType>Commercial</AddressType>
               </ShippingAddress>
+              <DefaultShipFromLocationAddress>
+                <Name>Seller name</Name>
+                <AddressLine1>15606 NE Any street</AddressLine1>
+                <AddressLine2>Suite 2</AddressLine2>
+                <City>Redmond</City>
+                <StateOrRegion>WA</StateOrRegion>
+                <PostalCode>98052</PostalCode>
+                <CountryCode>US</CountryCode>
+                <Phone>555 555-5555</Phone>
+                <isAddressSharingConfidential>false</isAddressSharingConfidential>
+              </DefaultShipFromLocationAddress>
               <OrderTotal>
                 <CurrencyCode>USD</CurrencyCode>
                 <Amount>25.00</Amount>
@@ -159,6 +171,11 @@ describe('lib.client.parsers.orders.list-orders-response', () => {
               <IsGlobalExpressEnabled>false</IsGlobalExpressEnabled>
               <PromiseResponseDueDate>2017-08-31T23:58:44Z</PromiseResponseDueDate>
               <IsEstimatedShipDateSet>true</IsEstimatedShipDateSet>
+              <AutomatedShippingSettings>
+                <hasAutomatedShippingSettings>true</hasAutomatedShippingSettings>
+                <automatedCarrier>Name</automatedCarrier>
+                <automatedShipMethod>Method</automatedShipMethod>
+              </AutomatedShippingSettings>
             </Order>
           </Orders>
         </ListOrdersResult>

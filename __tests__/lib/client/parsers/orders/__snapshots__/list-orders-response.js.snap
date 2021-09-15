@@ -9,6 +9,7 @@ Object {
     "orders": Array [
       Object {
         "amazonOrderId": "902-3159896-1390916",
+        "automatedShippingSettings": null,
         "buyerCounty": null,
         "buyerEmail": null,
         "buyerName": null,
@@ -59,7 +60,7 @@ Object {
 }
 `;
 
-exports[`lib.client.parsers.orders.list-orders-response should parse the ListOrdersResponse example response from MWS doc 1`] = `
+exports[`lib.client.parsers.orders.list-orders-response should parse the ListOrdersResponse example response from MWS doc (updated) 1`] = `
 Object {
   "listOrdersResult": Object {
     "createdBefore": null,
@@ -68,6 +69,7 @@ Object {
     "orders": Array [
       Object {
         "amazonOrderId": "902-3159896-1390916",
+        "automatedShippingSettings": null,
         "buyerCounty": null,
         "buyerEmail": "5vlhEXAMPLEh9h5@marketplace.amazon.com",
         "buyerName": "Buyer name",
@@ -81,7 +83,20 @@ Object {
           ],
           "taxingRegion": "US",
         },
-        "defaultShipFromLocationAddress": null,
+        "defaultShipFromLocationAddress": Object {
+          "addressType": null,
+          "adressLine1": "15606 NE Any street",
+          "adressLine2": "Suite 2",
+          "adressLine3": null,
+          "city": "Redmond",
+          "countryCode": "US",
+          "county": null,
+          "district": null,
+          "name": "Seller name",
+          "phone": "555 555-5555",
+          "postalCode": "98052",
+          "stateOrRegion": "WA",
+        },
         "earliestDeliveryDate": null,
         "earliestShipDate": 2017-02-20T19:51:16.000Z,
         "easyShipShipmentStatus": null,
@@ -131,11 +146,12 @@ Object {
           "name": "Buyer name",
           "phone": null,
           "postalCode": "98103",
-          "stateOrRegion": null,
+          "stateOrRegion": "WA",
         },
       },
       Object {
         "amazonOrderId": "483-3488972-0896720",
+        "automatedShippingSettings": null,
         "buyerCounty": "Vila Olimpia",
         "buyerEmail": "5vlhEXAMPLEh9h5@marketplace.amazon.com.br",
         "buyerName": "John Jones",
@@ -204,6 +220,11 @@ Object {
       },
       Object {
         "amazonOrderId": "058-1233752-8214740",
+        "automatedShippingSettings": Object {
+          "automatedCarrier": "Name",
+          "automatedShipMethod": "Method",
+          "hasAutomatedShippingSettings": true,
+        },
         "buyerCounty": null,
         "buyerEmail": "5vlhEXAMPLEh9h5@marketplace.amazon.co.jp",
         "buyerName": "Jane Smith",
