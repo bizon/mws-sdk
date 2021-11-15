@@ -5320,10 +5320,10 @@ libnpmversion@^1.2.1:
     semver "^7.3.5"
     stringify-package "^1.0.1"
 
-libxmljs2@^0.28.0:
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/libxmljs2/-/libxmljs2-0.28.0.tgz#ba217cf7d8dadd80449fdd81b147575fa969c942"
-  integrity sha512-Se1vTSn1rjquUlm9V4FHbfwJh4n5lLgP9I109f98kzWpm8YN5JD3myP96JAHiIxSmFIzYXnRfyImBvj9R3Ei5Q==
+libxmljs2@^0.29.0:
+  version "0.29.0"
+  resolved "https://registry.yarnpkg.com/libxmljs2/-/libxmljs2-0.29.0.tgz#4d44efc7998d9c0d938e174226cf625a8ebf630d"
+  integrity sha512-g9PvujoUGRHBp2R7Z49pKklMdAucayepGSJajfpzl+JlGRO1lHfWWH1KQcwqoylO524G9Mu9pO74ZaQ11fi0/w==
   dependencies:
     "@mapbox/node-pre-gyp" "^1.0.5"
     bindings "~1.5.0"
