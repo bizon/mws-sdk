@@ -11,6 +11,8 @@ Array [
     "mwsDomain": "mws-eu.amazonservices.com",
     "name": "France",
     "region": "eu",
+    "sellerCentralDomain": "sellercentral-europe.amazon.com",
+    "vendorCentralDomain": "vendorcentral.amazon.fr",
     "vendorId": "A1X6FK5RDHNB96",
   },
   Object {
@@ -22,6 +24,8 @@ Array [
     "mwsDomain": "mws-eu.amazonservices.com",
     "name": "Germany",
     "region": "eu",
+    "sellerCentralDomain": "sellercentral-europe.amazon.com",
+    "vendorCentralDomain": "vendorcentral.amazon.de",
     "vendorId": "A3JWKAKR8XB7XF",
   },
 ]
@@ -38,6 +42,8 @@ Array [
     "mwsDomain": "mws-eu.amazonservices.com",
     "name": "France",
     "region": "eu",
+    "sellerCentralDomain": "sellercentral-europe.amazon.com",
+    "vendorCentralDomain": "vendorcentral.amazon.fr",
     "vendorId": "A1X6FK5RDHNB96",
   },
   Object {
@@ -48,6 +54,8 @@ Array [
     "mwsDomain": "mws-eu.amazonservices.com",
     "name": "Netherlands",
     "region": "eu",
+    "sellerCentralDomain": "sellercentral.amazon.nl",
+    "vendorCentralDomain": "vendorcentral.amazon.nl",
     "vendorId": "A17D2BRD4YMT0X",
   },
   Object {
@@ -59,6 +67,8 @@ Array [
     "mwsDomain": "mws-eu.amazonservices.com",
     "name": "United Kingdom",
     "region": "eu",
+    "sellerCentralDomain": "sellercentral-europe.amazon.com",
+    "vendorCentralDomain": "vendorcentral.amazon.co.uk",
     "vendorId": "A3P5ROKL5A1OLE",
   },
   Object {
@@ -70,6 +80,8 @@ Array [
     "mwsDomain": "mws-eu.amazonservices.com",
     "name": "Germany",
     "region": "eu",
+    "sellerCentralDomain": "sellercentral-europe.amazon.com",
+    "vendorCentralDomain": "vendorcentral.amazon.de",
     "vendorId": "A3JWKAKR8XB7XF",
   },
   Object {
@@ -81,6 +93,8 @@ Array [
     "mwsDomain": "mws-eu.amazonservices.com",
     "name": "Spain",
     "region": "eu",
+    "sellerCentralDomain": "sellercentral-europe.amazon.com",
+    "vendorCentralDomain": "vendorcentral.amazon.es",
     "vendorId": "A1AT7YVPFBWXBL",
   },
   Object {
@@ -92,6 +106,8 @@ Array [
     "mwsDomain": "mws-eu.amazonservices.com",
     "name": "Italy",
     "region": "eu",
+    "sellerCentralDomain": "sellercentral-europe.amazon.com",
+    "vendorCentralDomain": "vendorcentral.amazon.it",
     "vendorId": "A11IL2PNWYJU7H",
   },
 ]
@@ -108,6 +124,8 @@ Array [
     "mwsDomain": "mws-eu.amazonservices.com",
     "name": "Germany",
     "region": "eu",
+    "sellerCentralDomain": "sellercentral-europe.amazon.com",
+    "vendorCentralDomain": "vendorcentral.amazon.de",
     "vendorId": "A3JWKAKR8XB7XF",
   },
   Object {
@@ -119,6 +137,8 @@ Array [
     "mwsDomain": "mws-eu.amazonservices.com",
     "name": "Spain",
     "region": "eu",
+    "sellerCentralDomain": "sellercentral-europe.amazon.com",
+    "vendorCentralDomain": "vendorcentral.amazon.es",
     "vendorId": "A1AT7YVPFBWXBL",
   },
   Object {
@@ -130,6 +150,8 @@ Array [
     "mwsDomain": "mws-eu.amazonservices.com",
     "name": "France",
     "region": "eu",
+    "sellerCentralDomain": "sellercentral-europe.amazon.com",
+    "vendorCentralDomain": "vendorcentral.amazon.fr",
     "vendorId": "A1X6FK5RDHNB96",
   },
   Object {
@@ -141,6 +163,8 @@ Array [
     "mwsDomain": "mws-eu.amazonservices.com",
     "name": "Italy",
     "region": "eu",
+    "sellerCentralDomain": "sellercentral-europe.amazon.com",
+    "vendorCentralDomain": "vendorcentral.amazon.it",
     "vendorId": "A11IL2PNWYJU7H",
   },
   Object {
@@ -152,6 +176,8 @@ Array [
     "mwsDomain": "mws-eu.amazonservices.com",
     "name": "United Kingdom",
     "region": "eu",
+    "sellerCentralDomain": "sellercentral-europe.amazon.com",
+    "vendorCentralDomain": "vendorcentral.amazon.co.uk",
     "vendorId": "A3P5ROKL5A1OLE",
   },
   Object {
@@ -162,6 +188,8 @@ Array [
     "mwsDomain": "mws-eu.amazonservices.com",
     "name": "Turkey",
     "region": "eu",
+    "sellerCentralDomain": "sellercentral.amazon.com.tr",
+    "vendorCentralDomain": "vendorcentral.amazon.com.tr",
     "vendorId": "A1UNQM1SR2CHM",
   },
   Object {
@@ -172,6 +200,8 @@ Array [
     "mwsDomain": "mws-eu.amazonservices.com",
     "name": "Egypt",
     "region": "eu",
+    "sellerCentralDomain": "sellercentral.amazon.eg",
+    "vendorCentralDomain": "vendorcentral.amazon.me",
     "vendorId": "A1ZVRGNO5AYLOV",
   },
   Object {
@@ -192,6 +222,8 @@ Array [
     "mwsDomain": "mws-eu.amazonservices.com",
     "name": "Netherlands",
     "region": "eu",
+    "sellerCentralDomain": "sellercentral.amazon.nl",
+    "vendorCentralDomain": "vendorcentral.amazon.nl",
     "vendorId": "A17D2BRD4YMT0X",
   },
   Object {
@@ -202,6 +234,8 @@ Array [
     "mwsDomain": "mws-eu.amazonservices.com",
     "name": "Sweden",
     "region": "eu",
+    "sellerCentralDomain": "sellercentral.amazon.se",
+    "vendorCentralDomain": "vendorcentral.amazon.se",
     "vendorId": "ANU9KP01APNAG",
   },
   Object {
@@ -212,6 +246,8 @@ Array [
     "mwsDomain": "mws-eu.amazonservices.com",
     "name": "Poland",
     "region": "eu",
+    "sellerCentralDomain": "sellercentral.amazon.pl",
+    "vendorCentralDomain": "vendorcentral.amazon.pl",
     "vendorId": "A2R2221NX79QZP",
   },
 ]
@@ -228,6 +264,8 @@ Array [
     "mwsDomain": "mws.amazonservices.com",
     "name": "United States",
     "region": "na",
+    "sellerCentralDomain": "sellercentral.amazon.com",
+    "vendorCentralDomain": "vendorcentral.amazon.com",
     "vendorId": "ATVPDKIKX0DER",
   },
   Object {
@@ -238,6 +276,8 @@ Array [
     "mwsDomain": "mws.amazonservices.com",
     "name": "Brazil",
     "region": "na",
+    "sellerCentralDomain": "sellercentral.amazon.com.br",
+    "vendorCentralDomain": "vendorcentral.amazon.com.br",
     "vendorId": "A1ZZFT5FULY4LN",
   },
 ]
@@ -253,6 +293,8 @@ Array [
     "mwsDomain": "mws-fe.amazonservices.com",
     "name": "Singapore",
     "region": "fe",
+    "sellerCentralDomain": "sellercentral.amazon.sg",
+    "vendorCentralDomain": "vendorcentral.amazon.com.sg",
   },
 ]
 `;
@@ -268,6 +310,8 @@ Array [
     "mwsDomain": "mws.amazonservices.ca",
     "name": "Canada",
     "region": "na",
+    "sellerCentralDomain": "sellercentral.amazon.ca",
+    "vendorCentralDomain": "vendorcentral.amazon.ca",
     "vendorId": "A3DWYIK6Y9EEQB",
   },
 ]
@@ -283,6 +327,8 @@ Array [
     "mwsDomain": "mws.amazonservices.in",
     "name": "India",
     "region": "eu",
+    "sellerCentralDomain": "sellercentral.amazon.in",
+    "vendorCentralDomain": "vendorcentral.amazon.in",
   },
 ]
 `;
@@ -298,6 +344,8 @@ Array [
     "mwsDomain": "mws.amazonservices.jp",
     "name": "Japan",
     "region": "fe",
+    "sellerCentralDomain": "sellercentral.amazon.co.jp",
+    "vendorCentralDomain": "vendorcentral.amazon.co.jp",
     "vendorId": "AN1VRQENFRJN5",
   },
 ]
