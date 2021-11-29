@@ -35,7 +35,7 @@ Object {
       "requestId": null,
     },
   },
-  "code": undefined,
+  "code": "ERR_NON_2XX_3XX_RESPONSE",
   "marketplaces": Array [
     Object {
       "advertisingApiDomain": "advertising-api-eu.amazon.com",
