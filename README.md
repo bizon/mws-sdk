@@ -6,6 +6,8 @@
 [![codecov](https://badgen.net/codecov/c/github/bizon/mws-sdk)](https://codecov.io/gh/bizon/mws-sdk)
 [![XO code style](https://badgen.net/badge/code%20style/XO/cyan)](https://github.com/xojs/xo)
 
+🚀 Switching to the Selling Partner API? See our [modularized SDK library for Amazon Selling Partner API](https://github.com/bizon/selling-partner-api-sdk) (fully typed in TypeScript).
+
 ## CI
 
 [![Tests](https://github.com/bizon/mws-sdk/actions/workflows/tests.yml/badge.svg)](https://github.com/bizon/mws-sdk/actions/workflows/tests.yml)
