@@ -145,10 +145,7 @@ describe('lib.client.parsers.products.get-matching-product-response', () => {
       </GetMatchingProductResponse>`,
     )
 
-    const res = parseGetMatchingProductResponse(
-      '/products:GetMatchingProductResponse',
-      doc,
-    )
+    const res = parseGetMatchingProductResponse('/products:GetMatchingProductResponse', doc)
 
     expect(res).toMatchSnapshot()
   })

@@ -28,7 +28,10 @@ describe('lib.client.models.orders', () => {
     const {pathname, data} = client.signData('GET', 'Orders', '2013-09-01', {
       Action: 'ListOrders',
       MaxResultsPerPage: 100,
-      ...arrayToObject('MarketplaceId.Id', client.settings.marketplaces.map(m => m.id)),
+      ...arrayToObject(
+        'MarketplaceId.Id',
+        client.settings.marketplaces.map((m) => m.id),
+      ),
     })
 
     nock(apiUrl)
@@ -403,22 +406,10 @@ describe('lib.client.models.orders', () => {
 
     const result = await client.orders.listOrders({
       lastUpdatedAfter: '2017-02-01T18:12:21',
-      marketplaceId: [
-        'ATVPDKIKX0DER',
-        'A2Q3Y263D00KWC',
-        'A1VC38T7YXB528',
-      ],
-      fulfillmentChannel: [
-        'MFN',
-      ],
-      paymentMethod: [
-        'COD',
-        'Other',
-      ],
-      orderStatus: [
-        'Unshipped',
-        'PendingAvailability',
-      ],
+      marketplaceId: ['ATVPDKIKX0DER', 'A2Q3Y263D00KWC', 'A1VC38T7YXB528'],
+      fulfillmentChannel: ['MFN'],
+      paymentMethod: ['COD', 'Other'],
+      orderStatus: ['Unshipped', 'PendingAvailability'],
     })
 
     expect(result).toMatchSnapshot()
@@ -472,9 +463,7 @@ describe('lib.client.models.orders', () => {
       )
 
     const result = await client.orders.getOrder({
-      amazonOrderId: [
-        '902-3159896-1390916',
-      ],
+      amazonOrderId: ['902-3159896-1390916'],
     })
 
     expect(result).toMatchSnapshot()

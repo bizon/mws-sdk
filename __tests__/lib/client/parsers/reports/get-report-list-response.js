@@ -23,10 +23,7 @@ describe('lib.client.parsers.reports.get-report-list-response', () => {
       </GetReportListResponse>`,
     )
 
-    const res = parseGetReportListResponse(
-      '/reports:GetReportListResponse',
-      doc,
-    )
+    const res = parseGetReportListResponse('/reports:GetReportListResponse', doc)
 
     expect(res).toMatchSnapshot()
   })
@@ -52,11 +49,7 @@ describe('lib.client.parsers.reports.get-report-list-response', () => {
       </GetReportListByNextTokenResponse>`,
     )
 
-    const res = parseGetReportListResponse(
-      '/reports:GetReportListByNextTokenResponse',
-      doc,
-      true,
-    )
+    const res = parseGetReportListResponse('/reports:GetReportListByNextTokenResponse', doc, true)
 
     expect(res).toMatchSnapshot()
   })

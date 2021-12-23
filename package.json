@@ -90,7 +90,11 @@
           "jest"
         ]
       }
-    ]
+    ],
+    "prettier": true
+  },
+  "prettier": {
+    "printWidth": 100
   },
   "release": {
     "extends": "@bizon/semantic-release-config"

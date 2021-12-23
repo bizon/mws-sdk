@@ -3,8 +3,9 @@ const parseListFinancialEventsResponse = require('../../../../../lib/client/pars
 
 describe('lib.client.parsers.finances.list-financial-event-groups-response', () => {
   it('should throw when getting an invalid XML', () => {
-    expect(() => parseXml(
-      `<?xml version="1.0"?>
+    expect(() =>
+      parseXml(
+        `<?xml version="1.0"?>
       <ListFinancialEventsResponse xmlns="http://mws.amazonservices.com/Finances/2015-05-01">
         <ListFinancialEventsResult>
           <FinancialEvents>
@@ -23,7 +24,8 @@ describe('lib.client.parsers.finances.list-financial-event-groups-response', () 
                 <FeeAmount>
                   <CurrencyAmount>16.38</CurrencyAmount>
                   <Curr`,
-    )).toThrow('Premature end of data in tag FeeAmount line 17')
+      ),
+    ).toThrow('Premature end of data in tag FeeAmount line 17')
   })
 
   it('should parse the ListFinancialEvents example response from MWS doc', () => {
@@ -202,10 +204,7 @@ describe('lib.client.parsers.finances.list-financial-event-groups-response', () 
       </ListFinancialEventsResponse>`,
     )
 
-    const res = parseListFinancialEventsResponse(
-      '/finances:ListFinancialEventsResponse',
-      doc,
-    )
+    const res = parseListFinancialEventsResponse('/finances:ListFinancialEventsResponse', doc)
 
     expect(res).toMatchSnapshot()
   })
@@ -498,10 +497,7 @@ describe('lib.client.parsers.finances.list-financial-event-groups-response', () 
       </ListFinancialEventsResponse>`,
     )
 
-    const res = parseListFinancialEventsResponse(
-      '/finances:ListFinancialEventsResponse',
-      doc,
-    )
+    const res = parseListFinancialEventsResponse('/finances:ListFinancialEventsResponse', doc)
 
     expect(res).toMatchSnapshot()
   })
