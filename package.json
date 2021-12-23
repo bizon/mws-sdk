@@ -28,7 +28,7 @@
   },
   "author": "Bertrand Marron <bertrand.marron@gmail.com>",
   "dependencies": {
-    "@bizon/amazon-ids": "^2.8.0",
+    "@bizon/amazon-ids": "^2.9.1",
     "content-type": "^1.0.4",
     "csv-parse": "^5.0.3",
     "date-fns": "^2.26.0",
