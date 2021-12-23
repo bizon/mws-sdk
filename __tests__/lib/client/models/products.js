@@ -219,7 +219,9 @@ describe('lib.client.models.products', () => {
         itemCondition: 'new',
       })
     } catch (error) {
-      expect(error.message).toBe('Products.GetLowestPricedOffersForSKU error: Response code 400 (Bad Request)')
+      expect(error.message).toBe(
+        'Products.GetLowestPricedOffersForSKU error: Response code 400 (Bad Request)',
+      )
       expect(error.body).toMatchSnapshot()
     }
   })
@@ -299,7 +301,9 @@ describe('lib.client.models.products', () => {
         itemCondition: 'new',
       })
     } catch (error) {
-      expect(error.message).toBe('Products.GetLowestPricedOffersForASIN error: Response code 400 (Bad Request)')
+      expect(error.message).toBe(
+        'Products.GetLowestPricedOffersForASIN error: Response code 400 (Bad Request)',
+      )
       expect(error.body).toMatchSnapshot()
     }
   })
@@ -363,9 +367,7 @@ describe('lib.client.models.products', () => {
 
     const result = await client.products.getMyPriceForAsin({
       marketplaceId: 'ATVPDKIKX0DER',
-      asinList: [
-        '1933890517',
-      ],
+      asinList: ['1933890517'],
     })
 
     expect(result).toMatchSnapshot()
@@ -435,9 +437,7 @@ describe('lib.client.models.products', () => {
 
     const result = await client.products.getMyPriceForSku({
       marketplaceId: 'ATVPDKIKX0DER',
-      sellerSkuList: [
-        'SKU2468',
-      ],
+      sellerSkuList: ['SKU2468'],
     })
 
     expect(result).toMatchSnapshot()

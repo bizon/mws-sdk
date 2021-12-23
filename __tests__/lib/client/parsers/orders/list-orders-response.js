@@ -185,10 +185,7 @@ describe('lib.client.parsers.orders.list-orders-response', () => {
       </ListOrdersResponse>`,
     )
 
-    const res = parseListOrdersResponse(
-      '/orders:ListOrdersResponse',
-      doc,
-    )
+    const res = parseListOrdersResponse('/orders:ListOrdersResponse', doc)
 
     expect(res).toMatchSnapshot()
   })
@@ -230,11 +227,7 @@ describe('lib.client.parsers.orders.list-orders-response', () => {
       </ListOrdersByNextTokenResponse>`,
     )
 
-    const res = parseListOrdersResponse(
-      '/orders:ListOrdersByNextTokenResponse',
-      doc,
-      true,
-    )
+    const res = parseListOrdersResponse('/orders:ListOrdersByNextTokenResponse', doc, true)
 
     expect(res).toMatchSnapshot()
   })

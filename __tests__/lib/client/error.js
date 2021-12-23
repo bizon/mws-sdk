@@ -18,15 +18,10 @@ describe('lib.client.error', () => {
   })
 
   it('should rethrow if httpError is not a valid got HTTPError', () => {
-    const errors = [
-      new Error('Error'),
-      new TypeError('TypeError'),
-    ]
+    const errors = [new Error('Error'), new TypeError('TypeError')]
 
     for (const error of errors) {
-      expect(
-        () => new MWSError(error),
-      ).toThrow(error)
+      expect(() => new MWSError(error)).toThrow(error)
     }
   })
 
@@ -35,13 +30,15 @@ describe('lib.client.error', () => {
 
     const tests = [
       () => new MWSError(httpError),
-      () => new MWSError(httpError, {
-        client,
-      }),
-      () => new MWSError(httpError, {
-        client,
-        resource: 'Orders',
-      }),
+      () =>
+        new MWSError(httpError, {
+          client,
+        }),
+      () =>
+        new MWSError(httpError, {
+          client,
+          resource: 'Orders',
+        }),
     ]
 
     for (const test of tests) {
@@ -50,14 +47,16 @@ describe('lib.client.error', () => {
   })
 
   it('should not allow updating error properties', async () => {
-    nock('http://example.org').get('/').reply(
-      400,
-      `<ErrorResponse>
+    nock('http://example.org')
+      .get('/')
+      .reply(
+        400,
+        `<ErrorResponse>
         <Error>
           <Message>This is a message</Message>
         </Error>
       </ErrorResponse>`,
-    )
+      )
 
     const response = await got.get('http://example.org', {
       retry: 0,
@@ -94,9 +93,11 @@ describe('lib.client.error', () => {
   })
 
   it('should create a MWSError and parse the response body', async () => {
-    nock('http://example.org').get('/').reply(
-      400,
-      `<ErrorResponse>
+    nock('http://example.org')
+      .get('/')
+      .reply(
+        400,
+        `<ErrorResponse>
         <Error>
           <Type>Foo</Type>
           <Code>Bar</Code>
@@ -106,7 +107,7 @@ describe('lib.client.error', () => {
           <RequestId>some_request_id</RequestId>
         </ResponseMetadata>
       </ErrorResponse>`,
-    )
+      )
 
     const response = await got.get('http://example.org', {
       retry: 0,
@@ -124,13 +125,15 @@ describe('lib.client.error', () => {
   })
 
   it('should create a MWSError and parse the response body using a custom error response parser', async () => {
-    nock('http://example.org').get('/').reply(
-      401,
-      `<ErrorResponse xmlns="https://mws.amazonservices.com/Sellers/2011-07-01">
+    nock('http://example.org')
+      .get('/')
+      .reply(
+        401,
+        `<ErrorResponse xmlns="https://mws.amazonservices.com/Sellers/2011-07-01">
         <Foo>Hello</Foo>
         <Bar>World!</Bar>
       </ErrorResponse>`,
-    )
+      )
 
     const response = await got.get('http://example.org', {
       retry: 0,

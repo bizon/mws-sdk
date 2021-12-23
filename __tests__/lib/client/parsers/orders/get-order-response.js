@@ -40,10 +40,7 @@ describe('lib.client.parsers.orders.get-order-response', () => {
       </GetOrderResponse>`,
     )
 
-    const res = parseGetOrderResponse(
-      '/orders:GetOrderResponse',
-      doc,
-    )
+    const res = parseGetOrderResponse('/orders:GetOrderResponse', doc)
 
     expect(res).toMatchSnapshot()
   })

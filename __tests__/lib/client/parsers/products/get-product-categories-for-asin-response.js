@@ -106,8 +106,8 @@ describe('lib.client.parsers.products.get-product-categories-for-asin-response',
       </GetProductCategoriesForASINResponse>`,
     )
 
-    expect(
-      () => parseGetProductCategoriesForAsinResponse(
+    expect(() =>
+      parseGetProductCategoriesForAsinResponse(
         '/products:GetProductCategoriesForASINResponse',
         doc,
       ),

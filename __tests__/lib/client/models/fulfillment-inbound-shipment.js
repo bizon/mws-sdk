@@ -121,10 +121,7 @@ describe('lib.client.models.fulfillment-inbound-shipment', () => {
       )
 
     const result = await client.fulfillmentInboundShipment.listInboundShipments({
-      shipmentIdList: [
-        'FBAN4QNH',
-        'FBA1123',
-      ],
+      shipmentIdList: ['FBAN4QNH', 'FBA1123'],
     })
 
     expect(result).toMatchSnapshot()

@@ -18,10 +18,7 @@ describe('lib.client.parsers.base.get-service-status-response', () => {
       </Notification>`,
     )
 
-    const res = parseNotification(
-      '/Notification',
-      doc,
-    )
+    const res = parseNotification('/Notification', doc)
 
     expect(res).toMatchSnapshot()
   })
@@ -323,10 +320,7 @@ describe('lib.client.parsers.base.get-service-status-response', () => {
       </Notification>`,
     )
 
-    const res = parseNotification(
-      '/Notification',
-      doc,
-    )
+    const res = parseNotification('/Notification', doc)
 
     expect(res).toMatchSnapshot()
   })
@@ -352,10 +346,7 @@ describe('lib.client.parsers.base.get-service-status-response', () => {
       </Notification>`,
     )
 
-    const res = parseNotification(
-      '/Notification',
-      doc,
-    )
+    const res = parseNotification('/Notification', doc)
 
     expect(res).toMatchSnapshot()
   })
@@ -382,10 +373,7 @@ describe('lib.client.parsers.base.get-service-status-response', () => {
       </Notification>`,
     )
 
-    const res = parseNotification(
-      '/Notification',
-      doc,
-    )
+    const res = parseNotification('/Notification', doc)
 
     expect(res).toMatchSnapshot()
   })

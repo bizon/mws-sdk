@@ -17,18 +17,21 @@ describe('lib.client.index', () => {
   it('should fail if accessKeyId, secretAccessKey, sellerId or mwsToken is not specified', () => {
     const tests = [
       () => new MWSClient(),
-      () => new MWSClient({
-        accessKeyId: 'foo',
-      }),
-      () => new MWSClient({
-        accessKeyId: 'foo',
-        secretAccessKey: 'bar',
-      }),
-      () => new MWSClient({
-        accessKeyId: 'foo',
-        secretAccessKey: 'bar',
-        sellerId: 'baz',
-      }),
+      () =>
+        new MWSClient({
+          accessKeyId: 'foo',
+        }),
+      () =>
+        new MWSClient({
+          accessKeyId: 'foo',
+          secretAccessKey: 'bar',
+        }),
+      () =>
+        new MWSClient({
+          accessKeyId: 'foo',
+          secretAccessKey: 'bar',
+          sellerId: 'baz',
+        }),
     ]
 
     for (const test of tests) {
@@ -38,24 +41,26 @@ describe('lib.client.index', () => {
 
   it('should fail if one of marketplaces or mwsRegion is not defined ', () => {
     expect(
-      () => new MWSClient({
-        accessKeyId: 'foo',
-        secretAccessKey: 'bar',
-        sellerId: 'baz',
-        mwsToken: 'token',
-      }),
+      () =>
+        new MWSClient({
+          accessKeyId: 'foo',
+          secretAccessKey: 'bar',
+          sellerId: 'baz',
+          mwsToken: 'token',
+        }),
     ).toThrow('Specify one of mwsRegion or marketplaces')
   })
 
   it('should fail if the region is unknown', () => {
     expect(
-      () => new MWSClient({
-        accessKeyId: 'foo',
-        secretAccessKey: 'bar',
-        sellerId: 'baz',
-        mwsToken: 'token',
-        mwsRegion: 'unknown',
-      }),
+      () =>
+        new MWSClient({
+          accessKeyId: 'foo',
+          secretAccessKey: 'bar',
+          sellerId: 'baz',
+          mwsToken: 'token',
+          mwsRegion: 'unknown',
+        }),
     ).toThrow('unknown is not a valid MWS region')
   })
 
@@ -67,13 +72,14 @@ describe('lib.client.index', () => {
 
     for (const [marketplaces, error] of tests) {
       expect(
-        () => new MWSClient({
-          accessKeyId: 'foo',
-          secretAccessKey: 'bar',
-          sellerId: 'baz',
-          mwsToken: 'token',
-          marketplaces,
-        }),
+        () =>
+          new MWSClient({
+            accessKeyId: 'foo',
+            secretAccessKey: 'bar',
+            sellerId: 'baz',
+            mwsToken: 'token',
+            marketplaces,
+          }),
       ).toThrow(error)
     }
   })
@@ -145,14 +151,21 @@ describe('lib.client.index', () => {
     expect.assertions(3)
 
     try {
-      await client.get('CustomResource', '1988-10-13', {
-        Action: 'CustomGetAction',
-      }, {
-        retry: 0, // Disable retries so got doesn’t eat our expected 503
-      })
+      await client.get(
+        'CustomResource',
+        '1988-10-13',
+        {
+          Action: 'CustomGetAction',
+        },
+        {
+          retry: 0, // Disable retries so got doesn’t eat our expected 503
+        },
+      )
     } catch (error) {
       expect(error).toBeInstanceOf(MWSClient.MWSError)
-      expect(error.message).toBe('CustomResource.CustomGetAction error: Response code 503 (Service Unavailable)')
+      expect(error.message).toBe(
+        'CustomResource.CustomGetAction error: Response code 503 (Service Unavailable)',
+      )
       expect(error.body).toMatchSnapshot()
     }
   })
@@ -196,7 +209,9 @@ describe('lib.client.index', () => {
       })
     } catch (error) {
       expect(error).toBeInstanceOf(MWSClient.MWSError)
-      expect(error.message).toBe('CustomResource.CustomPostAction error: Response code 400 (Bad Request)')
+      expect(error.message).toBe(
+        'CustomResource.CustomPostAction error: Response code 400 (Bad Request)',
+      )
       expect(error.body).toMatchSnapshot()
     }
   })

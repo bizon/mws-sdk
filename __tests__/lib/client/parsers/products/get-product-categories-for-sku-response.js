@@ -118,11 +118,8 @@ describe('lib.client.parsers.products.get-product-categories-for-sku-response', 
       </GetProductCategoriesForSKUResponse>`,
     )
 
-    expect(
-      () => parseGetProductCategoriesForSkuResponse(
-        '/products:GetProductCategoriesForSKUResponse',
-        doc,
-      ),
+    expect(() =>
+      parseGetProductCategoriesForSkuResponse('/products:GetProductCategoriesForSKUResponse', doc),
     ).toThrow('Failed parsing product category: more than 10 levels of depth')
   })
 })

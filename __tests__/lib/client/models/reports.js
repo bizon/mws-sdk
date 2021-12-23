@@ -61,9 +61,7 @@ describe('lib.client.models.reports', () => {
       reportType: '_GET_MERCHANT_LISTINGS_DATA_',
       startDate: '2009-01-03T18:12:21',
       endDate: '2008-06-26T18:12:21',
-      marketplaceIdList: [
-        'ATVPDKIKX0DER',
-      ],
+      marketplaceIdList: ['ATVPDKIKX0DER'],
     })
 
     expect(result).toMatchSnapshot()
@@ -75,9 +73,7 @@ describe('lib.client.models.reports', () => {
       ReportId: 'REPORT-1',
     })
 
-    nock(apiUrl)
-      .post(pathname, data)
-      .reply(200, Buffer.from('Hello world!'))
+    nock(apiUrl).post(pathname, data).reply(200, Buffer.from('Hello world!'))
 
     const result = await client.reports.getReport({
       reportId: 'REPORT-1',
@@ -93,9 +89,7 @@ describe('lib.client.models.reports', () => {
       ReportId: 'REPORT-1',
     })
 
-    nock(apiUrl)
-      .post(pathname, data)
-      .reply(200, Buffer.from('6eAg52EgdmEgPw==', 'base64'))
+    nock(apiUrl).post(pathname, data).reply(200, Buffer.from('6eAg52EgdmEgPw==', 'base64'))
 
     const result = await client.reports.getReport({
       reportId: 'REPORT-1',
@@ -140,9 +134,7 @@ describe('lib.client.models.reports', () => {
       ReportId: 'REPORT-1',
     })
 
-    nock(apiUrl)
-      .post(pathname, data)
-      .reply(200, Buffer.from('Hello world!'))
+    nock(apiUrl).post(pathname, data).reply(200, Buffer.from('Hello world!'))
 
     const result = await client.reports.getReport({
       reportId: 'REPORT-1',

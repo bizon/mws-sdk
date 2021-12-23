@@ -1,14 +1,9 @@
-const {
-  getMarketplaces,
-  getMarketplacesFromRegion,
-} = require('../../../lib/client/marketplaces')
+const {getMarketplaces, getMarketplacesFromRegion} = require('../../../lib/client/marketplaces')
 
 describe('lib.client.marketplaces', () => {
   describe('getMarketplacesFromRegion', () => {
     it('should throw if the provided region is unknown', () => {
-      expect(
-        () => getMarketplacesFromRegion('what'),
-      ).toThrow('what is not a valid MWS region')
+      expect(() => getMarketplacesFromRegion('what')).toThrow('what is not a valid MWS region')
     })
 
     it('should return a list of marketplaces for MWS regions', () => {
@@ -24,46 +19,43 @@ describe('lib.client.marketplaces', () => {
 
   describe('getMarketplaces', () => {
     it('should filter out unknown marketplaces', () => {
-      const marketplaces = getMarketplaces([
-        'fr',
-        'what',
-        'A1PA6795UKMFR9',
-      ])
+      const marketplaces = getMarketplaces(['fr', 'what', 'A1PA6795UKMFR9'])
 
       expect(marketplaces).toMatchSnapshot()
     })
 
     it('should deduplicate marketplaces', () => {
-      expect(getMarketplaces([
-        'fr',
-        'amazon.fr',
-        'A13V1IB3VIYZZH', // France
-      ])).toHaveLength(1)
+      expect(
+        getMarketplaces([
+          'fr',
+          'amazon.fr',
+          'A13V1IB3VIYZZH', // France
+        ]),
+      ).toHaveLength(1)
     })
 
     it('should ignore marketplaces without an API endpoint', () => {
-      expect(getMarketplaces([
-        'A13V1IB3VIYZZH',
-        'A1805IZSGTT6HS',
-        'A1F83G8C2ARO7P',
-        'A1PA6795UKMFR9',
-        'A1RKKUPIHCS9HS',
-        'A1ZFFQZ3HTUKT9',
-        'A38D8NSA03LJTC',
-        'A62U237T8HV6N',
-        'AFQLKURYRPEL8',
-        'APJ6JRA9NG5V4',
-        'AZMDEXL2RVFNN',
-      ])).toMatchSnapshot()
+      expect(
+        getMarketplaces([
+          'A13V1IB3VIYZZH',
+          'A1805IZSGTT6HS',
+          'A1F83G8C2ARO7P',
+          'A1PA6795UKMFR9',
+          'A1RKKUPIHCS9HS',
+          'A1ZFFQZ3HTUKT9',
+          'A38D8NSA03LJTC',
+          'A62U237T8HV6N',
+          'AFQLKURYRPEL8',
+          'APJ6JRA9NG5V4',
+          'AZMDEXL2RVFNN',
+        ]),
+      ).toMatchSnapshot()
     })
 
     it('should throw if the specified marketplaces are on multiple mws domains', () => {
-      expect(
-        () => getMarketplaces([
-          'fr',
-          'ae',
-        ]),
-      ).toThrow('The specified marketplaces should all be on the same MWS domain, found mws-eu.amazonservices.com,mws.amazonservices.ae')
+      expect(() => getMarketplaces(['fr', 'ae'])).toThrow(
+        'The specified marketplaces should all be on the same MWS domain, found mws-eu.amazonservices.com,mws.amazonservices.ae',
+      )
     })
   })
 })
