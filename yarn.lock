@@ -880,10 +880,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@bizon/amazon-ids@^2.9.1":
-  version "2.9.1"
-  resolved "https://registry.yarnpkg.com/@bizon/amazon-ids/-/amazon-ids-2.9.1.tgz#387de21577c2c88550a20008f9ee464261207499"
-  integrity sha512-MgMtlD3fm2wE8n+UBl6iNBn9vxQUyOcbaLHtgbEj03qjTliLUQaaHlbDT0Bqf82k+WE4eeSrbaqeArAhrxjgnw==
+"@bizon/amazon-ids@^2.9.2":
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/@bizon/amazon-ids/-/amazon-ids-2.9.2.tgz#69bcef8ff567cbe9fb22f9c066b2f1a99cd29a6a"
+  integrity sha512-B/Augr8JCTbhEEhPNIDaow0nSTM1sUd4ru2LPzAi7jzW/+c3m2yP/ch0qrlikCZTL/8UODiK7oL9CbbNdy8i4g==
   dependencies:
     mem "^8.1.1"
 
