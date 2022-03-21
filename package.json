@@ -32,7 +32,7 @@
     "content-type": "^1.0.4",
     "csv-parse": "^5.0.4",
     "date-fns": "^2.28.0",
-    "debug": "^4.3.3",
+    "debug": "^4.3.4",
     "got": "^11.8.3",
     "iconv-lite": "^0.6.3",
     "libxmljs2": "^0.29.0",
