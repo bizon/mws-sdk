@@ -41,7 +41,7 @@
   "devDependencies": {
     "@bizon/semantic-release-config": "^1.1.0",
     "jest": "^27.5.1",
-    "jest-junit": "^13.0.0",
+    "jest-junit": "^13.1.0",
     "mockdate": "^3.0.5",
     "nock": "^13.2.4",
     "semantic-release": "^19.0.2",
