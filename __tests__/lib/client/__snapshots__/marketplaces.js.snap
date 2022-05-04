@@ -212,6 +212,7 @@ Array [
     "mwsDomain": "mws-eu.amazonservices.com",
     "name": "Saudi Arabia",
     "region": "eu",
+    "sellerCentralDomain": "sellercentral.amazon.com.sa",
     "vendorId": "A2XPWB6MYN7ZDK",
   },
   Object {
