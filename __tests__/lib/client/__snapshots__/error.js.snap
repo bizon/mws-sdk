@@ -40,6 +40,7 @@ Object {
     Object {
       "advertisingApiDomain": "advertising-api-eu.amazon.com",
       "code": "de",
+      "currencyCode": "EUR",
       "domain": "amazon.de",
       "id": "A1PA6795UKMFR9",
       "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -53,6 +54,7 @@ Object {
     Object {
       "advertisingApiDomain": "advertising-api-eu.amazon.com",
       "code": "es",
+      "currencyCode": "EUR",
       "domain": "amazon.es",
       "id": "A1RKKUPIHCS9HS",
       "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -66,6 +68,7 @@ Object {
     Object {
       "advertisingApiDomain": "advertising-api-eu.amazon.com",
       "code": "fr",
+      "currencyCode": "EUR",
       "domain": "amazon.fr",
       "id": "A13V1IB3VIYZZH",
       "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -79,6 +82,7 @@ Object {
     Object {
       "advertisingApiDomain": "advertising-api-eu.amazon.com",
       "code": "it",
+      "currencyCode": "EUR",
       "domain": "amazon.it",
       "id": "APJ6JRA9NG5V4",
       "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -92,6 +96,7 @@ Object {
     Object {
       "advertisingApiDomain": "advertising-api-eu.amazon.com",
       "code": "uk",
+      "currencyCode": "GBP",
       "domain": "amazon.co.uk",
       "id": "A1F83G8C2ARO7P",
       "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -104,6 +109,7 @@ Object {
     },
     Object {
       "code": "tr",
+      "currencyCode": "TRY",
       "domain": "amazon.com.tr",
       "id": "A33AVAJ2PDY3EV",
       "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -116,6 +122,7 @@ Object {
     },
     Object {
       "code": "eg",
+      "currencyCode": "EGP",
       "domain": "amazon.eg",
       "id": "ARBP9OOSHTCHU",
       "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -128,6 +135,7 @@ Object {
     },
     Object {
       "code": "sa",
+      "currencyCode": "SAR",
       "domain": "amazon.sa",
       "id": "A17E79C6D8DWNP",
       "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -139,6 +147,7 @@ Object {
     },
     Object {
       "code": "nl",
+      "currencyCode": "EUR",
       "domain": "amazon.nl",
       "id": "A1805IZSGTT6HS",
       "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -151,6 +160,7 @@ Object {
     },
     Object {
       "code": "se",
+      "currencyCode": "SEK",
       "domain": "amazon.se",
       "id": "A2NODRKZP88ZB9",
       "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -163,6 +173,7 @@ Object {
     },
     Object {
       "code": "pl",
+      "currencyCode": "PLN",
       "domain": "amazon.pl",
       "id": "A1C3SOZRARQ6R3",
       "imagesDomain": "images-eu.ssl-images-amazon.com",
