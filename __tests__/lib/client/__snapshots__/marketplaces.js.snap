@@ -5,6 +5,7 @@ Array [
   Object {
     "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "fr",
+    "currencyCode": "EUR",
     "domain": "amazon.fr",
     "id": "A13V1IB3VIYZZH",
     "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -18,6 +19,7 @@ Array [
   Object {
     "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "de",
+    "currencyCode": "EUR",
     "domain": "amazon.de",
     "id": "A1PA6795UKMFR9",
     "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -36,6 +38,7 @@ Array [
   Object {
     "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "fr",
+    "currencyCode": "EUR",
     "domain": "amazon.fr",
     "id": "A13V1IB3VIYZZH",
     "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -48,6 +51,7 @@ Array [
   },
   Object {
     "code": "nl",
+    "currencyCode": "EUR",
     "domain": "amazon.nl",
     "id": "A1805IZSGTT6HS",
     "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -61,6 +65,7 @@ Array [
   Object {
     "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "uk",
+    "currencyCode": "GBP",
     "domain": "amazon.co.uk",
     "id": "A1F83G8C2ARO7P",
     "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -74,6 +79,7 @@ Array [
   Object {
     "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "de",
+    "currencyCode": "EUR",
     "domain": "amazon.de",
     "id": "A1PA6795UKMFR9",
     "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -87,6 +93,7 @@ Array [
   Object {
     "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "es",
+    "currencyCode": "EUR",
     "domain": "amazon.es",
     "id": "A1RKKUPIHCS9HS",
     "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -100,6 +107,7 @@ Array [
   Object {
     "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "it",
+    "currencyCode": "EUR",
     "domain": "amazon.it",
     "id": "APJ6JRA9NG5V4",
     "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -118,6 +126,7 @@ Array [
   Object {
     "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "de",
+    "currencyCode": "EUR",
     "domain": "amazon.de",
     "id": "A1PA6795UKMFR9",
     "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -131,6 +140,7 @@ Array [
   Object {
     "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "es",
+    "currencyCode": "EUR",
     "domain": "amazon.es",
     "id": "A1RKKUPIHCS9HS",
     "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -144,6 +154,7 @@ Array [
   Object {
     "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "fr",
+    "currencyCode": "EUR",
     "domain": "amazon.fr",
     "id": "A13V1IB3VIYZZH",
     "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -157,6 +168,7 @@ Array [
   Object {
     "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "it",
+    "currencyCode": "EUR",
     "domain": "amazon.it",
     "id": "APJ6JRA9NG5V4",
     "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -170,6 +182,7 @@ Array [
   Object {
     "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "uk",
+    "currencyCode": "GBP",
     "domain": "amazon.co.uk",
     "id": "A1F83G8C2ARO7P",
     "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -182,6 +195,7 @@ Array [
   },
   Object {
     "code": "tr",
+    "currencyCode": "TRY",
     "domain": "amazon.com.tr",
     "id": "A33AVAJ2PDY3EV",
     "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -194,6 +208,7 @@ Array [
   },
   Object {
     "code": "eg",
+    "currencyCode": "EGP",
     "domain": "amazon.eg",
     "id": "ARBP9OOSHTCHU",
     "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -206,6 +221,7 @@ Array [
   },
   Object {
     "code": "sa",
+    "currencyCode": "SAR",
     "domain": "amazon.sa",
     "id": "A17E79C6D8DWNP",
     "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -217,6 +233,7 @@ Array [
   },
   Object {
     "code": "nl",
+    "currencyCode": "EUR",
     "domain": "amazon.nl",
     "id": "A1805IZSGTT6HS",
     "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -229,6 +246,7 @@ Array [
   },
   Object {
     "code": "se",
+    "currencyCode": "SEK",
     "domain": "amazon.se",
     "id": "A2NODRKZP88ZB9",
     "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -241,6 +259,7 @@ Array [
   },
   Object {
     "code": "pl",
+    "currencyCode": "PLN",
     "domain": "amazon.pl",
     "id": "A1C3SOZRARQ6R3",
     "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -259,6 +278,7 @@ Array [
   Object {
     "advertisingApiDomain": "advertising-api.amazon.com",
     "code": "us",
+    "currencyCode": "USD",
     "domain": "amazon.com",
     "id": "ATVPDKIKX0DER",
     "imagesDomain": "images-na.ssl-images-amazon.com",
@@ -271,6 +291,7 @@ Array [
   },
   Object {
     "code": "br",
+    "currencyCode": "BRL",
     "domain": "amazon.com.br",
     "id": "A2Q3Y263D00KWC",
     "imagesDomain": "images-na.ssl-images-amazon.com",
@@ -288,6 +309,7 @@ exports[`lib.client.marketplaces getMarketplacesFromRegion should return a list 
 Array [
   Object {
     "code": "sg",
+    "currencyCode": "SGD",
     "domain": "amazon.sg",
     "id": "A19VAU5U5O7RUS",
     "imagesDomain": "images-fe.ssl-images-amazon.com",
@@ -305,6 +327,7 @@ Array [
   Object {
     "advertisingApiDomain": "advertising-api.amazon.com",
     "code": "ca",
+    "currencyCode": "CAD",
     "domain": "amazon.ca",
     "id": "A2EUQ1WTGCTBG2",
     "imagesDomain": "images-na.ssl-images-amazon.com",
@@ -322,6 +345,7 @@ exports[`lib.client.marketplaces getMarketplacesFromRegion should return a list 
 Array [
   Object {
     "code": "in",
+    "currencyCode": "INR",
     "domain": "amazon.in",
     "id": "A21TJRUUN4KGV",
     "imagesDomain": "images-eu.ssl-images-amazon.com",
@@ -339,6 +363,7 @@ Array [
   Object {
     "advertisingApiDomain": "advertising-api-fe.amazon.com",
     "code": "jp",
+    "currencyCode": "JPY",
     "domain": "amazon.co.jp",
     "id": "A1VC38T7YXB528",
     "imagesDomain": "images-fe.ssl-images-amazon.com",
