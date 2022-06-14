@@ -124,6 +124,15 @@ Array [
 exports[`lib.client.marketplaces getMarketplacesFromRegion should return a list of marketplaces for MWS regions 1`] = `
 Array [
   Object {
+    "code": "be",
+    "currencyCode": "EUR",
+    "id": "AMEN7PMS3EDWL",
+    "imagesDomain": "images-eu.ssl-images-amazon.com",
+    "mwsDomain": "mws-eu.amazonservices.com",
+    "name": "Belgium",
+    "region": "eu",
+  },
+  Object {
     "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "de",
     "currencyCode": "EUR",
