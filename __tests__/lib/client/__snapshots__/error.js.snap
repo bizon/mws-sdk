@@ -38,6 +38,15 @@ Object {
   "code": "ERR_NON_2XX_3XX_RESPONSE",
   "marketplaces": Array [
     Object {
+      "code": "be",
+      "currencyCode": "EUR",
+      "id": "AMEN7PMS3EDWL",
+      "imagesDomain": "images-eu.ssl-images-amazon.com",
+      "mwsDomain": "mws-eu.amazonservices.com",
+      "name": "Belgium",
+      "region": "eu",
+    },
+    Object {
       "advertisingApiDomain": "advertising-api-eu.amazon.com",
       "code": "de",
       "currencyCode": "EUR",
