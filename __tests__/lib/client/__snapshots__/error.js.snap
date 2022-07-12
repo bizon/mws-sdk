@@ -40,6 +40,7 @@ Object {
     Object {
       "code": "be",
       "currencyCode": "EUR",
+      "domain": "amazon.com.be",
       "id": "AMEN7PMS3EDWL",
       "imagesDomain": "images-eu.ssl-images-amazon.com",
       "mwsDomain": "mws-eu.amazonservices.com",
