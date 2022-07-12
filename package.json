@@ -1,6 +1,6 @@
 {
   "name": "@bizon/mws-sdk",
-  "version": "5.2.3",
+  "version": "6.0.0",
   "main": "index.js",
   "description": "SDK for Amazon Marketplace Web Services",
   "homepage": "https://github.com/bizon/mws-sdk#readme",
