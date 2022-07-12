@@ -8,6 +8,8 @@
 
 🚀 Switching to the Selling Partner API? See our [modularized SDK library for Amazon Selling Partner API](https://github.com/bizon/selling-partner-api-sdk) (fully typed in TypeScript).
 
+[<img src="https://files.bizon.solutions/images/logo/bizon-horizontal.png" alt="Bizon" width="250"/>](https://www.bizon.solutions?utm_source=github&utm_medium=readme&utm_campaign=mws-sdk)
+
 ## CI
 
 [![Tests](https://github.com/bizon/mws-sdk/actions/workflows/tests.yml/badge.svg)](https://github.com/bizon/mws-sdk/actions/workflows/tests.yml)
