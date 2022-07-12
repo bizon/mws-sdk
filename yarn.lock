@@ -603,10 +603,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@bizon/amazon-ids@^2.12.0":
-  version "2.12.0"
-  resolved "https://registry.yarnpkg.com/@bizon/amazon-ids/-/amazon-ids-2.12.0.tgz#ea8b95c17b9ef4b1d749a9669b26907a79fbb15f"
-  integrity sha512-IrYt+1UeF3ubHmUDrlq5G/c24Ql4LnUJTkxWZkHgfPg2Sh6fx4erpqZHCGtyyE5irB3R9V11JDKtWw8Ru1864A==
+"@bizon/amazon-ids@^2.12.1":
+  version "2.12.1"
+  resolved "https://registry.yarnpkg.com/@bizon/amazon-ids/-/amazon-ids-2.12.1.tgz#58371d8aee84079e4b1dcf0c21f34c4dbda36068"
+  integrity sha512-QVCPXTrhdQigSeW5Npkglt5QHhnBbS8oZR6XbGoP7zYXSMhv3ZPrJ0GYD3sZbChI9VwoOb9R9iv9mJ9hZU7K1A==
   dependencies:
     mem "^8.1.1"
 
@@ -2401,10 +2401,10 @@ crypto-random-string@^2.0.0:
   resolved "https://registry.yarnpkg.com/crypto-random-string/-/crypto-random-string-2.0.0.tgz#ef2a7a966ec11083388369baa02ebead229b30d5"
   integrity sha512-v1plID3y9r/lPhviJ1wrXpLeyUIGAZ2SHNYTEapm7/8A9nLPoyvVp3RK/EPFqn5kEznyWgYZNsRtYYIWbuG8KA==
 
-csv-parse@^5.2.2:
-  version "5.2.2"
-  resolved "https://registry.yarnpkg.com/csv-parse/-/csv-parse-5.2.2.tgz#46cafc760fd56f6e2fb347b3eb4d3ba026845248"
-  integrity sha512-WCQVGZM5YEj+2+mOuV0ss73GQi/pSlurOGD7qlJJi0sY9DPp2KiX7AInd3W1mjaxnIASlUIHirsTnLX5LoHF4g==
+csv-parse@^5.3.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/csv-parse/-/csv-parse-5.3.0.tgz#85cc02fc9d1c89bd1b02e69069c960f8b8064322"
+  integrity sha512-UXJCGwvJ2fep39purtAn27OUYmxB1JQto+zhZ4QlJpzsirtSFbzLvip1aIgziqNdZp/TptvsKEV5BZSxe10/DQ==
 
 date-fns@^2.28.0:
   version "2.28.0"
