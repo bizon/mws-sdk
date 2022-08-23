@@ -44,7 +44,7 @@
     "jest-junit": "^14.0.0",
     "mockdate": "^3.0.5",
     "nock": "^13.2.9",
-    "semantic-release": "^19.0.3",
+    "semantic-release": "^19.0.4",
     "xo": "^0.51.0"
   },
   "engines": {
