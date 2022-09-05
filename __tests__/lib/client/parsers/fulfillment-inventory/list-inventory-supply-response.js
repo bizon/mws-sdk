@@ -37,12 +37,12 @@ describe('lib.client.parsers.fulfillment-inventory.list-inventory-supply-respons
       </ListInventorySupplyResponse>`,
     )
 
-    const res = parseListInventorySupplyResponse(
+    const response = parseListInventorySupplyResponse(
       '/fulfillmentInventory:ListInventorySupplyResponse',
       doc,
     )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 
   it('should parse a ListInventorySupplyResponse with a MarketplaceId', () => {
@@ -103,12 +103,12 @@ describe('lib.client.parsers.fulfillment-inventory.list-inventory-supply-respons
       </ListInventorySupplyResponse>`,
     )
 
-    const res = parseListInventorySupplyResponse(
+    const response = parseListInventorySupplyResponse(
       '/fulfillmentInventory:ListInventorySupplyResponse',
       doc,
     )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 
   it('should parse the ListInventorySupplyByNextToken example response from MWS doc', () => {
@@ -147,13 +147,13 @@ describe('lib.client.parsers.fulfillment-inventory.list-inventory-supply-respons
       </ListInventorySupplyByNextTokenResponse>`,
     )
 
-    const res = parseListInventorySupplyResponse(
+    const response = parseListInventorySupplyResponse(
       '/fulfillmentInventory:ListInventorySupplyByNextTokenResponse',
       doc,
       true,
     )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 
   it('should parse a ListInventorySupplyByNextToken with a MarketplaceId', () => {
@@ -214,12 +214,12 @@ describe('lib.client.parsers.fulfillment-inventory.list-inventory-supply-respons
       </ListInventorySupplyByNextTokenResponse>`,
     )
 
-    const res = parseListInventorySupplyResponse(
+    const response = parseListInventorySupplyResponse(
       '/fulfillmentInventory:ListInventorySupplyByNextTokenResponse',
       doc,
       true,
     )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 })

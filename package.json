@@ -40,11 +40,12 @@
   },
   "devDependencies": {
     "@bizon/semantic-release-config": "^1.2.0",
+    "eslint-config-xo-bizon": "^1.1.1",
     "jest": "^28.1.3",
     "mockdate": "^3.0.5",
     "nock": "^13.2.9",
     "semantic-release": "^19.0.4",
-    "xo": "^0.51.0"
+    "xo": "^0.52.3"
   },
   "engines": {
     "node": ">=14"
@@ -72,16 +73,9 @@
     ]
   },
   "xo": {
+    "extends": "xo-bizon",
     "semicolon": false,
     "space": 2,
-    "rules": {
-      "import/extensions": "off",
-      "unicorn/no-array-callback-reference": "off",
-      "unicorn/no-array-method-this-argument": "off",
-      "unicorn/prefer-module": "off",
-      "unicorn/prefer-node-protocol": "off",
-      "unicorn/prevent-abbreviations": "off"
-    },
     "overrides": [
       {
         "files": "__tests__/**/*.js",

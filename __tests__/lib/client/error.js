@@ -1,12 +1,10 @@
-const nock = require('nock')
 const got = require('got')
-
-const {inspectError} = require('../../__helpers__/inspect')
+const nock = require('nock')
 
 const MWSClient = require('../../../lib/client')
 const MWSError = require('../../../lib/client/error')
-
-const {parseStr} = require('../../../lib/client/parsers/base')
+const {parseString} = require('../../../lib/client/parsers/base')
+const {inspectError} = require('../../__helpers__/inspect')
 
 describe('lib.client.error', () => {
   const client = new MWSClient({
@@ -145,8 +143,8 @@ describe('lib.client.error', () => {
       resource: 'Sellers',
       action: 'GetSomething',
       parseErrorResponse: (key, node) => ({
-        foo: parseStr(`${key}/sellers:Foo`, node),
-        bar: parseStr(`${key}/sellers:Bar`, node),
+        foo: parseString(`${key}/sellers:Foo`, node),
+        bar: parseString(`${key}/sellers:Bar`, node),
       }),
     })
 

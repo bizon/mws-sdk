@@ -23,9 +23,9 @@ describe('lib.client.parsers.reports.get-report-list-response', () => {
       </GetReportListResponse>`,
     )
 
-    const res = parseGetReportListResponse('/reports:GetReportListResponse', doc)
+    const response = parseGetReportListResponse('/reports:GetReportListResponse', doc)
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 
   it('should parse the GetReportListByNextTokenResponse example response from MWS doc', () => {
@@ -49,8 +49,12 @@ describe('lib.client.parsers.reports.get-report-list-response', () => {
       </GetReportListByNextTokenResponse>`,
     )
 
-    const res = parseGetReportListResponse('/reports:GetReportListByNextTokenResponse', doc, true)
+    const response = parseGetReportListResponse(
+      '/reports:GetReportListByNextTokenResponse',
+      doc,
+      true,
+    )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 })

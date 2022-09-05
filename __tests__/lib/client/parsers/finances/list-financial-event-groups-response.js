@@ -45,12 +45,12 @@ describe('lib.client.parsers.finances.list-financial-event-groups-response', () 
       </ListFinancialEventGroupsResponse>`,
     )
 
-    const res = parseListFinancialEventGroupsResponse(
+    const response = parseListFinancialEventGroupsResponse(
       '/finances:ListFinancialEventGroupsResponse',
       doc,
     )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 
   it('should parse the ListFinancialEventGroupsByNextTokenResponse example response from MWS doc', () => {
@@ -96,12 +96,12 @@ describe('lib.client.parsers.finances.list-financial-event-groups-response', () 
       </ListFinancialEventGroupsByNextTokenResponse>`,
     )
 
-    const res = parseListFinancialEventGroupsResponse(
+    const response = parseListFinancialEventGroupsResponse(
       '/finances:ListFinancialEventGroupsByNextTokenResponse',
       doc,
       true,
     )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 })

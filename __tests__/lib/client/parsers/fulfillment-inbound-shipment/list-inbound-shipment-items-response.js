@@ -33,11 +33,11 @@ describe('lib.client.parsers.fulfillment-inbound-shipment.list-inbound-shipment-
       </ListInboundShipmentItemsResponse>`,
     )
 
-    const res = parseListInboundShipmentItemsResponse(
+    const response = parseListInboundShipmentItemsResponse(
       '/fulfillmentInboundShipment:ListInboundShipmentItemsResponse',
       doc,
     )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 })

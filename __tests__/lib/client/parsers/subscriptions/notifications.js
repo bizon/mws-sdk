@@ -18,9 +18,9 @@ describe('lib.client.parsers.base.get-service-status-response', () => {
       </Notification>`,
     )
 
-    const res = parseNotification('/Notification', doc)
+    const response = parseNotification('/Notification', doc)
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 
   it('should parse an AnyOfferChanged notification', () => {
@@ -320,9 +320,9 @@ describe('lib.client.parsers.base.get-service-status-response', () => {
       </Notification>`,
     )
 
-    const res = parseNotification('/Notification', doc)
+    const response = parseNotification('/Notification', doc)
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 
   it('should parse a FeedProcessingFinished notification', () => {
@@ -346,9 +346,9 @@ describe('lib.client.parsers.base.get-service-status-response', () => {
       </Notification>`,
     )
 
-    const res = parseNotification('/Notification', doc)
+    const response = parseNotification('/Notification', doc)
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 
   it('should parse a ReportProcessingFinished notification', () => {
@@ -373,8 +373,8 @@ describe('lib.client.parsers.base.get-service-status-response', () => {
       </Notification>`,
     )
 
-    const res = parseNotification('/Notification', doc)
+    const response = parseNotification('/Notification', doc)
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 })

@@ -1,6 +1,6 @@
 const {
   dateToISOString,
-  normalizeSearchParams,
+  normalizeSearchParameters,
   reportOptionsToString,
 } = require('../../../lib/client/utils')
 
@@ -70,7 +70,7 @@ describe('lib.client.utils', () => {
 
       for (const [test, expected] of tests) {
         expect(
-          normalizeSearchParams({
+          normalizeSearchParameters({
             ReportOptions: reportOptionsToString(test),
           }),
         ).toBe(expected)

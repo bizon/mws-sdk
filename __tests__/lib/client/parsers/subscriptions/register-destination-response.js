@@ -13,8 +13,11 @@ describe('lib.client.parsers.subscriptions.register-destination-response', () =>
       </RegisterDestinationResponse>`,
     )
 
-    const res = parseRegisterDestinationResponse('/subscriptions:RegisterDestinationResponse', doc)
+    const response = parseRegisterDestinationResponse(
+      '/subscriptions:RegisterDestinationResponse',
+      doc,
+    )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 })

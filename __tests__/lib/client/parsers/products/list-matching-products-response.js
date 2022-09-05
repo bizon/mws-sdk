@@ -106,8 +106,11 @@ describe('lib.client.parsers.products.list-matching-products-response', () => {
       </ListMatchingProductsResponse>`,
     )
 
-    const res = parseListMatchingProductsResponse('/products:ListMatchingProductsResponse', doc)
+    const response = parseListMatchingProductsResponse(
+      '/products:ListMatchingProductsResponse',
+      doc,
+    )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 })

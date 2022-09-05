@@ -13,11 +13,11 @@ describe('lib.client.parsers.subscriptions.send-test-notification-to-destination
       </SendTestNotificationToDestinationResponse>`,
     )
 
-    const res = parseSendTestNotificationToDestinationResponse(
+    const response = parseSendTestNotificationToDestinationResponse(
       '/subscriptions:SendTestNotificationToDestinationResponse',
       doc,
     )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 })
