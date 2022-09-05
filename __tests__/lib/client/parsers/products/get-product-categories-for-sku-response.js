@@ -54,12 +54,12 @@ describe('lib.client.parsers.products.get-product-categories-for-sku-response', 
       </GetProductCategoriesForSKUResponse>`,
     )
 
-    const res = parseGetProductCategoriesForSkuResponse(
+    const response = parseGetProductCategoriesForSkuResponse(
       '/products:GetProductCategoriesForSKUResponse',
       doc,
     )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 
   it('should throw if there are too many levels of category recursion', () => {

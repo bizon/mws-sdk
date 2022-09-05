@@ -1,5 +1,5 @@
-const nock = require('nock')
 const MockDate = require('mockdate')
+const nock = require('nock')
 
 const MWSClient = require('../../../..')
 const {arrayToObject} = require('../../../../lib/client/utils')

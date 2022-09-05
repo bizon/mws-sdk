@@ -13,11 +13,11 @@ describe('lib.client.parsers.subscriptions.deregister-destination-response', () 
       </DeregisterDestinationResponse>`,
     )
 
-    const res = parseDeregisterDestinationResponse(
+    const response = parseDeregisterDestinationResponse(
       '/subscriptions:DeregisterDestinationResponse',
       doc,
     )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 })

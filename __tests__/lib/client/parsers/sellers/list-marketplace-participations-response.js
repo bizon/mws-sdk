@@ -32,12 +32,12 @@ describe('lib.client.parsers.sellers.list-marketplace-participations-response', 
       </ListMarketplaceParticipationsResponse>`,
     )
 
-    const res = parseListMarketplaceParticipationsResponse(
+    const response = parseListMarketplaceParticipationsResponse(
       '/sellers:ListMarketplaceParticipationsResponse',
       doc,
     )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 
   it('should parse the ListMarketplaceParticipationsByNextTokenResponse example response from MWS doc', () => {
@@ -70,12 +70,12 @@ describe('lib.client.parsers.sellers.list-marketplace-participations-response', 
       </ListMarketplaceParticipationsByNextTokenResponse>`,
     )
 
-    const res = parseListMarketplaceParticipationsResponse(
+    const response = parseListMarketplaceParticipationsResponse(
       '/sellers:ListMarketplaceParticipationsByNextTokenResponse',
       doc,
       true,
     )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 })

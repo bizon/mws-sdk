@@ -185,9 +185,9 @@ describe('lib.client.parsers.orders.list-orders-response', () => {
       </ListOrdersResponse>`,
     )
 
-    const res = parseListOrdersResponse('/orders:ListOrdersResponse', doc)
+    const response = parseListOrdersResponse('/orders:ListOrdersResponse', doc)
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 
   it('should parse the ListOrdersByNextTokenResult example response from MWS doc', () => {
@@ -227,8 +227,8 @@ describe('lib.client.parsers.orders.list-orders-response', () => {
       </ListOrdersByNextTokenResponse>`,
     )
 
-    const res = parseListOrdersResponse('/orders:ListOrdersByNextTokenResponse', doc, true)
+    const response = parseListOrdersResponse('/orders:ListOrdersByNextTokenResponse', doc, true)
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 })

@@ -116,12 +116,12 @@ describe('lib.client.parsers.products.get-lowest-priced-offers-for-sku-response'
       </GetLowestPricedOffersForSKUResponse>`,
     )
 
-    const res = parseGetLowestPricedOffersForSkuResponse(
+    const response = parseGetLowestPricedOffersForSkuResponse(
       '/products:GetLowestPricedOffersForSKUResponse',
       doc,
     )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 
   it('should parse the GetLowestPricedOffersForSKUResponse success with no offers example response from MWS doc', () => {
@@ -146,12 +146,12 @@ describe('lib.client.parsers.products.get-lowest-priced-offers-for-sku-response'
       </GetLowestPricedOffersForSKUResponse>`,
     )
 
-    const res = parseGetLowestPricedOffersForSkuResponse(
+    const response = parseGetLowestPricedOffersForSkuResponse(
       '/products:GetLowestPricedOffersForSKUResponse',
       doc,
     )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 
   it('should parse the GetLowestPricedOffersForSKUResponse missing shipping charge example response from MWS doc', () => {
@@ -176,12 +176,12 @@ describe('lib.client.parsers.products.get-lowest-priced-offers-for-sku-response'
       </GetLowestPricedOffersForSKUResponse>`,
     )
 
-    const res = parseGetLowestPricedOffersForSkuResponse(
+    const response = parseGetLowestPricedOffersForSkuResponse(
       '/products:GetLowestPricedOffersForSKUResponse',
       doc,
     )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 
   it('should parse the GetLowestPricedOffersForSKUResponse too soon for processing example response from MWS doc', () => {
@@ -207,11 +207,11 @@ describe('lib.client.parsers.products.get-lowest-priced-offers-for-sku-response'
       </GetLowestPricedOffersForSKUResponse>`,
     )
 
-    const res = parseGetLowestPricedOffersForSkuResponse(
+    const response = parseGetLowestPricedOffersForSkuResponse(
       '/products:GetLowestPricedOffersForSKUResponse',
       doc,
     )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 })

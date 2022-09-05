@@ -23,8 +23,8 @@ describe('lib.client.parsers.reports.request-report-response', () => {
       </RequestReportResponse>`,
     )
 
-    const res = parseRequestReportResponse('/reports:RequestReportResponse', doc)
+    const response = parseRequestReportResponse('/reports:RequestReportResponse', doc)
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 })

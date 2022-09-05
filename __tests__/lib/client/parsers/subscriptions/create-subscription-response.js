@@ -13,8 +13,11 @@ describe('lib.client.parsers.subscriptions.create-subscription-response', () => 
       </CreateSubscriptionResponse>`,
     )
 
-    const res = parseCreateSubscriptionResponse('/subscriptions:CreateSubscriptionResponse', doc)
+    const response = parseCreateSubscriptionResponse(
+      '/subscriptions:CreateSubscriptionResponse',
+      doc,
+    )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 })

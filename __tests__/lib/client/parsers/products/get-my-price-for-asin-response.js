@@ -50,9 +50,9 @@ describe('lib.client.parsers.products.get-my-price-for-asin-response', () => {
       </GetMyPriceForASINResponse>`,
     )
 
-    const res = parseGetMyPriceForAsinResponse('/products:GetMyPriceForASINResponse', doc)
+    const response = parseGetMyPriceForAsinResponse('/products:GetMyPriceForASINResponse', doc)
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 
   it('should parse GetMyPriceForASINResponse errors', () => {
@@ -72,8 +72,8 @@ describe('lib.client.parsers.products.get-my-price-for-asin-response', () => {
       </GetMyPriceForASINResponse>`,
     )
 
-    const res = parseGetMyPriceForAsinResponse('/products:GetMyPriceForASINResponse', doc)
+    const response = parseGetMyPriceForAsinResponse('/products:GetMyPriceForASINResponse', doc)
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 })

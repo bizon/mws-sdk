@@ -30,9 +30,9 @@ describe('lib.client.parsers.reports.get-report-request-list-response', () => {
       </GetReportRequestListResponse>`,
     )
 
-    const res = parseGetReportRequestListReponse('/reports:GetReportRequestListResponse', doc)
+    const response = parseGetReportRequestListReponse('/reports:GetReportRequestListResponse', doc)
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 
   it('should parse the GetReportRequestListByNextTokenResponse example response from MWS doc', () => {
@@ -58,12 +58,12 @@ describe('lib.client.parsers.reports.get-report-request-list-response', () => {
       </GetReportRequestListByNextTokenResponse>`,
     )
 
-    const res = parseGetReportRequestListReponse(
+    const response = parseGetReportRequestListReponse(
       '/reports:GetReportRequestListByNextTokenResponse',
       doc,
       true,
     )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 })

@@ -115,12 +115,12 @@ describe('lib.client.parsers.products.get-lowest-priced-offers-for-asin-response
       </GetLowestPricedOffersForASINResponse>`,
     )
 
-    const res = parseGetLowestPricedOffersForAsinResponse(
+    const response = parseGetLowestPricedOffersForAsinResponse(
       '/products:GetLowestPricedOffersForASINResponse',
       doc,
     )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 
   it('should parse the GetLowestPricedOffersForASINResponse success with no offers example response from MWS doc', () => {
@@ -145,12 +145,12 @@ describe('lib.client.parsers.products.get-lowest-priced-offers-for-asin-response
       </GetLowestPricedOffersForASINResponse>`,
     )
 
-    const res = parseGetLowestPricedOffersForAsinResponse(
+    const response = parseGetLowestPricedOffersForAsinResponse(
       '/products:GetLowestPricedOffersForASINResponse',
       doc,
     )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 
   it('should parse the GetLowestPricedOffersForASINResponse missing shipping charge example response from MWS doc', () => {
@@ -175,12 +175,12 @@ describe('lib.client.parsers.products.get-lowest-priced-offers-for-asin-response
       </GetLowestPricedOffersForASINResponse>`,
     )
 
-    const res = parseGetLowestPricedOffersForAsinResponse(
+    const response = parseGetLowestPricedOffersForAsinResponse(
       '/products:GetLowestPricedOffersForASINResponse',
       doc,
     )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 
   it('should parse the GetLowestPricedOffersForASINResponse active but too soon for processing example response from MWS doc', () => {
@@ -206,11 +206,11 @@ describe('lib.client.parsers.products.get-lowest-priced-offers-for-asin-response
       </GetLowestPricedOffersForASINResponse>`,
     )
 
-    const res = parseGetLowestPricedOffersForAsinResponse(
+    const response = parseGetLowestPricedOffersForAsinResponse(
       '/products:GetLowestPricedOffersForASINResponse',
       doc,
     )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 })

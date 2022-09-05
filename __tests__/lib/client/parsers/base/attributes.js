@@ -1,14 +1,13 @@
 const parseXml = require('../../../../../lib/client/parsers')
-
 const {
-  parseAttributeStr,
+  parseAttributeString,
   parseAttributeNumber,
   parseAttributeDecimal,
   parseAttributeDate,
 } = require('../../../../../lib/client/parsers/base/attributes')
 
 describe('lib.client.parsers.base.attributes', () => {
-  describe('parseAttributeStr', () => {
+  describe('parseAttributeString', () => {
     it('should return null when trying to access attributes on a non-existing node', () => {
       const value = parseAttributeNumber('/NotHere', parseXml('<Foo bar="" />'), 'bar')
 
@@ -17,7 +16,7 @@ describe('lib.client.parsers.base.attributes', () => {
 
     it('should throw when trying accessing attributes from multiple nodes', () => {
       expect(() =>
-        parseAttributeStr(
+        parseAttributeString(
           '/Wrapper/Foo',
           parseXml(`
             <Wrapper>
@@ -31,19 +30,23 @@ describe('lib.client.parsers.base.attributes', () => {
     })
 
     it('should return null if the attribute does not exist', () => {
-      const value = parseAttributeStr('.', parseXml('<Foo bar="a" />'), 'notHere')
+      const value = parseAttributeString('.', parseXml('<Foo bar="a" />'), 'notHere')
 
       expect(value).toBeNull()
     })
 
     it('should return an empty string if the attribute is empty', () => {
-      const value = parseAttributeStr('.', parseXml('<Foo bar="" />'), 'bar')
+      const value = parseAttributeString('.', parseXml('<Foo bar="" />'), 'bar')
 
       expect(value).toBe('')
     })
 
     it('should trim the attribute', () => {
-      const value = parseAttributeStr('.', parseXml('<Foo bar=" with spaces around  " />'), 'bar')
+      const value = parseAttributeString(
+        '.',
+        parseXml('<Foo bar=" with spaces around  " />'),
+        'bar',
+      )
 
       expect(value).toBe('with spaces around')
     })

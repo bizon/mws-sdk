@@ -16,8 +16,8 @@ describe('lib.client.parsers.base.get-service-status-response', () => {
       </GetServiceStatusResponse>`,
     )
 
-    const res = parseGetServiceStatusResponse('/finances:GetServiceStatusResponse', doc)
+    const response = parseGetServiceStatusResponse('/finances:GetServiceStatusResponse', doc)
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 })

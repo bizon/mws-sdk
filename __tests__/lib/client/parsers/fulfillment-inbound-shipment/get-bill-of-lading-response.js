@@ -19,11 +19,11 @@ describe('lib.client.parsers.fulfillment-inbound-shipment.get-bill-of-lading-res
       </GetBillOfLadingResponse>`,
     )
 
-    const res = parseGetBillOfLadingResponse(
+    const response = parseGetBillOfLadingResponse(
       '/fulfillmentInboundShipment:GetBillOfLadingResponse',
       doc,
     )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 })

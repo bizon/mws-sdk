@@ -42,12 +42,12 @@ describe('lib.client.parsers.products.get-product-categories-for-asin-response',
       </GetProductCategoriesForASINResponse>`,
     )
 
-    const res = parseGetProductCategoriesForAsinResponse(
+    const response = parseGetProductCategoriesForAsinResponse(
       '/products:GetProductCategoriesForASINResponse',
       doc,
     )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 
   it('should throw if there are too many levels of category recursion', () => {

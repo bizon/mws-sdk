@@ -1,7 +1,7 @@
 const {Buffer} = require('buffer')
 
-const nock = require('nock')
 const MockDate = require('mockdate')
+const nock = require('nock')
 
 const MWSClient = require('../../../..')
 

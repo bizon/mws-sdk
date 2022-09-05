@@ -55,9 +55,9 @@ describe('lib.client.parsers.products.get-my-price-for-sku-response', () => {
       </GetMyPriceForSKUResponse>`,
     )
 
-    const res = parseGetMyPriceForSkuResponse('/products:GetMyPriceForSKUResponse', doc)
+    const response = parseGetMyPriceForSkuResponse('/products:GetMyPriceForSKUResponse', doc)
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 
   it('should parse GetMyPriceForSKUResponse errors', () => {
@@ -77,8 +77,8 @@ describe('lib.client.parsers.products.get-my-price-for-sku-response', () => {
       </GetMyPriceForSKUResponse>`,
     )
 
-    const res = parseGetMyPriceForSkuResponse('/products:GetMyPriceForSKUResponse', doc)
+    const response = parseGetMyPriceForSkuResponse('/products:GetMyPriceForSKUResponse', doc)
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 })

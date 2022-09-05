@@ -248,12 +248,12 @@ describe('lib.client.parsers.products.get-matching-product-for-id-response', () 
       </GetMatchingProductForIdResponse>`,
     )
 
-    const res = parseGetMatchingProductForIdResponse(
+    const response = parseGetMatchingProductForIdResponse(
       '/products:GetMatchingProductForIdResponse',
       doc,
     )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 
   it('should parse the GetMatchingProductForIdResponse error example response from MWS doc', () => {
@@ -361,12 +361,12 @@ describe('lib.client.parsers.products.get-matching-product-for-id-response', () 
       </GetMatchingProductForIdResponse>`,
     )
 
-    const res = parseGetMatchingProductForIdResponse(
+    const response = parseGetMatchingProductForIdResponse(
       '/products:GetMatchingProductForIdResponse',
       doc,
     )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 
   it('should parse the GetMatchingProductResponse (modified) example response from MWS doc', () => {
@@ -514,12 +514,12 @@ describe('lib.client.parsers.products.get-matching-product-for-id-response', () 
       </GetMatchingProductForIdResponse>`,
     )
 
-    const res = parseGetMatchingProductForIdResponse(
+    const response = parseGetMatchingProductForIdResponse(
       '/products:GetMatchingProductForIdResponse',
       doc,
     )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 
   it('should parse a GetMatchingProductForIdResponse with variation parents', () => {
@@ -617,11 +617,11 @@ describe('lib.client.parsers.products.get-matching-product-for-id-response', () 
       </GetMatchingProductForIdResponse>`,
     )
 
-    const res = parseGetMatchingProductForIdResponse(
+    const response = parseGetMatchingProductForIdResponse(
       '/products:GetMatchingProductForIdResponse',
       doc,
     )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 })

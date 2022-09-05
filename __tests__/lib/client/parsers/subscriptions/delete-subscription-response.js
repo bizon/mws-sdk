@@ -12,8 +12,11 @@ describe('lib.client.parsers.subscriptions.delete-subscription-response', () => 
        </DeleteSubscriptionResponse>`,
     )
 
-    const res = parseDeleteSubscriptionResponse('/subscriptions:DeleteSubscriptionResponse', doc)
+    const response = parseDeleteSubscriptionResponse(
+      '/subscriptions:DeleteSubscriptionResponse',
+      doc,
+    )
 
-    expect(res).toMatchSnapshot()
+    expect(response).toMatchSnapshot()
   })
 })
