@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`lib.client.marketplaces getMarketplaces should filter out unknown marketplaces 1`] = `
-Array [
-  Object {
+[
+  {
     "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "fr",
     "currencyCode": "EUR",
@@ -16,7 +16,7 @@ Array [
     "vendorCentralDomain": "vendorcentral.amazon.fr",
     "vendorId": "A1X6FK5RDHNB96",
   },
-  Object {
+  {
     "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "de",
     "currencyCode": "EUR",
@@ -34,8 +34,8 @@ Array [
 `;
 
 exports[`lib.client.marketplaces getMarketplaces should ignore marketplaces without an API endpoint 1`] = `
-Array [
-  Object {
+[
+  {
     "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "fr",
     "currencyCode": "EUR",
@@ -49,7 +49,7 @@ Array [
     "vendorCentralDomain": "vendorcentral.amazon.fr",
     "vendorId": "A1X6FK5RDHNB96",
   },
-  Object {
+  {
     "code": "nl",
     "currencyCode": "EUR",
     "domain": "amazon.nl",
@@ -62,7 +62,7 @@ Array [
     "vendorCentralDomain": "vendorcentral.amazon.nl",
     "vendorId": "A17D2BRD4YMT0X",
   },
-  Object {
+  {
     "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "uk",
     "currencyCode": "GBP",
@@ -76,7 +76,7 @@ Array [
     "vendorCentralDomain": "vendorcentral.amazon.co.uk",
     "vendorId": "A3P5ROKL5A1OLE",
   },
-  Object {
+  {
     "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "de",
     "currencyCode": "EUR",
@@ -90,7 +90,7 @@ Array [
     "vendorCentralDomain": "vendorcentral.amazon.de",
     "vendorId": "A3JWKAKR8XB7XF",
   },
-  Object {
+  {
     "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "es",
     "currencyCode": "EUR",
@@ -104,7 +104,7 @@ Array [
     "vendorCentralDomain": "vendorcentral.amazon.es",
     "vendorId": "A1AT7YVPFBWXBL",
   },
-  Object {
+  {
     "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "it",
     "currencyCode": "EUR",
@@ -122,8 +122,8 @@ Array [
 `;
 
 exports[`lib.client.marketplaces getMarketplacesFromRegion should return a list of marketplaces for MWS regions 1`] = `
-Array [
-  Object {
+[
+  {
     "code": "be",
     "currencyCode": "EUR",
     "domain": "amazon.com.be",
@@ -133,7 +133,7 @@ Array [
     "name": "Belgium",
     "region": "eu",
   },
-  Object {
+  {
     "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "de",
     "currencyCode": "EUR",
@@ -147,7 +147,7 @@ Array [
     "vendorCentralDomain": "vendorcentral.amazon.de",
     "vendorId": "A3JWKAKR8XB7XF",
   },
-  Object {
+  {
     "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "es",
     "currencyCode": "EUR",
@@ -161,7 +161,7 @@ Array [
     "vendorCentralDomain": "vendorcentral.amazon.es",
     "vendorId": "A1AT7YVPFBWXBL",
   },
-  Object {
+  {
     "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "fr",
     "currencyCode": "EUR",
@@ -175,7 +175,7 @@ Array [
     "vendorCentralDomain": "vendorcentral.amazon.fr",
     "vendorId": "A1X6FK5RDHNB96",
   },
-  Object {
+  {
     "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "it",
     "currencyCode": "EUR",
@@ -189,7 +189,7 @@ Array [
     "vendorCentralDomain": "vendorcentral.amazon.it",
     "vendorId": "A11IL2PNWYJU7H",
   },
-  Object {
+  {
     "advertisingApiDomain": "advertising-api-eu.amazon.com",
     "code": "uk",
     "currencyCode": "GBP",
@@ -203,7 +203,7 @@ Array [
     "vendorCentralDomain": "vendorcentral.amazon.co.uk",
     "vendorId": "A3P5ROKL5A1OLE",
   },
-  Object {
+  {
     "code": "tr",
     "currencyCode": "TRY",
     "domain": "amazon.com.tr",
@@ -216,7 +216,7 @@ Array [
     "vendorCentralDomain": "vendorcentral.amazon.com.tr",
     "vendorId": "A1UNQM1SR2CHM",
   },
-  Object {
+  {
     "code": "eg",
     "currencyCode": "EGP",
     "domain": "amazon.eg",
@@ -229,7 +229,7 @@ Array [
     "vendorCentralDomain": "vendorcentral.amazon.me",
     "vendorId": "A1ZVRGNO5AYLOV",
   },
-  Object {
+  {
     "code": "sa",
     "currencyCode": "SAR",
     "domain": "amazon.sa",
@@ -241,7 +241,7 @@ Array [
     "sellerCentralDomain": "sellercentral.amazon.com.sa",
     "vendorId": "A2XPWB6MYN7ZDK",
   },
-  Object {
+  {
     "code": "nl",
     "currencyCode": "EUR",
     "domain": "amazon.nl",
@@ -254,7 +254,7 @@ Array [
     "vendorCentralDomain": "vendorcentral.amazon.nl",
     "vendorId": "A17D2BRD4YMT0X",
   },
-  Object {
+  {
     "code": "se",
     "currencyCode": "SEK",
     "domain": "amazon.se",
@@ -267,7 +267,7 @@ Array [
     "vendorCentralDomain": "vendorcentral.amazon.se",
     "vendorId": "ANU9KP01APNAG",
   },
-  Object {
+  {
     "code": "pl",
     "currencyCode": "PLN",
     "domain": "amazon.pl",
@@ -284,8 +284,8 @@ Array [
 `;
 
 exports[`lib.client.marketplaces getMarketplacesFromRegion should return a list of marketplaces for MWS regions 2`] = `
-Array [
-  Object {
+[
+  {
     "advertisingApiDomain": "advertising-api.amazon.com",
     "code": "us",
     "currencyCode": "USD",
@@ -299,7 +299,7 @@ Array [
     "vendorCentralDomain": "vendorcentral.amazon.com",
     "vendorId": "ATVPDKIKX0DER",
   },
-  Object {
+  {
     "code": "br",
     "currencyCode": "BRL",
     "domain": "amazon.com.br",
@@ -316,8 +316,8 @@ Array [
 `;
 
 exports[`lib.client.marketplaces getMarketplacesFromRegion should return a list of marketplaces for MWS regions 3`] = `
-Array [
-  Object {
+[
+  {
     "code": "sg",
     "currencyCode": "SGD",
     "domain": "amazon.sg",
@@ -333,8 +333,8 @@ Array [
 `;
 
 exports[`lib.client.marketplaces getMarketplacesFromRegion should return a list of marketplaces for MWS regions 4`] = `
-Array [
-  Object {
+[
+  {
     "advertisingApiDomain": "advertising-api.amazon.com",
     "code": "ca",
     "currencyCode": "CAD",
@@ -352,8 +352,8 @@ Array [
 `;
 
 exports[`lib.client.marketplaces getMarketplacesFromRegion should return a list of marketplaces for MWS regions 5`] = `
-Array [
-  Object {
+[
+  {
     "code": "in",
     "currencyCode": "INR",
     "domain": "amazon.in",
@@ -369,8 +369,8 @@ Array [
 `;
 
 exports[`lib.client.marketplaces getMarketplacesFromRegion should return a list of marketplaces for MWS regions 6`] = `
-Array [
-  Object {
+[
+  {
     "advertisingApiDomain": "advertising-api-fe.amazon.com",
     "code": "jp",
     "currencyCode": "JPY",

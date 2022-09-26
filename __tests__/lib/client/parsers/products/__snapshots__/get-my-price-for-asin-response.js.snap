@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`lib.client.parsers.products.get-my-price-for-asin-response should parse GetMyPriceForASINResponse errors 1`] = `
-Object {
-  "getMyPriceForAsinResult": Array [
-    Object {
+{
+  "getMyPriceForAsinResult": [
+    {
       "asin": "1933890517",
-      "error": Object {
+      "error": {
         "code": "InvalidParameterValue",
         "detail": null,
         "message": "1933890517 is an invalid ASIN for marketplace ATVPDKIKX0DER",
@@ -15,39 +15,39 @@ Object {
       "status": "Success",
     },
   ],
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "a3381684-87bd-416e-9b95-EXAMPLE9c236",
   },
 }
 `;
 
 exports[`lib.client.parsers.products.get-my-price-for-asin-response should parse the GetMyPriceForASINResponse example response from MWS doc 1`] = `
-Object {
-  "getMyPriceForAsinResult": Array [
-    Object {
+{
+  "getMyPriceForAsinResult": [
+    {
       "asin": "1933890517",
       "error": null,
-      "product": Object {
+      "product": {
         "attributes": null,
-        "identifiers": Object {
-          "marketplaceAsin": Object {
+        "identifiers": {
+          "marketplaceAsin": {
             "asin": "1933890517",
             "marketplaceId": "ATVPDKIKX0DER",
           },
           "skuIdentifier": null,
         },
-        "offers": Array [
-          Object {
-            "buyingPrice": Object {
-              "landedPrice": Object {
+        "offers": [
+          {
+            "buyingPrice": {
+              "landedPrice": {
                 "amount": 303.99,
                 "currencyCode": "USD",
               },
-              "listingPrice": Object {
+              "listingPrice": {
                 "amount": 300,
                 "currencyCode": "USD",
               },
-              "shipping": Object {
+              "shipping": {
                 "amount": 3.99,
                 "currencyCode": "USD",
               },
@@ -55,7 +55,7 @@ Object {
             "fulfillmentChannel": "MERCHANT",
             "itemCondition": "Used",
             "itemSubCondition": "Acceptable",
-            "regularPrice": Object {
+            "regularPrice": {
               "amount": 300,
               "currencyCode": "USD",
             },
@@ -63,16 +63,16 @@ Object {
             "sellerSku": "SKU2468",
           },
         ],
-        "relationships": Object {
-          "variationChildren": Array [],
+        "relationships": {
+          "variationChildren": [],
           "variationParent": null,
         },
-        "salesRankings": Array [],
+        "salesRankings": [],
       },
       "status": "Success",
     },
   ],
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "a3381684-87bd-416e-9b95-EXAMPLE9c236",
   },
 }

@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`lib.client.parsers.subscriptions.delete-subscription-response should parse the DeleteSubscriptionResponse example response from MWS doc 1`] = `
-Object {
-  "deleteSubscriptionResult": Object {},
-  "responseMetadata": Object {
+{
+  "deleteSubscriptionResult": {},
+  "responseMetadata": {
     "requestId": "2d7db8a1-8974-4541-9c9b-f882dEXAMPLE",
   },
 }

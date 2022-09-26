@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`lib.client.models.fulfillment-inbound-shipment should call GetBillOfLading 1`] = `
-Object {
-  "transportDocument": Object {
+{
+  "transportDocument": {
     "checksum": "WGQwqA+NlzMVL1plHc/7ZA==",
     "pdfDocument": "ABEAAAAAAlbHMucGRmUEsFBgAAAAABAAEAPwAAALQXAQAAAA==",
   },
@@ -10,11 +10,11 @@ Object {
 `;
 
 exports[`lib.client.models.fulfillment-inbound-shipment should call ListInboundShipmentItems 1`] = `
-Object {
-  "itemData": Array [
-    Object {
+{
+  "itemData": [
+    {
       "fulfillmentNetworkSKU": "B000FADVPQ",
-      "prepDetailsList": Array [],
+      "prepDetailsList": [],
       "quantityInCase": 0,
       "quantityReceived": 0,
       "quantityShipped": 3,
@@ -22,9 +22,9 @@ Object {
       "sellerSKU": "SampleSKU1",
       "shipmentId": "SSF85DGIZZ3OF1",
     },
-    Object {
+    {
       "fulfillmentNetworkSKU": "B0011VECH4",
-      "prepDetailsList": Array [],
+      "prepDetailsList": [],
       "quantityInCase": 0,
       "quantityReceived": 0,
       "quantityShipped": 10,
@@ -38,17 +38,17 @@ Object {
 `;
 
 exports[`lib.client.models.fulfillment-inbound-shipment should call ListInboundShipments 1`] = `
-Object {
+{
   "nextToken": null,
-  "shipmentData": Array [
-    Object {
+  "shipmentData": [
+    {
       "areCasesRequired": true,
       "boxContentsSource": null,
       "confirmedNeedByDate": null,
       "destinationFulfillmentCenterId": "YYZ1",
       "estimatedBoxContentsFee": null,
       "labelPrepType": "NO_LABEL",
-      "shipFromAddress": Object {
+      "shipFromAddress": {
         "addressLine1": "Address Line 1",
         "addressLine2": null,
         "city": "Vancouver",
@@ -62,24 +62,24 @@ Object {
       "shipmentName": "FBA (8/27/12 1:55 PM)",
       "shipmentStatus": "WORKING",
     },
-    Object {
+    {
       "areCasesRequired": null,
       "boxContentsSource": "NONE",
       "confirmedNeedByDate": null,
       "destinationFulfillmentCenterId": "RIC2",
-      "estimatedBoxContentsFee": Object {
-        "feePerUnit": Object {
+      "estimatedBoxContentsFee": {
+        "feePerUnit": {
           "currencyCode": "USD",
           "value": 0.1,
         },
-        "totalFee": Object {
+        "totalFee": {
           "currencyCode": "USD",
           "value": 10,
         },
         "totalUnits": 10,
       },
       "labelPrepType": "NO_LABEL",
-      "shipFromAddress": Object {
+      "shipFromAddress": {
         "addressLine1": "Address 1",
         "addressLine2": null,
         "city": "Vancouver",

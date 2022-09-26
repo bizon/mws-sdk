@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`lib.client.parsers.products.get-lowest-priced-offers-for-asin-response should parse the GetLowestPricedOffersForASINResponse active but too soon for processing example response from MWS doc 1`] = `
-Object {
-  "getLowestPricedOffersForAsinResult": Object {
+{
+  "getLowestPricedOffersForAsinResult": {
     "asin": "B01DL3WCPI",
-    "identifier": Object {
+    "identifier": {
       "asin": "B01DL3WCPI",
       "itemCondition": "New",
       "marketplaceId": "ATVPDKIKX0DER",
@@ -13,32 +13,32 @@ Object {
     },
     "itemCondition": "New",
     "marketplaceId": "ATVPDKIKX0DER",
-    "offers": Array [],
+    "offers": [],
     "status": "ActiveButTooSoonForProcessing",
-    "summary": Object {
-      "buyBoxEligibleOffers": Array [],
-      "buyBoxPrices": Array [],
+    "summary": {
+      "buyBoxEligibleOffers": [],
+      "buyBoxPrices": [],
       "competitivePriceThreshold": null,
       "listPrice": null,
-      "lowestPrices": Array [],
-      "numberOfOffers": Array [],
+      "lowestPrices": [],
+      "numberOfOffers": [],
       "offersAvailableTime": 2017-03-08T06:21:05.330Z,
-      "salesRankings": Array [],
+      "salesRankings": [],
       "suggestedLowerPricePlusShipping": null,
       "totalOfferCount": 0,
     },
   },
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "1212334",
   },
 }
 `;
 
 exports[`lib.client.parsers.products.get-lowest-priced-offers-for-asin-response should parse the GetLowestPricedOffersForASINResponse missing shipping charge example response from MWS doc 1`] = `
-Object {
-  "getLowestPricedOffersForAsinResult": Object {
+{
+  "getLowestPricedOffersForAsinResult": {
     "asin": "B000EVPGSQ",
-    "identifier": Object {
+    "identifier": {
       "asin": "B000EVPGSQ",
       "itemCondition": "New",
       "marketplaceId": "ATVPDKIKX0DER",
@@ -47,32 +47,32 @@ Object {
     },
     "itemCondition": "New",
     "marketplaceId": "ATVPDKIKX0DER",
-    "offers": Array [],
+    "offers": [],
     "status": "NoOfferDueToMissingShippingCharge",
-    "summary": Object {
-      "buyBoxEligibleOffers": Array [],
-      "buyBoxPrices": Array [],
+    "summary": {
+      "buyBoxEligibleOffers": [],
+      "buyBoxPrices": [],
       "competitivePriceThreshold": null,
       "listPrice": null,
-      "lowestPrices": Array [],
-      "numberOfOffers": Array [],
+      "lowestPrices": [],
+      "numberOfOffers": [],
       "offersAvailableTime": null,
-      "salesRankings": Array [],
+      "salesRankings": [],
       "suggestedLowerPricePlusShipping": null,
       "totalOfferCount": 0,
     },
   },
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "2bb867cd-8fa3-406c-adba-eb84c1796d21",
   },
 }
 `;
 
 exports[`lib.client.parsers.products.get-lowest-priced-offers-for-asin-response should parse the GetLowestPricedOffersForASINResponse success example response from MWS doc (updated) 1`] = `
-Object {
-  "getLowestPricedOffersForAsinResult": Object {
+{
+  "getLowestPricedOffersForAsinResult": {
     "asin": "B0002GTTRC",
-    "identifier": Object {
+    "identifier": {
       "asin": "B0002GTTRC",
       "itemCondition": "New",
       "marketplaceId": "ATVPDKIKX0DER",
@@ -81,32 +81,32 @@ Object {
     },
     "itemCondition": "New",
     "marketplaceId": "ATVPDKIKX0DER",
-    "offers": Array [
-      Object {
+    "offers": [
+      {
         "conditionNotes": "Some notes!",
         "isBuyBoxWinner": true,
         "isFeaturedMerchant": true,
         "isFulfilledByAmazon": true,
-        "listingPrice": Object {
+        "listingPrice": {
           "amount": 32.99,
           "currencyCode": "USD",
         },
         "myOffer": null,
         "points": null,
-        "primeInformation": Object {
+        "primeInformation": {
           "isNationalPrime": false,
           "isPrime": false,
         },
-        "sellerFeedbackRating": Object {
+        "sellerFeedbackRating": {
           "feedbackCount": 1,
           "sellerPositiveFeedbackRating": 100,
         },
         "sellerId": "SELLERID",
-        "shipping": Object {
+        "shipping": {
           "amount": 0,
           "currencyCode": "USD",
         },
-        "shippingTime": Object {
+        "shippingTime": {
           "availabilityType": "NOW",
           "availableDate": null,
           "maximumHours": 0,
@@ -117,100 +117,100 @@ Object {
       },
     ],
     "status": "Success",
-    "summary": Object {
-      "buyBoxEligibleOffers": Array [
-        Object {
+    "summary": {
+      "buyBoxEligibleOffers": [
+        {
           "condition": "new",
           "count": 1,
           "fulfillmentChannel": "Amazon",
         },
       ],
-      "buyBoxPrices": Array [
-        Object {
+      "buyBoxPrices": [
+        {
           "condition": "New",
-          "landedPrice": Object {
+          "landedPrice": {
             "amount": 32.99,
             "currencyCode": "USD",
           },
-          "listingPrice": Object {
+          "listingPrice": {
             "amount": 32.99,
             "currencyCode": "USD",
           },
           "points": null,
-          "shipping": Object {
+          "shipping": {
             "amount": 0,
             "currencyCode": "USD",
           },
         },
       ],
       "competitivePriceThreshold": null,
-      "listPrice": Object {
+      "listPrice": {
         "amount": 58.34,
         "currencyCode": "USD",
       },
-      "lowestPrices": Array [
-        Object {
+      "lowestPrices": [
+        {
           "condition": "new",
           "fulfillmentChannel": "Amazon",
-          "landedPrice": Object {
+          "landedPrice": {
             "amount": 32.99,
             "currencyCode": "USD",
           },
-          "listingPrice": Object {
+          "listingPrice": {
             "amount": 32.99,
             "currencyCode": "USD",
           },
           "points": null,
-          "shipping": Object {
+          "shipping": {
             "amount": 0,
             "currencyCode": "USD",
           },
         },
       ],
-      "numberOfOffers": Array [
-        Object {
+      "numberOfOffers": [
+        {
           "condition": "new",
           "count": 1,
           "fulfillmentChannel": "Amazon",
         },
       ],
       "offersAvailableTime": null,
-      "salesRankings": Array [
-        Object {
+      "salesRankings": [
+        {
           "productCategoryId": "book_display_on_website",
           "rank": 401,
         },
-        Object {
+        {
           "productCategoryId": "15356791",
           "rank": 5,
         },
-        Object {
+        {
           "productCategoryId": "3153",
           "rank": 8,
         },
-        Object {
+        {
           "productCategoryId": "17468",
           "rank": 16,
         },
       ],
-      "suggestedLowerPricePlusShipping": Object {
+      "suggestedLowerPricePlusShipping": {
         "amount": 32.99,
         "currencyCode": "USD",
       },
       "totalOfferCount": 0,
     },
   },
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "21534f03-e7e3-4d9a-9bea-0e15add3326d",
   },
 }
 `;
 
 exports[`lib.client.parsers.products.get-lowest-priced-offers-for-asin-response should parse the GetLowestPricedOffersForASINResponse success with no offers example response from MWS doc 1`] = `
-Object {
-  "getLowestPricedOffersForAsinResult": Object {
+{
+  "getLowestPricedOffersForAsinResult": {
     "asin": "B000EVPGSQ",
-    "identifier": Object {
+    "identifier": {
       "asin": "B000EVPGSQ",
       "itemCondition": "New",
       "marketplaceId": "ATVPDKIKX0DER",
@@ -219,22 +219,22 @@ Object {
     },
     "itemCondition": "New",
     "marketplaceId": "ATVPDKIKX0DER",
-    "offers": Array [],
+    "offers": [],
     "status": "NoBuyableOffers",
-    "summary": Object {
-      "buyBoxEligibleOffers": Array [],
-      "buyBoxPrices": Array [],
+    "summary": {
+      "buyBoxEligibleOffers": [],
+      "buyBoxPrices": [],
       "competitivePriceThreshold": null,
       "listPrice": null,
-      "lowestPrices": Array [],
-      "numberOfOffers": Array [],
+      "lowestPrices": [],
+      "numberOfOffers": [],
       "offersAvailableTime": null,
-      "salesRankings": Array [],
+      "salesRankings": [],
       "suggestedLowerPricePlusShipping": null,
       "totalOfferCount": 0,
     },
   },
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "2bb867cd-8fa3-406c-adba-eb84c1796d21",
   },
 }

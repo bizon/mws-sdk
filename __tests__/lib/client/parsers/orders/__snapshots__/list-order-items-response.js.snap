@@ -1,19 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`lib.client.parsers.orders.list-order-items-response should parse the ListOrderItemsByNextTokenResponse example response from MWS doc 1`] = `
-Object {
-  "listOrderItemsResult": Object {
+{
+  "listOrderItemsResult": {
     "amazonOrderId": "058-1233752-8214740",
     "nextToken": "MRgZW55IGNhcm5hbCBwbGVhc3VyZS6=",
-    "orderItems": Array [
-      Object {
+    "orderItems": [
+      {
         "asin": "BT0093TELA",
         "buyerCustomizedInfo": null,
-        "codFee": Object {
+        "codFee": {
           "amount": 10,
           "currencyCode": "USD",
         },
-        "codFeeDiscount": Object {
+        "codFeeDiscount": {
           "amount": 1,
           "currencyCode": "USD",
         },
@@ -22,14 +22,14 @@ Object {
         "conditionSubtypeId": null,
         "giftMessageText": "For you!",
         "giftWrapLevel": "Classic",
-        "giftWrapPrice": Object {
+        "giftWrapPrice": {
           "amount": 1.99,
           "currencyCode": "USD",
         },
         "giftWrapTax": null,
         "isGift": false,
         "isTransparency": null,
-        "itemPrice": Object {
+        "itemPrice": {
           "amount": 25.99,
           "currencyCode": "USD",
         },
@@ -40,7 +40,7 @@ Object {
         "productInfo": null,
         "promotionDiscount": null,
         "promotionDiscountTax": null,
-        "promotionIds": Array [],
+        "promotionIds": [],
         "quantityOrdered": 1,
         "quantityShipped": 1,
         "scheduledDeliveryEndDate": Date { NaN },
@@ -49,7 +49,7 @@ Object {
         "serialNumberRequired": null,
         "shippingDiscount": null,
         "shippingDiscountTax": null,
-        "shippingPrice": Object {
+        "shippingPrice": {
           "amount": 1.26,
           "currencyCode": "USD",
         },
@@ -57,7 +57,7 @@ Object {
         "taxCollection": null,
         "title": "Example item name",
       },
-      Object {
+      {
         "asin": "BCTU1104UEFB",
         "buyerCustomizedInfo": null,
         "codFee": null,
@@ -71,7 +71,7 @@ Object {
         "giftWrapTax": null,
         "isGift": false,
         "isTransparency": true,
-        "itemPrice": Object {
+        "itemPrice": {
           "amount": 17.95,
           "currencyCode": "USD",
         },
@@ -82,7 +82,7 @@ Object {
         "productInfo": null,
         "promotionDiscount": null,
         "promotionDiscountTax": null,
-        "promotionIds": Array [
+        "promotionIds": [
           "FREESHIP",
         ],
         "quantityOrdered": 2,
@@ -100,28 +100,28 @@ Object {
       },
     ],
   },
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "88faca76-b600-46d2-b53c-0c8c4533e43a",
   },
 }
 `;
 
 exports[`lib.client.parsers.orders.list-order-items-response should parse the ListOrderItemsResponse example response from MWS doc 1`] = `
-Object {
-  "listOrderItemsResult": Object {
+{
+  "listOrderItemsResult": {
     "amazonOrderId": "058-1233752-8214740",
     "nextToken": "MRgZW55IGNhcm5hbCBwbGVhc3VyZS6=",
-    "orderItems": Array [
-      Object {
+    "orderItems": [
+      {
         "asin": "BT0093TELA",
-        "buyerCustomizedInfo": Object {
+        "buyerCustomizedInfo": {
           "customizedURL": "https://zme-caps.amazon.com/t/bR6qHkzSOxuB/J8nbWhze0Bd3DkajkOdY-XQbWkFralegp2sr_QZiKEE/1",
         },
-        "codFee": Object {
+        "codFee": {
           "amount": 10,
           "currencyCode": "JPY",
         },
-        "codFeeDiscount": Object {
+        "codFeeDiscount": {
           "amount": 1,
           "currencyCode": "JPY",
         },
@@ -130,33 +130,33 @@ Object {
         "conditionSubtypeId": null,
         "giftMessageText": "For you!",
         "giftWrapLevel": "Classic",
-        "giftWrapPrice": Object {
+        "giftWrapPrice": {
           "amount": 1.99,
           "currencyCode": "JPY",
         },
         "giftWrapTax": null,
         "isGift": false,
         "isTransparency": true,
-        "itemPrice": Object {
+        "itemPrice": {
           "amount": 25.99,
           "currencyCode": "JPY",
         },
         "itemTax": null,
         "orderItemId": "68828574383266",
-        "pointsGranted": Object {
-          "pointsMonetaryValue": Object {
+        "pointsGranted": {
+          "pointsMonetaryValue": {
             "amount": 10,
             "currencyCode": "JPY",
           },
           "pointsNumber": 10,
         },
         "priceDesignation": "BusinessPrice",
-        "productInfo": Object {
+        "productInfo": {
           "numberOfItems": 12,
         },
         "promotionDiscount": null,
         "promotionDiscountTax": null,
-        "promotionIds": Array [],
+        "promotionIds": [],
         "quantityOrdered": 1,
         "quantityShipped": 1,
         "scheduledDeliveryEndDate": 2013-09-09T07:30:00.000Z,
@@ -165,7 +165,7 @@ Object {
         "serialNumberRequired": null,
         "shippingDiscount": null,
         "shippingDiscountTax": null,
-        "shippingPrice": Object {
+        "shippingPrice": {
           "amount": 1.26,
           "currencyCode": "JPY",
         },
@@ -173,7 +173,7 @@ Object {
         "taxCollection": null,
         "title": "Example item name",
       },
-      Object {
+      {
         "asin": "BCTU1104UEFB",
         "buyerCustomizedInfo": null,
         "codFee": null,
@@ -187,7 +187,7 @@ Object {
         "giftWrapTax": null,
         "isGift": false,
         "isTransparency": false,
-        "itemPrice": Object {
+        "itemPrice": {
           "amount": 17.95,
           "currencyCode": "JPY",
         },
@@ -198,7 +198,7 @@ Object {
         "productInfo": null,
         "promotionDiscount": null,
         "promotionDiscountTax": null,
-        "promotionIds": Array [
+        "promotionIds": [
           "FREESHIP",
         ],
         "quantityOrdered": 2,
@@ -211,7 +211,7 @@ Object {
         "shippingDiscountTax": null,
         "shippingPrice": null,
         "shippingTax": null,
-        "taxCollection": Object {
+        "taxCollection": {
           "model": "MarketplaceFacilitator",
           "responsibleParty": "Amazon Services, Inc.",
         },
@@ -219,7 +219,7 @@ Object {
       },
     ],
   },
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "88faca76-b600-46d2-b53c-0c8c4533e43a",
   },
 }

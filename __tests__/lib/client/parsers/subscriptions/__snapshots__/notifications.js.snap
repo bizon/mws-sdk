@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`lib.client.parsers.base.get-service-status-response should parse a FeedProcessingFinished notification 1`] = `
-Object {
-  "notificationMetadata": Object {
+{
+  "notificationMetadata": {
     "notificationType": "FeedProcessingFinished",
     "payloadVersion": "1.0",
     "publishTime": 2019-07-01T10:46:29.000Z,
     "sellerId": "XXXXXXXXXXTest",
     "uniqueId": "0123456789-ca3b-4127-abe7-82cfbe19a032",
   },
-  "notificationPayload": Object {
+  "notificationPayload": {
     "feedProcessingStatus": "_DONE_",
     "feedSubmissionId": "2291326430",
     "feedType": "_POST_PRODUCT_DATA_",
@@ -19,15 +19,15 @@ Object {
 `;
 
 exports[`lib.client.parsers.base.get-service-status-response should parse a ReportProcessingFinished notification 1`] = `
-Object {
-  "notificationMetadata": Object {
+{
+  "notificationMetadata": {
     "notificationType": "ReportProcessingFinishedNotification",
     "payloadVersion": "1.0",
     "publishTime": 2019-07-01T10:46:29.000Z,
     "sellerId": "XXXXXXXXXXTest",
     "uniqueId": "0123456789-ca3b-4127-abe7-82cfbe19a032",
   },
-  "notificationPayload": Object {
+  "notificationPayload": {
     "reportId": "1234",
     "reportProcessingStatus": "DONE_NO_DATA",
     "reportRequestId": "1234",
@@ -38,57 +38,57 @@ Object {
 `;
 
 exports[`lib.client.parsers.base.get-service-status-response should parse a Test notification 1`] = `
-Object {
-  "notificationMetadata": Object {
+{
+  "notificationMetadata": {
     "notificationType": "Test",
     "payloadVersion": "1.0",
     "publishTime": 2019-07-01T10:46:29.000Z,
     "sellerId": "XXXXXXXXXXTest",
     "uniqueId": "0123456789-ca3b-4127-abe7-82cfbe19a032",
   },
-  "notificationPayload": Object {},
+  "notificationPayload": {},
 }
 `;
 
 exports[`lib.client.parsers.base.get-service-status-response should parse an AnyOfferChanged notification 1`] = `
-Object {
-  "notificationMetadata": Object {
+{
+  "notificationMetadata": {
     "notificationType": "AnyOfferChanged",
     "payloadVersion": "1.0",
     "publishTime": 2015-01-06T14:15:55.708Z,
     "sellerId": "A2H6E05OPYV8CQ",
     "uniqueId": "4e3a2c04-5f63-4afb-8666-e480e83fae47",
   },
-  "notificationPayload": Object {
-    "offerChangeTrigger": Object {
+  "notificationPayload": {
+    "offerChangeTrigger": {
       "asin": "B001BXLZUO",
       "itemCondition": "new",
       "marketplaceId": "ATVPDKIKX0DER",
       "timeOfOfferChange": 2015-01-06T14:15:54.699Z,
     },
-    "offers": Array [
-      Object {
+    "offers": [
+      {
         "conditionNotes": null,
         "isBuyBoxWinner": false,
         "isExpeditedShippingAvailable": false,
         "isFeaturedMerchant": true,
         "isFulfilledByAmazon": true,
-        "listingPrice": Object {
+        "listingPrice": {
           "amount": 32.55,
           "currencyCode": "USD",
         },
         "points": null,
         "primeInformation": null,
-        "sellerFeedbackRating": Object {
+        "sellerFeedbackRating": {
           "feedbackCount": 15400,
           "sellerPositiveFeedbackRating": 96,
         },
         "sellerId": "A2TU82NH1RX1NZ",
-        "shipping": Object {
+        "shipping": {
           "amount": 0,
           "currencyCode": "USD",
         },
-        "shippingTime": Object {
+        "shippingTime": {
           "availabilityType": "NOW",
           "availableDate": null,
           "maximumHours": 0,
@@ -99,28 +99,28 @@ Object {
         "shipsInternationally": false,
         "subCondition": "new",
       },
-      Object {
+      {
         "conditionNotes": null,
         "isBuyBoxWinner": false,
         "isExpeditedShippingAvailable": false,
         "isFeaturedMerchant": true,
         "isFulfilledByAmazon": true,
-        "listingPrice": Object {
+        "listingPrice": {
           "amount": 32.55,
           "currencyCode": "USD",
         },
         "points": null,
         "primeInformation": null,
-        "sellerFeedbackRating": Object {
+        "sellerFeedbackRating": {
           "feedbackCount": 33837,
           "sellerPositiveFeedbackRating": 97,
         },
         "sellerId": "A3SE0BD58ZZU8T",
-        "shipping": Object {
+        "shipping": {
           "amount": 0,
           "currencyCode": "USD",
         },
-        "shippingTime": Object {
+        "shippingTime": {
           "availabilityType": "NOW",
           "availableDate": null,
           "maximumHours": 0,
@@ -131,63 +131,63 @@ Object {
         "shipsInternationally": false,
         "subCondition": "new",
       },
-      Object {
+      {
         "conditionNotes": null,
         "isBuyBoxWinner": false,
         "isExpeditedShippingAvailable": true,
         "isFeaturedMerchant": true,
         "isFulfilledByAmazon": false,
-        "listingPrice": Object {
+        "listingPrice": {
           "amount": 32.95,
           "currencyCode": "USD",
         },
         "points": null,
         "primeInformation": null,
-        "sellerFeedbackRating": Object {
+        "sellerFeedbackRating": {
           "feedbackCount": 2402,
           "sellerPositiveFeedbackRating": 93,
         },
         "sellerId": "A37V740TK9YOGL",
-        "shipping": Object {
+        "shipping": {
           "amount": 0,
           "currencyCode": "USD",
         },
-        "shippingTime": Object {
+        "shippingTime": {
           "availabilityType": "NOW",
           "availableDate": null,
           "maximumHours": 48,
           "minimumHours": 24,
         },
         "shipsDomestically": true,
-        "shipsFrom": Object {
+        "shipsFrom": {
           "country": "US",
           "state": "CA",
         },
         "shipsInternationally": false,
         "subCondition": "new",
       },
-      Object {
+      {
         "conditionNotes": null,
         "isBuyBoxWinner": false,
         "isExpeditedShippingAvailable": false,
         "isFeaturedMerchant": true,
         "isFulfilledByAmazon": true,
-        "listingPrice": Object {
+        "listingPrice": {
           "amount": 32.95,
           "currencyCode": "USD",
         },
         "points": null,
         "primeInformation": null,
-        "sellerFeedbackRating": Object {
+        "sellerFeedbackRating": {
           "feedbackCount": 1082,
           "sellerPositiveFeedbackRating": 100,
         },
         "sellerId": "A2H6E05OPYV8CQ",
-        "shipping": Object {
+        "shipping": {
           "amount": 0,
           "currencyCode": "USD",
         },
-        "shippingTime": Object {
+        "shippingTime": {
           "availabilityType": "NOW",
           "availableDate": null,
           "maximumHours": 0,
@@ -198,28 +198,28 @@ Object {
         "shipsInternationally": false,
         "subCondition": "new",
       },
-      Object {
+      {
         "conditionNotes": null,
         "isBuyBoxWinner": true,
         "isExpeditedShippingAvailable": false,
         "isFeaturedMerchant": true,
         "isFulfilledByAmazon": true,
-        "listingPrice": Object {
+        "listingPrice": {
           "amount": 33.56,
           "currencyCode": "USD",
         },
         "points": null,
         "primeInformation": null,
-        "sellerFeedbackRating": Object {
+        "sellerFeedbackRating": {
           "feedbackCount": 189569,
           "sellerPositiveFeedbackRating": 99,
         },
         "sellerId": "A19NVE4G6SOT2C",
-        "shipping": Object {
+        "shipping": {
           "amount": 0,
           "currencyCode": "USD",
         },
-        "shippingTime": Object {
+        "shippingTime": {
           "availabilityType": "NOW",
           "availableDate": null,
           "maximumHours": 0,
@@ -230,105 +230,105 @@ Object {
         "shipsInternationally": false,
         "subCondition": "new",
       },
-      Object {
+      {
         "conditionNotes": null,
         "isBuyBoxWinner": false,
         "isExpeditedShippingAvailable": true,
         "isFeaturedMerchant": true,
         "isFulfilledByAmazon": false,
-        "listingPrice": Object {
+        "listingPrice": {
           "amount": 42,
           "currencyCode": "USD",
         },
         "points": null,
         "primeInformation": null,
-        "sellerFeedbackRating": Object {
+        "sellerFeedbackRating": {
           "feedbackCount": 2016,
           "sellerPositiveFeedbackRating": null,
         },
         "sellerId": "A2P9RBMWEEISS4",
-        "shipping": Object {
+        "shipping": {
           "amount": 0,
           "currencyCode": "USD",
         },
-        "shippingTime": Object {
+        "shippingTime": {
           "availabilityType": "NOW",
           "availableDate": null,
           "maximumHours": 48,
           "minimumHours": 24,
         },
         "shipsDomestically": true,
-        "shipsFrom": Object {
+        "shipsFrom": {
           "country": "",
           "state": "",
         },
         "shipsInternationally": true,
         "subCondition": "new",
       },
-      Object {
+      {
         "conditionNotes": null,
         "isBuyBoxWinner": false,
         "isExpeditedShippingAvailable": true,
         "isFeaturedMerchant": true,
         "isFulfilledByAmazon": false,
-        "listingPrice": Object {
+        "listingPrice": {
           "amount": 45,
           "currencyCode": "USD",
         },
         "points": null,
         "primeInformation": null,
-        "sellerFeedbackRating": Object {
+        "sellerFeedbackRating": {
           "feedbackCount": 15138,
           "sellerPositiveFeedbackRating": 94.7,
         },
         "sellerId": "A1JZL1L8ARSOYB",
-        "shipping": Object {
+        "shipping": {
           "amount": 0,
           "currencyCode": "USD",
         },
-        "shippingTime": Object {
+        "shippingTime": {
           "availabilityType": "NOW",
           "availableDate": null,
           "maximumHours": 48,
           "minimumHours": 24,
         },
         "shipsDomestically": true,
-        "shipsFrom": Object {
+        "shipsFrom": {
           "country": "US",
           "state": "CA",
         },
         "shipsInternationally": false,
         "subCondition": "new",
       },
-      Object {
+      {
         "conditionNotes": null,
         "isBuyBoxWinner": false,
         "isExpeditedShippingAvailable": false,
         "isFeaturedMerchant": true,
         "isFulfilledByAmazon": false,
-        "listingPrice": Object {
+        "listingPrice": {
           "amount": 45,
           "currencyCode": "USD",
         },
         "points": null,
         "primeInformation": null,
-        "sellerFeedbackRating": Object {
+        "sellerFeedbackRating": {
           "feedbackCount": 13662,
           "sellerPositiveFeedbackRating": 95,
         },
         "sellerId": "A2N1A581RPHNSW",
-        "shipping": Object {
+        "shipping": {
           "amount": 0,
           "currencyCode": "USD",
         },
-        "shippingTime": Object {
+        "shippingTime": {
           "availabilityType": "NOW",
           "availableDate": null,
           "maximumHours": 48,
           "minimumHours": 24,
         },
         "shipsDomestically": true,
-        "shipsFrom": Object {
+        "shipsFrom": {
           "country": "",
           "state": "",
         },
@@ -336,95 +336,95 @@ Object {
         "subCondition": "new",
       },
     ],
-    "summary": Object {
-      "buyBoxEligibleOffers": Array [
-        Object {
+    "summary": {
+      "buyBoxEligibleOffers": [
+        {
           "condition": "new",
           "count": 4,
           "fulfillmentChannel": "Amazon",
         },
-        Object {
+        {
           "condition": "new",
           "count": 4,
           "fulfillmentChannel": "Merchant",
         },
       ],
-      "buyBoxPrices": Array [
-        Object {
+      "buyBoxPrices": [
+        {
           "condition": "new",
-          "landedPrice": Object {
+          "landedPrice": {
             "amount": 32.95,
             "currencyCode": "USD",
           },
-          "listingPrice": Object {
+          "listingPrice": {
             "amount": 32.95,
             "currencyCode": "USD",
           },
           "points": null,
-          "shipping": Object {
+          "shipping": {
             "amount": 0,
             "currencyCode": "USD",
           },
         },
       ],
       "competitivePriceThreshold": null,
-      "listPrice": Object {
+      "listPrice": {
         "amount": 42,
         "currencyCode": "USD",
       },
-      "lowestPrices": Array [
-        Object {
+      "lowestPrices": [
+        {
           "condition": "new",
           "fulfillmentChannel": "Amazon",
-          "landedPrice": Object {
+          "landedPrice": {
             "amount": 32.55,
             "currencyCode": "USD",
           },
-          "listingPrice": Object {
+          "listingPrice": {
             "amount": 32.55,
             "currencyCode": "USD",
           },
-          "points": Object {
+          "points": {
             "pointsNumber": 13,
           },
-          "shipping": Object {
+          "shipping": {
             "amount": 0,
             "currencyCode": "USD",
           },
         },
-        Object {
+        {
           "condition": "new",
           "fulfillmentChannel": "Merchant",
-          "landedPrice": Object {
+          "landedPrice": {
             "amount": 32.95,
             "currencyCode": "USD",
           },
-          "listingPrice": Object {
+          "listingPrice": {
             "amount": 32.95,
             "currencyCode": "USD",
           },
           "points": null,
-          "shipping": Object {
+          "shipping": {
             "amount": 0,
             "currencyCode": "USD",
           },
         },
       ],
       "minimumAdvertisedPrice": null,
-      "numberOfOffers": Array [
-        Object {
+      "numberOfOffers": [
+        {
           "condition": "new",
           "count": 4,
           "fulfillmentChannel": "Amazon",
         },
-        Object {
+        {
           "condition": "new",
           "count": 4,
           "fulfillmentChannel": "Merchant",
         },
       ],
-      "salesRankings": Array [
-        Object {
+      "salesRankings": [
+        {
           "parseNumber": 26563,
           "productCategoryId": "beauty_display_on_website",
         },

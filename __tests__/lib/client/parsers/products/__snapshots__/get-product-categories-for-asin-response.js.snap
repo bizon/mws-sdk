@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`lib.client.parsers.products.get-product-categories-for-asin-response should parse the GetProductCategoriesForASINResponse example response from MWS doc 1`] = `
-Object {
-  "getProductCategoriesForAsinResult": Object {
-    "categories": Array [
-      Object {
-        "parent": Object {
-          "parent": Object {
-            "parent": Object {
-              "parent": Object {
-                "parent": Object {
-                  "parent": Object {
+{
+  "getProductCategoriesForAsinResult": {
+    "categories": [
+      {
+        "parent": {
+          "parent": {
+            "parent": {
+              "parent": {
+                "parent": {
+                  "parent": {
                     "parent": null,
                     "productCategoryId": "3375251",
                     "productCategoryName": "Categories",
@@ -35,7 +35,7 @@ Object {
       },
     ],
   },
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "fbce5b62-67cc-4ab8-86f3-EXAMPLE22e4e",
   },
 }

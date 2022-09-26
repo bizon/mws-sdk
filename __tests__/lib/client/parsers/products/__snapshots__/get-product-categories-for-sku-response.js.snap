@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`lib.client.parsers.products.get-product-categories-for-sku-response should parse the GetProductCategoriesForSKUResponse example response from MWS doc 1`] = `
-Object {
-  "getProductCategoriesForSkuResult": Object {
-    "categories": Array [
-      Object {
-        "parent": Object {
-          "parent": Object {
-            "parent": Object {
-              "parent": Object {
+{
+  "getProductCategoriesForSkuResult": {
+    "categories": [
+      {
+        "parent": {
+          "parent": {
+            "parent": {
+              "parent": {
                 "parent": null,
                 "productCategoryId": "283155",
                 "productCategoryName": "Subjects",
@@ -25,11 +25,11 @@ Object {
         "productCategoryId": "271578011",
         "productCategoryName": "Project Management",
       },
-      Object {
-        "parent": Object {
-          "parent": Object {
-            "parent": Object {
-              "parent": Object {
+      {
+        "parent": {
+          "parent": {
+            "parent": {
+              "parent": {
                 "parent": null,
                 "productCategoryId": "283155",
                 "productCategoryName": "Specialty Boutique",
@@ -48,7 +48,7 @@ Object {
       },
     ],
   },
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "e058aabd-b4c3-48ba-9bfa-EXAMPLE9a267",
   },
 }

@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`lib.client.parsers.products.get-matching-product-response should parse the GetMatchingProductResponse example response from MWS doc 1`] = `
-Object {
-  "getMatchingProductResults": Array [
-    Object {
+{
+  "getMatchingProductResults": [
+    {
       "asin": "B002KT3XRQ",
-      "product": Object {
-        "attributes": Object {
+      "product": {
+        "attributes": {
           "binding": "Apparel",
           "brand": "Pearl iZUMi",
           "department": "mens",
-          "features": Array [
+          "features": [
             "Select transfer fabric sets the benchmark for moisture transfer and
                   four-way performance stretch",
             "6-Panel anatomic design for superior, chafe-free comfort, UPF 50+ sun
@@ -21,42 +21,42 @@ Object {
                   key areas",
             "86 percent nylon, 14% spandex, 9-Inch inseam",
           ],
-          "itemDimensions": Object {
-            "height": Object {
+          "itemDimensions": {
+            "height": {
               "unit": "inches",
               "value": 2,
             },
-            "length": Object {
+            "length": {
               "unit": "inches",
               "value": 9,
             },
             "weight": null,
-            "width": Object {
+            "width": {
               "unit": "inches",
               "value": 9,
             },
           },
           "label": "Pearl iZUMi",
-          "listPrice": Object {
+          "listPrice": {
             "amount": 50,
             "currencyCode": "USD",
           },
           "manufacturer": "Pearl iZUMi",
           "model": "0275",
-          "packageDimensions": Object {
-            "height": Object {
+          "packageDimensions": {
+            "height": {
               "unit": "inches",
               "value": 2.8,
             },
-            "length": Object {
+            "length": {
               "unit": "inches",
               "value": 9.75,
             },
-            "weight": Object {
+            "weight": {
               "unit": "pounds",
               "value": 0.4,
             },
-            "width": Object {
+            "width": {
               "unit": "inches",
               "value": 8.4,
             },
@@ -66,13 +66,13 @@ Object {
           "productGroup": "Apparel",
           "productTypeName": "SHORTS",
           "publisher": "Pearl iZUMi",
-          "smallImage": Object {
-            "height": Object {
+          "smallImage": {
+            "height": {
               "unit": "pixels",
               "value": 75,
             },
             "url": "http://ecx.images-amazon.com/images/I/41ty3Sn%2BU8L._SL75_.jpg",
-            "width": Object {
+            "width": {
               "unit": "pixels",
               "value": 58,
             },
@@ -80,20 +80,20 @@ Object {
           "studio": "Pearl iZUMi",
           "title": "Pearl iZUMi Men's Quest Cycling Short",
         },
-        "identifiers": Object {
-          "marketplaceAsin": Object {
+        "identifiers": {
+          "marketplaceAsin": {
             "asin": "B002KT3XRQ",
             "marketplaceId": "ATVPDKIKX0DER",
           },
           "skuIdentifier": null,
         },
-        "offers": Array [],
-        "relationships": Object {
-          "variationChildren": Array [
-            Object {
+        "offers": [],
+        "relationships": {
+          "variationChildren": [
+            {
               "color": "Black",
-              "identifiers": Object {
-                "marketplaceAsin": Object {
+              "identifiers": {
+                "marketplaceAsin": {
                   "asin": "B002KT3XQC",
                   "marketplaceId": "ATVPDKIKX0DER",
                 },
@@ -101,10 +101,10 @@ Object {
               },
               "size": "Small",
             },
-            Object {
+            {
               "color": "Black",
-              "identifiers": Object {
-                "marketplaceAsin": Object {
+              "identifiers": {
+                "marketplaceAsin": {
                   "asin": "B002KT3XQW",
                   "marketplaceId": "ATVPDKIKX0DER",
                 },
@@ -112,10 +112,10 @@ Object {
               },
               "size": "Medium",
             },
-            Object {
+            {
               "color": "Black",
-              "identifiers": Object {
-                "marketplaceAsin": Object {
+              "identifiers": {
+                "marketplaceAsin": {
                   "asin": "B002KT3XQM",
                   "marketplaceId": "ATVPDKIKX0DER",
                 },
@@ -123,10 +123,10 @@ Object {
               },
               "size": "Large",
             },
-            Object {
+            {
               "color": "Black",
-              "identifiers": Object {
-                "marketplaceAsin": Object {
+              "identifiers": {
+                "marketplaceAsin": {
                   "asin": "B002KT3XR6",
                   "marketplaceId": "ATVPDKIKX0DER",
                 },
@@ -134,10 +134,10 @@ Object {
               },
               "size": "X-Large",
             },
-            Object {
+            {
               "color": "Black",
-              "identifiers": Object {
-                "marketplaceAsin": Object {
+              "identifiers": {
+                "marketplaceAsin": {
                   "asin": "B002KT3XRG",
                   "marketplaceId": "ATVPDKIKX0DER",
                 },
@@ -148,16 +148,16 @@ Object {
           ],
           "variationParent": null,
         },
-        "salesRankings": Array [
-          Object {
+        "salesRankings": [
+          {
             "productCategoryId": "apparel_display_on_website",
             "rank": 159,
           },
-          Object {
+          {
             "productCategoryId": "2420095011",
             "rank": 1,
           },
-          Object {
+          {
             "productCategoryId": "2611189011",
             "rank": 4,
           },
@@ -166,7 +166,7 @@ Object {
       "status": "Success",
     },
   ],
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "b12caada-d330-4d87-a789-EXAMPLE35872",
   },
 }
