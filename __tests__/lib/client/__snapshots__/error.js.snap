@@ -46,6 +46,8 @@ exports[`lib.client.error should not allow updating error properties 1`] = `
       "mwsDomain": "mws-eu.amazonservices.com",
       "name": "Belgium",
       "region": "eu",
+      "sellerCentralDomain": "sellercentral.amazon.com.be",
+      "vendorCentralDomain": "vendorcentral.amazon.com.be",
     },
     {
       "advertisingApiDomain": "advertising-api-eu.amazon.com",
