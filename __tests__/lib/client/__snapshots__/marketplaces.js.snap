@@ -132,6 +132,8 @@ exports[`lib.client.marketplaces getMarketplacesFromRegion should return a list 
     "mwsDomain": "mws-eu.amazonservices.com",
     "name": "Belgium",
     "region": "eu",
+    "sellerCentralDomain": "sellercentral.amazon.com.be",
+    "vendorCentralDomain": "vendorcentral.amazon.com.be",
   },
   {
     "advertisingApiDomain": "advertising-api-eu.amazon.com",
