@@ -1,25 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`lib.client.parsers.reports.get-report-request-list-response should parse the GetReportRequestListByNextTokenResponse example response from MWS doc 1`] = `
-Object {
-  "getReportRequestListResult": Object {
+{
+  "getReportRequestListResult": {
     "hasNext": null,
     "nextToken": null,
-    "reportRequestInfos": Array [],
+    "reportRequestInfos": [],
   },
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "732480cb-84a8-4c15-9084-a46bd9a0889b",
   },
 }
 `;
 
 exports[`lib.client.parsers.reports.get-report-request-list-response should parse the GetReportRequestListResponse example response from MWS doc 1`] = `
-Object {
-  "getReportRequestListResult": Object {
+{
+  "getReportRequestListResult": {
     "hasNext": null,
     "nextToken": "2YgYW55IPQhcm5hbCBwbGVhc3VyZS4=",
-    "reportRequestInfos": Array [
-      Object {
+    "reportRequestInfos": [
+      {
         "completedDate": 2011-02-17T23:44:48.000Z,
         "endDate": 2011-02-13T02:10:39.000Z,
         "generatedReportId": "3538561173",
@@ -33,7 +33,7 @@ Object {
       },
     ],
   },
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "732480cb-84a8-4c15-9084-a46bd9a0889b",
   },
 }

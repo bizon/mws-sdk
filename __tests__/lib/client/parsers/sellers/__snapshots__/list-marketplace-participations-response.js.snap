@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`lib.client.parsers.sellers.list-marketplace-participations-response should parse the ListMarketplaceParticipationsByNextTokenResponse example response from MWS doc 1`] = `
-Object {
-  "listMarketplaceParticipationsResult": Object {
-    "marketplaces": Array [
-      Object {
+{
+  "listMarketplaceParticipationsResult": {
+    "marketplaces": [
+      {
         "defaultCountryCode": "US",
         "defaultCurrencyCode": "USD",
         "defaultLanguageCode": "en_US",
@@ -14,25 +14,25 @@ Object {
       },
     ],
     "nextToken": "MRgZW55IGNhcm5hbCBwbGVhc3VyZS6=",
-    "participations": Array [
-      Object {
+    "participations": [
+      {
         "hasSellerSuspendedListings": false,
         "marketplaceId": "ATVPDKIKX0DER",
         "sellerId": "A135KKEKWF1JAI6",
       },
     ],
   },
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "efeab958-74e2-45d4-9018-2323084413b5",
   },
 }
 `;
 
 exports[`lib.client.parsers.sellers.list-marketplace-participations-response should parse the ListMarketplaceParticipationsResponse example response from MWS doc 1`] = `
-Object {
-  "listMarketplaceParticipationsResult": Object {
-    "marketplaces": Array [
-      Object {
+{
+  "listMarketplaceParticipationsResult": {
+    "marketplaces": [
+      {
         "defaultCountryCode": "US",
         "defaultCurrencyCode": "USD",
         "defaultLanguageCode": "en_US",
@@ -42,15 +42,15 @@ Object {
       },
     ],
     "nextToken": "MRgZW55IGNhcm5hbCBwbGVhc3VyZS6=",
-    "participations": Array [
-      Object {
+    "participations": [
+      {
         "hasSellerSuspendedListings": false,
         "marketplaceId": "ATVPDKIKX0DER",
         "sellerId": "A135KKEKJAIBJ56",
       },
     ],
   },
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "efeab958-74e2-45d4-9018-2323084413b5",
   },
 }

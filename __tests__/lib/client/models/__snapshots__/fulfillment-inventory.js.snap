@@ -1,34 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`lib.client.models.fulfillment-inventory should call ListInventorySupply 1`] = `
-Object {
-  "inventorySupplyList": Array [
-    Object {
+{
+  "inventorySupplyList": [
+    {
       "asin": "BT008FQ92Q",
       "condition": "NewItem",
       "earliestAvailability": null,
       "fnSKU": "X0000000EY",
       "inStockSupplyQuantity": 4,
       "sellerSKU": "SampleSKU3",
-      "supplyDetail": Array [
-        Object {
-          "earliestAvailableToPick": Object {
+      "supplyDetail": [
+        {
+          "earliestAvailableToPick": {
             "dateTime": null,
             "timepointType": "Immediately",
           },
-          "latestAvailableToPick": Object {
+          "latestAvailableToPick": {
             "dateTime": null,
             "timepointType": "Immediately",
           },
           "quantity": 5,
           "supplyType": "InStock",
         },
-        Object {
-          "earliestAvailableToPick": Object {
+        {
+          "earliestAvailableToPick": {
             "dateTime": 2011-05-04T23:00:00.000Z,
             "timepointType": "DateTime",
           },
-          "latestAvailableToPick": Object {
+          "latestAvailableToPick": {
             "dateTime": 2011-05-04T23:00:00.000Z,
             "timepointType": "DateTime",
           },

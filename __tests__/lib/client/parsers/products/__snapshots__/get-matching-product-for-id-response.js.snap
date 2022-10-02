@@ -1,62 +1,62 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`lib.client.parsers.products.get-matching-product-for-id-response should parse a GetMatchingProductForIdResponse with variation parents 1`] = `
-Object {
-  "getMatchingProductForIdResults": Array [
-    Object {
+{
+  "getMatchingProductForIdResults": [
+    {
       "error": null,
       "id": "B002KT3XRQ",
       "idType": "ASIN",
-      "products": Array [
-        Object {
-          "attributes": Object {
+      "products": [
+        {
+          "attributes": {
             "binding": "Apparel",
             "brand": "Pearl iZUMi",
             "color": "Black",
             "department": "mens",
-            "features": Array [
-              "Ergonomic 6-panel design with 8 3/4\\" inseam",
+            "features": [
+              "Ergonomic 6-panel design with 8 3/4" inseam",
               "Nylon / Lycra blend Sensor fabric",
               "Seamless Tour 3-D chamois pad",
               "Pearl Izumi leg gripper",
               "Quality, value and lifetime guarantee",
             ],
-            "itemDimensions": Object {
-              "height": Object {
+            "itemDimensions": {
+              "height": {
                 "unit": "inches",
                 "value": 2,
               },
-              "length": Object {
+              "length": {
                 "unit": "inches",
                 "value": 9,
               },
               "weight": null,
-              "width": Object {
+              "width": {
                 "unit": "inches",
                 "value": 9,
               },
             },
             "label": "Pearl iZUMi",
-            "listPrice": Object {
+            "listPrice": {
               "amount": 50,
               "currencyCode": "USD",
             },
             "manufacturer": "Pearl iZUMi",
             "model": "0275-21-LG",
-            "packageDimensions": Object {
-              "height": Object {
+            "packageDimensions": {
+              "height": {
                 "unit": "inches",
                 "value": 2.2,
               },
-              "length": Object {
+              "length": {
                 "unit": "inches",
                 "value": 9.21,
               },
-              "weight": Object {
+              "weight": {
                 "unit": "pounds",
                 "value": 0.4,
               },
-              "width": Object {
+              "width": {
                 "unit": "inches",
                 "value": 7.87,
               },
@@ -67,13 +67,13 @@ Object {
             "productTypeName": "ABIS_SPORTS",
             "publisher": "Pearl iZUMi",
             "size": "Large",
-            "smallImage": Object {
-              "height": Object {
+            "smallImage": {
+              "height": {
                 "unit": "pixels",
                 "value": 75,
               },
               "url": "http://ecx.images-amazon.com/images/I/41ty3Sn%2BU8L._SL75_.jpg",
-              "width": Object {
+              "width": {
                 "unit": "pixels",
                 "value": 58,
               },
@@ -81,19 +81,19 @@ Object {
             "studio": "Pearl iZUMi",
             "title": "Pearl iZUMi Men's Quest Cycling Short,Black,Large",
           },
-          "identifiers": Object {
-            "marketplaceAsin": Object {
+          "identifiers": {
+            "marketplaceAsin": {
               "asin": "B002KT3XQM",
               "marketplaceId": "ATVPDKIKX0DER",
             },
             "skuIdentifier": null,
           },
-          "offers": Array [],
-          "relationships": Object {
-            "variationChildren": Array [],
-            "variationParent": Object {
-              "identifiers": Object {
-                "marketplaceAsin": Object {
+          "offers": [],
+          "relationships": {
+            "variationChildren": [],
+            "variationParent": {
+              "identifiers": {
+                "marketplaceAsin": {
                   "asin": "B002KT3XRQ",
                   "marketplaceId": "ATVPDKIKX0DER",
                 },
@@ -101,20 +101,20 @@ Object {
               },
             },
           },
-          "salesRankings": Array [
-            Object {
+          "salesRankings": [
+            {
               "productCategoryId": "261874012",
               "rank": 90,
             },
-            Object {
+            {
               "productCategoryId": "271578011",
               "rank": 3,
             },
-            Object {
+            {
               "productCategoryId": "355562011",
               "rank": 1,
             },
-            Object {
+            {
               "productCategoryId": "173516",
               "rank": 11,
             },
@@ -124,17 +124,17 @@ Object {
       "status": "Success",
     },
   ],
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "b12caada-d330-4d87-a789-EXAMPLE35872",
   },
 }
 `;
 
 exports[`lib.client.parsers.products.get-matching-product-for-id-response should parse the GetMatchingProductForIdResponse error example response from MWS doc 1`] = `
-Object {
-  "getMatchingProductForIdResults": Array [
-    Object {
-      "error": Object {
+{
+  "getMatchingProductForIdResults": [
+    {
+      "error": {
         "code": "InvalidParameterValue",
         "detail": null,
         "message": "Invalid ISBN identifier 0439708623 for marketplace ATVPDKIKX0DER",
@@ -142,80 +142,80 @@ Object {
       },
       "id": "0439708623",
       "idType": "ISBN",
-      "products": Array [],
+      "products": [],
       "status": "ClientError",
     },
-    Object {
+    {
       "error": null,
       "id": "9781933988665",
       "idType": "ISBN",
-      "products": Array [
-        Object {
-          "attributes": Object {
-            "authors": Array [
+      "products": [
+        {
+          "attributes": {
+            "authors": [
               "Marmanis, Haralambos",
               "Babenko, Dmitry",
             ],
             "binding": "Paperback",
             "brand": "Marmanis, Haralambos/ Babenko, Dmitry",
             "edition": "1",
-            "itemDimensions": Object {
-              "height": Object {
+            "itemDimensions": {
+              "height": {
                 "unit": "inches",
                 "value": 9.25,
               },
-              "length": Object {
+              "length": {
                 "unit": "inches",
                 "value": 7.38,
               },
-              "weight": Object {
+              "weight": {
                 "unit": "pounds",
                 "value": 1.38,
               },
-              "width": Object {
+              "width": {
                 "unit": "inches",
                 "value": 0.73,
               },
             },
             "label": "Manning Publications",
-            "languages": Array [
-              Object {
+            "languages": [
+              {
                 "audioFormat": null,
                 "name": "english",
                 "type": "Published",
               },
-              Object {
+              {
                 "audioFormat": null,
                 "name": "english",
                 "type": "Original Language",
               },
-              Object {
+              {
                 "audioFormat": null,
                 "name": "english",
                 "type": "Unknown",
               },
             ],
-            "listPrice": Object {
+            "listPrice": {
               "amount": 44.99,
               "currencyCode": "USD",
             },
             "manufacturer": "Manning Publications",
             "numberOfItems": 1,
             "numberOfPages": 368,
-            "packageDimensions": Object {
-              "height": Object {
+            "packageDimensions": {
+              "height": {
                 "unit": "inches",
                 "value": 0.8,
               },
-              "length": Object {
+              "length": {
                 "unit": "inches",
                 "value": 9.1,
               },
-              "weight": Object {
+              "weight": {
                 "unit": "pounds",
                 "value": 1.35,
               },
-              "width": Object {
+              "width": {
                 "unit": "inches",
                 "value": 7.3,
               },
@@ -226,13 +226,13 @@ Object {
             "productTypeName": "ABIS_BOOK",
             "publicationDate": 2009-07-08T00:00:00.000Z,
             "publisher": "Manning Publications",
-            "smallImage": Object {
-              "height": Object {
+            "smallImage": {
+              "height": {
                 "unit": "pixels",
                 "value": 75,
               },
               "url": "http://ecx.images-amazon.com/images/I/51EEz05N2HL._SL75_.jpg",
-              "width": Object {
+              "width": {
                 "unit": "pixels",
                 "value": 60,
               },
@@ -240,32 +240,32 @@ Object {
             "studio": "Manning Publications",
             "title": "Algorithms of the Intelligent Web",
           },
-          "identifiers": Object {
-            "marketplaceAsin": Object {
+          "identifiers": {
+            "marketplaceAsin": {
               "asin": "1933988665",
               "marketplaceId": "ATVPDKIKX0DER",
             },
             "skuIdentifier": null,
           },
-          "offers": Array [],
-          "relationships": Object {
-            "variationChildren": Array [],
+          "offers": [],
+          "relationships": {
+            "variationChildren": [],
             "variationParent": null,
           },
-          "salesRankings": Array [
-            Object {
+          "salesRankings": [
+            {
               "productCategoryId": "book_display_on_website",
               "rank": 689405,
             },
-            Object {
+            {
               "productCategoryId": "491298",
               "rank": 150,
             },
-            Object {
+            {
               "productCategoryId": "3870",
               "rank": 375,
             },
-            Object {
+            {
               "productCategoryId": "3887",
               "rank": 836,
             },
@@ -275,86 +275,86 @@ Object {
       "status": "Success",
     },
   ],
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "a34b6cca-d7dc-4939-b226-b13ea3ac1d88",
   },
 }
 `;
 
 exports[`lib.client.parsers.products.get-matching-product-for-id-response should parse the GetMatchingProductForIdResponse example response from MWS doc 1`] = `
-Object {
-  "getMatchingProductForIdResults": Array [
-    Object {
+{
+  "getMatchingProductForIdResults": [
+    {
       "error": null,
       "id": "9781933988665",
       "idType": "ISBN",
-      "products": Array [
-        Object {
-          "attributes": Object {
-            "authors": Array [
+      "products": [
+        {
+          "attributes": {
+            "authors": [
               "Marmanis, Haralambos",
               "Babenko, Dmitry",
             ],
             "binding": "Paperback",
             "edition": "1",
             "isEligibleForTradeIn": true,
-            "itemDimensions": Object {
-              "height": Object {
+            "itemDimensions": {
+              "height": {
                 "unit": "inches",
                 "value": 9.17,
               },
-              "length": Object {
+              "length": {
                 "unit": "inches",
                 "value": 7.36,
               },
-              "weight": Object {
+              "weight": {
                 "unit": "pounds",
                 "value": 1.4,
               },
-              "width": Object {
+              "width": {
                 "unit": "inches",
                 "value": 0.75,
               },
             },
             "label": "Manning Publications",
-            "languages": Array [
-              Object {
+            "languages": [
+              {
                 "audioFormat": null,
                 "name": "english",
                 "type": "Unknown",
               },
-              Object {
+              {
                 "audioFormat": null,
                 "name": "english",
                 "type": "Original Language",
               },
-              Object {
+              {
                 "audioFormat": null,
                 "name": "english",
                 "type": "Published",
               },
             ],
-            "listPrice": Object {
+            "listPrice": {
               "amount": 44.99,
               "currencyCode": "USD",
             },
             "manufacturer": "Manning Publications",
             "numberOfItems": 1,
             "numberOfPages": 368,
-            "packageDimensions": Object {
-              "height": Object {
+            "packageDimensions": {
+              "height": {
                 "unit": "inches",
                 "value": 0.8,
               },
-              "length": Object {
+              "length": {
                 "unit": "inches",
                 "value": 9.1,
               },
-              "weight": Object {
+              "weight": {
                 "unit": "pounds",
                 "value": 1.35,
               },
-              "width": Object {
+              "width": {
                 "unit": "inches",
                 "value": 7.3,
               },
@@ -363,13 +363,13 @@ Object {
             "productTypeName": "ABIS_BOOK",
             "publicationDate": 2009-07-05T00:00:00.000Z,
             "publisher": "Manning Publications",
-            "smallImage": Object {
-              "height": Object {
+            "smallImage": {
+              "height": {
                 "unit": "pixels",
                 "value": 75,
               },
               "url": "http://ecx.images-amazon.com/images/I/51EEz05N2HL._SL75_.jpg",
-              "width": Object {
+              "width": {
                 "unit": "pixels",
                 "value": 60,
               },
@@ -377,32 +377,32 @@ Object {
             "studio": "Manning Publications",
             "title": "Algorithms of the Intelligent Web",
           },
-          "identifiers": Object {
-            "marketplaceAsin": Object {
+          "identifiers": {
+            "marketplaceAsin": {
               "asin": "1933988665",
               "marketplaceId": "ATVPDKIKX0DER",
             },
             "skuIdentifier": null,
           },
-          "offers": Array [],
-          "relationships": Object {
-            "variationChildren": Array [],
+          "offers": [],
+          "relationships": {
+            "variationChildren": [],
             "variationParent": null,
           },
-          "salesRankings": Array [
-            Object {
+          "salesRankings": [
+            {
               "productCategoryId": "book_display_on_website",
               "rank": 59485,
             },
-            Object {
+            {
               "productCategoryId": "377886011",
               "rank": 32,
             },
-            Object {
+            {
               "productCategoryId": "3887",
               "rank": 66,
             },
-            Object {
+            {
               "productCategoryId": "3870",
               "rank": 82,
             },
@@ -411,87 +411,87 @@ Object {
       ],
       "status": "Success",
     },
-    Object {
+    {
       "error": null,
       "id": "0439708184",
       "idType": "ISBN",
-      "products": Array [
-        Object {
-          "attributes": Object {
-            "authors": Array [
+      "products": [
+        {
+          "attributes": {
+            "authors": [
               "Rowling, J.K.",
             ],
             "binding": "Paperback",
             "brand": "Scholastic Press",
-            "creators": Array [
-              Object {
+            "creators": [
+              {
                 "name": "GrandPrÃ©, Mary",
                 "role": "Illustrator",
               },
             ],
             "edition": "1st",
-            "features": Array [
+            "features": [
               "Recommended Age: 9 years and up",
             ],
             "isAutographed": false,
             "isMemorabilia": false,
-            "itemDimensions": Object {
-              "height": Object {
+            "itemDimensions": {
+              "height": {
                 "unit": "inches",
                 "value": 0.8,
               },
-              "length": Object {
+              "length": {
                 "unit": "inches",
                 "value": 7.5,
               },
-              "weight": Object {
+              "weight": {
                 "unit": "pounds",
                 "value": 0.5,
               },
-              "width": Object {
+              "width": {
                 "unit": "inches",
                 "value": 5.2,
               },
             },
             "label": "Scholastic Paperbacks",
-            "languages": Array [
-              Object {
+            "languages": [
+              {
                 "audioFormat": null,
                 "name": "english",
                 "type": "Unknown",
               },
-              Object {
+              {
                 "audioFormat": null,
                 "name": "english",
                 "type": "Original Language",
               },
-              Object {
+              {
                 "audioFormat": null,
                 "name": "english",
                 "type": "Published",
               },
             ],
-            "listPrice": Object {
+            "listPrice": {
               "amount": 10.99,
               "currencyCode": "USD",
             },
             "manufacturer": "Scholastic Paperbacks",
             "numberOfItems": 1,
             "numberOfPages": 320,
-            "packageDimensions": Object {
-              "height": Object {
+            "packageDimensions": {
+              "height": {
                 "unit": "inches",
                 "value": 1,
               },
-              "length": Object {
+              "length": {
                 "unit": "inches",
                 "value": 7.5,
               },
-              "weight": Object {
+              "weight": {
                 "unit": "pounds",
                 "value": 0.5,
               },
-              "width": Object {
+              "width": {
                 "unit": "inches",
                 "value": 5.2,
               },
@@ -503,13 +503,13 @@ Object {
             "publicationDate": 1999-10-01T00:00:00.000Z,
             "publisher": "Scholastic Paperbacks",
             "releaseDate": 1999-09-08T00:00:00.000Z,
-            "smallImage": Object {
-              "height": Object {
+            "smallImage": {
+              "height": {
                 "unit": "pixels",
                 "value": 75,
               },
               "url": "http://ecx.images-amazon.com/images/I/51MU5VilKpL._SL75_.jpg",
-              "width": Object {
+              "width": {
                 "unit": "pixels",
                 "value": 51,
               },
@@ -517,51 +517,51 @@ Object {
             "studio": "Scholastic Paperbacks",
             "title": "Harry Potter and the Sorcerer's Stone (Book 1)",
           },
-          "identifiers": Object {
-            "marketplaceAsin": Object {
+          "identifiers": {
+            "marketplaceAsin": {
               "asin": "059035342X",
               "marketplaceId": "ATVPDKIKX0DER",
             },
             "skuIdentifier": null,
           },
-          "offers": Array [],
-          "relationships": Object {
-            "variationChildren": Array [],
+          "offers": [],
+          "relationships": {
+            "variationChildren": [],
             "variationParent": null,
           },
-          "salesRankings": Array [
-            Object {
+          "salesRankings": [
+            {
               "productCategoryId": "book_display_on_website",
               "rank": 362,
             },
-            Object {
+            {
               "productCategoryId": "15356791",
               "rank": 6,
             },
-            Object {
+            {
               "productCategoryId": "3153",
               "rank": 9,
             },
-            Object {
+            {
               "productCategoryId": "3045",
               "rank": 14,
             },
           ],
         },
-        Object {
-          "attributes": Object {
-            "authors": Array [
+        {
+          "attributes": {
+            "authors": [
               "J.K. Rowling, Mary GrandPrÃƒÂ©",
             ],
             "binding": "Paperback",
             "label": "Scholastic Paperbacks",
-            "languages": Array [
-              Object {
+            "languages": [
+              {
                 "audioFormat": null,
                 "name": "english",
                 "type": "Unknown",
               },
-              Object {
+              {
                 "audioFormat": null,
                 "name": "english",
                 "type": "Published",
@@ -570,20 +570,20 @@ Object {
             "manufacturer": "Scholastic Paperbacks",
             "numberOfItems": 1,
             "numberOfPages": 784,
-            "packageDimensions": Object {
-              "height": Object {
+            "packageDimensions": {
+              "height": {
                 "unit": "inches",
                 "value": 0.73,
               },
-              "length": Object {
+              "length": {
                 "unit": "inches",
                 "value": 8.43,
               },
-              "weight": Object {
+              "weight": {
                 "unit": "pounds",
                 "value": 0.79,
               },
-              "width": Object {
+              "width": {
                 "unit": "inches",
                 "value": 5.85,
               },
@@ -592,13 +592,13 @@ Object {
             "productTypeName": "BOOKS_1973_AND_LATER",
             "publicationDate": 1999-09-08T00:00:00.000Z,
             "publisher": "Scholastic Paperbacks",
-            "smallImage": Object {
-              "height": Object {
+            "smallImage": {
+              "height": {
                 "unit": "pixels",
                 "value": 75,
               },
               "url": "http://ecx.images-amazon.com/images/I/51STfI7UiCL._SL75_.jpg",
-              "width": Object {
+              "width": {
                 "unit": "pixels",
                 "value": 52,
               },
@@ -606,20 +606,20 @@ Object {
             "studio": "Scholastic Paperbacks",
             "title": "Harry Potter and the Sorcerer's Stone",
           },
-          "identifiers": Object {
-            "marketplaceAsin": Object {
+          "identifiers": {
+            "marketplaceAsin": {
               "asin": "0439708184",
               "marketplaceId": "ATVPDKIKX0DER",
             },
             "skuIdentifier": null,
           },
-          "offers": Array [],
-          "relationships": Object {
-            "variationChildren": Array [],
+          "offers": [],
+          "relationships": {
+            "variationChildren": [],
             "variationParent": null,
           },
-          "salesRankings": Array [
-            Object {
+          "salesRankings": [
+            {
               "productCategoryId": "book_display_on_website",
               "rank": 2091024,
             },
@@ -629,26 +629,26 @@ Object {
       "status": "Success",
     },
   ],
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "7ba3245e-a213-430a-bea9-EXAMPLE38d76",
   },
 }
 `;
 
 exports[`lib.client.parsers.products.get-matching-product-for-id-response should parse the GetMatchingProductResponse (modified) example response from MWS doc 1`] = `
-Object {
-  "getMatchingProductForIdResults": Array [
-    Object {
+{
+  "getMatchingProductForIdResults": [
+    {
       "error": null,
       "id": "B002KT3XRQ",
       "idType": "ASIN",
-      "products": Array [
-        Object {
-          "attributes": Object {
+      "products": [
+        {
+          "attributes": {
             "binding": "Apparel",
             "brand": "Pearl iZUMi",
             "department": "mens",
-            "features": Array [
+            "features": [
               "Select transfer fabric sets the benchmark for moisture transfer and
                     four-way performance stretch",
               "6-Panel anatomic design for superior, chafe-free comfort, UPF 50+ sun
@@ -659,42 +659,42 @@ Object {
                     key areas",
               "86 percent nylon, 14% spandex, 9-Inch inseam",
             ],
-            "itemDimensions": Object {
-              "height": Object {
+            "itemDimensions": {
+              "height": {
                 "unit": "inches",
                 "value": 2,
               },
-              "length": Object {
+              "length": {
                 "unit": "inches",
                 "value": 9,
               },
               "weight": null,
-              "width": Object {
+              "width": {
                 "unit": "inches",
                 "value": 9,
               },
             },
             "label": "Pearl iZUMi",
-            "listPrice": Object {
+            "listPrice": {
               "amount": 50,
               "currencyCode": "USD",
             },
             "manufacturer": "Pearl iZUMi",
             "model": "0275",
-            "packageDimensions": Object {
-              "height": Object {
+            "packageDimensions": {
+              "height": {
                 "unit": "inches",
                 "value": 2.8,
               },
-              "length": Object {
+              "length": {
                 "unit": "inches",
                 "value": 9.75,
               },
-              "weight": Object {
+              "weight": {
                 "unit": "pounds",
                 "value": 0.4,
               },
-              "width": Object {
+              "width": {
                 "unit": "inches",
                 "value": 8.4,
               },
@@ -704,13 +704,13 @@ Object {
             "productGroup": "Apparel",
             "productTypeName": "SHORTS",
             "publisher": "Pearl iZUMi",
-            "smallImage": Object {
-              "height": Object {
+            "smallImage": {
+              "height": {
                 "unit": "pixels",
                 "value": 75,
               },
               "url": "http://ecx.images-amazon.com/images/I/41ty3Sn%2BU8L._SL75_.jpg",
-              "width": Object {
+              "width": {
                 "unit": "pixels",
                 "value": 58,
               },
@@ -718,20 +718,20 @@ Object {
             "studio": "Pearl iZUMi",
             "title": "Pearl iZUMi Men's Quest Cycling Short",
           },
-          "identifiers": Object {
-            "marketplaceAsin": Object {
+          "identifiers": {
+            "marketplaceAsin": {
               "asin": "B002KT3XRQ",
               "marketplaceId": "ATVPDKIKX0DER",
             },
             "skuIdentifier": null,
           },
-          "offers": Array [],
-          "relationships": Object {
-            "variationChildren": Array [
-              Object {
+          "offers": [],
+          "relationships": {
+            "variationChildren": [
+              {
                 "color": "Black",
-                "identifiers": Object {
-                  "marketplaceAsin": Object {
+                "identifiers": {
+                  "marketplaceAsin": {
                     "asin": "B002KT3XQC",
                     "marketplaceId": "ATVPDKIKX0DER",
                   },
@@ -739,10 +739,10 @@ Object {
                 },
                 "size": "Small",
               },
-              Object {
+              {
                 "color": "Black",
-                "identifiers": Object {
-                  "marketplaceAsin": Object {
+                "identifiers": {
+                  "marketplaceAsin": {
                     "asin": "B002KT3XQW",
                     "marketplaceId": "ATVPDKIKX0DER",
                   },
@@ -750,10 +750,10 @@ Object {
                 },
                 "size": "Medium",
               },
-              Object {
+              {
                 "color": "Black",
-                "identifiers": Object {
-                  "marketplaceAsin": Object {
+                "identifiers": {
+                  "marketplaceAsin": {
                     "asin": "B002KT3XQM",
                     "marketplaceId": "ATVPDKIKX0DER",
                   },
@@ -761,10 +761,10 @@ Object {
                 },
                 "size": "Large",
               },
-              Object {
+              {
                 "color": "Black",
-                "identifiers": Object {
-                  "marketplaceAsin": Object {
+                "identifiers": {
+                  "marketplaceAsin": {
                     "asin": "B002KT3XR6",
                     "marketplaceId": "ATVPDKIKX0DER",
                   },
@@ -772,10 +772,10 @@ Object {
                 },
                 "size": "X-Large",
               },
-              Object {
+              {
                 "color": "Black",
-                "identifiers": Object {
-                  "marketplaceAsin": Object {
+                "identifiers": {
+                  "marketplaceAsin": {
                     "asin": "B002KT3XRG",
                     "marketplaceId": "ATVPDKIKX0DER",
                   },
@@ -786,16 +786,16 @@ Object {
             ],
             "variationParent": null,
           },
-          "salesRankings": Array [
-            Object {
+          "salesRankings": [
+            {
               "productCategoryId": "apparel_display_on_website",
               "rank": 159,
             },
-            Object {
+            {
               "productCategoryId": "2420095011",
               "rank": 1,
             },
-            Object {
+            {
               "productCategoryId": "2611189011",
               "rank": 4,
             },
@@ -805,7 +805,7 @@ Object {
       "status": "Success",
     },
   ],
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "b12caada-d330-4d87-a789-EXAMPLE35872",
   },
 }

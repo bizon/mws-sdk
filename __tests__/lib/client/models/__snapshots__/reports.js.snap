@@ -1,21 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`lib.client.models.reports should call GetReport and return a parsed CSV 1`] = `
-Array [
-  Array [
+[
+  [
     "asin,title",
   ],
-  Array [
+  [
     "A1,cool product",
   ],
-  Array [
+  [
     "A2,other product",
   ],
 ]
 `;
 
 exports[`lib.client.models.reports should call RequestReport 1`] = `
-Object {
+{
   "completedDate": null,
   "endDate": 2009-02-13T02:10:39.000Z,
   "generatedReportId": null,

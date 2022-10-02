@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`lib.client.parsers.products.get-my-price-for-sku-response should parse GetMyPriceForSKUResponse errors 1`] = `
-Object {
-  "getMyPriceForSkuResult": Array [
-    Object {
-      "error": Object {
+{
+  "getMyPriceForSkuResult": [
+    {
+      "error": {
         "code": "InvalidParameterValue",
         "detail": null,
         "message": "SKU2468 is an invalid SellerSKU for marketplace ATVPDKIKX0DER",
@@ -15,42 +15,42 @@ Object {
       "status": "ClientError",
     },
   ],
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "bc6e4601-3d74-4612-adcf-EXAMPLEf1796",
   },
 }
 `;
 
 exports[`lib.client.parsers.products.get-my-price-for-sku-response should parse the GetMyPriceForSKUResponse example response from MWS doc 1`] = `
-Object {
-  "getMyPriceForSkuResult": Array [
-    Object {
+{
+  "getMyPriceForSkuResult": [
+    {
       "error": null,
-      "product": Object {
+      "product": {
         "attributes": null,
-        "identifiers": Object {
-          "marketplaceAsin": Object {
+        "identifiers": {
+          "marketplaceAsin": {
             "asin": "1933890517",
             "marketplaceId": "ATVPDKIKX0DER",
           },
-          "skuIdentifier": Object {
+          "skuIdentifier": {
             "marketplaceId": "ATVPDKIKX0DER",
             "sellerId": "A1IMEXAMPLEWRC",
             "sellerSKU": "SKU2468",
           },
         },
-        "offers": Array [
-          Object {
-            "buyingPrice": Object {
-              "landedPrice": Object {
+        "offers": [
+          {
+            "buyingPrice": {
+              "landedPrice": {
                 "amount": 303.99,
                 "currencyCode": "USD",
               },
-              "listingPrice": Object {
+              "listingPrice": {
                 "amount": 300,
                 "currencyCode": "USD",
               },
-              "shipping": Object {
+              "shipping": {
                 "amount": 3.99,
                 "currencyCode": "USD",
               },
@@ -58,7 +58,7 @@ Object {
             "fulfillmentChannel": "MERCHANT",
             "itemCondition": "Used",
             "itemSubCondition": "Acceptable",
-            "regularPrice": Object {
+            "regularPrice": {
               "amount": 300,
               "currencyCode": "USD",
             },
@@ -66,17 +66,17 @@ Object {
             "sellerSku": "SKU2468",
           },
         ],
-        "relationships": Object {
-          "variationChildren": Array [],
+        "relationships": {
+          "variationChildren": [],
           "variationParent": null,
         },
-        "salesRankings": Array [],
+        "salesRankings": [],
       },
       "sellerSku": "SKU2468",
       "status": "Success",
     },
   ],
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "bc6e4601-3d74-4612-adcf-EXAMPLEf1796",
   },
 }

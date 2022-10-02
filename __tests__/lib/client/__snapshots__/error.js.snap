@@ -1,43 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`lib.client.error should create a MWSError and parse the response body 1`] = `
-Object {
-  "error": Object {
+{
+  "error": {
     "code": "Bar",
     "detail": null,
     "message": "This is a message",
     "type": "Foo",
   },
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "some_request_id",
   },
 }
 `;
 
 exports[`lib.client.error should create a MWSError and parse the response body using a custom error response parser 1`] = `
-Object {
+{
   "bar": "World!",
   "foo": "Hello",
 }
 `;
 
 exports[`lib.client.error should not allow updating error properties 1`] = `
-Object {
+{
   "action": "Function",
-  "body": Object {
-    "error": Object {
+  "body": {
+    "error": {
       "code": null,
       "detail": null,
       "message": "This is a message",
       "type": null,
     },
-    "responseMetadata": Object {
+    "responseMetadata": {
       "requestId": null,
     },
   },
   "code": "ERR_NON_2XX_3XX_RESPONSE",
-  "marketplaces": Array [
-    Object {
+  "marketplaces": [
+    {
       "code": "be",
       "currencyCode": "EUR",
       "domain": "amazon.com.be",
@@ -47,7 +47,7 @@ Object {
       "name": "Belgium",
       "region": "eu",
     },
-    Object {
+    {
       "advertisingApiDomain": "advertising-api-eu.amazon.com",
       "code": "de",
       "currencyCode": "EUR",
@@ -61,7 +61,7 @@ Object {
       "vendorCentralDomain": "vendorcentral.amazon.de",
       "vendorId": "A3JWKAKR8XB7XF",
     },
-    Object {
+    {
       "advertisingApiDomain": "advertising-api-eu.amazon.com",
       "code": "es",
       "currencyCode": "EUR",
@@ -75,7 +75,7 @@ Object {
       "vendorCentralDomain": "vendorcentral.amazon.es",
       "vendorId": "A1AT7YVPFBWXBL",
     },
-    Object {
+    {
       "advertisingApiDomain": "advertising-api-eu.amazon.com",
       "code": "fr",
       "currencyCode": "EUR",
@@ -89,7 +89,7 @@ Object {
       "vendorCentralDomain": "vendorcentral.amazon.fr",
       "vendorId": "A1X6FK5RDHNB96",
     },
-    Object {
+    {
       "advertisingApiDomain": "advertising-api-eu.amazon.com",
       "code": "it",
       "currencyCode": "EUR",
@@ -103,7 +103,7 @@ Object {
       "vendorCentralDomain": "vendorcentral.amazon.it",
       "vendorId": "A11IL2PNWYJU7H",
     },
-    Object {
+    {
       "advertisingApiDomain": "advertising-api-eu.amazon.com",
       "code": "uk",
       "currencyCode": "GBP",
@@ -117,7 +117,7 @@ Object {
       "vendorCentralDomain": "vendorcentral.amazon.co.uk",
       "vendorId": "A3P5ROKL5A1OLE",
     },
-    Object {
+    {
       "code": "tr",
       "currencyCode": "TRY",
       "domain": "amazon.com.tr",
@@ -130,7 +130,7 @@ Object {
       "vendorCentralDomain": "vendorcentral.amazon.com.tr",
       "vendorId": "A1UNQM1SR2CHM",
     },
-    Object {
+    {
       "code": "eg",
       "currencyCode": "EGP",
       "domain": "amazon.eg",
@@ -143,7 +143,7 @@ Object {
       "vendorCentralDomain": "vendorcentral.amazon.me",
       "vendorId": "A1ZVRGNO5AYLOV",
     },
-    Object {
+    {
       "code": "sa",
       "currencyCode": "SAR",
       "domain": "amazon.sa",
@@ -155,7 +155,7 @@ Object {
       "sellerCentralDomain": "sellercentral.amazon.com.sa",
       "vendorId": "A2XPWB6MYN7ZDK",
     },
-    Object {
+    {
       "code": "nl",
       "currencyCode": "EUR",
       "domain": "amazon.nl",
@@ -168,7 +168,7 @@ Object {
       "vendorCentralDomain": "vendorcentral.amazon.nl",
       "vendorId": "A17D2BRD4YMT0X",
     },
-    Object {
+    {
       "code": "se",
       "currencyCode": "SEK",
       "domain": "amazon.se",
@@ -181,7 +181,7 @@ Object {
       "vendorCentralDomain": "vendorcentral.amazon.se",
       "vendorId": "ANU9KP01APNAG",
     },
-    Object {
+    {
       "code": "pl",
       "currencyCode": "PLN",
       "domain": "amazon.pl",

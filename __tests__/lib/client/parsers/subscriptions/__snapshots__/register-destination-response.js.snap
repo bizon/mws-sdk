@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`lib.client.parsers.subscriptions.register-destination-response should parse the RegisterDestinationResponse example response from MWS doc 1`] = `
-Object {
-  "registerDestinationResult": Object {},
-  "responseMetadata": Object {
+{
+  "registerDestinationResult": {},
+  "responseMetadata": {
     "requestId": "b120e610-9cf0-48d7-b615-ca869EXAMPLE",
   },
 }

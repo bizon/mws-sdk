@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`lib.client.models.orders should call GetOrder 1`] = `
-Array [
-  Object {
+[
+  {
     "amazonOrderId": "902-3159896-1390916",
     "automatedShippingSettings": null,
     "buyerCounty": null,
@@ -31,9 +31,9 @@ Array [
     "orderStatus": "Pending",
     "orderTotal": null,
     "orderType": "StandardOrder",
-    "paymentExecutionDetail": Array [],
+    "paymentExecutionDetail": [],
     "paymentMethod": "Other",
-    "paymentMethodDetails": Array [
+    "paymentMethodDetails": [
       "CreditCard",
       "GiftCerificate",
     ],
@@ -51,21 +51,21 @@ Array [
 `;
 
 exports[`lib.client.models.orders should call ListOrders with marketplaceIds 1`] = `
-Object {
+{
   "createdBefore": null,
   "lastUpdatedBefore": 2017-02-25T18:10:21.687Z,
   "nextToken": "2YgYW55IGNhcm5hbCBwbGVhc3VyZS4=",
-  "orders": Array [
-    Object {
+  "orders": [
+    {
       "amazonOrderId": "902-3159896-1390916",
       "automatedShippingSettings": null,
       "buyerCounty": null,
       "buyerEmail": "5vlhEXAMPLEh9h5@marketplace.amazon.com",
       "buyerName": "Buyer name",
-      "buyerTaxInfo": Object {
+      "buyerTaxInfo": {
         "companyLegalName": "Company Name",
-        "taxClassifications": Array [
-          Object {
+        "taxClassifications": [
+          {
             "name": "VATNumber",
             "value": "XXX123",
           },
@@ -92,14 +92,14 @@ Object {
       "numberOfItemsUnshipped": 1,
       "orderChannel": null,
       "orderStatus": "Unshipped",
-      "orderTotal": Object {
+      "orderTotal": {
         "amount": 25,
         "currencyCode": "USD",
       },
       "orderType": "StandardOrder",
-      "paymentExecutionDetail": Array [],
+      "paymentExecutionDetail": [],
       "paymentMethod": "Other",
-      "paymentMethodDetails": Array [
+      "paymentMethodDetails": [
         "CreditCard",
       ],
       "promiseResponseDueDate": null,
@@ -110,7 +110,7 @@ Object {
       "sellerOrderId": null,
       "shipServiceLevel": null,
       "shipmentServiceLevelCategory": null,
-      "shippingAddress": Object {
+      "shippingAddress": {
         "addressType": "Commercial",
         "adressLine1": "1234 Any St.",
         "adressLine2": null,
@@ -125,16 +125,16 @@ Object {
         "stateOrRegion": null,
       },
     },
-    Object {
+    {
       "amazonOrderId": "483-3488972-0896720",
       "automatedShippingSettings": null,
       "buyerCounty": "Vila Olimpia",
       "buyerEmail": "5vlhEXAMPLEh9h5@marketplace.amazon.com.br",
       "buyerName": "John Jones",
-      "buyerTaxInfo": Object {
+      "buyerTaxInfo": {
         "companyLegalName": null,
-        "taxClassifications": Array [
-          Object {
+        "taxClassifications": [
+          {
             "name": "CSTNumber",
             "value": "XXX123",
           },
@@ -161,14 +161,14 @@ Object {
       "numberOfItemsUnshipped": 1,
       "orderChannel": null,
       "orderStatus": "Unshipped",
-      "orderTotal": Object {
+      "orderTotal": {
         "amount": 100,
         "currencyCode": "BRL",
       },
       "orderType": null,
-      "paymentExecutionDetail": Array [],
+      "paymentExecutionDetail": [],
       "paymentMethod": "Other",
-      "paymentMethodDetails": Array [
+      "paymentMethodDetails": [
         "CreditCard",
       ],
       "promiseResponseDueDate": null,
@@ -179,7 +179,7 @@ Object {
       "sellerOrderId": null,
       "shipServiceLevel": null,
       "shipmentServiceLevelCategory": null,
-      "shippingAddress": Object {
+      "shippingAddress": {
         "addressType": "Residential",
         "adressLine1": "1234 Avenida Qualquer",
         "adressLine2": null,
@@ -194,7 +194,7 @@ Object {
         "stateOrRegion": null,
       },
     },
-    Object {
+    {
       "amazonOrderId": "058-1233752-8214740",
       "automatedShippingSettings": null,
       "buyerCounty": null,
@@ -221,28 +221,28 @@ Object {
       "numberOfItemsUnshipped": 1,
       "orderChannel": null,
       "orderStatus": "Unshipped",
-      "orderTotal": Object {
+      "orderTotal": {
         "amount": 1507,
         "currencyCode": "JPY",
       },
       "orderType": "SourcingOnDemandOrder",
-      "paymentExecutionDetail": Array [
-        Object {
-          "payment": Object {
+      "paymentExecutionDetail": [
+        {
+          "payment": {
             "amount": 10,
             "currencyCode": "JPY",
           },
           "paymentMethod": "PointsAccount",
         },
-        Object {
-          "payment": Object {
+        {
+          "payment": {
             "amount": 317,
             "currencyCode": "JPY",
           },
           "paymentMethod": "GC",
         },
-        Object {
-          "payment": Object {
+        {
+          "payment": {
             "amount": 1180,
             "currencyCode": "JPY",
           },
@@ -250,7 +250,7 @@ Object {
         },
       ],
       "paymentMethod": "COD",
-      "paymentMethodDetails": Array [
+      "paymentMethodDetails": [
         "COD",
       ],
       "promiseResponseDueDate": 2017-08-31T23:58:44.000Z,
@@ -261,7 +261,7 @@ Object {
       "sellerOrderId": null,
       "shipServiceLevel": "Std JP Kanto8",
       "shipmentServiceLevelCategory": "Standard",
-      "shippingAddress": Object {
+      "shippingAddress": {
         "addressType": null,
         "adressLine1": "1-2-10 Akasaka",
         "adressLine2": null,
@@ -281,28 +281,28 @@ Object {
 `;
 
 exports[`lib.client.models.orders should call ListOrders without marketplaceIds 1`] = `
-Object {
+{
   "createdBefore": null,
   "lastUpdatedBefore": 2017-02-25T18:10:21.687Z,
   "nextToken": "2YgYW55IGNhcm5hbCBwbGVhc3VyZS4=",
-  "orders": Array [
-    Object {
+  "orders": [
+    {
       "amazonOrderId": "902-3159896-1390916",
       "automatedShippingSettings": null,
       "buyerCounty": null,
       "buyerEmail": "5vlhEXAMPLEh9h5@marketplace.amazon.com",
       "buyerName": "Buyer name",
-      "buyerTaxInfo": Object {
+      "buyerTaxInfo": {
         "companyLegalName": "Company Name",
-        "taxClassifications": Array [
-          Object {
+        "taxClassifications": [
+          {
             "name": "VATNumber",
             "value": "XXX123",
           },
         ],
         "taxingRegion": "US",
       },
-      "defaultShipFromLocationAddress": Object {
+      "defaultShipFromLocationAddress": {
         "addressType": null,
         "adressLine1": "15606 NE Any street",
         "adressLine2": "Suite 2",
@@ -335,14 +335,14 @@ Object {
       "numberOfItemsUnshipped": 1,
       "orderChannel": null,
       "orderStatus": "Unshipped",
-      "orderTotal": Object {
+      "orderTotal": {
         "amount": 25,
         "currencyCode": "USD",
       },
       "orderType": "StandardOrder",
-      "paymentExecutionDetail": Array [],
+      "paymentExecutionDetail": [],
       "paymentMethod": "Other",
-      "paymentMethodDetails": Array [
+      "paymentMethodDetails": [
         "CreditCard",
       ],
       "promiseResponseDueDate": null,
@@ -353,7 +353,7 @@ Object {
       "sellerOrderId": null,
       "shipServiceLevel": null,
       "shipmentServiceLevelCategory": null,
-      "shippingAddress": Object {
+      "shippingAddress": {
         "addressType": "Commercial",
         "adressLine1": "1234 Any St.",
         "adressLine2": null,
@@ -368,16 +368,16 @@ Object {
         "stateOrRegion": "WA",
       },
     },
-    Object {
+    {
       "amazonOrderId": "483-3488972-0896720",
       "automatedShippingSettings": null,
       "buyerCounty": "Vila Olimpia",
       "buyerEmail": "5vlhEXAMPLEh9h5@marketplace.amazon.com.br",
       "buyerName": "John Jones",
-      "buyerTaxInfo": Object {
+      "buyerTaxInfo": {
         "companyLegalName": null,
-        "taxClassifications": Array [
-          Object {
+        "taxClassifications": [
+          {
             "name": "CSTNumber",
             "value": "XXX123",
           },
@@ -404,14 +404,14 @@ Object {
       "numberOfItemsUnshipped": 1,
       "orderChannel": null,
       "orderStatus": "Unshipped",
-      "orderTotal": Object {
+      "orderTotal": {
         "amount": 100,
         "currencyCode": "BRL",
       },
       "orderType": null,
-      "paymentExecutionDetail": Array [],
+      "paymentExecutionDetail": [],
       "paymentMethod": "Other",
-      "paymentMethodDetails": Array [
+      "paymentMethodDetails": [
         "CreditCard",
       ],
       "promiseResponseDueDate": null,
@@ -422,7 +422,7 @@ Object {
       "sellerOrderId": null,
       "shipServiceLevel": null,
       "shipmentServiceLevelCategory": null,
-      "shippingAddress": Object {
+      "shippingAddress": {
         "addressType": "Residential",
         "adressLine1": "1234 Avenida Qualquer",
         "adressLine2": null,
@@ -437,7 +437,7 @@ Object {
         "stateOrRegion": null,
       },
     },
-    Object {
+    {
       "amazonOrderId": "058-1233752-8214740",
       "automatedShippingSettings": null,
       "buyerCounty": null,
@@ -464,28 +464,28 @@ Object {
       "numberOfItemsUnshipped": 1,
       "orderChannel": null,
       "orderStatus": "Unshipped",
-      "orderTotal": Object {
+      "orderTotal": {
         "amount": 1507,
         "currencyCode": "JPY",
       },
       "orderType": "SourcingOnDemandOrder",
-      "paymentExecutionDetail": Array [
-        Object {
-          "payment": Object {
+      "paymentExecutionDetail": [
+        {
+          "payment": {
             "amount": 10,
             "currencyCode": "JPY",
           },
           "paymentMethod": "PointsAccount",
         },
-        Object {
-          "payment": Object {
+        {
+          "payment": {
             "amount": 317,
             "currencyCode": "JPY",
           },
           "paymentMethod": "GC",
         },
-        Object {
-          "payment": Object {
+        {
+          "payment": {
             "amount": 1180,
             "currencyCode": "JPY",
           },
@@ -493,7 +493,7 @@ Object {
         },
       ],
       "paymentMethod": "COD",
-      "paymentMethodDetails": Array [
+      "paymentMethodDetails": [
         "COD",
       ],
       "promiseResponseDueDate": 2017-08-31T23:58:44.000Z,
@@ -504,7 +504,7 @@ Object {
       "sellerOrderId": null,
       "shipServiceLevel": "Std JP Kanto8",
       "shipmentServiceLevelCategory": "Standard",
-      "shippingAddress": Object {
+      "shippingAddress": {
         "addressType": null,
         "adressLine1": "1-2-10 Akasaka",
         "adressLine2": null,

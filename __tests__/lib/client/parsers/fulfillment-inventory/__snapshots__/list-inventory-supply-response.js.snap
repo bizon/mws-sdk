@@ -1,50 +1,50 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`lib.client.parsers.fulfillment-inventory.list-inventory-supply-response should parse a ListInventorySupplyByNextToken with a MarketplaceId 1`] = `
-Object {
-  "listInventorySupplyResult": Object {
-    "inventorySupplyList": Array [
-      Object {
+{
+  "listInventorySupplyResult": {
+    "inventorySupplyList": [
+      {
         "asin": "B00004RWQR",
         "condition": "NewItem",
-        "earliestAvailability": Object {
+        "earliestAvailability": {
           "dateTime": null,
           "timepointType": "Immediately",
         },
         "fnSKU": "X00008FZR1",
         "inStockSupplyQuantity": 28,
         "sellerSKU": "SampleSKU1",
-        "supplyDetail": Array [
-          Object {
-            "earliestAvailableToPick": Object {
+        "supplyDetail": [
+          {
+            "earliestAvailableToPick": {
               "dateTime": null,
               "timepointType": "Immediately",
             },
-            "latestAvailableToPick": Object {
+            "latestAvailableToPick": {
               "dateTime": null,
               "timepointType": "Immediately",
             },
             "quantity": 11,
             "supplyType": "InStock",
           },
-          Object {
-            "earliestAvailableToPick": Object {
+          {
+            "earliestAvailableToPick": {
               "dateTime": null,
               "timepointType": "Immediately",
             },
-            "latestAvailableToPick": Object {
+            "latestAvailableToPick": {
               "dateTime": null,
               "timepointType": "Immediately",
             },
             "quantity": 16,
             "supplyType": "InStock",
           },
-          Object {
-            "earliestAvailableToPick": Object {
+          {
+            "earliestAvailableToPick": {
               "dateTime": null,
               "timepointType": "Immediately",
             },
-            "latestAvailableToPick": Object {
+            "latestAvailableToPick": {
               "dateTime": null,
               "timepointType": "Immediately",
             },
@@ -58,57 +58,57 @@ Object {
     "marketplaceId": "A13V1IB3VIYZZH",
     "nextToken": null,
   },
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "8734426a-a50f-4c8e-a3cd-d8d39e532d76",
   },
 }
 `;
 
 exports[`lib.client.parsers.fulfillment-inventory.list-inventory-supply-response should parse a ListInventorySupplyResponse with a MarketplaceId 1`] = `
-Object {
-  "listInventorySupplyResult": Object {
-    "inventorySupplyList": Array [
-      Object {
+{
+  "listInventorySupplyResult": {
+    "inventorySupplyList": [
+      {
         "asin": "B00004RWQR",
         "condition": "NewItem",
-        "earliestAvailability": Object {
+        "earliestAvailability": {
           "dateTime": null,
           "timepointType": "Immediately",
         },
         "fnSKU": "X00008FZR1",
         "inStockSupplyQuantity": 28,
         "sellerSKU": "SampleSKU1",
-        "supplyDetail": Array [
-          Object {
-            "earliestAvailableToPick": Object {
+        "supplyDetail": [
+          {
+            "earliestAvailableToPick": {
               "dateTime": null,
               "timepointType": "Immediately",
             },
-            "latestAvailableToPick": Object {
+            "latestAvailableToPick": {
               "dateTime": null,
               "timepointType": "Immediately",
             },
             "quantity": 11,
             "supplyType": "InStock",
           },
-          Object {
-            "earliestAvailableToPick": Object {
+          {
+            "earliestAvailableToPick": {
               "dateTime": null,
               "timepointType": "Immediately",
             },
-            "latestAvailableToPick": Object {
+            "latestAvailableToPick": {
               "dateTime": null,
               "timepointType": "Immediately",
             },
             "quantity": 16,
             "supplyType": "InStock",
           },
-          Object {
-            "earliestAvailableToPick": Object {
+          {
+            "earliestAvailableToPick": {
               "dateTime": null,
               "timepointType": "Immediately",
             },
-            "latestAvailableToPick": Object {
+            "latestAvailableToPick": {
               "dateTime": null,
               "timepointType": "Immediately",
             },
@@ -122,81 +122,81 @@ Object {
     "marketplaceId": "A13V1IB3VIYZZH",
     "nextToken": null,
   },
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "8734426a-a50f-4c8e-a3cd-d8d39e532d76",
   },
 }
 `;
 
 exports[`lib.client.parsers.fulfillment-inventory.list-inventory-supply-response should parse the ListInventorySupply example response from MWS doc 1`] = `
-Object {
-  "listInventorySupplyResult": Object {
-    "inventorySupplyList": Array [
-      Object {
+{
+  "listInventorySupplyResult": {
+    "inventorySupplyList": [
+      {
         "asin": "B00000K3CQ",
         "condition": "NewItem",
-        "earliestAvailability": Object {
+        "earliestAvailability": {
           "dateTime": null,
           "timepointType": "Immediately",
         },
         "fnSKU": "X0000000FM",
         "inStockSupplyQuantity": 15,
         "sellerSKU": "SampleSKU1",
-        "supplyDetail": Array [],
+        "supplyDetail": [],
         "totalSupplyQuantity": 20,
       },
-      Object {
+      {
         "asin": "B00004RWQR",
         "condition": "UsedLikeNew",
         "earliestAvailability": null,
         "fnSKU": "X00008FZR1",
         "inStockSupplyQuantity": 0,
         "sellerSKU": "SampleSKU2",
-        "supplyDetail": Array [],
+        "supplyDetail": [],
         "totalSupplyQuantity": 0,
       },
     ],
     "marketplaceId": null,
     "nextToken": null,
   },
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "e8698ffa-8e59-11df-9acb-230ae7a8b736",
   },
 }
 `;
 
 exports[`lib.client.parsers.fulfillment-inventory.list-inventory-supply-response should parse the ListInventorySupplyByNextToken example response from MWS doc 1`] = `
-Object {
-  "listInventorySupplyResult": Object {
-    "inventorySupplyList": Array [
-      Object {
+{
+  "listInventorySupplyResult": {
+    "inventorySupplyList": [
+      {
         "asin": "B00008UI0R",
         "condition": "",
         "earliestAvailability": null,
         "fnSKU": "B00008UI0R",
         "inStockSupplyQuantity": 0,
         "sellerSKU": "SampleSKU5",
-        "supplyDetail": Array [],
+        "supplyDetail": [],
         "totalSupplyQuantity": 0,
       },
-      Object {
+      {
         "asin": "B00000K3CQ",
         "condition": "NewItem",
-        "earliestAvailability": Object {
+        "earliestAvailability": {
           "dateTime": null,
           "timepointType": "Immediately",
         },
         "fnSKU": "X0000000FM",
         "inStockSupplyQuantity": 5259,
         "sellerSKU": "SampleSKU6",
-        "supplyDetail": Array [],
+        "supplyDetail": [],
         "totalSupplyQuantity": 5259,
       },
     ],
     "marketplaceId": null,
     "nextToken": "2YgYW55IGNhcm5hbCBwbGVhc3VyZS4=",
   },
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "b3a020ac-8e5e-11df-9acb-230ae7a8b736",
   },
 }

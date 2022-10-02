@@ -1,102 +1,102 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`lib.client.parsers.finances.list-financial-event-groups-response should parse a ListFinancialEvents example with service fees 1`] = `
-Object {
-  "listFinancialEventsResult": Object {
-    "financialEvents": Object {
-      "adjustmentEventList": Array [],
-      "affordabilityExpenseEventList": Array [],
-      "affordabilityExpenseReversalEventList": Array [],
-      "chargebackEventList": Array [],
-      "couponPaymentEventList": Array [],
-      "debtRecoveryEventList": Array [],
-      "fbaLiquidationEventList": Array [],
-      "guaranteeClaimEventList": Array [],
-      "imagingServicesFeeEventList": Array [],
-      "loanServicingEventList": Array [],
-      "networkComminglingTransactionEventList": Array [],
-      "payWithAmazonEventList": Array [],
-      "performanceBondRefundEventList": Array [],
-      "productAdsPaymentEventList": Array [],
-      "refundEventList": Array [
-        Object {
+{
+  "listFinancialEventsResult": {
+    "financialEvents": {
+      "adjustmentEventList": [],
+      "affordabilityExpenseEventList": [],
+      "affordabilityExpenseReversalEventList": [],
+      "chargebackEventList": [],
+      "couponPaymentEventList": [],
+      "debtRecoveryEventList": [],
+      "fbaLiquidationEventList": [],
+      "guaranteeClaimEventList": [],
+      "imagingServicesFeeEventList": [],
+      "loanServicingEventList": [],
+      "networkComminglingTransactionEventList": [],
+      "payWithAmazonEventList": [],
+      "performanceBondRefundEventList": [],
+      "productAdsPaymentEventList": [],
+      "refundEventList": [
+        {
           "amazonOrderId": "123-2345656-89327983",
-          "directPaymentList": Array [],
+          "directPaymentList": [],
           "marketplaceName": "Amazon.de",
-          "orderChargeAdjustmentList": Array [],
-          "orderChargeList": Array [],
-          "orderFeeAdjustmentList": Array [],
-          "orderFeeList": Array [],
+          "orderChargeAdjustmentList": [],
+          "orderChargeList": [],
+          "orderFeeAdjustmentList": [],
+          "orderFeeList": [],
           "postedDate": 2019-11-20T14:34:12.452Z,
           "sellerOrderId": "123-2345656-89327983",
-          "shipmentFeeAdjustmentList": Array [],
-          "shipmentFeeList": Array [],
-          "shipmentItemAdjustmentList": Array [
-            Object {
+          "shipmentFeeAdjustmentList": [],
+          "shipmentFeeList": [],
+          "shipmentItemAdjustmentList": [
+            {
               "costOfPointsGranted": null,
               "costOfPointsReturned": null,
-              "itemChargeAdjustmentList": Array [
-                Object {
-                  "chargeAmount": Object {
+              "itemChargeAdjustmentList": [
+                {
+                  "chargeAmount": {
                     "currencyAmount": -2.29,
                     "currencyCode": "EUR",
                   },
                   "chargeType": "Tax",
                 },
-                Object {
-                  "chargeAmount": Object {
+                {
+                  "chargeAmount": {
                     "currencyAmount": -0.13,
                     "currencyCode": "EUR",
                   },
                   "chargeType": "ShippingTax",
                 },
-                Object {
-                  "chargeAmount": Object {
+                {
+                  "chargeAmount": {
                     "currencyAmount": -0.71,
                     "currencyCode": "EUR",
                   },
                   "chargeType": "ShippingCharge",
                 },
-                Object {
-                  "chargeAmount": Object {
+                {
+                  "chargeAmount": {
                     "currencyAmount": -12.06,
                     "currencyCode": "EUR",
                   },
                   "chargeType": "Principal",
                 },
               ],
-              "itemChargeList": Array [],
-              "itemFeeAdjustmentList": Array [
-                Object {
-                  "feeAmount": Object {
+              "itemChargeList": [],
+              "itemFeeAdjustmentList": [
+                {
+                  "feeAmount": {
                     "currencyAmount": 2.15,
                     "currencyCode": "EUR",
                   },
                   "feeType": "Commission",
                 },
-                Object {
-                  "feeAmount": Object {
+                {
+                  "feeAmount": {
                     "currencyAmount": -0.43,
                     "currencyCode": "EUR",
                   },
                   "feeType": "RefundCommission",
                 },
               ],
-              "itemFeeList": Array [],
-              "itemTaxWithheldList": Array [],
+              "itemFeeList": [],
+              "itemTaxWithheldList": [],
               "orderAdjustmentItemId": "3242342352343",
               "orderItemId": null,
-              "promotionAdjustmentList": Array [
-                Object {
-                  "promotionAmount": Object {
+              "promotionAdjustmentList": [
+                {
+                  "promotionAmount": {
                     "currencyAmount": 0.13,
                     "currencyCode": "EUR",
                   },
                   "promotionId": "DE Core Free Shipping 2018/04/24 20-00-00",
                   "promotionType": "PromotionMetaDataDefinitionValue",
                 },
-                Object {
-                  "promotionAmount": Object {
+                {
+                  "promotionAmount": {
                     "currencyAmount": 0.71,
                     "currencyCode": "EUR",
                   },
@@ -104,36 +104,36 @@ Object {
                   "promotionType": "PromotionMetaDataDefinitionValue",
                 },
               ],
-              "promotionList": Array [],
+              "promotionList": [],
               "quantityShipped": 1,
               "sellerSKU": "COOL_SKU-EUR-FBA",
             },
           ],
-          "shipmentItemList": Array [],
+          "shipmentItemList": [],
         },
       ],
-      "rentalTransactionEventList": Array [],
-      "retrochargeEventList": Array [],
-      "safeTReimbursementEventList": Array [],
-      "sellerDealPaymentEventList": Array [],
-      "sellerReviewEnrollmentPaymentEventList": Array [],
-      "serviceFeeEventList": Array [
-        Object {
+      "rentalTransactionEventList": [],
+      "retrochargeEventList": [],
+      "safeTReimbursementEventList": [],
+      "sellerDealPaymentEventList": [],
+      "sellerReviewEnrollmentPaymentEventList": [],
+      "serviceFeeEventList": [
+        {
           "amazonOrderId": "123-2345656-89327983",
           "asin": null,
           "feeDescription": "Cool title",
-          "feeList": Array [],
+          "feeList": [],
           "feeReason": null,
           "fnSKU": null,
           "sellerSKU": "COOL_SKU-EUR-FBA",
         },
-        Object {
+        {
           "amazonOrderId": "123-2345656-89327983",
           "asin": null,
           "feeDescription": "Cool fee description",
-          "feeList": Array [
-            Object {
-              "feeAmount": Object {
+          "feeList": [
+            {
+              "feeAmount": {
                 "currencyAmount": -2.39,
                 "currencyCode": "EUR",
               },
@@ -145,162 +145,162 @@ Object {
           "sellerSKU": "COOL_SKU-EUR-FBA",
         },
       ],
-      "serviceProviderCreditEventList": Array [],
-      "shipmentEventList": Array [
-        Object {
+      "serviceProviderCreditEventList": [],
+      "shipmentEventList": [
+        {
           "amazonOrderId": "123-2345656-89327983",
-          "directPaymentList": Array [],
+          "directPaymentList": [],
           "marketplaceName": "Amazon.de",
-          "orderChargeAdjustmentList": Array [],
-          "orderChargeList": Array [],
-          "orderFeeAdjustmentList": Array [],
-          "orderFeeList": Array [],
+          "orderChargeAdjustmentList": [],
+          "orderChargeList": [],
+          "orderFeeAdjustmentList": [],
+          "orderFeeList": [],
           "postedDate": 2019-11-04T09:50:56.966Z,
           "sellerOrderId": "123-2345656-89327983",
-          "shipmentFeeAdjustmentList": Array [],
-          "shipmentFeeList": Array [],
-          "shipmentItemAdjustmentList": Array [],
-          "shipmentItemList": Array [
-            Object {
+          "shipmentFeeAdjustmentList": [],
+          "shipmentFeeList": [],
+          "shipmentItemAdjustmentList": [],
+          "shipmentItemList": [
+            {
               "costOfPointsGranted": null,
               "costOfPointsReturned": null,
-              "itemChargeAdjustmentList": Array [],
-              "itemChargeList": Array [
-                Object {
-                  "chargeAmount": Object {
+              "itemChargeAdjustmentList": [],
+              "itemChargeList": [
+                {
+                  "chargeAmount": {
                     "currencyAmount": 12.06,
                     "currencyCode": "EUR",
                   },
                   "chargeType": "Principal",
                 },
-                Object {
-                  "chargeAmount": Object {
+                {
+                  "chargeAmount": {
                     "currencyAmount": 2.29,
                     "currencyCode": "EUR",
                   },
                   "chargeType": "Tax",
                 },
-                Object {
-                  "chargeAmount": Object {
+                {
+                  "chargeAmount": {
                     "currencyAmount": 0,
                     "currencyCode": "EUR",
                   },
                   "chargeType": "GiftWrap",
                 },
-                Object {
-                  "chargeAmount": Object {
+                {
+                  "chargeAmount": {
                     "currencyAmount": 0,
                     "currencyCode": "EUR",
                   },
                   "chargeType": "GiftWrapTax",
                 },
-                Object {
-                  "chargeAmount": Object {
+                {
+                  "chargeAmount": {
                     "currencyAmount": 0.71,
                     "currencyCode": "EUR",
                   },
                   "chargeType": "ShippingCharge",
                 },
-                Object {
-                  "chargeAmount": Object {
+                {
+                  "chargeAmount": {
                     "currencyAmount": 0.13,
                     "currencyCode": "EUR",
                   },
                   "chargeType": "ShippingTax",
                 },
               ],
-              "itemFeeAdjustmentList": Array [],
-              "itemFeeList": Array [
-                Object {
-                  "feeAmount": Object {
+              "itemFeeAdjustmentList": [],
+              "itemFeeList": [
+                {
+                  "feeAmount": {
                     "currencyAmount": -2.39,
                     "currencyCode": "EUR",
                   },
                   "feeType": "FBAPerUnitFulfillmentFee",
                 },
-                Object {
-                  "feeAmount": Object {
+                {
+                  "feeAmount": {
                     "currencyAmount": -2.15,
                     "currencyCode": "EUR",
                   },
                   "feeType": "Commission",
                 },
-                Object {
-                  "feeAmount": Object {
+                {
+                  "feeAmount": {
                     "currencyAmount": 0,
                     "currencyCode": "EUR",
                   },
                   "feeType": "FixedClosingFee",
                 },
-                Object {
-                  "feeAmount": Object {
+                {
+                  "feeAmount": {
                     "currencyAmount": 0,
                     "currencyCode": "EUR",
                   },
                   "feeType": "GiftwrapChargeback",
                 },
-                Object {
-                  "feeAmount": Object {
+                {
+                  "feeAmount": {
                     "currencyAmount": 0,
                     "currencyCode": "EUR",
                   },
                   "feeType": "ShippingChargeback",
                 },
-                Object {
-                  "feeAmount": Object {
+                {
+                  "feeAmount": {
                     "currencyAmount": 0,
                     "currencyCode": "EUR",
                   },
                   "feeType": "VariableClosingFee",
                 },
               ],
-              "itemTaxWithheldList": Array [],
+              "itemTaxWithheldList": [],
               "orderAdjustmentItemId": null,
               "orderItemId": "12345",
-              "promotionAdjustmentList": Array [],
-              "promotionList": Array [
-                Object {
-                  "promotionAmount": Object {
+              "promotionAdjustmentList": [],
+              "promotionList": [
+                {
+                  "promotionAmount": {
                     "currencyAmount": 0,
                     "currencyCode": "EUR",
                   },
                   "promotionId": "DE Core Free Shipping 2018/04/24 20-00-00",
                   "promotionType": "PromotionMetaDataDefinitionValue",
                 },
-                Object {
-                  "promotionAmount": Object {
+                {
+                  "promotionAmount": {
                     "currencyAmount": 0,
                     "currencyCode": "EUR",
                   },
                   "promotionId": "DE Core Free Shipping 2018/04/24 20-00-00",
                   "promotionType": "PromotionMetaDataDefinitionValue",
                 },
-                Object {
-                  "promotionAmount": Object {
+                {
+                  "promotionAmount": {
                     "currencyAmount": 0,
                     "currencyCode": "EUR",
                   },
                   "promotionId": "DE Core Free Shipping 2018/04/24 20-00-00",
                   "promotionType": "PromotionMetaDataDefinitionValue",
                 },
-                Object {
-                  "promotionAmount": Object {
+                {
+                  "promotionAmount": {
                     "currencyAmount": 0,
                     "currencyCode": "EUR",
                   },
                   "promotionId": "DE Core Free Shipping 2018/04/24 20-00-00",
                   "promotionType": "PromotionMetaDataDefinitionValue",
                 },
-                Object {
-                  "promotionAmount": Object {
+                {
+                  "promotionAmount": {
                     "currencyAmount": -0.71,
                     "currencyCode": "EUR",
                   },
                   "promotionId": "DE Core Free Shipping 2018/04/24 20-00-00",
                   "promotionType": "PromotionMetaDataDefinitionValue",
                 },
-                Object {
-                  "promotionAmount": Object {
+                {
+                  "promotionAmount": {
                     "currencyAmount": -0.13,
                     "currencyCode": "EUR",
                   },
@@ -314,200 +314,200 @@ Object {
           ],
         },
       ],
-      "taxWithholdingEventList": Array [],
-      "tdsReimbursementEventList": Array [],
+      "taxWithholdingEventList": [],
+      "tdsReimbursementEventList": [],
     },
     "nextToken": null,
   },
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "508eabb9-3606-4124-b01d-e879190aaf28",
   },
 }
 `;
 
 exports[`lib.client.parsers.finances.list-financial-event-groups-response should parse the ListFinancialEvents example response from MWS doc 1`] = `
-Object {
-  "listFinancialEventsResult": Object {
-    "financialEvents": Object {
-      "adjustmentEventList": Array [],
-      "affordabilityExpenseEventList": Array [
-        Object {
+{
+  "listFinancialEventsResult": {
+    "financialEvents": {
+      "adjustmentEventList": [],
+      "affordabilityExpenseEventList": [
+        {
           "amazonOrderId": "931-2463294-5740665",
-          "baseExpense": Object {
+          "baseExpense": {
             "currencyAmount": -100,
             "currencyCode": "INR",
           },
           "marketplaceId": "A2XZLSVIQ0F4JT",
           "postedDate": 2018-02-08T13:17:15.000Z,
-          "taxTypeCGST": Object {
+          "taxTypeCGST": {
             "currencyAmount": 0,
             "currencyCode": "INR",
           },
-          "taxTypeIGST": Object {
+          "taxTypeIGST": {
             "currencyAmount": -18,
             "currencyCode": "INR",
           },
-          "taxTypeSGST": Object {
+          "taxTypeSGST": {
             "currencyAmount": 0,
             "currencyCode": "INR",
           },
-          "totalExpense": Object {
+          "totalExpense": {
             "currencyAmount": -118,
             "currencyCode": "INR",
           },
           "transactionType": "Charge",
         },
       ],
-      "affordabilityExpenseReversalEventList": Array [
-        Object {
+      "affordabilityExpenseReversalEventList": [
+        {
           "amazonOrderId": "931-2463294-5740665",
-          "baseExpense": Object {
+          "baseExpense": {
             "currencyAmount": 100,
             "currencyCode": "INR",
           },
           "marketplaceId": "A2XZLSVIQ0F4JT",
           "postedDate": 2018-02-08T13:17:15.000Z,
-          "taxTypeCGST": Object {
+          "taxTypeCGST": {
             "currencyAmount": 0,
             "currencyCode": "INR",
           },
-          "taxTypeIGST": Object {
+          "taxTypeIGST": {
             "currencyAmount": 18,
             "currencyCode": "INR",
           },
-          "taxTypeSGST": Object {
+          "taxTypeSGST": {
             "currencyAmount": 0,
             "currencyCode": "INR",
           },
-          "totalExpense": Object {
+          "totalExpense": {
             "currencyAmount": 118,
             "currencyCode": "INR",
           },
           "transactionType": "Refund",
         },
       ],
-      "chargebackEventList": Array [],
-      "couponPaymentEventList": Array [],
-      "debtRecoveryEventList": Array [],
-      "fbaLiquidationEventList": Array [],
-      "guaranteeClaimEventList": Array [],
-      "imagingServicesFeeEventList": Array [],
-      "loanServicingEventList": Array [],
-      "networkComminglingTransactionEventList": Array [],
-      "payWithAmazonEventList": Array [],
-      "performanceBondRefundEventList": Array [],
-      "productAdsPaymentEventList": Array [
-        Object {
-          "baseValue": Object {
+      "chargebackEventList": [],
+      "couponPaymentEventList": [],
+      "debtRecoveryEventList": [],
+      "fbaLiquidationEventList": [],
+      "guaranteeClaimEventList": [],
+      "imagingServicesFeeEventList": [],
+      "loanServicingEventList": [],
+      "networkComminglingTransactionEventList": [],
+      "payWithAmazonEventList": [],
+      "performanceBondRefundEventList": [],
+      "productAdsPaymentEventList": [
+        {
+          "baseValue": {
             "currencyAmount": 115.34,
             "currencyCode": "USD",
           },
           "invoiceId": "TR1W0B4YB-6",
           "postedDate": null,
-          "taxValue": Object {
+          "taxValue": {
             "currencyAmount": 21.91,
             "currencyCode": "USD",
           },
           "transactionType": "Charge",
-          "transactionValue": Object {
+          "transactionValue": {
             "currencyAmount": 137.25,
             "currencyCode": "USD",
           },
         },
       ],
-      "refundEventList": Array [],
-      "rentalTransactionEventList": Array [],
-      "retrochargeEventList": Array [],
-      "safeTReimbursementEventList": Array [],
-      "sellerDealPaymentEventList": Array [
-        Object {
+      "refundEventList": [],
+      "rentalTransactionEventList": [],
+      "retrochargeEventList": [],
+      "safeTReimbursementEventList": [],
+      "sellerDealPaymentEventList": [
+        {
           "dealDescription": "test fees",
           "dealId": "fec11097c1f4379426a7de68bf938b684f677de2",
           "eventType": "SellerDealComplete",
-          "feeAmount": Object {
+          "feeAmount": {
             "currencyAmount": 16.38,
             "currencyCode": "USD",
           },
           "feeType": "RunLightningDealFee",
           "postedDate": 2016-11-21T16:18:15.000Z,
-          "taxAmount": Object {
+          "taxAmount": {
             "currencyAmount": 3.18,
             "currencyCode": "USD",
           },
           "totalAmount": null,
         },
       ],
-      "sellerReviewEnrollmentPaymentEventList": Array [],
-      "serviceFeeEventList": Array [],
-      "serviceProviderCreditEventList": Array [],
-      "shipmentEventList": Array [
-        Object {
+      "sellerReviewEnrollmentPaymentEventList": [],
+      "serviceFeeEventList": [],
+      "serviceProviderCreditEventList": [],
+      "shipmentEventList": [
+        {
           "amazonOrderId": "105-0457358-1245022",
-          "directPaymentList": Array [],
+          "directPaymentList": [],
           "marketplaceName": "Amazon.com",
-          "orderChargeAdjustmentList": Array [],
-          "orderChargeList": Array [],
-          "orderFeeAdjustmentList": Array [],
-          "orderFeeList": Array [],
+          "orderChargeAdjustmentList": [],
+          "orderChargeList": [],
+          "orderFeeAdjustmentList": [],
+          "orderFeeList": [],
           "postedDate": 2017-01-23T01:31:25.000Z,
           "sellerOrderId": "105-0457358-1245022",
-          "shipmentFeeAdjustmentList": Array [],
-          "shipmentFeeList": Array [],
-          "shipmentItemAdjustmentList": Array [],
-          "shipmentItemList": Array [
-            Object {
+          "shipmentFeeAdjustmentList": [],
+          "shipmentFeeList": [],
+          "shipmentItemAdjustmentList": [],
+          "shipmentItemList": [
+            {
               "costOfPointsGranted": null,
               "costOfPointsReturned": null,
-              "itemChargeAdjustmentList": Array [],
-              "itemChargeList": Array [
-                Object {
-                  "chargeAmount": Object {
+              "itemChargeAdjustmentList": [],
+              "itemChargeList": [
+                {
+                  "chargeAmount": {
                     "currencyAmount": 25.99,
                     "currencyCode": "USD",
                   },
                   "chargeType": "Principal",
                 },
-                Object {
-                  "chargeAmount": Object {
+                {
+                  "chargeAmount": {
                     "currencyAmount": 0,
                     "currencyCode": "USD",
                   },
                   "chargeType": "Tax",
                 },
               ],
-              "itemFeeAdjustmentList": Array [],
-              "itemFeeList": Array [
-                Object {
-                  "feeAmount": Object {
+              "itemFeeAdjustmentList": [],
+              "itemFeeList": [
+                {
+                  "feeAmount": {
                     "currencyAmount": 0,
                     "currencyCode": "USD",
                   },
                   "feeType": "ShippingChargeback",
                 },
-                Object {
-                  "feeAmount": Object {
+                {
+                  "feeAmount": {
                     "currencyAmount": 0,
                     "currencyCode": "USD",
                   },
                   "feeType": "VariableClosingFee",
                 },
               ],
-              "itemTaxWithheldList": Array [],
+              "itemTaxWithheldList": [],
               "orderAdjustmentItemId": null,
               "orderItemId": "46432915698730",
-              "promotionAdjustmentList": Array [],
-              "promotionList": Array [],
+              "promotionAdjustmentList": [],
+              "promotionList": [],
               "quantityShipped": 1,
               "sellerSKU": "HS223A-C00",
             },
           ],
         },
       ],
-      "taxWithholdingEventList": Array [],
-      "tdsReimbursementEventList": Array [
-        Object {
+      "taxWithholdingEventList": [],
+      "tdsReimbursementEventList": [
+        {
           "postedDate": 2019-08-01T16:18:15.000Z,
-          "reimbursedAmount": Object {
+          "reimbursedAmount": {
             "currencyAmount": 3.98,
             "currencyCode": "INR",
           },
@@ -517,32 +517,32 @@ Object {
     },
     "nextToken": null,
   },
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "6a2929e5-5c77-470e-ad71-36f30bfaffcc",
   },
 }
 `;
 
 exports[`lib.client.parsers.finances.list-financial-event-groups-response should parse the ListFinancialEventsByNextToken example response from MWS doc 1`] = `
-Object {
-  "listFinancialEventsResult": Object {
-    "financialEvents": Object {
-      "adjustmentEventList": Array [
-        Object {
+{
+  "listFinancialEventsResult": {
+    "financialEvents": {
+      "adjustmentEventList": [
+        {
           "adjustmentAmount": null,
-          "adjustmentItemList": Array [
-            Object {
+          "adjustmentItemList": [
+            {
               "asin": null,
               "fnSKU": null,
-              "perUnitAmount": Object {
+              "perUnitAmount": {
                 "currencyAmount": 3.38,
                 "currencyCode": "USD",
               },
-              "productDescription": "Shacke Metal Shoe Horn 7.5\\" inches - Double Sided Stainless
+              "productDescription": "Shacke Metal Shoe Horn 7.5" inches - Double Sided Stainless
                       Steel (Silver)",
               "quantity": 1,
               "sellerSKU": "KL-BPYA-C1VH",
-              "totalAmount": Object {
+              "totalAmount": {
                 "currencyAmount": 3.38,
                 "currencyCode": "USD",
               },
@@ -552,147 +552,147 @@ Object {
           "postedDate": null,
         },
       ],
-      "affordabilityExpenseEventList": Array [
-        Object {
+      "affordabilityExpenseEventList": [
+        {
           "amazonOrderId": "931-2463294-5740665",
-          "baseExpense": Object {
+          "baseExpense": {
             "currencyAmount": -100,
             "currencyCode": "INR",
           },
           "marketplaceId": "A2XZLSVIQ0F4JT",
           "postedDate": 2018-02-08T13:17:15.000Z,
-          "taxTypeCGST": Object {
+          "taxTypeCGST": {
             "currencyAmount": 0,
             "currencyCode": "INR",
           },
-          "taxTypeIGST": Object {
+          "taxTypeIGST": {
             "currencyAmount": -18,
             "currencyCode": "INR",
           },
-          "taxTypeSGST": Object {
+          "taxTypeSGST": {
             "currencyAmount": 0,
             "currencyCode": "INR",
           },
-          "totalExpense": Object {
+          "totalExpense": {
             "currencyAmount": -118,
             "currencyCode": "INR",
           },
           "transactionType": "Charge",
         },
       ],
-      "affordabilityExpenseReversalEventList": Array [
-        Object {
+      "affordabilityExpenseReversalEventList": [
+        {
           "amazonOrderId": "931-2463294-5740665",
-          "baseExpense": Object {
+          "baseExpense": {
             "currencyAmount": 100,
             "currencyCode": "INR",
           },
           "marketplaceId": "A2XZLSVIQ0F4JT",
           "postedDate": 2018-02-08T13:17:15.000Z,
-          "taxTypeCGST": Object {
+          "taxTypeCGST": {
             "currencyAmount": 0,
             "currencyCode": "INR",
           },
-          "taxTypeIGST": Object {
+          "taxTypeIGST": {
             "currencyAmount": 18,
             "currencyCode": "INR",
           },
-          "taxTypeSGST": Object {
+          "taxTypeSGST": {
             "currencyAmount": 0,
             "currencyCode": "INR",
           },
-          "totalExpense": Object {
+          "totalExpense": {
             "currencyAmount": 118,
             "currencyCode": "INR",
           },
           "transactionType": "Refund",
         },
       ],
-      "chargebackEventList": Array [],
-      "couponPaymentEventList": Array [],
-      "debtRecoveryEventList": Array [],
-      "fbaLiquidationEventList": Array [],
-      "guaranteeClaimEventList": Array [],
-      "imagingServicesFeeEventList": Array [],
-      "loanServicingEventList": Array [],
-      "networkComminglingTransactionEventList": Array [],
-      "payWithAmazonEventList": Array [],
-      "performanceBondRefundEventList": Array [],
-      "productAdsPaymentEventList": Array [
-        Object {
-          "baseValue": Object {
+      "chargebackEventList": [],
+      "couponPaymentEventList": [],
+      "debtRecoveryEventList": [],
+      "fbaLiquidationEventList": [],
+      "guaranteeClaimEventList": [],
+      "imagingServicesFeeEventList": [],
+      "loanServicingEventList": [],
+      "networkComminglingTransactionEventList": [],
+      "payWithAmazonEventList": [],
+      "performanceBondRefundEventList": [],
+      "productAdsPaymentEventList": [
+        {
+          "baseValue": {
             "currencyAmount": 115.34,
             "currencyCode": "USD",
           },
           "invoiceId": "TR1W0B4YB-6",
           "postedDate": null,
-          "taxValue": Object {
+          "taxValue": {
             "currencyAmount": 21.91,
             "currencyCode": "USD",
           },
           "transactionType": "Charge",
-          "transactionValue": Object {
+          "transactionValue": {
             "currencyAmount": 137.25,
             "currencyCode": "USD",
           },
         },
       ],
-      "refundEventList": Array [],
-      "rentalTransactionEventList": Array [],
-      "retrochargeEventList": Array [],
-      "safeTReimbursementEventList": Array [],
-      "sellerDealPaymentEventList": Array [
-        Object {
+      "refundEventList": [],
+      "rentalTransactionEventList": [],
+      "retrochargeEventList": [],
+      "safeTReimbursementEventList": [],
+      "sellerDealPaymentEventList": [
+        {
           "dealDescription": "test fees",
           "dealId": "fec11097c1f4379426a7de68bf938b684f677de2",
           "eventType": "SellerDealComplete",
-          "feeAmount": Object {
+          "feeAmount": {
             "currencyAmount": 16.38,
             "currencyCode": "USD",
           },
           "feeType": "RunLightningDealFee",
           "postedDate": 2016-11-21T16:18:15.000Z,
-          "taxAmount": Object {
+          "taxAmount": {
             "currencyAmount": 3.18,
             "currencyCode": "USD",
           },
           "totalAmount": null,
         },
       ],
-      "sellerReviewEnrollmentPaymentEventList": Array [],
-      "serviceFeeEventList": Array [
-        Object {
+      "sellerReviewEnrollmentPaymentEventList": [],
+      "serviceFeeEventList": [
+        {
           "amazonOrderId": null,
           "asin": null,
           "feeDescription": "Shacke Luggage Tags with Full Back Privacy Cover w/ Steel Loops - Set of 2
                   (Green)",
-          "feeList": Array [],
+          "feeList": [],
           "feeReason": null,
           "fnSKU": null,
           "sellerSKU": "FH-REED-16DX",
         },
-        Object {
+        {
           "amazonOrderId": null,
           "asin": null,
           "feeDescription": "Shacke Luggage Tags with Full Back Privacy Cover w/ Steel Loops - Set of 2
                   (Green)",
-          "feeList": Array [
-            Object {
-              "feeAmount": Object {
+          "feeList": [
+            {
+              "feeAmount": {
                 "currencyAmount": -1,
                 "currencyCode": "USD",
               },
               "feeType": "FBACustomerReturnPerOrderFee",
             },
-            Object {
-              "feeAmount": Object {
+            {
+              "feeAmount": {
                 "currencyAmount": -1.06,
                 "currencyCode": "USD",
               },
               "feeType": "FBACustomerReturnPerUnitFee",
             },
-            Object {
-              "feeAmount": Object {
+            {
+              "feeAmount": {
                 "currencyAmount": -0.5,
                 "currencyCode": "USD",
               },
@@ -704,14 +704,14 @@ Object {
           "sellerSKU": "FH-REED-16DX",
         },
       ],
-      "serviceProviderCreditEventList": Array [],
-      "shipmentEventList": Array [],
-      "taxWithholdingEventList": Array [],
-      "tdsReimbursementEventList": Array [],
+      "serviceProviderCreditEventList": [],
+      "shipmentEventList": [],
+      "taxWithholdingEventList": [],
+      "tdsReimbursementEventList": [],
     },
     "nextToken": "e21hcmtldHBsYWNlSWQ6bnVsbCxtYXhSZXN1bHRzUGVyUGFnZTowLHNlYXJjaFF1ZXJ5Q2hlY2tzdW06bnVsbCxxdWVyeVBhZ2luYXRpb25Ub2tlbjoidDB3V25MNXFLWkRIZ2p5ZzB3ZHRWODVnV0htVExVMkM0XzlsMHpRMG9HVXFZOVhTdjFyWUNWUE8teGxWRnF3N0ZyaDIyY3lQX0VTOXYxendQNUVvc0t0V1NKM1YyQkRJdWcyWFpXdm1KVmdPVktBdzNIMXUyVHBiTGoxVmRmY3Z6ZlU1WlpNaEpsQ0RKUnYxRk16am13Y1YyQ1BoOXNWMU1xNUZqamxUMlRCeFBkSjdEa3BkbENISElVZ094aHVTN3ZfZlFCUWYyWWJYZ2l3NHNxZXkwNnQyaVBucm5PdnAzRTdKbW4xcnc1UTlaTGV1Ymk5WUV6UGJ6UnhjRmh2VUFKdlQ5U2U3eERIdHVMUzNJVWFRODBubVhja3JLeWt3dVZKeWZXQm5CY3p0bjZTbVRHenJmZ1VOanFMWFFNT2giLHNlYXJjaFF1ZXJ5Om51bGwsdG9rZW5DcmVhdGlvbkRhdGU6MTQ4NTg2MjY5ODI1NCxzZWxsZXJJZDoiQTM1SlMxREpITjdGViJ9",
   },
-  "responseMetadata": Object {
+  "responseMetadata": {
     "requestId": "c07d1dd2-12f9-415f-a167-8ab5f7726dbf",
   },
 }
