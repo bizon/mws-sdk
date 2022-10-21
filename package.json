@@ -45,7 +45,7 @@
     "mockdate": "^3.0.5",
     "nock": "^13.2.9",
     "semantic-release": "^19.0.5",
-    "xo": "^0.52.3"
+    "xo": "^0.52.4"
   },
   "engines": {
     "node": ">=14"
