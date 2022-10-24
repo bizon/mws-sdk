@@ -937,10 +937,10 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@mapbox/node-pre-gyp@^1.0.9":
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.9.tgz#09a8781a3a036151cdebbe8719d6f8b25d4058bc"
-  integrity sha512-aDF3S3rK9Q2gey/WAttUlISduDItz5BU3306M9Eyv6/oS40aMprnopshtlKTykxRNIBEZuRMaZAnbrQ4QtKGyw==
+"@mapbox/node-pre-gyp@^1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.10.tgz#8e6735ccebbb1581e5a7e652244cadc8a844d03c"
+  integrity sha512-4ySo4CjzStuprMwk35H5pPbkymjv1SF3jGLj6rAHp/xT/RF7TL7bd9CTm1xDY49K2qF7jmR/g7k+SkLETP6opA==
   dependencies:
     detect-libc "^2.0.0"
     https-proxy-agent "^5.0.0"
@@ -4803,14 +4803,14 @@ libnpmversion@^3.0.1:
     proc-log "^2.0.0"
     semver "^7.3.7"
 
-libxmljs2@^0.30.1:
-  version "0.30.1"
-  resolved "https://registry.yarnpkg.com/libxmljs2/-/libxmljs2-0.30.1.tgz#a7e468facbde8ef57076d1f1f379375b30d3f212"
-  integrity sha512-Upgf6LnbDZV8oYrG2cONazKjnUPV2v8TbAKP951flkCsyyrEuMYBe8IgYtrcm5bXFOmQnKsbFeZwMwVvVNZLpg==
+libxmljs2@^0.31.0:
+  version "0.31.0"
+  resolved "https://registry.yarnpkg.com/libxmljs2/-/libxmljs2-0.31.0.tgz#0f7cf42453500843628d338f1e1b88d0bc20fa90"
+  integrity sha512-+o8y4lhmmf7zUA67watbLcAcxE0lkBkuatoIwgFkWTmuFTPEOZKunNpSjW6V7ONzAj8Ey1qVeR12q1JMU/sTlQ==
   dependencies:
-    "@mapbox/node-pre-gyp" "^1.0.9"
+    "@mapbox/node-pre-gyp" "^1.0.10"
     bindings "~1.5.0"
-    nan "~2.15.0"
+    nan "~2.17.0"
 
 line-column-path@^3.0.0:
   version "3.0.0"
@@ -5295,10 +5295,10 @@ mute-stream@~0.0.4:
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.8.tgz#1630c42b2251ff81e2a283de96a5497ea92e5e0d"
   integrity sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA==
 
-nan@~2.15.0:
-  version "2.15.0"
-  resolved "https://registry.yarnpkg.com/nan/-/nan-2.15.0.tgz#3f34a473ff18e15c1b5626b62903b5ad6e665fee"
-  integrity sha512-8ZtvEnA2c5aYCZYd1cvgdnU6cqwixRoYg70xPLWUws5ORTa/lnw+u4amixRS/Ac5U5mQVgp9pnlSUnbNWFaWZQ==
+nan@~2.17.0:
+  version "2.17.0"
+  resolved "https://registry.yarnpkg.com/nan/-/nan-2.17.0.tgz#c0150a2368a182f033e9aa5195ec76ea41a199cb"
+  integrity sha512-2ZTgtl0nJsO0KQCjEpxcIr5D+Yv90plTitZt9JBfQvVJDS5seMl3FOvsh3+9CoYWXf/1l5OaZzzF6nDm4cagaQ==
 
 natural-compare@^1.4.0:
   version "1.4.0"
