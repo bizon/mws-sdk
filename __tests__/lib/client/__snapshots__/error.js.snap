@@ -48,6 +48,7 @@ exports[`lib.client.error should not allow updating error properties 1`] = `
       "region": "eu",
       "sellerCentralDomain": "sellercentral.amazon.com.be",
       "vendorCentralDomain": "vendorcentral.amazon.com.be",
+      "vendorId": "A3Q3FYJVX702M2",
     },
     {
       "advertisingApiDomain": "advertising-api-eu.amazon.com",
